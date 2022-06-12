@@ -1,0 +1,12 @@
+{
+    "name": "schranz/templating",
+    "description": "A template abstraction prototype for php template engines.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\": "src/"
+        }
+    },
+    "require": {}
+}

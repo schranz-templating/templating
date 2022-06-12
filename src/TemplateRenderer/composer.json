@@ -1,0 +1,14 @@
+{
+    "name": "schranz-templating/template-renderer",
+    "description": "Provide template renderer interface used by different template engine bridges.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\TemplateRenderer\\": ""
+        }
+    },
+    "require": {
+        "php": "^7.0 || ^8.0"
+    }
+}

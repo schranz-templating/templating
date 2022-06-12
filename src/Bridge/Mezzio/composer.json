@@ -1,0 +1,16 @@
+{
+    "name": "schranz-templating/mezzio-bridge",
+    "description": "A bridge for the template renderer for mezzio template engine.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\Bridge\\Mezzio\\": ""
+        }
+    },
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "mezzio/mezzio-template": "^1.0 || ^2.0",
+        "schranz/template-renderer": "^0.1"
+    }
+}

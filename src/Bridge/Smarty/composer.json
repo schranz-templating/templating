@@ -1,0 +1,16 @@
+{
+    "name": "schranz-templating/smarty-bridge",
+    "description": "A bridge for the template renderer for smarty template engine.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\Bridge\\Smarty\\": ""
+        }
+    },
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "schranz/template-renderer": "^0.1",
+        "smarty/smarty": "^3.0 || ^4.1"
+    }
+}

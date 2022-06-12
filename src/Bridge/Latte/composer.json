@@ -1,0 +1,16 @@
+{
+    "name": "schranz-templating/latte-bridge",
+    "description": "A bridge for the template renderer for latte template engine.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\Bridge\\Latte\\": ""
+        }
+    },
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "latte/latte": "^2.0 || ^3.0",
+        "schranz/template-renderer": "^0.1"
+    }
+}
