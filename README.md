@@ -16,8 +16,8 @@ Discussion in the PHP-FIG:
  - [x] [Latte Template Renderer](src/Bridge/Latte/LatteRenderer.php) (`schranz-templating/latte-bridge`)
  - [x] [Blade Template Renderer](src/Bridge/Blade/BladeRenderer.php) (`schranz-templating/blade-bridge`)
  - [x] [Mezzio Template Renderer](src/Bridge/Mezzio/MezzioRenderer.php) (`schranz-templating/mezzio-bridge`)
+ - [x] [Plates Template Renderer](src/Bridge/Plates/PlatesRenderer.php) (`schranz-templating/plates-bridge`)
  - [ ] Mustache
- - [ ] Plates
  - [ ] Yii View
  - [ ] Fluid (Typo3)
  - [ ] Subtree Split
