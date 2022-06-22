@@ -11,14 +11,52 @@ Discussion in the PHP-FIG:
 ## TODO
 
  - [x] [TemplateRendererInterface](src/TemplateRenderer/TemplateRendererInterface.php) (`schranz-templating/template-renderer`)
- - [x] [Twig Template Renderer](src/Bridge/Twig/TwigRenderer.php) (`schranz-templating/twig-bridge`)
- - [x] [Smarty Template Renderer](src/Bridge/Smarty/SmartyRenderer.php) (`schranz-templating/smarty-bridge`)
- - [x] [Latte Template Renderer](src/Bridge/Latte/LatteRenderer.php) (`schranz-templating/latte-bridge`)
- - [x] [Blade Template Renderer](src/Bridge/Blade/BladeRenderer.php) (`schranz-templating/blade-bridge`)
- - [x] [Mezzio Template Renderer](src/Bridge/Mezzio/MezzioRenderer.php) (`schranz-templating/mezzio-bridge`)
- - [x] [Plates Template Renderer](src/Bridge/Plates/PlatesRenderer.php) (`schranz-templating/plates-bridge`)
- - [ ] Mustache
- - [ ] Yii View
- - [ ] Fluid (Typo3)
+ - [ ] Bridges
+   - [x] [Twig Template Renderer](src/Bridge/Twig/TwigRenderer.php) (`schranz-templating/twig-bridge`)
+   - [x] [Smarty Template Renderer](src/Bridge/Smarty/SmartyRenderer.php) (`schranz-templating/smarty-bridge`)
+   - [x] [Latte Template Renderer](src/Bridge/Latte/LatteRenderer.php) (`schranz-templating/latte-bridge`)
+   - [x] [Blade Template Renderer](src/Bridge/Blade/BladeRenderer.php) (`schranz-templating/blade-bridge`)
+   - [x] [Mezzio Template Renderer](src/Bridge/Mezzio/MezzioRenderer.php) (`schranz-templating/mezzio-bridge`)
+   - [x] [Plates Template Renderer](src/Bridge/Plates/PlatesRenderer.php) (`schranz-templating/plates-bridge`)
+   - [x] [Spiral View Template Renderer](src/Bridge/SpiralView/SpiralViewRenderer.php) (`schranz-templating/spiral-view-bridge`)
+     - [ ] Stempler?
+   - [ ] Mustache
+   - [ ] Yii View
+   - [ ] Fluid (Typo3)
+ - [ ] Integrations
+   - [ ] Symfony
+   - [ ] Laravel
+   - [ ] Spiral
+   - [ ] Laminas
+   - [ ] Mezzio
+   - [ ] Yii
+   - [ ] Cake
+   - [ ] CodeIgniter
  - [ ] Subtree Split
  - [ ] Register Packages
+
+## Usage for Library Authors
+
+If you create a library, framework or whatever you should just require the template renderer in the
+require section of your composer.json:
+
+```bash
+composer require schranz-templating/template-renderer
+```
+
+## Usage for Projects
+
+Projects depending on libraries which where build on top of the schranz-templating/template-render abstract
+should require the renderer package and a bridge to the template engine they want to use:
+
+```bash
+composer require schranz-templating/template-renderer
+# one of:
+composer require schranz-templating/twig-bridge
+composer require schranz-templating/smarty-bridge
+composer require schranz-templating/latte-bridge
+composer require schranz-templating/blade-bridge
+composer require schranz-templating/mezzio-bridge
+composer require schranz-templating/plates-bridge
+composer require schranz-templating/spiral-view-bridge
+```

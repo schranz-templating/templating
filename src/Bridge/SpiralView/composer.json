@@ -1,0 +1,16 @@
+{
+    "name": "schranz-templating/spiral-view-bridge",
+    "description": "A bridge for the template renderer for spiral view template engines.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\Bridge\\SpiralView\\": ""
+        }
+    },
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "schranz/template-renderer": "^0.1",
+        "spiral/views": "^1.0 || ^2"
+    }
+}
