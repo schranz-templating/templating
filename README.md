@@ -1,6 +1,17 @@
-# Schranz Templating
+<div align="center">
+ 
+![PHP Templating Logo with a Rooster on it](https://user-images.githubusercontent.com/1698337/175612156-b475d5bc-6caa-413f-b741-ff14ce861d5d.png)
 
-A template abstraction prototype for php template engines.
+</div>
+
+<h1 align="center">Schranz Templating</h1>
+
+<div align="center">
+ <strong>A template abstraction prototype for PHP template engines.</strong>
+</div>
+
+<br/>
+<br/>
 
 This project should help to find a way for a general Template Render Interface.
 
