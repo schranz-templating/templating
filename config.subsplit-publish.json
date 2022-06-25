@@ -11,6 +11,11 @@
             "target": "git@github.com:schranz-templating/blade-bridge.git"
         },
         {
+            "name": "HandlebarsBridge",
+            "directory": "src/Bridge/Handlebars",
+            "target": "git@github.com:schranz-templating/handlebars-bridge.git"
+        },
+        {
             "name": "LatteBridge",
             "directory": "src/Bridge/Latte",
             "target": "git@github.com:schranz-templating/latte-bridge.git"
