@@ -67,6 +67,7 @@ composer require schranz-templating/template-renderer
 # one of:
 composer require schranz-templating/blade-bridge
 composer require schranz-templating/handlebars-bridge
+composer require schranz-templating/laminas-view-bridge
 composer require schranz-templating/latte-bridge
 composer require schranz-templating/mezzio-bridge
 composer require schranz-templating/mustache-bridge
@@ -92,7 +93,7 @@ they are supporting. Also what kind of features are supported by them.
 | Stempler     | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?     | ?       | ?         | ?      | [ ]         |
 | Mezzio       | `3.10.0` | `~7.4.0 ~8.0.0 ~8.1.0` | [x]         |          | [x] `@`    | ?         | ?       | ?     | ?       |           | [x]    | [x]         |
 | Plates       | `3.4.0`  | `^7.0 ^8.0`            | [x]         |          |            |           |         | ?     |         | ?         | [x]    | [x]         |
-| Laminas View | `2.20.0` | `^7.4 ~8.0.0 ~8.1.0`   | [x]         | [x]      | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [ ]         |
+| Laminas View | `2.20.0` | `^7.4 ~8.0.0 ~8.1.0`   | [x]         | [x]      | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
 | Yii View     | `5.0.0 ` | `^7.4 ^8.0`            | [x]         | [x]      | [x] `@`    | ?         | ?       | ?     | ?       | ?         | [x]    | [ ]         |
 | Fluid        | `2.7.1`  | `>=5.5.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [ ]         |
 | Contao       | `4.13.4` | `^7.4 ^8.0`            | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [ ]         |

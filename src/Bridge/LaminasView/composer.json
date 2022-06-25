@@ -1,0 +1,17 @@
+{
+    "name": "schranz-templating/laminas-view-bridge",
+    "description": "A bridge for the template renderer for laminas view template engines.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\Bridge\\LaminasView\\": ""
+        }
+    },
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "laminas/laminas-view": "^2.0 || ^3.0",
+        "schranz-templating/template-renderer": "^0.1"
+    },
+    "minimum-stability": "dev"
+}
