@@ -84,16 +84,16 @@ they are supporting. Also what kind of features are supported by them.
 
 | Engine       | Version  | PHP Version            | Inheritance | Subviews | Namespaces | Functions | Filters | Exist | Partial | Streaming | String | Implemented |
 |--------------|----------|------------------------|-------------|----------|------------|-----------|---------|-------|---------|-----------|--------|-------------|
-| Twig         | `3.4.1`  | `>=7.2.5`              | [x]         |          | [x]        | [x]       | [x]     | [x]   | [x]     | [x]       | [x]    | [x]         |
+| Twig         | `3.4.1`  | `>=7.2.5`              | [x]         |          | [x] `@`    | [x]       | [x]     | [x]   | [x]     | [x]       | [x]    | [x]         |
 | Smarty       | `4.1.1`  | `^7.1 ^8.0`            | [x]         |          | ?          | [x]       | ?       | ?     | ?       | [x]       |        | [x]         |
-| Latte        | `3.0.0`  | `>=8.0 <8.2`           | [x]         |          | [x]        |           | [x]     | ?     | ?       | ?         | [x]    | [x]         |
-| Blade        | `9.15.0` | `^8.1`                 | [x]         |          | [x]        | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
+| Latte        | `3.0.0`  | `>=8.0 <8.2`           | [x]         |          | ?          |           | [x]     | ?     | ?       | ?         | [x]    | [x]         |
+| Blade        | `9.15.0` | `^8.1`                 | [x]         |          | [x] `::`   | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
 | Spiral View  | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?     | ?       | ?         | ?      | [x]         |
 | Stempler     | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?     | ?       | ?         | ?      | [ ]         |
-| Mezzio       | `3.10.0` | `~7.4.0 ~8.0.0 ~8.1.0` | [x]         |          | [x]        | ?         | ?       | ?     | ?       |           | [x]    | [x]         |
+| Mezzio       | `3.10.0` | `~7.4.0 ~8.0.0 ~8.1.0` | [x]         |          | [x] `@`    | ?         | ?       | ?     | ?       |           | [x]    | [x]         |
 | Plates       | `3.4.0`  | `^7.0 ^8.0`            | [x]         |          |            |           |         | ?     |         | ?         | [x]    | [x]         |
 | Laminas View | `2.20.0` | `^7.4 ~8.0.0 ~8.1.0`   | [x]         | [x]      | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [ ]         |
-| Yii View     | `5.0.0 ` | `^7.4 ^8.0`            | [x]         | [x]      | [x]        | ?         | ?       | ?     | ?       | ?         | [x]    | [ ]         |
+| Yii View     | `5.0.0 ` | `^7.4 ^8.0`            | [x]         | [x]      | [x] `@`    | ?         | ?       | ?     | ?       | ?         | [x]    | [ ]         |
 | Fluid        | `2.7.1`  | `>=5.5.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [ ]         |
 | Contao       | `4.13.4` | `^7.4 ^8.0`            | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [ ]         |
 | Mustache     | `2.14.1` | `>=5.2.4`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
@@ -133,9 +133,10 @@ and inheritance only on template level not on render caller level.
 #### Namespaces
 
 The template engine allow to render specific template from different
-directories via namepaces.
+directories via namepaces. Also how a namespace is reference should
+be listed.
 
-E.g. This is achieved in twig via the `@Namespace` and in Blade and Latte via `namespace::` template names.
+E.g. This is achieved in twig via the `@Namespace/` and in Blade and Latte via `namespace::` template names.
 
 #### Functions
 
