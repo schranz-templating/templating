@@ -1,0 +1,17 @@
+{
+    "name": "schranz-templating/fluid-bridge",
+    "description": "A bridge for the template renderer for fluid template engine.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\Bridge\\Fluid\\": ""
+        }
+    },
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "schranz-templating/template-renderer": "^0.1",
+        "typo3fluid/fluid": "^2.0"
+    },
+    "minimum-stability": "dev"
+}

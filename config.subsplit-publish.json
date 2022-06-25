@@ -16,6 +16,11 @@
             "target": "git@github.com:schranz-templating/blade-bridge.git"
         },
         {
+            "name": "FluidBridge",
+            "directory": "src/Bridge/Fluid",
+            "target": "git@github.com:schranz-templating/fluid-bridge.git"
+        },
+        {
             "name": "HandlebarsBridge",
             "directory": "src/Bridge/Handlebars",
             "target": "git@github.com:schranz-templating/handlebars-bridge.git"
