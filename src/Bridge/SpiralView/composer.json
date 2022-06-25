@@ -10,7 +10,8 @@
     },
     "require": {
         "php": "^7.0 || ^8.0",
-        "schranz/template-renderer": "^0.1",
-        "spiral/views": "^1.0 || ^2"
-    }
+        "spiral/views": "^1.0 || ^2",
+        "schranz-templating/template-renderer": "^0.1"
+    },
+    "minimum-stability": "dev"
 }

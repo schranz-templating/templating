@@ -11,6 +11,7 @@
     "require": {
         "php": "^7.0 || ^8.0",
         "latte/latte": "^2.0 || ^3.0",
-        "schranz/template-renderer": "^0.1"
-    }
+        "schranz-templating/template-renderer": "^0.1"
+    },
+    "minimum-stability": "dev"
 }
