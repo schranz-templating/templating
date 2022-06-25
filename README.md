@@ -85,6 +85,12 @@ composer require schranz-templating/twig-bridge
 composer require schranz-templating/yii-view-bridge
 ```
 
+**Why Bridges?**
+
+As it would be too much work to create forks of every template engines to implement
+the interface for prototyping it is easier to use the [Bridge Design Pattern](https://designpatternsphp.readthedocs.io/en/latest/Structural/Bridge/README.html)
+to bridge from the `TemplateRendererInterface` to underlying template engines.
+
 ## Analysis
 
 In the following table we will ist all yet found interesting template engines
