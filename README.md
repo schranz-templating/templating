@@ -34,6 +34,7 @@ Discussion in the PHP-FIG:
    - [x] [Mustache Renderer](src/Bridge/Mustache/MustacheRenderer.php) (`schranz-templating/mustache-bridge`)
    - [x] [Handlebars Renderer](src/Bridge/Handlebars/HandlebarsRenderer.php) (`schranz-templating/handlebars-bridge`)
    - [ ] Yii View
+   - [ ] Laminas View
    - [ ] Fluid (Typo3)
  - [ ] Integrations
    - [ ] Symfony
@@ -64,13 +65,15 @@ should require the renderer package and a bridge to the template engine they wan
 ```bash
 composer require schranz-templating/template-renderer
 # one of:
-composer require schranz-templating/twig-bridge
-composer require schranz-templating/smarty-bridge
-composer require schranz-templating/latte-bridge
 composer require schranz-templating/blade-bridge
+composer require schranz-templating/handlebars-bridge
+composer require schranz-templating/latte-bridge
 composer require schranz-templating/mezzio-bridge
+composer require schranz-templating/mustache-bridge
 composer require schranz-templating/plates-bridge
+composer require schranz-templating/smarty-bridge
 composer require schranz-templating/spiral-view-bridge
+composer require schranz-templating/twig-bridge
 ```
 
 ## Analysis
@@ -79,22 +82,22 @@ In the following table we will ist all yet found interesting template engines
 and view renderers. What kind of version they currently are and what PHP Version
 they are supporting. Also what kind of features are supported by them.
 
-| Engine       | Version  | PHP Version            | Inheritance | Subviews | Namespaces | Functions | Filters | Partial | Streaming | String | Implemented |
-|--------------|----------|------------------------|-------------|----------|------------|-----------|---------|---------|-----------|--------|-------------|
-| Twig         | `3.4.1`  | `>=7.2.5`              | [x]         |          | [x]        | [x]       | [x]     | [x]     | [x]       | [x]    | [x]         |
-| Smarty       | `4.1.1`  | `^7.1 ^8.0`            | [x]         |          | ?          | [x]       | ?       | ?       | [x]       |        | [x]         |
-| Latte        | `3.0.0`  | `>=8.0 <8.2`           | [x]         |          | [x]        |           | [x]     | ?       | ?         | [x]    | [x]         |
-| Blade        | `9.15.0` | `^8.1`                 | [x]         |          | [x]        | ?         | ?       | ?       | ?         | [x]    | [x]         |
-| Spiral View  | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?       | ?         | ?      | [x]         |
-| Stempler     | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?       | ?         | ?      | [ ]         |
-| Mezzio       | `3.10.0` | `~7.4.0 ~8.0.0 ~8.1.0` | [x]         |          | [x]        | ?         | ?       | ?       |           | [x]    | [x]         |
-| Plates       | `3.4.0`  | `^7.0 ^8.0`            | [x]         |          |            |           |         |         | ?         | [x]    | [x]         |
-| Laminas View | `2.20.0` | `^7.4 ~8.0.0 ~8.1.0`   | [x]         | [x]      | ?          | ?         | ?       | ?       | ?         | [x]    | [ ]         |
-| Yii View     | `5.0.0 ` | `^7.4 ~8.0.0 ~8.1.0`   | [x]         | [x]      | [x]        | ?         | ?       | ?       | ?         | [x]    | [ ]         |
-| Fluid        | `2.7.1`  | `>=5.5.0`              | ?           | ?        | ?          | ?         | ?       | ?       | ?         | [x]    | [ ]         |
-| Contao       | `4.13.4` | `^7.4 ^8.0`            | ?           | ?        | ?          | ?         | ?       | ?       | ?         | [x]    | [ ]         |
-| Mustache     | `2.14.1` | `>=5.2.4`              | ?           | ?        | ?          | ?         | ?       | ?       | ?         | [x]    | [x]         |
-| Handlebars   | `2.3.0`  | `>=5.4.0`              | ?           | ?        | ?          | ?         | ?       | ?       | ?         | [x]    | [x]         |
+| Engine       | Version  | PHP Version            | Inheritance | Subviews | Namespaces | Functions | Filters | Exist | Partial | Streaming | String | Implemented |
+|--------------|----------|------------------------|-------------|----------|------------|-----------|---------|-------|---------|-----------|--------|-------------|
+| Twig         | `3.4.1`  | `>=7.2.5`              | [x]         |          | [x]        | [x]       | [x]     | [x]   | [x]     | [x]       | [x]    | [x]         |
+| Smarty       | `4.1.1`  | `^7.1 ^8.0`            | [x]         |          | ?          | [x]       | ?       | ?     | ?       | [x]       |        | [x]         |
+| Latte        | `3.0.0`  | `>=8.0 <8.2`           | [x]         |          | [x]        |           | [x]     | ?     | ?       | ?         | [x]    | [x]         |
+| Blade        | `9.15.0` | `^8.1`                 | [x]         |          | [x]        | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
+| Spiral View  | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?     | ?       | ?         | ?      | [x]         |
+| Stempler     | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?     | ?       | ?         | ?      | [ ]         |
+| Mezzio       | `3.10.0` | `~7.4.0 ~8.0.0 ~8.1.0` | [x]         |          | [x]        | ?         | ?       | ?     | ?       |           | [x]    | [x]         |
+| Plates       | `3.4.0`  | `^7.0 ^8.0`            | [x]         |          |            |           |         | ?     |         | ?         | [x]    | [x]         |
+| Laminas View | `2.20.0` | `^7.4 ~8.0.0 ~8.1.0`   | [x]         | [x]      | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [ ]         |
+| Yii View     | `5.0.0 ` | `^7.4 ^8.0`            | [x]         | [x]      | [x]        | ?         | ?       | ?     | ?       | ?         | [x]    | [ ]         |
+| Fluid        | `2.7.1`  | `>=5.5.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [ ]         |
+| Contao       | `4.13.4` | `^7.4 ^8.0`            | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [ ]         |
+| Mustache     | `2.14.1` | `>=5.2.4`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
+| Handlebars   | `2.3.0`  | `>=5.4.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
 
 ### Feature Support
 
@@ -127,6 +130,13 @@ the rendering of the template.
 This is not fulfilled by twig, blade or latte as they support layout
 and inheritance only on template level not on render caller level.
 
+#### Namespaces
+
+The template engine allow to render specific template from different
+directories via namepaces.
+
+E.g. This is achieved in twig via the `@Namespace` and in Blade and Latte via `namespace::` template names.
+
 #### Functions
 
 The template engine allows to define custom functions which can be
@@ -134,12 +144,12 @@ called via the that name in the template.
 
 E.g.: This is achieved in twig via twig extension and twig functions.
 
-#### Namespaces
+#### Exist
 
-The template engine allow to render specific template from different
-directories via namepaces.
+The template engine allows to check if a template with a specific
+name does exist or not.
 
-E.g. This is achieved in twig via the `@Namespace` and in Blade and Latte via `namespace::` template names.
+E.g.: This is achieved in twig via the getLoader()->exist method.
 
 #### Filter
 
