@@ -41,6 +41,11 @@
             "target": "git@github.com:schranz-templating/plates-bridge.git"
         },
         {
+            "name": "QiqBridge",
+            "directory": "src/Bridge/Qiq",
+            "target": "git@github.com:schranz-templating/qiq-bridge.git"
+        },
+        {
             "name": "SmartyBridge",
             "directory": "src/Bridge/Smarty",
             "target": "git@github.com:schranz-templating/smarty-bridge.git"

@@ -1,0 +1,17 @@
+{
+    "name": "schranz-templating/qiq-bridge",
+    "description": "A bridge for the template renderer for qiq template engine.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\Bridge\\Qiq\\": ""
+        }
+    },
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "qiq/qiq": "^1.0",
+        "schranz-templating/template-renderer": "^0.1"
+    },
+    "minimum-stability": "dev"
+}

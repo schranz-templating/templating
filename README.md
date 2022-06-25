@@ -33,6 +33,7 @@ Discussion in the PHP-FIG:
    - [x] [Handlebars Renderer](src/Bridge/Handlebars/HandlebarsRenderer.php) ([`schranz-templating/handlebars-bridge`](https://github.com/schranz-templating/handlebars-bridge))
    - [x] [Laminas View Renderer](src/Bridge/LaminasView/LaminasViewRenderer.php) ([`schranz-templating/laminas-view-bridge`](https://github.com/schranz-templating/laminas-view-bridge))
    - [x] [YiiView Renderer](src/Bridge/YiiView/YiiViewRenderer.php) ([`schranz-templating/yii-view-bridge`](https://github.com/schranz-templating/yii-view-bridge))
+   - [x] [Qiq Template Renderer](src/Bridge/Qiq/QiqRenderer.php) ([`schranz-templating/qiq-bridge`](https://github.com/schranz-templating/qiq-bridge))
    - [x] [Spiral View Template Renderer](src/Bridge/SpiralView/SpiralViewRenderer.php) ([`schranz-templating/spiral-view-bridge`](https://github.com/schranz-templating/spiral-view-bridge))
      - [ ] Stempler?
    - [ ] Fluid (Typo3)
@@ -75,6 +76,7 @@ composer require schranz-templating/latte-bridge
 composer require schranz-templating/mezzio-bridge
 composer require schranz-templating/mustache-bridge
 composer require schranz-templating/plates-bridge
+composer require schranz-templating/qiq-bridge
 composer require schranz-templating/smarty-bridge
 composer require schranz-templating/spiral-view-bridge
 composer require schranz-templating/twig-bridge
@@ -103,6 +105,7 @@ they are supporting. Also what kind of features are supported by them.
 | Contao       | `4.13.4` | `^7.4 ^8.0`            | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [ ]         |
 | Mustache     | `2.14.1` | `>=5.2.4`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
 | Handlebars   | `2.3.0`  | `>=5.4.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
+| Qiq          | `1.0.2`  | `^8.0`                 | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
 
 ### Feature Support
 
