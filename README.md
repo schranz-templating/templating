@@ -104,7 +104,9 @@ to fulfill it is given.
 #### Inheritance
 
 With support for template inheritance it means that I can inheritance
-from a parent template and overwrite parts.In some template engine
+from a parent template and overwrite parts in the template language
+itself. This feature is not fulfilled for template engines which
+only allow to give subviews into a parent view in the caller.
 
 E.g.: This is achieved in twig via extends and blocks.
 
