@@ -1,0 +1,9 @@
+{
+    "sub-splits": [
+        {
+            "name": "TemplateRenderer",
+            "directory": "src/TemplateRenderer",
+            "target": "git@github.com:schranz-templating/template-renderer.git"
+        }
+    ]
+}
