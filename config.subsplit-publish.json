@@ -21,6 +21,11 @@
             "target": "git@github.com:schranz-templating/mezzio-bridge.git"
         },
         {
+            "name": "MustacheBridge",
+            "directory": "src/Bridge/Mustache",
+            "target": "git@github.com:schranz-templating/mustache-bridge.git"
+        },
+        {
             "name": "PlatesBridge",
             "directory": "src/Bridge/Plates",
             "target": "git@github.com:schranz-templating/plates-bridge.git"

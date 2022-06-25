@@ -31,7 +31,8 @@ Discussion in the PHP-FIG:
    - [x] [Plates Template Renderer](src/Bridge/Plates/PlatesRenderer.php) (`schranz-templating/plates-bridge`)
    - [x] [Spiral View Template Renderer](src/Bridge/SpiralView/SpiralViewRenderer.php) (`schranz-templating/spiral-view-bridge`)
      - [ ] Stempler?
-   - [ ] Mustache
+   - [x] Mustache
+   - [ ] Handlebars
    - [ ] Yii View
    - [ ] Fluid (Typo3)
  - [ ] Integrations
@@ -92,7 +93,7 @@ they are supporting. Also what kind of features are supported by them.
 | Yii View     | `5.0.0 ` | `^7.4 ~8.0.0 ~8.1.0`   | [x]         | [x]      | [x]        | ?         | ?       | ?       | ?         | [x]    | [ ]         |
 | Fluid        | `2.7.1`  | `>=5.5.0`              | ?           | ?        | ?          | ?         | ?       | ?       | ?         | [x]    | [ ]         |
 | Contao       | `4.13.4` | `^7.4 ^8.0`            | ?           | ?        | ?          | ?         | ?       | ?       | ?         | [x]    | [ ]         |
-| Mustache     | `2.14.1` | `>=5.2.4`              | ?           | ?        | ?          | ?         | ?       | ?       | ?         | [x]    | [ ]         |
+| Mustache     | `2.14.1` | `>=5.2.4`              | ?           | ?        | ?          | ?         | ?       | ?       | ?         | [x]    | [x]         |
 | Handlebars   | `2.3.0`  | `>=5.4.0`              | ?           | ?        | ?          | ?         | ?       | ?       | ?         | [x]    | [ ]         |
 
 ### Feature Support
