@@ -1,0 +1,17 @@
+{
+    "name": "schranz-templating/aura-view-bridge",
+    "description": "A bridge for the template renderer for aura view template engine.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\Bridge\\AuraView\\": ""
+        }
+    },
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "aura/view": "^2.0",
+        "schranz-templating/template-renderer": "^0.1"
+    },
+    "minimum-stability": "dev"
+}

@@ -6,6 +6,11 @@
             "target": "git@github.com:schranz-templating/template-renderer.git"
         },
         {
+            "name": "AuraViewBridge",
+            "directory": "src/Bridge/AuraView",
+            "target": "git@github.com:schranz-templating/aura-view-bridge.git"
+        },
+        {
             "name": "BladeBridge",
             "directory": "src/Bridge/Blade",
             "target": "git@github.com:schranz-templating/blade-bridge.git"
