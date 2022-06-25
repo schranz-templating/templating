@@ -21,19 +21,19 @@ Discussion in the PHP-FIG:
 
 ## TODO
 
- - [x] [TemplateRendererInterface](src/TemplateRenderer/TemplateRendererInterface.php) (`schranz-templating/template-renderer`)
+ - [x] [TemplateRendererInterface](src/TemplateRenderer/TemplateRendererInterface.php) ([`schranz-templating/template-renderer`](https://github.com/schranz-templating/template-renderer))
  - [ ] Bridges
-   - [x] [Twig Template Renderer](src/Bridge/Twig/TwigRenderer.php) (`schranz-templating/twig-bridge`)
-   - [x] [Smarty Template Renderer](src/Bridge/Smarty/SmartyRenderer.php) (`schranz-templating/smarty-bridge`)
-   - [x] [Latte Template Renderer](src/Bridge/Latte/LatteRenderer.php) (`schranz-templating/latte-bridge`)
-   - [x] [Blade Template Renderer](src/Bridge/Blade/BladeRenderer.php) (`schranz-templating/blade-bridge`)
-   - [x] [Mezzio Template Renderer](src/Bridge/Mezzio/MezzioRenderer.php) (`schranz-templating/mezzio-bridge`)
-   - [x] [Plates Template Renderer](src/Bridge/Plates/PlatesRenderer.php) (`schranz-templating/plates-bridge`)
-   - [x] [Mustache Renderer](src/Bridge/Mustache/MustacheRenderer.php) (`schranz-templating/mustache-bridge`)
-   - [x] [Handlebars Renderer](src/Bridge/Handlebars/HandlebarsRenderer.php) (`schranz-templating/handlebars-bridge`)
-   - [x] [Laminas View Renderer](src/Bridge/LaminasView/LaminasViewRenderer.php) (`schranz-templating/laminas-view-bridge`)
-   - [x] [YiiView Renderer](src/Bridge/YiiView/YiiViewRenderer.php) (`schranz-templating/yii-view-bridge`)
-   - [x] [Spiral View Template Renderer](src/Bridge/SpiralView/SpiralViewRenderer.php) (`schranz-templating/spiral-view-bridge`)
+   - [x] [Twig Template Renderer](src/Bridge/Twig/TwigRenderer.php) ([`schranz-templating/twig-bridge`](https://github.com/schranz-templating/twig-bridge))
+   - [x] [Smarty Template Renderer](src/Bridge/Smarty/SmartyRenderer.php) ([`schranz-templating/smarty-bridge`](https://github.com/schranz-templating/smarty-bridge))
+   - [x] [Latte Template Renderer](src/Bridge/Latte/LatteRenderer.php) ([`schranz-templating/latte-bridge`](https://github.com/schranz-templating/latte-bridge))
+   - [x] [Blade Template Renderer](src/Bridge/Blade/BladeRenderer.php) ([`schranz-templating/blade-bridge`](https://github.com/schranz-templating/blade-bridge))
+   - [x] [Mezzio Template Renderer](src/Bridge/Mezzio/MezzioRenderer.php) ([`schranz-templating/mezzio-bridge`](https://github.com/schranz-templating/mezzio-bridge))
+   - [x] [Plates Template Renderer](src/Bridge/Plates/PlatesRenderer.php) ([`schranz-templating/plates-bridge`](https://github.com/schranz-templating/plates-bridge))
+   - [x] [Mustache Renderer](src/Bridge/Mustache/MustacheRenderer.php) ([`schranz-templating/mustache-bridge`](https://github.com/schranz-templating/mustache-bridge))
+   - [x] [Handlebars Renderer](src/Bridge/Handlebars/HandlebarsRenderer.php) ([`schranz-templating/handlebars-bridge`](https://github.com/schranz-templating/handlebars-bridge))
+   - [x] [Laminas View Renderer](src/Bridge/LaminasView/LaminasViewRenderer.php) ([`schranz-templating/laminas-view-bridge`](https://github.com/schranz-templating/laminas-view-bridge))
+   - [x] [YiiView Renderer](src/Bridge/YiiView/YiiViewRenderer.php) ([`schranz-templating/yii-view-bridge`](https://github.com/schranz-templating/yii-view-bridge))
+   - [x] [Spiral View Template Renderer](src/Bridge/SpiralView/SpiralViewRenderer.php) ([`schranz-templating/spiral-view-bridge`](https://github.com/schranz-templating/spiral-view-bridge))
      - [ ] Stempler?
    - [ ] Fluid (Typo3)
    - [ ] Cake View
