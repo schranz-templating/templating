@@ -54,6 +54,11 @@
             "name": "TwigBridge",
             "directory": "src/Bridge/Twig",
             "target": "git@github.com:schranz-templating/twig-bridge.git"
+        },
+        {
+            "name": "YiiViewBridge",
+            "directory": "src/Bridge/YiiView",
+            "target": "git@github.com:schranz-templating/yii-view-bridge.git"
         }
     ]
 }
