@@ -78,22 +78,22 @@ In the following table we will ist all yet found interesting template engines
 and view renderers. What kind of version they currently are and what PHP Version
 they are supporting. Also what kind of features are supported by them.
 
-| Engine       | Version  | PHP Version            | Inheritance | Namespaces | Functions | Filters | Partial | Streaming | String | Implemented |
-|--------------|----------|------------------------|-------------|------------|-----------|---------|---------|-----------|--------|-------------|
-| Twig         | `3.4.1`  | `>=7.2.5`              | [x]         | [x]        | [x]       | [x]     | [x]     | [x]       | [x]    | [x]         |
-| Smarty       | `4.1.1`  | `^7.1 ^8.0`            | [x]         | ?          | [x]       | ?       | ?       | [x]       |        | [x]         |
-| Latte        | `3.0.0`  | `>=8.0 <8.2`           | [x]         | [x]        |           | [x]     | ?       | ?         | [x]    | [x]         |
-| Blade        | `9.15.0` | `^8.1`                 | [x]         | [x]        | ?         | ?       | ?       | ?         | [x]    | [x]         |
-| Spiral View  | `2.13.1` | `>=7.4`                | [x]         |            | ?         | ?       | ?       | ?         | ?      | [x]         |
-| Stempler     | `2.13.1` | `>=7.4`                | [x]         |            | ?         | ?       | ?       | ?         | ?      | [ ]         |
-| Mezzio       | `3.10.0` | `~7.4.0 ~8.0.0 ~8.1.0` |             |            |           |         |         |           |        | [x]         |
-| Plates       | `3.4.0`  | `^7.0 ^8.0`            |             |            |           |         |         |           |        | [x]         |
-| Laminas View | `2.20.0` | `^7.4 ~8.0.0 ~8.1.0`   |             |            |           |         |         |           |        | [ ]         |
-| Yii View     | `5.0.0 ` | `^7.4 ~8.0.0 ~8.1.0`   |             |            |           |         |         |           |        | [ ]         |
-| Fluid        | `2.7.1`  | `>=5.5.0`              |             |            |           |         |         |           |        | [ ]         |
-| Contao       | `4.13.4` | `^7.4 ^8.0`            |             |            |           |         |         |           |        | [ ]         |
-| Mustache     | `2.14.1` | `>=5.2.4`              |             |            |           |         |         |           |        | [ ]         |
-| Yii View     | `5.0.0`  | `^7.4 ^8.0`            |             |            |           |         |         |           |        | [ ]         |
+| Engine       | Version  | PHP Version            | Inheritance | Subviews | Namespaces | Functions | Filters | Partial | Streaming | String | Implemented |
+|--------------|----------|------------------------|-------------|----------|------------|-----------|---------|---------|-----------|--------|-------------|
+| Twig         | `3.4.1`  | `>=7.2.5`              | [x]         |          | [x]        | [x]       | [x]     | [x]     | [x]       | [x]    | [x]         |
+| Smarty       | `4.1.1`  | `^7.1 ^8.0`            | [x]         |          | ?          | [x]       | ?       | ?       | [x]       |        | [x]         |
+| Latte        | `3.0.0`  | `>=8.0 <8.2`           | [x]         |          | [x]        |           | [x]     | ?       | ?         | [x]    | [x]         |
+| Blade        | `9.15.0` | `^8.1`                 | [x]         |          | [x]        | ?         | ?       | ?       | ?         | [x]    | [x]         |
+| Spiral View  | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?       | ?         | ?      | [x]         |
+| Stempler     | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?       | ?         | ?      | [ ]         |
+| Mezzio       | `3.10.0` | `~7.4.0 ~8.0.0 ~8.1.0` | [x]         |          | [x]        | ?         | ?       | ?       |           | [x]    | [x]         |
+| Plates       | `3.4.0`  | `^7.0 ^8.0`            | [x]         |          |            |           |         |         | ?         | [x]    | [x]         |
+| Laminas View | `2.20.0` | `^7.4 ~8.0.0 ~8.1.0`   | [x]         | [x]      | ?          | ?         | ?       | ?       | ?         | [x]    | [ ]         |
+| Yii View     | `5.0.0 ` | `^7.4 ~8.0.0 ~8.1.0`   | [x]         | [x]      | [x]        | ?         | ?       | ?       | ?         | [x]    | [ ]         |
+| Fluid        | `2.7.1`  | `>=5.5.0`              | ?           | ?        | ?          | ?         | ?       | ?       | ?         | [x]    | [ ]         |
+| Contao       | `4.13.4` | `^7.4 ^8.0`            | ?           | ?        | ?          | ?         | ?       | ?       | ?         | [x]    | [ ]         |
+| Mustache     | `2.14.1` | `>=5.2.4`              | ?           | ?        | ?          | ?         | ?       | ?       | ?         | [x]    | [ ]         |
+| Handlebars   | `2.3.0`  | `>=5.4.0`              | ?           | ?        | ?          | ?         | ?       | ?       | ?         | [x]    | [ ]         |
 
 ### Feature Support
 
@@ -103,12 +103,28 @@ to fulfill it is given.
 
 #### Inheritance
 
-With support for template inheritance it means that I can inheritance
-from a parent template and overwrite parts in the template language
-itself. This feature is not fulfilled for template engines which
-only allow to give subviews into a parent view in the caller.
+With support for template inheritance it means that a rendered template
+can inherit from a parent template and overwrite parts in the template
+language itself. This feature is not fulfilled for template engines which
+only allow to give subviews into a parent view or other way around.
 
-E.g.: This is achieved in twig via extends and blocks.
+E.g.: This is achieved in twig via extends and blocks. In blade via
+extends and sections keywords. In latte via layout and blocks keywords.
+Laminas view via the layout helper.
+
+#### Subviews
+
+This is the opposite way of creating layout and base template. Why it is
+possible via all engines to call several render calls and put template 
+together. This is only fulfilled for template engines explicit working
+with a view, layout system and support given view with subviews them
+in the renderer call.
+
+E.g.: In laminas view this is possible via the setLayout before calling
+the rendering of the template.
+
+This is not fulfilled by twig, blade or latte as they support layout
+and inheritance only on template level not on render caller level.
 
 #### Functions
 
