@@ -4,6 +4,41 @@
             "name": "TemplateRenderer",
             "directory": "src/TemplateRenderer",
             "target": "git@github.com:schranz-templating/template-renderer.git"
+        },
+        {
+            "name": "BladeBridge",
+            "directory": "src/Bridge/Blade",
+            "target": "git@github.com:schranz-templating/blade-bridge.git"
+        },
+        {
+            "name": "LatteBridge",
+            "directory": "src/Bridge/Latte",
+            "target": "git@github.com:schranz-templating/latte-bridge.git"
+        },
+        {
+            "name": "MezzioBridge",
+            "directory": "src/Bridge/Mezzio",
+            "target": "git@github.com:schranz-templating/mezzio-bridge.git"
+        },
+        {
+            "name": "PlatesBridge",
+            "directory": "src/Bridge/Plates",
+            "target": "git@github.com:schranz-templating/plates-bridge.git"
+        },
+        {
+            "name": "SmartyBridge",
+            "directory": "src/Bridge/Smarty",
+            "target": "git@github.com:schranz-templating/smarty-bridge.git"
+        },
+        {
+            "name": "SpiralViewBridge",
+            "directory": "src/Bridge/SpiralView",
+            "target": "git@github.com:schranz-templating/spiral-view-bridge.git"
+        },
+        {
+            "name": "TwigBridge",
+            "directory": "src/Bridge/Twig",
+            "target": "git@github.com:schranz-templating/twig-bridge.git"
         }
     ]
 }
