@@ -66,9 +66,19 @@
             "target": "git@github.com:schranz-templating/twig-bridge.git"
         },
         {
+            "name": "SymfonyBladeIntegration",
+            "directory": "src/Integration/Symfony/Blade",
+            "target": "git@github.com:schranz-templating/symfony-blade-integration.git"
+        },
+        {
             "name": "YiiViewBridge",
             "directory": "src/Bridge/YiiView",
             "target": "git@github.com:schranz-templating/yii-view-bridge.git"
+        },
+        {
+            "name": "SymfonyBladeIntegration",
+            "directory": "src/Integration/Symfony/Blade",
+            "target": "git@github.com:schranz-templating/symfony-blade-integration.git"
         },
         {
             "name": "SymfonyTwigIntegration",

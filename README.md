@@ -42,7 +42,7 @@ Discussion in the PHP-FIG:
  - [ ] Integrations
    - [ ] Symfony
      - [x] [Twig](src/Integration/Symfony/Twig/README.md) ([`schranz-templating/symfony-twig-integration`](https://github.com/schranz-templating/symfony-twig-integration))
-     - [ ] Blade
+     - [x] [Blade](src/Integration/Symfony/Blade/README.md) ([`schranz-templating/symfony-blade-integration`](https://github.com/schranz-templating/symfony-blade-integration))
      - [ ] ...
    - [ ] Laravel
       - [ ] Blade
@@ -113,6 +113,7 @@ which will register the bridge service and integration of the selected template 
 
 ```bash
 composer require schranz-templating/symfony-twig-integration
+composer require schranz-templating/symfony-blade-integration
 ```
 
 ## Analysis
