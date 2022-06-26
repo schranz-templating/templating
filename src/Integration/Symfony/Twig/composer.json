@@ -1,0 +1,20 @@
+{
+    "name": "schranz-templating/symfony-twig-integration",
+    "description": "A integration of template renderer into symfony via twig template engine.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\Integration\\Symfony\\Twig\\": ""
+        }
+    },
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "schranz-templating/twig-bridge": "^0.1",
+        "symfony/config": "^4.4 || ^5.4 || ^6.0",
+        "symfony/dependency-injection": "^4.4 || ^5.4 || ^6.0",
+        "symfony/http-kernel": "^4.4 || ^5.4 || ^6.0",
+        "symfony/twig-bundle": "^4.4 || ^5.4 || ^6.0"
+    },
+    "minimum-stability": "dev"
+}

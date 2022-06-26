@@ -69,6 +69,11 @@
             "name": "YiiViewBridge",
             "directory": "src/Bridge/YiiView",
             "target": "git@github.com:schranz-templating/yii-view-bridge.git"
+        },
+        {
+            "name": "SymfonyTwigIntegration",
+            "directory": "src/Integration/Symfony/Twig",
+            "target": "git@github.com:schranz-templating/symfony-twig-integration.git"
         }
     ]
 }

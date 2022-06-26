@@ -41,14 +41,32 @@ Discussion in the PHP-FIG:
    - [ ] Contao
  - [ ] Integrations
    - [ ] Symfony
+     - [x] [Twig](src/Integration/Symfony/Twig/README.md) ([`schranz-templating/symfony-twig-integration`](https://github.com/schranz-templating/symfony-twig-integration))
+     - [ ] Blade
+     - [ ] ...
    - [ ] Laravel
+      - [ ] Blade
+      - [ ] Twig
+      - [ ] ...
    - [ ] Spiral
+      - [ ] SpiralView
+      - [ ] ...
    - [ ] Laminas
+      - [ ] LaminasView
+      - [ ] ...
    - [ ] Mezzio
+      - [ ] Mezzio
+      - [ ] ...
    - [ ] Yii
-   - [ ] Cake
-   - [ ] CodeIgniter
+      - [ ] YiiView
+      - [ ] ...
    - [ ] Typo3
+      - [ ] Fluid
+      - [ ] ...
+   - [ ] Cake
+      - [ ] ...
+   - [ ] CodeIgniter
+      - [ ] ...
  - [ ] Subtree Split
  - [ ] Register Packages
 
@@ -67,8 +85,6 @@ Projects depending on libraries which where build on top of the schranz-templati
 should require the renderer package and a bridge to the template engine they want to use:
 
 ```bash
-composer require schranz-templating/template-renderer
-# one of:
 composer require schranz-templating/aura-view-bridge
 composer require schranz-templating/blade-bridge
 composer require schranz-templating/handlebars-bridge
@@ -89,6 +105,15 @@ composer require schranz-templating/yii-view-bridge
 As it would be too much work to create forks of every template engines to implement
 the interface for prototyping it is easier to use the [Bridge Design Pattern](https://designpatternsphp.readthedocs.io/en/latest/Structural/Bridge/README.html)
 to bridge from the `TemplateRendererInterface` to underlying template engines.
+
+### Usage for Symfony Projects
+
+To use the integration in the Symfony the following packages are currently provided,
+which will register the bridge service and integration of the selected template engine:
+
+```bash
+composer require schranz-templating/symfony-twig-integration
+```
 
 ## Analysis
 
