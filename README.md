@@ -36,7 +36,6 @@ Discussion in the PHP-FIG:
    - [x] [Aura View Renderer](src/Bridge/AuraView/AuraViewRenderer.php) ([`schranz-templating/aura-view-bridge`](https://github.com/schranz-templating/aura-view-bridge))
    - [x] [Qiq Template Renderer](src/Bridge/Qiq/QiqRenderer.php) ([`schranz-templating/qiq-bridge`](https://github.com/schranz-templating/qiq-bridge))
    - [x] [Spiral View Template Renderer](src/Bridge/SpiralView/SpiralViewRenderer.php) ([`schranz-templating/spiral-view-bridge`](https://github.com/schranz-templating/spiral-view-bridge))
-     - [ ] Stempler?
    - [ ] Fluid (Typo3)
    - [ ] Cake View
    - [ ] Contao
@@ -104,7 +103,6 @@ they are supporting. Also what kind of features are supported by them.
 | Latte        | `3.0.0`  | `>=8.0 <8.2`           | [x]         |          | ?          |           | [x]     | ?     | ?       | ?         | [x]    | [x]         |
 | Blade        | `9.15.0` | `^8.1`                 | [x]         |          | [x] `::`   | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
 | Spiral View  | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?     | ?       | ?         | ?      | [x]         |
-| Stempler     | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?     | ?       | ?         | ?      | [ ]         |
 | Mezzio       | `3.10.0` | `~7.4.0 ~8.0.0 ~8.1.0` | [x]         |          | [x] `@`    | ?         | ?       | ?     | ?       |           | [x]    | [x]         |
 | Plates       | `3.4.0`  | `^7.0 ^8.0`            | [x]         |          |            |           |         | ?     |         | ?         | [x]    | [x]         |
 | Laminas View | `2.20.0` | `^7.4 ~8.0.0 ~8.1.0`   | [x]         | [x]      | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
