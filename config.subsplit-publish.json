@@ -81,6 +81,11 @@
             "target": "git@github.com:schranz-templating/symfony-blade-integration.git"
         },
         {
+            "name": "SymfonyLatteIntegration",
+            "directory": "src/Integration/Symfony/Latte",
+            "target": "git@github.com:schranz-templating/symfony-latte-integration.git"
+        },
+        {
             "name": "SymfonyTwigIntegration",
             "directory": "src/Integration/Symfony/Twig",
             "target": "git@github.com:schranz-templating/symfony-twig-integration.git"

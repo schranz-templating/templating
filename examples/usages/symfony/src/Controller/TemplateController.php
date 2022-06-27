@@ -35,6 +35,19 @@ class TemplateController
     }
 
     /**
+     * @Route("/latte", name="latte")
+     */
+    public function latteRenderer(TemplateRendererInterface $latteRenderer): Response
+    {
+        return new Response($latteRenderer->render(
+            'base.latte',
+            [
+                'title' => 'Render using: ' . get_class($latteRenderer),
+            ]
+        ));
+    }
+
+    /**
      * @Route("/twig", name="twig")
      */
     public function twigRenderer(TemplateRendererInterface $twigRenderer): Response

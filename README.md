@@ -43,6 +43,7 @@ Discussion in the PHP-FIG:
    - [ ] Symfony
      - [x] [Twig](src/Integration/Symfony/Twig/README.md) ([`schranz-templating/symfony-twig-integration`](https://github.com/schranz-templating/symfony-twig-integration))
      - [x] [Blade](src/Integration/Symfony/Blade/README.md) ([`schranz-templating/symfony-blade-integration`](https://github.com/schranz-templating/symfony-blade-integration))
+     - [x] [Latte](src/Integration/Symfony/Latte/README.md) ([`schranz-templating/symfony-latte-integration`](https://github.com/schranz-templating/symfony-latte-integration))
      - [ ] ...
    - [ ] Laravel
       - [ ] Blade
@@ -112,8 +113,9 @@ To use the integration in the Symfony the following packages are currently provi
 which will register the bridge service and integration of the selected template engine:
 
 ```bash
-composer require schranz-templating/symfony-twig-integration
 composer require schranz-templating/symfony-blade-integration
+composer require schranz-templating/symfony-latte-integration
+composer require schranz-templating/symfony-twig-integration
 ```
 
 ## Analysis

@@ -6,14 +6,21 @@
     "repositories": [
         {
             "type": "path",
-            "url": "./../../../src/Integration/Symfony/Twig",
+            "url": "./../../../src/Integration/Symfony/Blade",
             "options": {
                 "symlink": true
             }
         },
         {
             "type": "path",
-            "url": "./../../../src/Integration/Symfony/Blade",
+            "url": "./../../../src/Integration/Symfony/Latte",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../src/Integration/Symfony/Twig",
             "options": {
                 "symlink": true
             }
@@ -25,6 +32,7 @@
         "ext-iconv": "*",
         "doctrine/annotations": "^1.13",
         "schranz-templating/symfony-blade-integration": "@dev",
+        "schranz-templating/symfony-latte-integration": "@dev",
         "schranz-templating/symfony-twig-integration": "@dev",
         "symfony/console": "6.1.*",
         "symfony/dotenv": "6.1.*",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "787e2269b2e1072b7f1e82c542525856",
+    "content-hash": "50f62b1432357fad72cde14d3e441089",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -833,6 +833,90 @@
             "time": "2022-06-15T07:05:00+00:00"
         },
         {
+            "name": "latte/latte",
+            "version": "v3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/latte.git",
+                "reference": "c3eee2e4e2c21cdf9f9c158c4bfa6150625457e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/latte/zipball/c3eee2e4e2c21cdf9f9c158c4bfa6150625457e1",
+                "reference": "c3eee2e4e2c21cdf9f9c158c4bfa6150625457e1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-tokenizer": "*",
+                "php": ">=8.0 <8.2"
+            },
+            "conflict": {
+                "nette/application": "<2.4.1"
+            },
+            "require-dev": {
+                "nette/php-generator": "^3.3.4",
+                "nette/tester": "^2.0",
+                "nette/utils": "^3.0",
+                "phpstan/phpstan": "^1",
+                "tracy/tracy": "^2.3"
+            },
+            "suggest": {
+                "ext-fileinfo": "to use filter |datastream",
+                "ext-iconv": "to use filters |reverse, |substring",
+                "ext-mbstring": "to use filters like lower, upper, capitalize, ...",
+                "nette/php-generator": "to use tag {templatePrint}",
+                "nette/utils": "to use filter |webalize"
+            },
+            "bin": [
+                "bin/latte-lint"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0-only",
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "☕ Latte: the intuitive and fast template engine for those who want the most secure PHP sites. Introduces context-sensitive escaping.",
+            "homepage": "https://latte.nette.org",
+            "keywords": [
+                "context-sensitive",
+                "engine",
+                "escaping",
+                "html",
+                "nette",
+                "security",
+                "template",
+                "twig"
+            ],
+            "support": {
+                "issues": "https://github.com/nette/latte/issues",
+                "source": "https://github.com/nette/latte/tree/v3.0.2"
+            },
+            "time": "2022-06-15T13:42:57+00:00"
+        },
+        {
             "name": "nesbot/carbon",
             "version": "2.58.0",
             "source": {
@@ -1220,6 +1304,43 @@
             "time": "2022-06-25T11:46:40+00:00"
         },
         {
+            "name": "schranz-templating/latte-bridge",
+            "version": "0.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schranz-templating/latte-bridge.git",
+                "reference": "18633efa193b2100a760ce3a6e00b5cd153804a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schranz-templating/latte-bridge/zipball/18633efa193b2100a760ce3a6e00b5cd153804a2",
+                "reference": "18633efa193b2100a760ce3a6e00b5cd153804a2",
+                "shasum": ""
+            },
+            "require": {
+                "latte/latte": "^2.0 || ^3.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/template-renderer": "^0.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Bridge\\Latte\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A bridge for the template renderer for latte template engine.",
+            "support": {
+                "issues": "https://github.com/schranz-templating/latte-bridge/issues",
+                "source": "https://github.com/schranz-templating/latte-bridge/tree/0.1"
+            },
+            "time": "2022-06-25T11:46:40+00:00"
+        },
+        {
             "name": "schranz-templating/symfony-blade-integration",
             "version": "0.1.x-dev",
             "dist": {
@@ -1244,6 +1365,37 @@
                 "MIT"
             ],
             "description": "A integration of template renderer into symfony via blade template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "schranz-templating/symfony-latte-integration",
+            "version": "0.1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "./../../../src/Integration/Symfony/Latte",
+                "reference": "0ed779422200c4ddb874ec664acb79634925e878"
+            },
+            "require": {
+                "latte/latte": "^2.0|^3.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/latte-bridge": "^0.1",
+                "symfony/config": "^4.4 || ^5.4 || ^6.0",
+                "symfony/dependency-injection": "^4.4 || ^5.4 || ^6.0",
+                "symfony/http-kernel": "^4.4 || ^5.4 || ^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Integration\\Symfony\\Latte\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A integration of template renderer into symfony via latte template engine.",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -3446,16 +3598,16 @@
         },
         {
             "name": "symfony/twig-bridge",
-            "version": "v6.1.0",
+            "version": "v6.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/twig-bridge.git",
-                "reference": "53ce2d7811500c0f0f94af700307ff5b1e305d3c"
+                "reference": "320b9ec7db38b78ce2ea8173b925be55e697f8e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/53ce2d7811500c0f0f94af700307ff5b1e305d3c",
-                "reference": "53ce2d7811500c0f0f94af700307ff5b1e305d3c",
+                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/320b9ec7db38b78ce2ea8173b925be55e697f8e5",
+                "reference": "320b9ec7db38b78ce2ea8173b925be55e697f8e5",
                 "shasum": ""
             },
             "require": {
@@ -3548,7 +3700,7 @@
             "description": "Provides integration for Twig with various Symfony components",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/twig-bridge/tree/v6.1.0"
+                "source": "https://github.com/symfony/twig-bridge/tree/v6.1.2"
             },
             "funding": [
                 {
@@ -3564,7 +3716,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-21T13:34:40+00:00"
+            "time": "2022-06-19T13:21:48+00:00"
         },
         {
             "name": "symfony/twig-bundle",
@@ -4042,6 +4194,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "schranz-templating/symfony-blade-integration": 20,
+        "schranz-templating/symfony-latte-integration": 20,
         "schranz-templating/symfony-twig-integration": 20
     },
     "prefer-stable": true,
