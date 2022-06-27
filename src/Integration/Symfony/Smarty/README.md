@@ -18,7 +18,7 @@ Register the Bundle class in your `config/bundles.php` or Kernel file:
 ```php
 return [
     // ...
-    Schranz\Templating\Integration\Symfony\Smarty\SchranzTemplatingSmartyBundle::class => ['all' => true],
+    Schranz\Templating\Integration\Symfony\Smarty\SchranzTemplatingMustacheBundle::class => ['all' => true],
 ];
 ```
 

@@ -16,7 +16,7 @@ class TemplateController
         return new Response($defaultRenderer->render(
             'base.html.twig',
             [
-                'title' => 'Goto /blade, /latte, /smarty, /twig',
+                'title' => 'Goto /blade, /latte, /mustache, /smarty, /twig',
             ]
         ));
     }
@@ -43,6 +43,19 @@ class TemplateController
             'base.latte',
             [
                 'title' => 'Render using: ' . get_class($latteRenderer),
+            ]
+        ));
+    }
+
+    /**
+     * @Route("/mustache", name="mustache")
+     */
+    public function mustacheRenderer(TemplateRendererInterface $mustacheRenderer): Response
+    {
+        return new Response($mustacheRenderer->render(
+            'base',
+            [
+                'title' => 'Render using: ' . get_class($mustacheRenderer),
             ]
         ));
     }

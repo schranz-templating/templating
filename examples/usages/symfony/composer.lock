@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df5049c297a8e887e5f3ce4ec849417f",
+    "content-hash": "9db50e24850252126cd8f386b5b196b3",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -917,6 +917,56 @@
             "time": "2022-06-15T13:42:57+00:00"
         },
         {
+            "name": "mustache/mustache",
+            "version": "v2.14.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bobthecow/mustache.php.git",
+                "reference": "579ffa5c96e1d292c060b3dd62811ff01ad8c24e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/579ffa5c96e1d292c060b3dd62811ff01ad8c24e",
+                "reference": "579ffa5c96e1d292c060b3dd62811ff01ad8c24e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~1.11",
+                "phpunit/phpunit": "~3.7|~4.0|~5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mustache": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Hileman",
+                    "email": "justin@justinhileman.info",
+                    "homepage": "http://justinhileman.com"
+                }
+            ],
+            "description": "A Mustache implementation in PHP.",
+            "homepage": "https://github.com/bobthecow/mustache.php",
+            "keywords": [
+                "mustache",
+                "templating"
+            ],
+            "support": {
+                "issues": "https://github.com/bobthecow/mustache.php/issues",
+                "source": "https://github.com/bobthecow/mustache.php/tree/v2.14.1"
+            },
+            "time": "2022-01-21T06:08:36+00:00"
+        },
+        {
             "name": "nesbot/carbon",
             "version": "2.58.0",
             "source": {
@@ -1341,6 +1391,43 @@
             "time": "2022-06-25T11:46:40+00:00"
         },
         {
+            "name": "schranz-templating/mustache-bridge",
+            "version": "0.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schranz-templating/mustache-bridge.git",
+                "reference": "3e0726ef5daf9bd128bc4695dc7fd60d783462a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schranz-templating/mustache-bridge/zipball/3e0726ef5daf9bd128bc4695dc7fd60d783462a8",
+                "reference": "3e0726ef5daf9bd128bc4695dc7fd60d783462a8",
+                "shasum": ""
+            },
+            "require": {
+                "mustache/mustache": "^2.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/template-renderer": "^0.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Bridge\\Mustache\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A bridge for the template renderer for mustache template engine.",
+            "support": {
+                "issues": "https://github.com/schranz-templating/mustache-bridge/issues",
+                "source": "https://github.com/schranz-templating/mustache-bridge/tree/0.1"
+            },
+            "time": "2022-06-25T16:11:44+00:00"
+        },
+        {
             "name": "schranz-templating/smarty-bridge",
             "version": "0.1.x-dev",
             "source": {
@@ -1383,9 +1470,10 @@
             "dist": {
                 "type": "path",
                 "url": "./../../../src/Integration/Symfony/Blade",
-                "reference": "cc069c24b0818f7477fb0f7c155ea7738a9c5e4a"
+                "reference": "4ae9635765cda24231755ea7bbdfefa76aecba83"
             },
             "require": {
+                "illuminate/view": "^8.0 || ^9.0",
                 "php": "^7.0 || ^8.0",
                 "schranz-templating/blade-bridge": "^0.1",
                 "symfony/config": "^4.4 || ^5.4 || ^6.0",
@@ -1433,6 +1521,37 @@
                 "MIT"
             ],
             "description": "A integration of template renderer into symfony via latte template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "schranz-templating/symfony-mustache-integration",
+            "version": "0.1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "./../../../src/Integration/Symfony/Mustache",
+                "reference": "5930fba5bfeb2f3a9967142d33979f9f6308016a"
+            },
+            "require": {
+                "mustache/mustache": "^2.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/mustache-bridge": "^0.1",
+                "symfony/config": "^4.4 || ^5.4 || ^6.0",
+                "symfony/dependency-injection": "^4.4 || ^5.4 || ^6.0",
+                "symfony/http-kernel": "^4.4 || ^5.4 || ^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Integration\\Symfony\\Mustache\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A integration of template renderer into symfony via mustache template engine.",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -4329,6 +4448,7 @@
     "stability-flags": {
         "schranz-templating/symfony-blade-integration": 20,
         "schranz-templating/symfony-latte-integration": 20,
+        "schranz-templating/symfony-mustache-integration": 20,
         "schranz-templating/symfony-smarty-integration": 20,
         "schranz-templating/symfony-twig-integration": 20
     },

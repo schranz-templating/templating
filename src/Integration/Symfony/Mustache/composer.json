@@ -1,17 +1,17 @@
 {
-    "name": "schranz-templating/symfony-blade-integration",
-    "description": "A integration of template renderer into symfony via blade template engine.",
+    "name": "schranz-templating/symfony-mustache-integration",
+    "description": "A integration of template renderer into symfony via mustache template engine.",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Schranz\\Templating\\Integration\\Symfony\\Blade\\": ""
+            "Schranz\\Templating\\Integration\\Symfony\\Mustache\\": ""
         }
     },
     "require": {
         "php": "^7.0 || ^8.0",
-        "illuminate/view": "^8.0 || ^9.0",
-        "schranz-templating/blade-bridge": "^0.1",
+        "mustache/mustache": "^2.0",
+        "schranz-templating/mustache-bridge": "^0.1",
         "symfony/config": "^4.4 || ^5.4 || ^6.0",
         "symfony/dependency-injection": "^4.4 || ^5.4 || ^6.0",
         "symfony/http-kernel": "^4.4 || ^5.4 || ^6.0"
