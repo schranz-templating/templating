@@ -20,6 +20,13 @@
         },
         {
             "type": "path",
+            "url": "./../../../src/Integration/Symfony/Smarty",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "./../../../src/Integration/Symfony/Twig",
             "options": {
                 "symlink": true
@@ -33,6 +40,7 @@
         "doctrine/annotations": "^1.13",
         "schranz-templating/symfony-blade-integration": "@dev",
         "schranz-templating/symfony-latte-integration": "@dev",
+        "schranz-templating/symfony-smarty-integration": "@dev",
         "schranz-templating/symfony-twig-integration": "@dev",
         "symfony/console": "6.1.*",
         "symfony/dotenv": "6.1.*",

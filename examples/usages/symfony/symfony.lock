@@ -14,6 +14,9 @@
     "schranz-templating/symfony-latte-integration": {
         "version": "0.1.x-dev"
     },
+    "schranz-templating/symfony-smarty-integration": {
+        "version": "0.1.x-dev"
+    },
     "schranz-templating/symfony-twig-integration": {
         "version": "0.1.x-dev"
     },

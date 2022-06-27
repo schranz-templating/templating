@@ -16,7 +16,7 @@ class TemplateController
         return new Response($defaultRenderer->render(
             'base.html.twig',
             [
-                'title' => 'Goto /twig or /blade',
+                'title' => 'Goto /blade, /latte, /smarty, /twig',
             ]
         ));
     }
@@ -24,7 +24,7 @@ class TemplateController
     /**
      * @Route("/blade", name="blade")
      */
-    public function defaultRenderer(TemplateRendererInterface $bladeRenderer): Response
+    public function bladeRenderer(TemplateRendererInterface $bladeRenderer): Response
     {
         return new Response($bladeRenderer->render(
             'base',
@@ -43,6 +43,19 @@ class TemplateController
             'base.latte',
             [
                 'title' => 'Render using: ' . get_class($latteRenderer),
+            ]
+        ));
+    }
+
+    /**
+     * @Route("/smarty", name="smarty")
+     */
+    public function smartyRenderer(TemplateRendererInterface $smartyRenderer): Response
+    {
+        return new Response($smartyRenderer->render(
+            'base.tpl',
+            [
+                'title' => 'Render using: ' . get_class($smartyRenderer),
             ]
         ));
     }
