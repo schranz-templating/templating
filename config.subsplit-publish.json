@@ -96,6 +96,11 @@
             "target": "git@github.com:schranz-templating/symfony-mustache-integration.git"
         },
         {
+            "name": "SymfonyPlatesIntegration",
+            "directory": "src/Integration/Symfony/Plates",
+            "target": "git@github.com:schranz-templating/symfony-plates-integration.git"
+        },
+        {
             "name": "SymfonySmartyIntegration",
             "directory": "src/Integration/Symfony/Smarty",
             "target": "git@github.com:schranz-templating/symfony-smarty-integration.git"

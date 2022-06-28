@@ -1,6 +1,6 @@
 <?php
 
-namespace Schranz\Templating\Integration\Symfony\Blade\DependencyInjection;
+namespace Schranz\Templating\Integration\Symfony\Plates\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -12,13 +12,10 @@ class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('schranz_templating_blade');
+        $treeBuilder = new TreeBuilder('schranz_templating_plates');
         $rootNode = $treeBuilder->getRootNode();
 
         $rootNode->children()
-            ->scalarNode('cache')
-                ->defaultValue('%kernel.cache_dir%/blade')
-            ->end()
             ->scalarNode('default_path')
                 ->info('The default path used to load templates')
                 ->defaultValue('%kernel.project_dir%/templates')

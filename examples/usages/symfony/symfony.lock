@@ -20,6 +20,9 @@
     "schranz-templating/symfony-mustache-integration": {
         "version": "0.1.x-dev"
     },
+    "schranz-templating/symfony-plates-integration": {
+        "version": "0.1.x-dev"
+    },
     "schranz-templating/symfony-smarty-integration": {
         "version": "0.1.x-dev"
     },

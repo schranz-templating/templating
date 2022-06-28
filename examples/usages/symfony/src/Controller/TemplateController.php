@@ -14,7 +14,7 @@ class TemplateController
     public function home(TemplateRendererInterface $defaultRenderer): Response
     {
         return new Response(
-            '<h1>Goto /blade, /handlebars /latte, /mustache, /smarty, /twig</h1>' .
+            '<h1>Goto /blade, /handlebars /latte, /mustache, /plates, /smarty, /twig</h1>' .
             '<p>Default Renderer is: ' . get_class($defaultRenderer) . '</p>'
         );
     }
@@ -67,6 +67,19 @@ class TemplateController
             'base',
             [
                 'title' => 'Render using: ' . get_class($mustacheRenderer),
+            ]
+        ));
+    }
+
+    /**
+     * @Route("/plates", name="plates")
+     */
+    public function platesRenderer(TemplateRendererInterface $platesRenderer): Response
+    {
+        return new Response($platesRenderer->render(
+            'base.plates',
+            [
+                'title' => 'Render using: ' . get_class($platesRenderer),
             ]
         ));
     }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c23a8e83bf2ec9a19a8e4da4d6c62432",
+    "content-hash": "ed2c49ec90d7f0e4dbaf042efff8a580",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -917,6 +917,70 @@
             "time": "2022-06-15T13:42:57+00:00"
         },
         {
+            "name": "league/plates",
+            "version": "v3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/plates.git",
+                "reference": "6d3ee31199b536a4e003b34a356ca20f6f75496a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/plates/zipball/6d3ee31199b536a4e003b34a356ca20f6f75496a",
+                "reference": "6d3ee31199b536a4e003b34a356ca20f6f75496a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0|^8.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Plates\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Reinink",
+                    "email": "jonathan@reinink.ca",
+                    "role": "Developer"
+                },
+                {
+                    "name": "RJ Garcia",
+                    "email": "ragboyjr@icloud.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Plates, the native PHP template system that's fast, easy to use and easy to extend.",
+            "homepage": "https://platesphp.com",
+            "keywords": [
+                "league",
+                "package",
+                "templates",
+                "templating",
+                "views"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/plates/issues",
+                "source": "https://github.com/thephpleague/plates/tree/v3.4.0"
+            },
+            "time": "2020-12-25T05:00:37+00:00"
+        },
+        {
             "name": "mustache/mustache",
             "version": "v2.14.1",
             "source": {
@@ -1522,6 +1586,43 @@
             "time": "2022-06-25T16:11:44+00:00"
         },
         {
+            "name": "schranz-templating/plates-bridge",
+            "version": "0.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schranz-templating/plates-bridge.git",
+                "reference": "91ee8627608b70459d4c1039e0aa330c3a447bf3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schranz-templating/plates-bridge/zipball/91ee8627608b70459d4c1039e0aa330c3a447bf3",
+                "reference": "91ee8627608b70459d4c1039e0aa330c3a447bf3",
+                "shasum": ""
+            },
+            "require": {
+                "league/plates": "^3.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/template-renderer": "^0.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Bridge\\Plates\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A bridge for the template renderer for plates template engine.",
+            "support": {
+                "issues": "https://github.com/schranz-templating/plates-bridge/issues",
+                "source": "https://github.com/schranz-templating/plates-bridge/tree/0.1"
+            },
+            "time": "2022-06-25T16:11:44+00:00"
+        },
+        {
             "name": "schranz-templating/smarty-bridge",
             "version": "0.1.x-dev",
             "source": {
@@ -1677,6 +1778,37 @@
                 "MIT"
             ],
             "description": "A integration of template renderer into symfony via mustache template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "schranz-templating/symfony-plates-integration",
+            "version": "0.1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "./../../../src/Integration/Symfony/Plates",
+                "reference": "734647cc1d0d97e4ff5bb4803b2537e3176d8daf"
+            },
+            "require": {
+                "league/plates": "^3.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/plates-bridge": "^0.1",
+                "symfony/config": "^4.4 || ^5.4 || ^6.0",
+                "symfony/dependency-injection": "^4.4 || ^5.4 || ^6.0",
+                "symfony/http-kernel": "^4.4 || ^5.4 || ^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Integration\\Symfony\\Plates\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A integration of template renderer into symfony via plates template engine.",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -4575,6 +4707,7 @@
         "schranz-templating/symfony-handlebars-integration": 20,
         "schranz-templating/symfony-latte-integration": 20,
         "schranz-templating/symfony-mustache-integration": 20,
+        "schranz-templating/symfony-plates-integration": 20,
         "schranz-templating/symfony-smarty-integration": 20,
         "schranz-templating/symfony-twig-integration": 20
     },

@@ -34,6 +34,13 @@
         },
         {
             "type": "path",
+            "url": "./../../../src/Integration/Symfony/Plates",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "./../../../src/Integration/Symfony/Smarty",
             "options": {
                 "symlink": true
@@ -56,6 +63,7 @@
         "schranz-templating/symfony-handlebars-integration": "@dev",
         "schranz-templating/symfony-latte-integration": "@dev",
         "schranz-templating/symfony-mustache-integration": "@dev",
+        "schranz-templating/symfony-plates-integration": "@dev",
         "schranz-templating/symfony-smarty-integration": "@dev",
         "schranz-templating/symfony-twig-integration": "@dev",
         "symfony/console": "6.1.*",
