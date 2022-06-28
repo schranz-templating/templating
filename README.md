@@ -45,6 +45,7 @@ Discussion in the PHP-FIG:
      - [x] [Blade](src/Integration/Symfony/Blade/README.md) ([`schranz-templating/symfony-blade-integration`](https://github.com/schranz-templating/symfony-blade-integration))
      - [x] [Latte](src/Integration/Symfony/Latte/README.md) ([`schranz-templating/symfony-latte-integration`](https://github.com/schranz-templating/symfony-latte-integration))
      - [x] [Mustache](src/Integration/Symfony/Mustache/README.md) ([`schranz-templating/symfony-mustache-integration`](https://github.com/schranz-templating/symfony-mustache-integration))
+     - [x] [Handlebars](src/Integration/Symfony/Handlebars/README.md) ([`schranz-templating/symfony-handlebars-integration`](https://github.com/schranz-templating/symfony-handlebars-integration))
      - [x] [Smarty](src/Integration/Symfony/Smarty/README.md) ([`schranz-templating/symfony-smarty-integration`](https://github.com/schranz-templating/symfony-smarty-integration))
      - [ ] ...
    - [ ] Laravel
@@ -116,9 +117,10 @@ which will register the bridge service and integration of the selected template 
 
 ```bash
 composer require schranz-templating/symfony-blade-integration
+composer require schranz-templating/symfony-handlebars-integration
 composer require schranz-templating/symfony-latte-integration
-composer require schranz-templating/symfony-smarty-integration
 composer require schranz-templating/symfony-mustache-integration
+composer require schranz-templating/symfony-smarty-integration
 composer require schranz-templating/symfony-twig-integration
 ```
 

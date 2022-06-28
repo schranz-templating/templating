@@ -13,6 +13,13 @@
         },
         {
             "type": "path",
+            "url": "./../../../src/Integration/Symfony/Handlebars",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "./../../../src/Integration/Symfony/Latte",
             "options": {
                 "symlink": true
@@ -46,6 +53,7 @@
         "ext-iconv": "*",
         "doctrine/annotations": "^1.13",
         "schranz-templating/symfony-blade-integration": "@dev",
+        "schranz-templating/symfony-handlebars-integration": "@dev",
         "schranz-templating/symfony-latte-integration": "@dev",
         "schranz-templating/symfony-mustache-integration": "@dev",
         "schranz-templating/symfony-smarty-integration": "@dev",

@@ -13,12 +13,10 @@ class TemplateController
      */
     public function home(TemplateRendererInterface $defaultRenderer): Response
     {
-        return new Response($defaultRenderer->render(
-            'base.html.twig',
-            [
-                'title' => 'Goto /blade, /latte, /mustache, /smarty, /twig',
-            ]
-        ));
+        return new Response(
+            '<h1>Goto /blade, /handlebars /latte, /mustache, /smarty, /twig</h1>' .
+            '<p>Default Renderer is: ' . get_class($defaultRenderer) . '</p>'
+        );
     }
 
     /**
@@ -30,6 +28,19 @@ class TemplateController
             'base',
             [
                 'title' => 'Render using: ' . get_class($bladeRenderer),
+            ]
+        ));
+    }
+
+    /**
+     * @Route("/handlebars", name="handlebars")
+     */
+    public function handlebarsRenderer(TemplateRendererInterface $handlebarsRenderer): Response
+    {
+        return new Response($handlebarsRenderer->render(
+            'base.handlebars',
+            [
+                'title' => 'Render using: ' . get_class($handlebarsRenderer),
             ]
         ));
     }

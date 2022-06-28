@@ -11,6 +11,9 @@
     "schranz-templating/symfony-blade-integration": {
         "version": "0.1.x-dev"
     },
+    "schranz-templating/symfony-handlebars-integration": {
+        "version": "0.1.x-dev"
+    },
     "schranz-templating/symfony-latte-integration": {
         "version": "0.1.x-dev"
     },
