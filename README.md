@@ -145,8 +145,8 @@ they are supporting. Also what kind of features are supported by them.
 | Yii View     | `5.0.0 ` | `^7.4 ^8.0`            | [x]         | [x]      | [x] `@`    | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
 | Fluid        | `2.7.1`  | `>=5.5.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [ ]         |
 | Contao       | `4.13.4` | `^7.4 ^8.0`            | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [ ]         |
-| Mustache     | `2.14.1` | `>=5.2.4`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
-| Handlebars   | `2.3.0`  | `>=5.4.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
+| Mustache     | `2.14.1` | `>=5.2.4`              |             |          | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
+| Handlebars   | `2.3.0`  | `>=5.4.0`              |             |          | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
 | Qiq          | `1.0.2`  | `^8.0`                 | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
 | Aura View    | `2.4.0`  | `>=5.4.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
 
@@ -220,16 +220,15 @@ templates `renderBlock` method.
 #### Streaming
 
 Supports to stream the template directly to the output and not have
-the need to keep al in a string variable.
+the need to keep all in a string variable.
 
 E.g. This is achieved in twig via the `display` method.
 
 #### String
 
-Supports to stream the template directly to the output and not have
-the need to keep al in a string variable.
+Supports to return the template as a string.
 
-E.g. This is achieved in twig via the `display` method.
+E.g. This is achieved in twig via the `render` method.
 
 #### Implemented
 
