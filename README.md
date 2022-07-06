@@ -36,20 +36,42 @@ Discussion in the PHP-FIG:
    - [x] [Aura View Renderer](src/Bridge/AuraView/AuraViewRenderer.php) ([`schranz-templating/aura-view-bridge`](https://github.com/schranz-templating/aura-view-bridge))
    - [x] [Qiq Template Renderer](src/Bridge/Qiq/QiqRenderer.php) ([`schranz-templating/qiq-bridge`](https://github.com/schranz-templating/qiq-bridge))
    - [x] [Spiral View Template Renderer](src/Bridge/SpiralView/SpiralViewRenderer.php) ([`schranz-templating/spiral-view-bridge`](https://github.com/schranz-templating/spiral-view-bridge))
-     - [ ] Stempler?
    - [x] Fluid (Typo3)
    - [ ] Cake View
    - [ ] Contao
  - [ ] Integrations
    - [ ] Symfony
+     - [x] [Twig](src/Integration/Symfony/Twig/README.md) ([`schranz-templating/symfony-twig-integration`](https://github.com/schranz-templating/symfony-twig-integration))
+     - [x] [Blade](src/Integration/Symfony/Blade/README.md) ([`schranz-templating/symfony-blade-integration`](https://github.com/schranz-templating/symfony-blade-integration))
+     - [x] [Latte](src/Integration/Symfony/Latte/README.md) ([`schranz-templating/symfony-latte-integration`](https://github.com/schranz-templating/symfony-latte-integration))
+     - [x] [Mustache](src/Integration/Symfony/Mustache/README.md) ([`schranz-templating/symfony-mustache-integration`](https://github.com/schranz-templating/symfony-mustache-integration))
+     - [x] [Plates](src/Integration/Symfony/Plates/README.md) ([`schranz-templating/symfony-plates-integration`](https://github.com/schranz-templating/symfony-plates-integration))
+     - [x] [Handlebars](src/Integration/Symfony/Handlebars/README.md) ([`schranz-templating/symfony-handlebars-integration`](https://github.com/schranz-templating/symfony-handlebars-integration))
+     - [x] [Smarty](src/Integration/Symfony/Smarty/README.md) ([`schranz-templating/symfony-smarty-integration`](https://github.com/schranz-templating/symfony-smarty-integration))
+     - [ ] ...
    - [ ] Laravel
+      - [ ] Blade
+      - [ ] Twig
+      - [ ] ...
    - [ ] Spiral
+      - [ ] SpiralView
+      - [ ] ...
    - [ ] Laminas
+      - [ ] LaminasView
+      - [ ] ...
    - [ ] Mezzio
+      - [ ] Mezzio
+      - [ ] ...
    - [ ] Yii
-   - [ ] Cake
-   - [ ] CodeIgniter
+      - [ ] YiiView
+      - [ ] ...
    - [ ] Typo3
+      - [ ] Fluid
+      - [ ] ...
+   - [ ] Cake
+      - [ ] ...
+   - [ ] CodeIgniter
+      - [ ] ...
  - [ ] Subtree Split
  - [ ] Register Packages
 
@@ -68,8 +90,6 @@ Projects depending on libraries which where build on top of the schranz-templati
 should require the renderer package and a bridge to the template engine they want to use:
 
 ```bash
-composer require schranz-templating/template-renderer
-# one of:
 composer require schranz-templating/aura-view-bridge
 composer require schranz-templating/blade-bridge
 composer require schranz-templating/fluid-bridge
@@ -92,6 +112,21 @@ As it would be too much work to create forks of every template engines to implem
 the interface for prototyping it is easier to use the [Bridge Design Pattern](https://designpatternsphp.readthedocs.io/en/latest/Structural/Bridge/README.html)
 to bridge from the `TemplateRendererInterface` to underlying template engines.
 
+### Usage for Symfony Projects
+
+To use the integration in the Symfony the following packages are currently provided,
+which will register the bridge service and integration of the selected template engine:
+
+```bash
+composer require schranz-templating/symfony-blade-integration
+composer require schranz-templating/symfony-handlebars-integration
+composer require schranz-templating/symfony-latte-integration
+composer require schranz-templating/symfony-mustache-integration
+composer require schranz-templating/symfony-plates-integration
+composer require schranz-templating/symfony-smarty-integration
+composer require schranz-templating/symfony-twig-integration
+```
+
 ## Analysis
 
 In the following table we will ist all yet found interesting template engines
@@ -105,9 +140,8 @@ they are supporting. Also what kind of features are supported by them.
 | Latte        | `3.0.0`  | `>=8.0 <8.2`           | [x]         |          | ?          |           | [x]     | ?     | ?       | ?         | [x]    | [x]         |
 | Blade        | `9.15.0` | `^8.1`                 | [x]         |          | [x] `::`   | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
 | Spiral View  | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?     | ?       | ?         | ?      | [x]         |
-| Stempler     | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?     | ?       | ?         | ?      | [ ]         |
 | Mezzio       | `3.10.0` | `~7.4.0 ~8.0.0 ~8.1.0` | [x]         |          | [x] `@`    | ?         | ?       | ?     | ?       |           | [x]    | [x]         |
-| Plates       | `3.4.0`  | `^7.0 ^8.0`            | [x]         |          |            |           |         | ?     |         | ?         | [x]    | [x]         |
+| Plates       | `3.4.0`  | `^7.0 ^8.0`            | [x]         |          | [x] `::`   | [x]       |         | ?     |         | ?         | [x]    | [x]         |
 | Laminas View | `2.20.0` | `^7.4 ~8.0.0 ~8.1.0`   | [x]         | [x]      | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
 | Yii View     | `5.0.0 ` | `^7.4 ^8.0`            | [x]         | [x]      | [x] `@`    | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
 | Fluid        | `2.7.1`  | `>=5.5.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |

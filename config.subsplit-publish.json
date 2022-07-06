@@ -71,9 +71,49 @@
             "target": "git@github.com:schranz-templating/twig-bridge.git"
         },
         {
+            "name": "SymfonyBladeIntegration",
+            "directory": "src/Integration/Symfony/Blade",
+            "target": "git@github.com:schranz-templating/symfony-blade-integration.git"
+        },
+        {
             "name": "YiiViewBridge",
             "directory": "src/Bridge/YiiView",
             "target": "git@github.com:schranz-templating/yii-view-bridge.git"
+        },
+        {
+            "name": "SymfonyBladeIntegration",
+            "directory": "src/Integration/Symfony/Blade",
+            "target": "git@github.com:schranz-templating/symfony-blade-integration.git"
+        },
+        {
+            "name": "SymfonyHandlebarsIntegration",
+            "directory": "src/Integration/Symfony/Handlebars",
+            "target": "git@github.com:schranz-templating/symfony-handlebars-integration.git"
+        },
+        {
+            "name": "SymfonyLatteIntegration",
+            "directory": "src/Integration/Symfony/Latte",
+            "target": "git@github.com:schranz-templating/symfony-latte-integration.git"
+        },
+        {
+            "name": "SymfonyMustacheIntegration",
+            "directory": "src/Integration/Symfony/Mustache",
+            "target": "git@github.com:schranz-templating/symfony-mustache-integration.git"
+        },
+        {
+            "name": "SymfonyPlatesIntegration",
+            "directory": "src/Integration/Symfony/Plates",
+            "target": "git@github.com:schranz-templating/symfony-plates-integration.git"
+        },
+        {
+            "name": "SymfonySmartyIntegration",
+            "directory": "src/Integration/Symfony/Smarty",
+            "target": "git@github.com:schranz-templating/symfony-smarty-integration.git"
+        },
+        {
+            "name": "SymfonyTwigIntegration",
+            "directory": "src/Integration/Symfony/Twig",
+            "target": "git@github.com:schranz-templating/symfony-twig-integration.git"
         }
     ]
 }

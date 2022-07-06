@@ -18,10 +18,6 @@ class SmartyRenderer implements TemplateRendererInterface
 
     public function render(string $template, array $context): string
     {
-        foreach ($context as $key => $value) {
-            $this->smarty->assign($key, $value);
-        }
-
         // Smarty does not support render to string, so the mechanism from twig is used to render it into a string:
         //      https://github.com/twigphp/Twig/blob/b6017005b3f6cfc476a976d7cfd57c038f183569/src/Template.php#L370-L389
         $level = ob_get_level();
