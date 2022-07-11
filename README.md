@@ -19,6 +19,16 @@ Discussion in the PHP-FIG:
 
  - [https://github.com/php-fig/fig-standards/pull/1280](https://github.com/php-fig/fig-standards/pull/1280)
 
+## Table of Contents
+
+ - [TODO](#todo)
+ - [Usage](#usage)
+   - [Usage for Library Authors](#usage-for-library-authors)
+   - [Usage for Projects](#usage-for-projects)
+   - [Usage for Symfony Projects](#usage-for-symfony-projects)
+ - [Analyses](#analysis)
+ - [Tooling](#tooling)
+
 ## TODO
 
  - [x] [TemplateRendererInterface](src/TemplateRenderer/TemplateRendererInterface.php) ([`schranz-templating/template-renderer`](https://github.com/schranz-templating/template-renderer))
@@ -75,7 +85,9 @@ Discussion in the PHP-FIG:
  - [ ] Subtree Split
  - [ ] Register Packages
 
-## Usage for Library Authors
+## Usage
+
+### Usage for Library Authors
 
 If you create a library, framework or whatever you should just require the template renderer in the
 require section of your composer.json:
@@ -84,7 +96,7 @@ require section of your composer.json:
 composer require schranz-templating/template-renderer
 ```
 
-## Usage for Projects
+### Usage for Projects
 
 Projects depending on libraries which where build on top of the schranz-templating/template-render abstract
 should require the renderer package and a bridge to the template engine they want to use:
@@ -111,7 +123,7 @@ As it would be too much work to create forks of every template engines to implem
 the interface for prototyping it is easier to use the [Bridge Design Pattern](https://designpatternsphp.readthedocs.io/en/latest/Structural/Bridge/README.html)
 to bridge from the `TemplateRendererInterface` to underlying template engines.
 
-### Usage for Symfony Projects
+#### Usage for Symfony Projects
 
 To use the integration in the Symfony the following packages are currently provided,
 which will register the bridge service and integration of the selected template engine:
@@ -234,3 +246,25 @@ E.g. This is achieved in twig via the `render` method.
 
 A bridge was already implemented for this engine and so a common interface
 for this type of engine would be possible.
+
+## Tooling
+
+Tooling around template engines:
+
+ - **Twig**
+   - [twig2latte](https://twig2latte.nette.org/)
+   - [twigfiddle](https://twigfiddle.com/);
+   - [asm89/twig-lint](https://github.com/asm89/twig-lint)
+   - [symfony-twig-lint](https://github.com/symfony/twig-bridge/blob/05e3128cb875e9f21d18c5af2354293cd1dec010/Command/LintCommand.php#L39)
+   - [reveal/reveal-twig](https://github.com/revealphp/reveal/tree/main/packages/reveal-twig) PHPStan Twig Rules
+
+ - **Latte**
+   - [twig2latte](https://twig2latte.nette.org/)
+   - [lattefiddle](https://fiddle.nette.org/latte/)
+   - [reveal/reveal-latte](https://github.com/revealphp/reveal/tree/main/packages/reveal-latte) PHPStan Latte Rules
+
+ - **Blade**
+     - [bdelespierre/laravel-blade-linter](https://github.com/bdelespierre/laravel-blade-linter)
+     - [magentron/laravel-blade-lint](https://github.com/Magentron/laravel-blade-lint)
+
+Please let me know about more tools around template engines.
