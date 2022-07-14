@@ -257,6 +257,7 @@ Tooling around template engines:
    - [asm89/twig-lint](https://github.com/asm89/twig-lint)
    - [symfony-twig-lint](https://github.com/symfony/twig-bridge/blob/05e3128cb875e9f21d18c5af2354293cd1dec010/Command/LintCommand.php#L39)
    - [reveal/reveal-twig](https://github.com/revealphp/reveal/tree/main/packages/reveal-twig) PHPStan Twig Rules
+   - [matthiasnoback/phpstan-twig-analysis](https://github.com/matthiasnoback/phpstan-twig-analysis)
 
  - **Latte**
    - [twig2latte](https://twig2latte.nette.org/)
