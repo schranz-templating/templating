@@ -46,7 +46,7 @@ Discussion in the PHP-FIG:
    - [x] [Aura View Renderer](src/Bridge/AuraView/AuraViewRenderer.php) ([`schranz-templating/aura-view-bridge`](https://github.com/schranz-templating/aura-view-bridge))
    - [x] [Qiq Template Renderer](src/Bridge/Qiq/QiqRenderer.php) ([`schranz-templating/qiq-bridge`](https://github.com/schranz-templating/qiq-bridge))
    - [x] [Spiral View Template Renderer](src/Bridge/SpiralView/SpiralViewRenderer.php) ([`schranz-templating/spiral-view-bridge`](https://github.com/schranz-templating/spiral-view-bridge))
-   - [ ] Fluid (Typo3)
+   - [x] Fluid (Typo3)
    - [ ] Cake View
    - [ ] Contao
  - [ ] Integrations
@@ -104,6 +104,7 @@ should require the renderer package and a bridge to the template engine they wan
 ```bash
 composer require schranz-templating/aura-view-bridge
 composer require schranz-templating/blade-bridge
+composer require schranz-templating/fluid-bridge
 composer require schranz-templating/handlebars-bridge
 composer require schranz-templating/laminas-view-bridge
 composer require schranz-templating/latte-bridge
@@ -155,7 +156,7 @@ they are supporting. Also what kind of features are supported by them.
 | Plates       | `3.4.0`  | `^7.0 ^8.0`            | [x]         |          | [x] `::`   | [x]       |         | ?     |         | ?         | [x]    | [x]         |
 | Laminas View | `2.20.0` | `^7.4 ~8.0.0 ~8.1.0`   | [x]         | [x]      | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
 | Yii View     | `5.0.0 ` | `^7.4 ^8.0`            | [x]         | [x]      | [x] `@`    | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
-| Fluid        | `2.7.1`  | `>=5.5.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [ ]         |
+| Fluid        | `2.7.1`  | `>=5.5.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
 | Contao       | `4.13.4` | `^7.4 ^8.0`            | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [ ]         |
 | Mustache     | `2.14.1` | `>=5.2.4`              |             |          | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
 | Handlebars   | `2.3.0`  | `>=5.4.0`              |             |          | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | [x]         |
