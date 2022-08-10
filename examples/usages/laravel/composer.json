@@ -11,6 +11,13 @@
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "path",
+            "url": "./../../../src/Integration/Laravel/Mustache",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "require": {
@@ -19,7 +26,8 @@
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
-        "schranz-templating/laravel-blade-integration": "@dev"
+        "schranz-templating/laravel-blade-integration": "@dev",
+        "schranz-templating/laravel-mustache-integration": "@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
