@@ -46,7 +46,7 @@ Discussion in the PHP-FIG:
    - [x] [Aura View Renderer](src/Bridge/AuraView/AuraViewRenderer.php) ([`schranz-templating/aura-view-bridge`](https://github.com/schranz-templating/aura-view-bridge))
    - [x] [Qiq Template Renderer](src/Bridge/Qiq/QiqRenderer.php) ([`schranz-templating/qiq-bridge`](https://github.com/schranz-templating/qiq-bridge))
    - [x] [Spiral View Template Renderer](src/Bridge/SpiralView/SpiralViewRenderer.php) ([`schranz-templating/spiral-view-bridge`](https://github.com/schranz-templating/spiral-view-bridge))
-   - [x] Fluid (Typo3)
+   - [x] [Fluid Renderer](src/Bridge/Fluid/FluidRenderer.php) ([`schranz-templating/fluid-bridge`](https://github.com/schranz-templating/fluid-bridge))
    - [ ] Cake View
    - [ ] Contao
  - [ ] Integrations
@@ -60,9 +60,10 @@ Discussion in the PHP-FIG:
      - [x] [Smarty](src/Integration/Symfony/Smarty/README.md) ([`schranz-templating/symfony-smarty-integration`](https://github.com/schranz-templating/symfony-smarty-integration))
      - [ ] ...
    - [ ] Laravel
-      - [ ] Blade
-      - [ ] Twig
-      - [ ] ...
+     - [x] [Blade](src/Integration/Laravel/Blade/README.md) ([`schranz-templating/laravel-blade-integration`](https://github.com/schranz-templating/laravel-blade-integration))
+     - [x] [Mustache](src/Integration/Laravel/Mustache/README.md) ([`schranz-templating/symfony-mustache-integration`](https://github.com/schranz-templating/laravel-mustache-integration))
+     - [ ] Twig
+     - [ ] ...
    - [ ] Spiral
       - [ ] SpiralView
       - [ ] ...
