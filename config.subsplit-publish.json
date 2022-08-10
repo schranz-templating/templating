@@ -71,6 +71,11 @@
             "target": "git@github.com:schranz-templating/twig-bridge.git"
         },
         {
+            "name": "LaravelBladeIntegration",
+            "directory": "src/Integration/Laravel/Blade",
+            "target": "git@github.com:schranz-templating/laravel-blade-integration.git"
+        },
+        {
             "name": "SymfonyBladeIntegration",
             "directory": "src/Integration/Symfony/Blade",
             "target": "git@github.com:schranz-templating/symfony-blade-integration.git"

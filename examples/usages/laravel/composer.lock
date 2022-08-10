@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccbd816a07b206f971042295b899d1ba",
+    "content-hash": "85ffd1df9ab4fa58833878079be493f4",
     "packages": [
         {
             "name": "brick/math",
@@ -2818,6 +2818,114 @@
                 }
             ],
             "time": "2022-08-05T17:58:37+00:00"
+        },
+        {
+            "name": "schranz-templating/blade-bridge",
+            "version": "0.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schranz-templating/blade-bridge.git",
+                "reference": "c04d85ed4ab642ce1bdff5e453efe363a078a727"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schranz-templating/blade-bridge/zipball/c04d85ed4ab642ce1bdff5e453efe363a078a727",
+                "reference": "c04d85ed4ab642ce1bdff5e453efe363a078a727",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/view": "^8.0 || ^9.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/template-renderer": "^0.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Bridge\\Blade\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A bridge for the template renderer for blade template engine.",
+            "support": {
+                "issues": "https://github.com/schranz-templating/blade-bridge/issues",
+                "source": "https://github.com/schranz-templating/blade-bridge/tree/0.1"
+            },
+            "time": "2022-06-25T11:46:40+00:00"
+        },
+        {
+            "name": "schranz-templating/laravel-blade-integration",
+            "version": "0.1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "./../../../src/Integration/Laravel/Blade",
+                "reference": "b31acf7c6c11e5d0816dd704250f9b2b5cc349df"
+            },
+            "require": {
+                "illuminate/support": "^8.0 || ^9.0",
+                "illuminate/view": "^8.0 || ^9.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/blade-bridge": "^0.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Schranz\\Templating\\Integration\\Laravel\\Blade\\SchranzTemplatingBladeProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Integration\\Laravel\\Blade\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A integration of template renderer into laravel via blade template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "schranz-templating/template-renderer",
+            "version": "0.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schranz-templating/template-renderer.git",
+                "reference": "b150e2056ef8e4c1ddb9c288ad5e5db7b7aa3c2e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schranz-templating/template-renderer/zipball/b150e2056ef8e4c1ddb9c288ad5e5db7b7aa3c2e",
+                "reference": "b150e2056ef8e4c1ddb9c288ad5e5db7b7aa3c2e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^8.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\TemplateRenderer\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Provide template renderer interface used by different template engine bridges.",
+            "support": {
+                "issues": "https://github.com/schranz-templating/template-renderer/issues",
+                "source": "https://github.com/schranz-templating/template-renderer/tree/0.1"
+            },
+            "time": "2022-06-25T10:01:57+00:00"
         },
         {
             "name": "symfony/console",
@@ -7915,7 +8023,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "schranz-templating/laravel-blade-integration": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
