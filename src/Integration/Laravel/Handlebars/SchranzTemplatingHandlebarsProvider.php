@@ -34,7 +34,7 @@ class SchranzTemplatingHandlebarsProvider extends ServiceProvider
             );
         });
 
-        $this->app->singleton('Handlebars', function ($app) {
+        $this->app->singleton('handlebars', function ($app) {
             return new Handlebars(
                 [
                     'cache' => $app['handlebars.cache'],
@@ -44,7 +44,7 @@ class SchranzTemplatingHandlebarsProvider extends ServiceProvider
         });
 
         $this->app->singleton('schranz_templating.renderer.handlebars', function ($app) {
-            return new HandlebarsRenderer($app['Handlebars']);
+            return new HandlebarsRenderer($app['handlebars']);
         });
 
         $this->app->alias('schranz_templating.renderer.handlebars', TemplateRendererInterface::class);
@@ -57,7 +57,7 @@ class SchranzTemplatingHandlebarsProvider extends ServiceProvider
     public function provides(): array
     {
         return [
-            'schranz_templating.renderer.Handlebars',
+            'schranz_templating.renderer.handlebars',
             TemplateRendererInterface::class,
             HandlebarsRenderer::class,
         ];

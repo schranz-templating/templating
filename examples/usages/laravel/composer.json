@@ -25,6 +25,13 @@
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "path",
+            "url": "./../../../src/Integration/Laravel/Plates",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "require": {
@@ -35,7 +42,8 @@
         "laravel/tinker": "^2.7",
         "schranz-templating/laravel-blade-integration": "@dev",
         "schranz-templating/laravel-handlebars-integration": "@dev",
-        "schranz-templating/laravel-mustache-integration": "@dev"
+        "schranz-templating/laravel-mustache-integration": "@dev",
+        "schranz-templating/laravel-plates-integration": "@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

@@ -86,6 +86,11 @@
             "target": "git@github.com:schranz-templating/laravel-mustache-integration.git"
         },
         {
+            "name": "LaravelPlatesIntegration",
+            "directory": "src/Integration/Laravel/Plates",
+            "target": "git@github.com:schranz-templating/laravel-plates-integration.git"
+        },
+        {
             "name": "SymfonyBladeIntegration",
             "directory": "src/Integration/Symfony/Blade",
             "target": "git@github.com:schranz-templating/symfony-blade-integration.git"

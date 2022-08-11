@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7aefe97ebaa72b2b70365df819bebe37",
+    "content-hash": "71104ae91b44a8dc370812fd9ce65a13",
     "packages": [
         {
             "name": "brick/math",
@@ -1596,6 +1596,70 @@
             "time": "2022-04-17T13:12:02+00:00"
         },
         {
+            "name": "league/plates",
+            "version": "v3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/plates.git",
+                "reference": "6d3ee31199b536a4e003b34a356ca20f6f75496a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/plates/zipball/6d3ee31199b536a4e003b34a356ca20f6f75496a",
+                "reference": "6d3ee31199b536a4e003b34a356ca20f6f75496a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0|^8.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Plates\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Reinink",
+                    "email": "jonathan@reinink.ca",
+                    "role": "Developer"
+                },
+                {
+                    "name": "RJ Garcia",
+                    "email": "ragboyjr@icloud.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Plates, the native PHP template system that's fast, easy to use and easy to extend.",
+            "homepage": "https://platesphp.com",
+            "keywords": [
+                "league",
+                "package",
+                "templates",
+                "templating",
+                "views"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/plates/issues",
+                "source": "https://github.com/thephpleague/plates/tree/v3.4.0"
+            },
+            "time": "2020-12-25T05:00:37+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "2.8.0",
             "source": {
@@ -3109,6 +3173,42 @@
             }
         },
         {
+            "name": "schranz-templating/laravel-plates-integration",
+            "version": "0.1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "./../../../src/Integration/Laravel/Plates",
+                "reference": "f60ef3727f893e77e402056a764c12ecc30385de"
+            },
+            "require": {
+                "illuminate/support": "^8.0 || ^9.0",
+                "illuminate/view": "^8.0 || ^9.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/plates-bridge": "^0.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Schranz\\Templating\\Integration\\Laravel\\Plates\\SchranzTemplatingPlatesProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Integration\\Laravel\\Plates\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A integration of template renderer into laravel via plates template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "schranz-templating/mustache-bridge",
             "version": "0.1.x-dev",
             "source": {
@@ -3142,6 +3242,43 @@
             "support": {
                 "issues": "https://github.com/schranz-templating/mustache-bridge/issues",
                 "source": "https://github.com/schranz-templating/mustache-bridge/tree/0.1"
+            },
+            "time": "2022-06-25T16:11:44+00:00"
+        },
+        {
+            "name": "schranz-templating/plates-bridge",
+            "version": "0.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schranz-templating/plates-bridge.git",
+                "reference": "91ee8627608b70459d4c1039e0aa330c3a447bf3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schranz-templating/plates-bridge/zipball/91ee8627608b70459d4c1039e0aa330c3a447bf3",
+                "reference": "91ee8627608b70459d4c1039e0aa330c3a447bf3",
+                "shasum": ""
+            },
+            "require": {
+                "league/plates": "^3.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/template-renderer": "^0.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Bridge\\Plates\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A bridge for the template renderer for plates template engine.",
+            "support": {
+                "issues": "https://github.com/schranz-templating/plates-bridge/issues",
+                "source": "https://github.com/schranz-templating/plates-bridge/tree/0.1"
             },
             "time": "2022-06-25T16:11:44+00:00"
         },
@@ -8279,7 +8416,8 @@
     "stability-flags": {
         "schranz-templating/laravel-blade-integration": 20,
         "schranz-templating/laravel-handlebars-integration": 20,
-        "schranz-templating/laravel-mustache-integration": 20
+        "schranz-templating/laravel-mustache-integration": 20,
+        "schranz-templating/laravel-plates-integration": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
