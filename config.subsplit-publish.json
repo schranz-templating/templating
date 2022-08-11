@@ -76,6 +76,11 @@
             "target": "git@github.com:schranz-templating/laravel-blade-integration.git"
         },
         {
+            "name": "LaravelHandlebarsIntegration",
+            "directory": "src/Integration/Laravel/Handlebars",
+            "target": "git@github.com:schranz-templating/laravel-handlebars-integration.git"
+        },
+        {
             "name": "LaravelMustacheIntegration",
             "directory": "src/Integration/Laravel/Mustache",
             "target": "git@github.com:schranz-templating/laravel-mustache-integration.git"

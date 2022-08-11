@@ -14,6 +14,13 @@
         },
         {
             "type": "path",
+            "url": "./../../../src/Integration/Laravel/Handlebars",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "./../../../src/Integration/Laravel/Mustache",
             "options": {
                 "symlink": true
@@ -27,6 +34,7 @@
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "schranz-templating/laravel-blade-integration": "@dev",
+        "schranz-templating/laravel-handlebars-integration": "@dev",
         "schranz-templating/laravel-mustache-integration": "@dev"
     },
     "require-dev": {

@@ -1,0 +1,25 @@
+{
+    "name": "schranz-templating/laravel-handlebars-integration",
+    "description": "A integration of template renderer into laravel via handlebars template engine.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\Integration\\Laravel\\Handlebars\\": ""
+        }
+    },
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "illuminate/view": "^8.0 || ^9.0",
+        "illuminate/support": "^8.0 || ^9.0",
+        "schranz-templating/handlebars-bridge": "^0.1"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Schranz\\Templating\\Integration\\Laravel\\Handlebars\\SchranzTemplatingHandlebarsProvider"
+            ]
+        }
+    }
+}
