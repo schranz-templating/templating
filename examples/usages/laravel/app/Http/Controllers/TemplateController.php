@@ -6,6 +6,7 @@ use Schranz\Templating\Bridge\Blade\BladeRenderer;
 use Schranz\Templating\Bridge\Handlebars\HandlebarsRenderer;
 use Schranz\Templating\Bridge\Mustache\MustacheRenderer;
 use Schranz\Templating\Bridge\Plates\PlatesRenderer;
+use Schranz\Templating\Bridge\Smarty\SmartyRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class TemplateController extends Controller
@@ -16,13 +17,14 @@ class TemplateController extends Controller
         private HandlebarsRenderer $handlebarsRenderer,
         private MustacheRenderer $mustacheRenderer,
         private PlatesRenderer $platesRenderer,
+        private SmartyRenderer $smartyRenderer,
     ) {
     }
 
     public function home(): string
     {
         return
-            '<h1>Goto /blade, /handlebars, /mustache, /plates, more todo ...</h1>' .
+            '<h1>Goto /blade, /handlebars, /mustache, /plates, /smarty, more todo ...</h1>' .
             '<p>Default Renderer is: ' . get_class($this->defaultRenderer) . '</p>'
         ;
     }
@@ -63,6 +65,16 @@ class TemplateController extends Controller
             'base.plates',
             [
                 'title' => 'Render using: ' . get_class($this->platesRenderer),
+            ]
+        );
+    }
+
+    public function smartyRenderer(): string
+    {
+        return $this->smartyRenderer->render(
+            'base.tpl',
+            [
+                'title' => 'Render using: ' . get_class($this->smartyRenderer),
             ]
         );
     }

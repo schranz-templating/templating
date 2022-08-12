@@ -23,6 +23,10 @@ class SmartyRenderer implements TemplateRendererInterface
         $level = ob_get_level();
         ob_start(function () { return ''; });
 
+        foreach ($context as $key => $value) {
+            $this->smarty->assign($key, $value);
+        }
+
         try {
             $this->smarty->display($template);
         } catch (\Throwable $e) {

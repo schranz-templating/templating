@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "71104ae91b44a8dc370812fd9ce65a13",
+    "content-hash": "63b1fd8ce349cc11303b9cc6743850c0",
     "packages": [
         {
             "name": "brick/math",
@@ -3209,6 +3209,42 @@
             }
         },
         {
+            "name": "schranz-templating/laravel-smarty-integration",
+            "version": "0.1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "./../../../src/Integration/Laravel/Smarty",
+                "reference": "cf7c4d9e6e1306ced05356d2a1332fc9f41ade74"
+            },
+            "require": {
+                "illuminate/support": "^8.0 || ^9.0",
+                "illuminate/view": "^8.0 || ^9.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/smarty-bridge": "^0.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Schranz\\Templating\\Integration\\Laravel\\Smarty\\SchranzTemplatingSmartyProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Integration\\Laravel\\Smarty\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A integration of template renderer into laravel via smarty template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "schranz-templating/mustache-bridge",
             "version": "0.1.x-dev",
             "source": {
@@ -3283,6 +3319,43 @@
             "time": "2022-06-25T16:11:44+00:00"
         },
         {
+            "name": "schranz-templating/smarty-bridge",
+            "version": "0.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schranz-templating/smarty-bridge.git",
+                "reference": "28df4e9c39c3cfc469cb74d1bb7cc888fbf46440"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schranz-templating/smarty-bridge/zipball/28df4e9c39c3cfc469cb74d1bb7cc888fbf46440",
+                "reference": "28df4e9c39c3cfc469cb74d1bb7cc888fbf46440",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/template-renderer": "^0.1",
+                "smarty/smarty": "^3.0 || ^4.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Bridge\\Smarty\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A bridge for the template renderer for smarty template engine.",
+            "support": {
+                "issues": "https://github.com/schranz-templating/smarty-bridge/issues",
+                "source": "https://github.com/schranz-templating/smarty-bridge/tree/0.1"
+            },
+            "time": "2022-06-27T21:40:09+00:00"
+        },
+        {
             "name": "schranz-templating/template-renderer",
             "version": "0.1.x-dev",
             "source": {
@@ -3316,6 +3389,72 @@
                 "source": "https://github.com/schranz-templating/template-renderer/tree/0.1"
             },
             "time": "2022-06-25T10:01:57+00:00"
+        },
+        {
+            "name": "smarty/smarty",
+            "version": "v4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smarty-php/smarty.git",
+                "reference": "97aeb14c6fc2fb733938809926e2f9d6c581a70d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/97aeb14c6fc2fb733938809926e2f9d6c581a70d",
+                "reference": "97aeb14c6fc2fb733938809926e2f9d6c581a70d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5 || ^7.5",
+                "smarty/smarty-lexer": "^3.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "libs/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Monte Ohrt",
+                    "email": "monte@ohrt.com"
+                },
+                {
+                    "name": "Uwe Tews",
+                    "email": "uwe.tews@googlemail.com"
+                },
+                {
+                    "name": "Rodney Rehm",
+                    "email": "rodney.rehm@medialize.de"
+                },
+                {
+                    "name": "Simon Wisselink",
+                    "homepage": "https://www.iwink.nl/"
+                }
+            ],
+            "description": "Smarty - the compiling PHP template engine",
+            "homepage": "https://smarty-php.github.io/smarty/",
+            "keywords": [
+                "templating"
+            ],
+            "support": {
+                "forum": "https://github.com/smarty-php/smarty/discussions",
+                "issues": "https://github.com/smarty-php/smarty/issues",
+                "source": "https://github.com/smarty-php/smarty/tree/v4.2.0"
+            },
+            "time": "2022-08-01T21:57:38+00:00"
         },
         {
             "name": "symfony/console",
@@ -8417,7 +8556,8 @@
         "schranz-templating/laravel-blade-integration": 20,
         "schranz-templating/laravel-handlebars-integration": 20,
         "schranz-templating/laravel-mustache-integration": 20,
-        "schranz-templating/laravel-plates-integration": 20
+        "schranz-templating/laravel-plates-integration": 20,
+        "schranz-templating/laravel-smarty-integration": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -19,3 +19,4 @@ Route::get('/blade', [TemplateController::class, 'bladeRenderer']);
 Route::get('/handlebars', [TemplateController::class, 'handlebarsRenderer']);
 Route::get('/mustache', [TemplateController::class, 'mustacheRenderer']);
 Route::get('/plates', [TemplateController::class, 'platesRenderer']);
+Route::get('/smarty', [TemplateController::class, 'smartyRenderer']);

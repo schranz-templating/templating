@@ -1,6 +1,6 @@
 # Schranz Template Renderer Integration for Plates
 
-Integrate the templating [Handlebars Bridge](https://github.com/schranz-templating/plates-bridge) 
+Integrate the templating [Plates Bridge](https://github.com/schranz-templating/plates-bridge) 
 into the Laravel Framework.
 
 Part of the [Schranz Templating Project](https://github.com/schranz-templating/templating).

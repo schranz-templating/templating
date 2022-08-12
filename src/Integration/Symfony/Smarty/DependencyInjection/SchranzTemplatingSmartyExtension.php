@@ -62,6 +62,8 @@ class SchranzTemplatingSmartyExtension extends Extension
         $path = $config['default_path'];
         $cache = $config['cache'];
 
+        // TODO add additional directories via addTemplateDir
+
         $container->setDefinition(
             'smarty',
             (new Definition(Smarty::class))

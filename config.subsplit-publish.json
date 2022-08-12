@@ -91,6 +91,11 @@
             "target": "git@github.com:schranz-templating/laravel-plates-integration.git"
         },
         {
+            "name": "LaravelSmartyIntegration",
+            "directory": "src/Integration/Laravel/Smarty",
+            "target": "git@github.com:schranz-templating/laravel-smarty-integration.git"
+        },
+        {
             "name": "SymfonyBladeIntegration",
             "directory": "src/Integration/Symfony/Blade",
             "target": "git@github.com:schranz-templating/symfony-blade-integration.git"
