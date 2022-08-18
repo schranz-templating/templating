@@ -88,8 +88,8 @@ Discussion in the PHP-FIG:
       - [ ] ...
    - [ ] CodeIgniter
       - [ ] ...
- - [ ] Subtree Split
- - [ ] Register Packages
+ - [x] Subtree Split
+ - [x] Register Packages
 
 ## Usage
 
@@ -104,7 +104,7 @@ composer require schranz-templating/template-renderer
 
 ### Usage for Projects
 
-Projects depending on libraries which where build on top of the schranz-templating/template-render abstract
+Projects depending on libraries which where build on top of the `schranz-templating/template-render` abstract
 should require the renderer package and a bridge to the template engine they want to use:
 
 ```bash
@@ -143,6 +143,30 @@ composer require schranz-templating/symfony-mustache-integration
 composer require schranz-templating/symfony-plates-integration
 composer require schranz-templating/symfony-smarty-integration
 composer require schranz-templating/symfony-twig-integration
+```
+
+#### Usage for Laravel Projects
+
+To use the integration in the Laravel the following packages are currently provided,
+which will register the bridge service and integration of the selected template engine:
+
+```bash
+composer require schranz-templating/laravel-blade-integration
+composer require schranz-templating/laravel-handlebars-integration
+composer require schranz-templating/laravel-latte-integration
+composer require schranz-templating/laravel-mustache-integration
+composer require schranz-templating/laravel-plates-integration
+composer require schranz-templating/laravel-smarty-integration
+composer require schranz-templating/laravel-twig-integration
+```
+
+#### Usage for Laminas Projects
+
+To use the integration in the Laravel the following packages are currently provided,
+which will register the bridge service and integration of the selected template engine:
+
+```bash
+composer require schranz-templating/laminas-plates-integration
 ```
 
 ## Analysis
