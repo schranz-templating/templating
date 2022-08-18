@@ -1444,10 +1444,11 @@
             "dist": {
                 "type": "path",
                 "url": "./../../../src/Integration/Laminas/Plates",
-                "reference": "a86ac0a7cc54eb4bb54bd47c81a4daaec3012c67"
+                "reference": "635347846cbfcde3c9f4d44ec18f450d46fff411"
             },
             "require": {
                 "laminas/laminas-modulemanager": "^2.0",
+                "laminas/laminas-servicemanager": "^2.0 || ^3.0",
                 "php": "^7.0 || ^8.0",
                 "schranz-templating/plates-bridge": "^0.1"
             },

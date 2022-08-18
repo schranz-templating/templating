@@ -73,6 +73,7 @@ Discussion in the PHP-FIG:
       - [ ] ...
    - [ ] Laminas
       - [ ] LaminasView
+      - [x] [Plates](src/Integration/Laminas/Plates/README.md) ([`schranz-templating/laminas-plates-integration`](https://github.com/schranz-templating/laminas-plates-integration))
       - [ ] ...
    - [ ] Mezzio
       - [ ] Mezzio

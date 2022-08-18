@@ -9,6 +9,15 @@
         "skeleton",
         "framework"
     ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./../../../src/Integration/Laminas/Plates",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
         "php": "^7.4 || ~8.0.0 || ~8.1.0",
         "laminas/laminas-component-installer": "^2.4",
@@ -57,5 +66,6 @@
             "laminas/laminas-component-installer": true,
             "laminas/laminas-skeleton-installer": true
         }
-    }
+    },
+    "minimum-stability": "dev"
 }

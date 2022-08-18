@@ -5,8 +5,9 @@ declare(strict_types=1);
 namespace Application;
 
 use Laminas\Router\Http\Literal;
-use Laminas\Router\Http\Segment;
 use Laminas\ServiceManager\Factory\InvokableFactory;
+use Schranz\Templating\Bridge\Plates\PlatesRenderer;
+use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 return [
     'router' => [
@@ -16,18 +17,18 @@ return [
                 'options' => [
                     'route'    => '/',
                     'defaults' => [
-                        'controller' => Controller\IndexController::class,
-                        'action'     => 'index',
+                        'controller' => Controller\TemplateController::class,
+                        'action' => 'home',
                     ],
                 ],
             ],
-            'application' => [
-                'type'    => Segment::class,
+            'plates' => [
+                'type'    => Literal::class,
                 'options' => [
-                    'route'    => '/application[/:action]',
+                    'route'    => '/plates',
                     'defaults' => [
-                        'controller' => Controller\IndexController::class,
-                        'action'     => 'index',
+                        'controller' => Controller\TemplateController::class,
+                        'action'     => 'platesRenderer',
                     ],
                 ],
             ],
@@ -36,6 +37,12 @@ return [
     'controllers' => [
         'factories' => [
             Controller\IndexController::class => InvokableFactory::class,
+            Controller\TemplateController::class  => function($container) {
+                return new Controller\TemplateController(
+                    $container->get(TemplateRendererInterface::class),
+                    $container->get(PlatesRenderer::class),
+                );
+            },
         ],
     ],
     'view_manager' => [
