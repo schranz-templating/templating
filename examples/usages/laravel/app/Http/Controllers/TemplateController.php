@@ -8,6 +8,7 @@ use Schranz\Templating\Bridge\Latte\LatteRenderer;
 use Schranz\Templating\Bridge\Mustache\MustacheRenderer;
 use Schranz\Templating\Bridge\Plates\PlatesRenderer;
 use Schranz\Templating\Bridge\Smarty\SmartyRenderer;
+use Schranz\Templating\Bridge\Twig\TwigRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class TemplateController extends Controller
@@ -20,13 +21,14 @@ class TemplateController extends Controller
         private MustacheRenderer $mustacheRenderer,
         private PlatesRenderer $platesRenderer,
         private SmartyRenderer $smartyRenderer,
+        private TwigRenderer $twigRenderer,
     ) {
     }
 
     public function home(): string
     {
         return
-            '<h1>Goto /blade, /handlebars, /latte, /mustache, /plates, /smarty, more todo ...</h1>' .
+            '<h1>Goto /blade, /handlebars, /latte, /mustache, /plates, /smarty, /twig</h1>' .
             '<p>Default Renderer is: ' . get_class($this->defaultRenderer) . '</p>'
         ;
     }
@@ -87,6 +89,16 @@ class TemplateController extends Controller
             'base.tpl',
             [
                 'title' => 'Render using: ' . get_class($this->smartyRenderer),
+            ]
+        );
+    }
+
+    public function twigRenderer(): string
+    {
+        return $this->twigRenderer->render(
+            'base.html.twig',
+            [
+                'title' => 'Render using: ' . get_class($this->twigRenderer),
             ]
         );
     }

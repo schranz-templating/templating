@@ -1,0 +1,25 @@
+{
+    "name": "schranz-templating/laravel-twig-integration",
+    "description": "A integration of template renderer into laravel via twig template engine.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\Integration\\Laravel\\Twig\\": ""
+        }
+    },
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "illuminate/view": "^8.0 || ^9.0",
+        "illuminate/support": "^8.0 || ^9.0",
+        "schranz-templating/twig-bridge": "^0.1"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Schranz\\Templating\\Integration\\Laravel\\Twig\\SchranzTemplatingTwigProvider"
+            ]
+        }
+    }
+}

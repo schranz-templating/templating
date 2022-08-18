@@ -21,3 +21,4 @@ Route::get('/latte', [TemplateController::class, 'latteRenderer']);
 Route::get('/mustache', [TemplateController::class, 'mustacheRenderer']);
 Route::get('/plates', [TemplateController::class, 'platesRenderer']);
 Route::get('/smarty', [TemplateController::class, 'smartyRenderer']);
+Route::get('/twig', [TemplateController::class, 'twigRenderer']);
