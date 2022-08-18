@@ -3,6 +3,7 @@
 namespace Schranz\Templating\Integration\Symfony\Latte\DependencyInjection;
 
 use Latte\Engine;
+use Latte\Extension as LatteExtension;
 use Latte\Loaders\FileLoader;
 use Schranz\Templating\Bridge\Latte\LatteRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
@@ -74,5 +75,8 @@ class SchranzTemplatingLatteExtension extends Extension
                 ->addMethodCall('setTempDirectory', [$cache])
                 ->addMethodCall('setLoader', [new Reference('latte.file_loader')])
         );
+
+        $container->registerForAutoconfiguration(LatteExtension::class)
+            ->addTag('latte.extension');
     }
 }

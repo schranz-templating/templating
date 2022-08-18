@@ -45,3 +45,18 @@ The path to the directory where Symfony will look for the application Latte temp
 **type:** `string` **default:** `'%kernel.cache_dir%/latte'`
 
 Before using the Latte templates to render some contents, they are compiled into regular PHP code. Compilation is a costly process, so the result is cached in the directory defined by this configuration option.
+
+## Extensions
+
+To extend Latte functionality you can create a new service extending from `Latte\Extension`
+which when `autoconfigure` is enabled automatically be tagged with `latte.extension` and added
+as a Latte Extension. If not you need to tag the service yourself:
+
+```yaml
+services:
+    App\Latte\MyExtension:
+        tags:
+            - { name: latte.extension }
+```
+
+Read more about Latte Extensions in the [Latte documentation](https://latte.nette.org/en/creating-extension).

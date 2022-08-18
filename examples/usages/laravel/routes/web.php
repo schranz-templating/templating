@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [TemplateController::class, 'home']);
 Route::get('/blade', [TemplateController::class, 'bladeRenderer']);
 Route::get('/handlebars', [TemplateController::class, 'handlebarsRenderer']);
+Route::get('/latte', [TemplateController::class, 'latteRenderer']);
 Route::get('/mustache', [TemplateController::class, 'mustacheRenderer']);
 Route::get('/plates', [TemplateController::class, 'platesRenderer']);
 Route::get('/smarty', [TemplateController::class, 'smartyRenderer']);
