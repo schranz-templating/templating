@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "18055ea92920bebfff3e4633b4d3951f",
+    "content-hash": "976bb2b0ab8397c73d7fc5d598dc10a7",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -1439,6 +1439,129 @@
             "time": "2021-11-05T16:50:12+00:00"
         },
         {
+            "name": "salesforce/handlebars-php",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/salesforce/handlebars-php.git",
+                "reference": "59fc47c7b2701659cb483d0f3461c4f712693b2b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/salesforce/handlebars-php/zipball/59fc47c7b2701659cb483d0f3461c4f712693b2b",
+                "reference": "59fc47c7b2701659cb483d0f3461c4f712693b2b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Handlebars": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "fzerorubigd",
+                    "email": "fzerorubigd@gmail.com"
+                },
+                {
+                    "name": "Behrooz Shabani (everplays)",
+                    "email": "everplays@gmail.com"
+                },
+                {
+                    "name": "Mardix",
+                    "homepage": "https://github.com/mardix"
+                }
+            ],
+            "description": "Handlebars processor for php",
+            "homepage": "http://www.github.com/salesforce/handlebars-php",
+            "keywords": [
+                "handlebars",
+                "mustache",
+                "templating"
+            ],
+            "support": {
+                "issues": "https://github.com/salesforce/handlebars-php/issues",
+                "source": "https://github.com/salesforce/handlebars-php/tree/2.3.0"
+            },
+            "time": "2020-06-08T17:23:52+00:00"
+        },
+        {
+            "name": "schranz-templating/handlebars-bridge",
+            "version": "0.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schranz-templating/handlebars-bridge.git",
+                "reference": "f3419ead7b9711cd0ed205c873ccb3fea859f080"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schranz-templating/handlebars-bridge/zipball/f3419ead7b9711cd0ed205c873ccb3fea859f080",
+                "reference": "f3419ead7b9711cd0ed205c873ccb3fea859f080",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^8.0",
+                "salesforce/handlebars-php": "^2.3",
+                "schranz-templating/template-renderer": "^0.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Bridge\\Handlebars\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A bridge for the template renderer for handlebars template engine.",
+            "support": {
+                "issues": "https://github.com/schranz-templating/handlebars-bridge/issues",
+                "source": "https://github.com/schranz-templating/handlebars-bridge/tree/0.1"
+            },
+            "time": "2022-06-25T16:30:49+00:00"
+        },
+        {
+            "name": "schranz-templating/laminas-handlebars-integration",
+            "version": "0.1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "./../../../src/Integration/Laminas/Handlebars",
+                "reference": "6f54f01a2613f6799c2096e484899be714658f03"
+            },
+            "require": {
+                "laminas/laminas-modulemanager": "^2.0",
+                "laminas/laminas-servicemanager": "^2.0 || ^3.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/handlebars-bridge": "^0.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Integration\\Laminas\\Handlebars\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A integration of template renderer into laminas via handlebars template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "schranz-templating/laminas-plates-integration",
             "version": "0.1.x-dev",
             "dist": {
@@ -1603,6 +1726,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "schranz-templating/laminas-handlebars-integration": 20,
         "schranz-templating/laminas-plates-integration": 20
     },
     "prefer-stable": false,

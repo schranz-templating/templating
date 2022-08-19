@@ -73,6 +73,7 @@ Discussion in the PHP-FIG:
       - [ ] ...
    - [ ] Laminas
       - [ ] LaminasView
+      - [x] [Handlebars](src/Integration/Laminas/Handlebars/README.md) ([`schranz-templating/laminas-handlebars-integration`](https://github.com/schranz-templating/laminas-handlebars-integration))
       - [x] [Plates](src/Integration/Laminas/Plates/README.md) ([`schranz-templating/laminas-plates-integration`](https://github.com/schranz-templating/laminas-plates-integration))
       - [ ] ...
    - [ ] Mezzio
@@ -166,6 +167,7 @@ To use the integration in the Laravel the following packages are currently provi
 which will register the bridge service and integration of the selected template engine:
 
 ```bash
+composer require schranz-templating/laminas-handlebars-integration
 composer require schranz-templating/laminas-plates-integration
 ```
 

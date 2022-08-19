@@ -9,5 +9,6 @@ return [
     'Laminas\Router',
     'Laminas\Validator',
     'Application',
+    'Schranz\Templating\Integration\Laminas\Handlebars',
     'Schranz\Templating\Integration\Laminas\Plates',
 ];

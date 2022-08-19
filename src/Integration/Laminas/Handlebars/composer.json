@@ -1,0 +1,18 @@
+{
+    "name": "schranz-templating/laminas-handlebars-integration",
+    "description": "A integration of template renderer into laminas via handlebars template engine.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\Integration\\Laminas\\Handlebars\\": ""
+        }
+    },
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "laminas/laminas-modulemanager": "^2.0",
+        "laminas/laminas-servicemanager": "^2.0 || ^3.0",
+        "schranz-templating/handlebars-bridge": "^0.1"
+    },
+    "minimum-stability": "dev"
+}

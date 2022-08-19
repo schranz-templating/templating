@@ -12,6 +12,13 @@
     "repositories": [
         {
             "type": "path",
+            "url": "./../../../src/Integration/Laminas/Handlebars",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "./../../../src/Integration/Laminas/Plates",
             "options": {
                 "symlink": true
@@ -24,6 +31,7 @@
         "laminas/laminas-development-mode": "^3.2",
         "laminas/laminas-skeleton-installer": "^0.6",
         "laminas/laminas-mvc": "^3.1.1",
+        "schranz-templating/laminas-handlebars-integration": "@dev",
         "schranz-templating/laminas-plates-integration": "@dev"
     },
     "autoload": {

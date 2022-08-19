@@ -76,6 +76,11 @@
             "target": "git@github.com:schranz-templating/laminas-plates-integration.git"
         },
         {
+            "name": "LaminasHandlebarsIntegration",
+            "directory": "src/Integration/Laminas/Handlebars",
+            "target": "git@github.com:schranz-templating/laminas-handlebars-integration.git"
+        },
+        {
             "name": "LaravelBladeIntegration",
             "directory": "src/Integration/Laravel/Blade",
             "target": "git@github.com:schranz-templating/laravel-blade-integration.git"

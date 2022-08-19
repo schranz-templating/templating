@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Application;
 
 use Laminas\Router\Http\Literal;
-use Laminas\ServiceManager\Factory\InvokableFactory;
+use Schranz\Templating\Bridge\Handlebars\HandlebarsRenderer;
 use Schranz\Templating\Bridge\Plates\PlatesRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
@@ -32,14 +32,24 @@ return [
                     ],
                 ],
             ],
+            'plates' => [
+                'type'    => Literal::class,
+                'options' => [
+                    'route'    => '/handlebars',
+                    'defaults' => [
+                        'controller' => Controller\TemplateController::class,
+                        'action'     => 'handlebarsRenderer',
+                    ],
+                ],
+            ],
         ],
     ],
     'controllers' => [
         'factories' => [
-            Controller\IndexController::class => InvokableFactory::class,
             Controller\TemplateController::class  => function($container) {
                 return new Controller\TemplateController(
                     $container->get(TemplateRendererInterface::class),
+                    $container->get(HandlebarsRenderer::class),
                     $container->get(PlatesRenderer::class),
                 );
             },
