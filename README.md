@@ -7,7 +7,7 @@
 <h1 align="center">Schranz Templating</h1>
 
 <div align="center">
- <strong>A template abstraction prototype for PHP template engines.</strong>
+   <strong>A template abstraction prototype for PHP template engines.</strong>
 </div>
 
 <br/>
@@ -74,6 +74,7 @@ Discussion in the PHP-FIG:
    - [ ] Laminas
       - [ ] LaminasView
       - [x] [Handlebars](src/Integration/Laminas/Handlebars/README.md) ([`schranz-templating/laminas-handlebars-integration`](https://github.com/schranz-templating/laminas-handlebars-integration))
+      - [x] [Mustache](src/Integration/Laminas/Mustache/README.md) ([`schranz-templating/laminas-mustache-integration`](https://github.com/schranz-templating/laminas-mustache-integration))
       - [x] [Plates](src/Integration/Laminas/Plates/README.md) ([`schranz-templating/laminas-plates-integration`](https://github.com/schranz-templating/laminas-plates-integration))
       - [ ] ...
    - [ ] Mezzio
@@ -168,6 +169,7 @@ which will register the bridge service and integration of the selected template 
 
 ```bash
 composer require schranz-templating/laminas-handlebars-integration
+composer require schranz-templating/laminas-mustache-integration
 composer require schranz-templating/laminas-plates-integration
 ```
 

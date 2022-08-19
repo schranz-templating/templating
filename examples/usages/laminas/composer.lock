@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "976bb2b0ab8397c73d7fc5d598dc10a7",
+    "content-hash": "a5ba7291f138b2b895f7bfa5cad60ce4",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -1335,6 +1335,56 @@
             "time": "2021-07-28T23:59:37+00:00"
         },
         {
+            "name": "mustache/mustache",
+            "version": "v2.14.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bobthecow/mustache.php.git",
+                "reference": "579ffa5c96e1d292c060b3dd62811ff01ad8c24e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/579ffa5c96e1d292c060b3dd62811ff01ad8c24e",
+                "reference": "579ffa5c96e1d292c060b3dd62811ff01ad8c24e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~1.11",
+                "phpunit/phpunit": "~3.7|~4.0|~5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mustache": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Hileman",
+                    "email": "justin@justinhileman.info",
+                    "homepage": "http://justinhileman.com"
+                }
+            ],
+            "description": "A Mustache implementation in PHP.",
+            "homepage": "https://github.com/bobthecow/mustache.php",
+            "keywords": [
+                "mustache",
+                "templating"
+            ],
+            "support": {
+                "issues": "https://github.com/bobthecow/mustache.php/issues",
+                "source": "https://github.com/bobthecow/mustache.php/tree/v2.14.1"
+            },
+            "time": "2022-01-21T06:08:36+00:00"
+        },
+        {
             "name": "nikic/php-parser",
             "version": "4.x-dev",
             "source": {
@@ -1562,6 +1612,35 @@
             }
         },
         {
+            "name": "schranz-templating/laminas-mustache-integration",
+            "version": "0.1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "./../../../src/Integration/Laminas/Mustache",
+                "reference": "e6f719e231ef471dcd0b9b0f29465a587720961c"
+            },
+            "require": {
+                "laminas/laminas-modulemanager": "^2.0",
+                "laminas/laminas-servicemanager": "^2.0 || ^3.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/mustache-bridge": "^0.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Integration\\Laminas\\Mustache\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A integration of template renderer into laminas via mustache template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "schranz-templating/laminas-plates-integration",
             "version": "0.1.x-dev",
             "dist": {
@@ -1589,6 +1668,43 @@
                 "symlink": true,
                 "relative": true
             }
+        },
+        {
+            "name": "schranz-templating/mustache-bridge",
+            "version": "0.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schranz-templating/mustache-bridge.git",
+                "reference": "3e0726ef5daf9bd128bc4695dc7fd60d783462a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schranz-templating/mustache-bridge/zipball/3e0726ef5daf9bd128bc4695dc7fd60d783462a8",
+                "reference": "3e0726ef5daf9bd128bc4695dc7fd60d783462a8",
+                "shasum": ""
+            },
+            "require": {
+                "mustache/mustache": "^2.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/template-renderer": "^0.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Bridge\\Mustache\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A bridge for the template renderer for mustache template engine.",
+            "support": {
+                "issues": "https://github.com/schranz-templating/mustache-bridge/issues",
+                "source": "https://github.com/schranz-templating/mustache-bridge/tree/0.1"
+            },
+            "time": "2022-06-25T16:11:44+00:00"
         },
         {
             "name": "schranz-templating/plates-bridge",
@@ -1727,6 +1843,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "schranz-templating/laminas-handlebars-integration": 20,
+        "schranz-templating/laminas-mustache-integration": 20,
         "schranz-templating/laminas-plates-integration": 20
     },
     "prefer-stable": false,

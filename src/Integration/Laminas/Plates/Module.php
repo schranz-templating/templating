@@ -21,7 +21,7 @@ class Module implements ConfigProviderInterface
     {
         return [
             'factories' => [
-                'schranz_templating.renderer.plates' => function ($container) {
+                'schranz_templating.renderer.plates' => function (ServiceManager $container) {
                     return new PlatesRenderer($container->get('plates'));
                 },
                 'plates' => function (ServiceManager $container) {

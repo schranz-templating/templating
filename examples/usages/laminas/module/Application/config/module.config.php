@@ -6,6 +6,7 @@ namespace Application;
 
 use Laminas\Router\Http\Literal;
 use Schranz\Templating\Bridge\Handlebars\HandlebarsRenderer;
+use Schranz\Templating\Bridge\Mustache\MustacheRenderer;
 use Schranz\Templating\Bridge\Plates\PlatesRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
@@ -22,6 +23,26 @@ return [
                     ],
                 ],
             ],
+            'handlebars' => [
+                'type'    => Literal::class,
+                'options' => [
+                    'route'    => '/handlebars',
+                    'defaults' => [
+                        'controller' => Controller\TemplateController::class,
+                        'action'     => 'handlebarsRenderer',
+                    ],
+                ],
+            ],
+            'mustache' => [
+                'type'    => Literal::class,
+                'options' => [
+                    'route'    => '/mustache',
+                    'defaults' => [
+                        'controller' => Controller\TemplateController::class,
+                        'action'     => 'mustacheRenderer',
+                    ],
+                ],
+            ],
             'plates' => [
                 'type'    => Literal::class,
                 'options' => [
@@ -29,16 +50,6 @@ return [
                     'defaults' => [
                         'controller' => Controller\TemplateController::class,
                         'action'     => 'platesRenderer',
-                    ],
-                ],
-            ],
-            'plates' => [
-                'type'    => Literal::class,
-                'options' => [
-                    'route'    => '/handlebars',
-                    'defaults' => [
-                        'controller' => Controller\TemplateController::class,
-                        'action'     => 'handlebarsRenderer',
                     ],
                 ],
             ],
@@ -50,6 +61,7 @@ return [
                 return new Controller\TemplateController(
                     $container->get(TemplateRendererInterface::class),
                     $container->get(HandlebarsRenderer::class),
+                    $container->get(MustacheRenderer::class),
                     $container->get(PlatesRenderer::class),
                 );
             },
