@@ -71,11 +71,6 @@
             "target": "git@github.com:schranz-templating/twig-bridge.git"
         },
         {
-            "name": "LaminasPlatesIntegration",
-            "directory": "src/Integration/Laminas/Plates",
-            "target": "git@github.com:schranz-templating/laminas-plates-integration.git"
-        },
-        {
             "name": "LaminasHandlebarsIntegration",
             "directory": "src/Integration/Laminas/Handlebars",
             "target": "git@github.com:schranz-templating/laminas-handlebars-integration.git"
@@ -84,6 +79,16 @@
             "name": "LaminasMustacheIntegration",
             "directory": "src/Integration/Laminas/Mustache",
             "target": "git@github.com:schranz-templating/laminas-mustache-integration.git"
+        },
+        {
+            "name": "LaminasPlatesIntegration",
+            "directory": "src/Integration/Laminas/Plates",
+            "target": "git@github.com:schranz-templating/laminas-plates-integration.git"
+        },
+        {
+            "name": "LaminasSmartyIntegration",
+            "directory": "src/Integration/Laminas/Smarty",
+            "target": "git@github.com:schranz-templating/laminas-smarty-integration.git"
         },
         {
             "name": "LaravelBladeIntegration",

@@ -3,7 +3,7 @@
 namespace Schranz\Templating\Integration\Laravel\Smarty;
 
 use Illuminate\Support\ServiceProvider;
-use \Schranz\Templating\Bridge\Smarty\SmartyRenderer;
+use Schranz\Templating\Bridge\Smarty\SmartyRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class SchranzTemplatingSmartyProvider extends ServiceProvider

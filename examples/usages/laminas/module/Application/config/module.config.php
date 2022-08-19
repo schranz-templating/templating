@@ -8,6 +8,7 @@ use Laminas\Router\Http\Literal;
 use Schranz\Templating\Bridge\Handlebars\HandlebarsRenderer;
 use Schranz\Templating\Bridge\Mustache\MustacheRenderer;
 use Schranz\Templating\Bridge\Plates\PlatesRenderer;
+use Schranz\Templating\Bridge\Smarty\SmartyRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 return [
@@ -53,6 +54,16 @@ return [
                     ],
                 ],
             ],
+            'smarty' => [
+                'type'    => Literal::class,
+                'options' => [
+                    'route'    => '/smarty',
+                    'defaults' => [
+                        'controller' => Controller\TemplateController::class,
+                        'action'     => 'smartyRenderer',
+                    ],
+                ],
+            ],
         ],
     ],
     'controllers' => [
@@ -63,6 +74,7 @@ return [
                     $container->get(HandlebarsRenderer::class),
                     $container->get(MustacheRenderer::class),
                     $container->get(PlatesRenderer::class),
+                    $container->get(SmartyRenderer::class),
                 );
             },
         ],

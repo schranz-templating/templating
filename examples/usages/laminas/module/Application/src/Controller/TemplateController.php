@@ -7,6 +7,7 @@ use Laminas\Mvc\Controller\AbstractActionController;
 use Schranz\Templating\Bridge\Handlebars\HandlebarsRenderer;
 use Schranz\Templating\Bridge\Mustache\MustacheRenderer;
 use Schranz\Templating\Bridge\Plates\PlatesRenderer;
+use Schranz\Templating\Bridge\Smarty\SmartyRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class TemplateController extends AbstractActionController
@@ -16,6 +17,7 @@ class TemplateController extends AbstractActionController
         private HandlebarsRenderer $handlebarsRenderer,
         private MustacheRenderer $mustacheRenderer,
         private PlatesRenderer $platesRenderer,
+        private SmartyRenderer $smartyRenderer,
     ) {
     }
 
@@ -23,7 +25,7 @@ class TemplateController extends AbstractActionController
     {
         $response = new Response();
         $response->setContent(
-            '<h1>Goto /handlebars, /mustache, /plates, more ...</h1>' .
+            '<h1>Goto /handlebars, /mustache, /plates, /smarty, more ...</h1>' .
             '<p>Default Renderer is: ' . get_class($this->defaultRenderer) . '</p>'
         );
 
@@ -63,6 +65,19 @@ class TemplateController extends AbstractActionController
             'base.plates',
             [
                 'title' => 'Render using: ' . get_class($this->platesRenderer),
+            ]
+        ));
+
+        return $response;
+    }
+
+    public function smartyRendererAction(): Response
+    {
+        $response = new Response();
+        $response->setContent($this->smartyRenderer->render(
+            'base.tpl',
+            [
+                'title' => 'Render using: ' . get_class($this->smartyRenderer),
             ]
         ));
 

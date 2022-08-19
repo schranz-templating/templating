@@ -41,7 +41,7 @@ class Module implements ConfigProviderInterface
             'aliases' => [
                 TemplateRendererInterface::class => 'schranz_templating.renderer.mustache',
                 MustacheRenderer::class => 'schranz_templating.renderer.mustache',
-            ]
+            ],
         ];
     }
 }

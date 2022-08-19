@@ -48,7 +48,7 @@ class Module implements ConfigProviderInterface
             'aliases' => [
                 TemplateRendererInterface::class => 'schranz_templating.renderer.plates',
                 PlatesRenderer::class => 'schranz_templating.renderer.plates',
-            ]
+            ],
         ];
     }
 }

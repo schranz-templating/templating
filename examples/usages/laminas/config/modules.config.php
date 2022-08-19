@@ -12,4 +12,5 @@ return [
     'Schranz\Templating\Integration\Laminas\Handlebars',
     'Schranz\Templating\Integration\Laminas\Mustache',
     'Schranz\Templating\Integration\Laminas\Plates',
+    'Schranz\Templating\Integration\Laminas\Smarty',
 ];

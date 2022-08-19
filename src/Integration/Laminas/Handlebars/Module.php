@@ -48,7 +48,7 @@ class Module implements ConfigProviderInterface
             'aliases' => [
                 TemplateRendererInterface::class => 'schranz_templating.renderer.handlebars',
                 HandlebarsRenderer::class => 'schranz_templating.renderer.handlebars',
-            ]
+            ],
         ];
     }
 }
