@@ -6,6 +6,7 @@ namespace Application;
 
 use Laminas\Router\Http\Literal;
 use Schranz\Templating\Bridge\Handlebars\HandlebarsRenderer;
+use Schranz\Templating\Bridge\Latte\LatteRenderer;
 use Schranz\Templating\Bridge\Mustache\MustacheRenderer;
 use Schranz\Templating\Bridge\Plates\PlatesRenderer;
 use Schranz\Templating\Bridge\Smarty\SmartyRenderer;
@@ -44,6 +45,16 @@ return [
                     ],
                 ],
             ],
+            'latte' => [
+                'type'    => Literal::class,
+                'options' => [
+                    'route'    => '/latte',
+                    'defaults' => [
+                        'controller' => Controller\TemplateController::class,
+                        'action'     => 'latteRenderer',
+                    ],
+                ],
+            ],
             'plates' => [
                 'type'    => Literal::class,
                 'options' => [
@@ -72,6 +83,7 @@ return [
                 return new Controller\TemplateController(
                     $container->get(TemplateRendererInterface::class),
                     $container->get(HandlebarsRenderer::class),
+                    $container->get(LatteRenderer::class),
                     $container->get(MustacheRenderer::class),
                     $container->get(PlatesRenderer::class),
                     $container->get(SmartyRenderer::class),

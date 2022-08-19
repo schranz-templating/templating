@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cd915768bbfa38f2c36d487023567157",
+    "content-hash": "bb5557ba606e42816dfc9b1d872ed8ca",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -1270,6 +1270,91 @@
             "time": "2022-08-17T21:13:14+00:00"
         },
         {
+            "name": "latte/latte",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/latte.git",
+                "reference": "f446bf515edd7d4f3e1cec188e529d9253b7f153"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/latte/zipball/f446bf515edd7d4f3e1cec188e529d9253b7f153",
+                "reference": "f446bf515edd7d4f3e1cec188e529d9253b7f153",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-tokenizer": "*",
+                "php": ">=8.0 <8.2"
+            },
+            "conflict": {
+                "nette/application": "<2.4.1"
+            },
+            "require-dev": {
+                "nette/php-generator": "^3.3.4",
+                "nette/tester": "^2.0",
+                "nette/utils": "^3.0",
+                "phpstan/phpstan": "^1",
+                "tracy/tracy": "^2.3"
+            },
+            "suggest": {
+                "ext-fileinfo": "to use filter |datastream",
+                "ext-iconv": "to use filters |reverse, |substring",
+                "ext-mbstring": "to use filters like lower, upper, capitalize, ...",
+                "nette/php-generator": "to use tag {templatePrint}",
+                "nette/utils": "to use filter |webalize"
+            },
+            "default-branch": true,
+            "bin": [
+                "bin/latte-lint"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0-only",
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "☕ Latte: the intuitive and fast template engine for those who want the most secure PHP sites. Introduces context-sensitive escaping.",
+            "homepage": "https://latte.nette.org",
+            "keywords": [
+                "context-sensitive",
+                "engine",
+                "escaping",
+                "html",
+                "nette",
+                "security",
+                "template",
+                "twig"
+            ],
+            "support": {
+                "issues": "https://github.com/nette/latte/issues",
+                "source": "https://github.com/nette/latte/tree/master"
+            },
+            "time": "2022-07-09T20:07:17+00:00"
+        },
+        {
             "name": "league/plates",
             "version": "v3.x-dev",
             "source": {
@@ -1612,6 +1697,35 @@
             }
         },
         {
+            "name": "schranz-templating/laminas-latte-integration",
+            "version": "0.1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "./../../../src/Integration/Laminas/Latte",
+                "reference": "4eaf0a5094a3f841381b98cfc190de7cfd9bb7b2"
+            },
+            "require": {
+                "laminas/laminas-modulemanager": "^2.0",
+                "laminas/laminas-servicemanager": "^2.0 || ^3.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/latte-bridge": "^0.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Integration\\Laminas\\Latte\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A integration of template renderer into laminas via latte template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "schranz-templating/laminas-mustache-integration",
             "version": "0.1.x-dev",
             "dist": {
@@ -1697,6 +1811,43 @@
                 "symlink": true,
                 "relative": true
             }
+        },
+        {
+            "name": "schranz-templating/latte-bridge",
+            "version": "0.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schranz-templating/latte-bridge.git",
+                "reference": "18633efa193b2100a760ce3a6e00b5cd153804a2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schranz-templating/latte-bridge/zipball/18633efa193b2100a760ce3a6e00b5cd153804a2",
+                "reference": "18633efa193b2100a760ce3a6e00b5cd153804a2",
+                "shasum": ""
+            },
+            "require": {
+                "latte/latte": "^2.0 || ^3.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/template-renderer": "^0.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Bridge\\Latte\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A bridge for the template renderer for latte template engine.",
+            "support": {
+                "issues": "https://github.com/schranz-templating/latte-bridge/issues",
+                "source": "https://github.com/schranz-templating/latte-bridge/tree/0.1"
+            },
+            "time": "2022-06-25T11:46:40+00:00"
         },
         {
             "name": "schranz-templating/mustache-bridge",
@@ -1975,6 +2126,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "schranz-templating/laminas-handlebars-integration": 20,
+        "schranz-templating/laminas-latte-integration": 20,
         "schranz-templating/laminas-mustache-integration": 20,
         "schranz-templating/laminas-plates-integration": 20,
         "schranz-templating/laminas-smarty-integration": 20

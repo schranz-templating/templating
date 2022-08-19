@@ -19,6 +19,13 @@
         },
         {
             "type": "path",
+            "url": "./../../../src/Integration/Laminas/Latte",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "./../../../src/Integration/Laminas/Mustache",
             "options": {
                 "symlink": true
@@ -46,6 +53,7 @@
         "laminas/laminas-skeleton-installer": "^0.6",
         "laminas/laminas-mvc": "^3.1.1",
         "schranz-templating/laminas-handlebars-integration": "@dev",
+        "schranz-templating/laminas-latte-integration": "@dev",
         "schranz-templating/laminas-mustache-integration": "@dev",
         "schranz-templating/laminas-plates-integration": "@dev",
         "schranz-templating/laminas-smarty-integration": "@dev"

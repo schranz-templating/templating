@@ -10,6 +10,7 @@ return [
     'Laminas\Validator',
     'Application',
     'Schranz\Templating\Integration\Laminas\Handlebars',
+    'Schranz\Templating\Integration\Laminas\Latte',
     'Schranz\Templating\Integration\Laminas\Mustache',
     'Schranz\Templating\Integration\Laminas\Plates',
     'Schranz\Templating\Integration\Laminas\Smarty',

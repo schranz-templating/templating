@@ -5,6 +5,7 @@ namespace Application\Controller;
 use Laminas\Http\Response;
 use Laminas\Mvc\Controller\AbstractActionController;
 use Schranz\Templating\Bridge\Handlebars\HandlebarsRenderer;
+use Schranz\Templating\Bridge\Latte\LatteRenderer;
 use Schranz\Templating\Bridge\Mustache\MustacheRenderer;
 use Schranz\Templating\Bridge\Plates\PlatesRenderer;
 use Schranz\Templating\Bridge\Smarty\SmartyRenderer;
@@ -15,6 +16,7 @@ class TemplateController extends AbstractActionController
     public function __construct(
         private TemplateRendererInterface $defaultRenderer,
         private HandlebarsRenderer $handlebarsRenderer,
+        private LatteRenderer $latteRenderer,
         private MustacheRenderer $mustacheRenderer,
         private PlatesRenderer $platesRenderer,
         private SmartyRenderer $smartyRenderer,
@@ -25,7 +27,7 @@ class TemplateController extends AbstractActionController
     {
         $response = new Response();
         $response->setContent(
-            '<h1>Goto /handlebars, /mustache, /plates, /smarty, more ...</h1>' .
+            '<h1>Goto /handlebars, /latte, /mustache, /plates, /smarty, more ...</h1>' .
             '<p>Default Renderer is: ' . get_class($this->defaultRenderer) . '</p>'
         );
 
@@ -39,6 +41,19 @@ class TemplateController extends AbstractActionController
             'base',
             [
                 'title' => 'Render using: ' . get_class($this->handlebarsRenderer),
+            ]
+        ));
+
+        return $response;
+    }
+
+    public function latteRendererAction(): Response
+    {
+        $response = new Response();
+        $response->setContent($this->latteRenderer->render(
+            'base.latte',
+            [
+                'title' => 'Render using: ' . get_class($this->latteRenderer),
             ]
         ));
 
