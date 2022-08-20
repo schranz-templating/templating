@@ -9,6 +9,7 @@ use Schranz\Templating\Bridge\Latte\LatteRenderer;
 use Schranz\Templating\Bridge\Mustache\MustacheRenderer;
 use Schranz\Templating\Bridge\Plates\PlatesRenderer;
 use Schranz\Templating\Bridge\Smarty\SmartyRenderer;
+use Schranz\Templating\Bridge\Twig\TwigRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class TemplateController extends AbstractActionController
@@ -20,6 +21,7 @@ class TemplateController extends AbstractActionController
         private MustacheRenderer $mustacheRenderer,
         private PlatesRenderer $platesRenderer,
         private SmartyRenderer $smartyRenderer,
+        private TwigRenderer $twigRenderer,
     ) {
     }
 
@@ -27,7 +29,7 @@ class TemplateController extends AbstractActionController
     {
         $response = new Response();
         $response->setContent(
-            '<h1>Goto /handlebars, /latte, /mustache, /plates, /smarty, more ...</h1>' .
+            '<h1>Goto /handlebars, /latte, /mustache, /plates, /smarty, /twig, more ...</h1>' .
             '<p>Default Renderer is: ' . get_class($this->defaultRenderer) . '</p>'
         );
 
@@ -93,6 +95,19 @@ class TemplateController extends AbstractActionController
             'base.tpl',
             [
                 'title' => 'Render using: ' . get_class($this->smartyRenderer),
+            ]
+        ));
+
+        return $response;
+    }
+
+    public function twigRendererAction(): Response
+    {
+        $response = new Response();
+        $response->setContent($this->twigRenderer->render(
+            'base.html.twig',
+            [
+                'title' => 'Render using: ' . get_class($this->twigRenderer),
             ]
         ));
 

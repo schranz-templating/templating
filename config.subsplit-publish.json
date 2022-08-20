@@ -96,6 +96,11 @@
             "target": "git@github.com:schranz-templating/laminas-smarty-integration.git"
         },
         {
+            "name": "LaminasTwigIntegration",
+            "directory": "src/Integration/Laminas/Twig",
+            "target": "git@github.com:schranz-templating/laminas-twig-integration.git"
+        },
+        {
             "name": "LaravelBladeIntegration",
             "directory": "src/Integration/Laravel/Blade",
             "target": "git@github.com:schranz-templating/laravel-blade-integration.git"

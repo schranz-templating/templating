@@ -13,5 +13,6 @@ return [
     'Schranz\Templating\Integration\Laminas\Mustache',
     'Schranz\Templating\Integration\Laminas\Plates',
     'Schranz\Templating\Integration\Laminas\Smarty',
+    'Schranz\Templating\Integration\Laminas\Twig',
     'Application',
 ];

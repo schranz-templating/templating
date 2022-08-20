@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Schranz\Templating\Bridge\Twig\TwigRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 use Twig\Environment;
+use Twig\Extension\DebugExtension;
 use Twig\Loader\FilesystemLoader;
 
 class SchranzTemplatingTwigProvider extends ServiceProvider
@@ -42,6 +43,10 @@ class SchranzTemplatingTwigProvider extends ServiceProvider
                     'optimizations' => $optimizations,
                 ]
             );
+
+            if ($debug) {
+                $environment->addExtension(new DebugExtension());
+            }
 
             foreach ($app->tagged('twig.extension') as $latteExtension) {
                 $environment->addExtension($latteExtension);

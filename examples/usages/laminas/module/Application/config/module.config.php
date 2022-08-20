@@ -10,6 +10,7 @@ use Schranz\Templating\Bridge\Latte\LatteRenderer;
 use Schranz\Templating\Bridge\Mustache\MustacheRenderer;
 use Schranz\Templating\Bridge\Plates\PlatesRenderer;
 use Schranz\Templating\Bridge\Smarty\SmartyRenderer;
+use Schranz\Templating\Bridge\Twig\TwigRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 return [
@@ -75,6 +76,16 @@ return [
                     ],
                 ],
             ],
+            'twig' => [
+                'type'    => Literal::class,
+                'options' => [
+                    'route'    => '/twig',
+                    'defaults' => [
+                        'controller' => Controller\TemplateController::class,
+                        'action'     => 'twigRenderer',
+                    ],
+                ],
+            ],
         ],
     ],
     'controllers' => [
@@ -87,6 +98,7 @@ return [
                     $container->get(MustacheRenderer::class),
                     $container->get(PlatesRenderer::class),
                     $container->get(SmartyRenderer::class),
+                    $container->get(TwigRenderer::class),
                 );
             },
         ],

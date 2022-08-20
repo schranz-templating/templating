@@ -44,6 +44,13 @@
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "path",
+            "url": "./../../../src/Integration/Laminas/Twig",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "require": {
@@ -56,7 +63,8 @@
         "schranz-templating/laminas-latte-integration": "@dev",
         "schranz-templating/laminas-mustache-integration": "@dev",
         "schranz-templating/laminas-plates-integration": "@dev",
-        "schranz-templating/laminas-smarty-integration": "@dev"
+        "schranz-templating/laminas-smarty-integration": "@dev",
+        "schranz-templating/laminas-twig-integration": "@dev"
     },
     "autoload": {
         "psr-4": {

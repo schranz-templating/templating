@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb5557ba606e42816dfc9b1d872ed8ca",
+    "content-hash": "1818938117cd201b9718ddd46eca7d21",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -649,12 +649,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-mvc.git",
-                "reference": "f2febe11fbcf7dd93ccc669adbd16c31002348fe"
+                "reference": "46a3be585582788721c3533eb25226787cbd4359"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-mvc/zipball/f2febe11fbcf7dd93ccc669adbd16c31002348fe",
-                "reference": "f2febe11fbcf7dd93ccc669adbd16c31002348fe",
+                "url": "https://api.github.com/repos/laminas/laminas-mvc/zipball/46a3be585582788721c3533eb25226787cbd4359",
+                "reference": "46a3be585582788721c3533eb25226787cbd4359",
                 "shasum": ""
             },
             "require": {
@@ -723,7 +723,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-06-03T13:40:26+00:00"
+            "time": "2022-08-20T11:01:41+00:00"
         },
         {
             "name": "laminas/laminas-router",
@@ -1673,7 +1673,7 @@
             "dist": {
                 "type": "path",
                 "url": "./../../../src/Integration/Laminas/Handlebars",
-                "reference": "6f54f01a2613f6799c2096e484899be714658f03"
+                "reference": "24c27a5f3e962d8e28b0b8bbc50faa46cd324959"
             },
             "require": {
                 "laminas/laminas-modulemanager": "^2.0",
@@ -1682,6 +1682,11 @@
                 "schranz-templating/handlebars-bridge": "^0.1"
             },
             "type": "library",
+            "extra": {
+                "laminas": {
+                    "module": "Schranz\\Templating\\Integration\\Laminas\\Handlebars"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Schranz\\Templating\\Integration\\Laminas\\Handlebars\\": ""
@@ -1702,7 +1707,7 @@
             "dist": {
                 "type": "path",
                 "url": "./../../../src/Integration/Laminas/Latte",
-                "reference": "714077705a7242b818d0c0b5be89121185a40be4"
+                "reference": "5ec9228c70c88bbc88388cd1d3336aaa79c1f55c"
             },
             "require": {
                 "laminas/laminas-modulemanager": "^2.0",
@@ -1713,7 +1718,7 @@
             "type": "library",
             "extra": {
                 "laminas": {
-                    "module": "Schranz\\Templating\\Integration\\Laminas\\Latte\\Module"
+                    "module": "Schranz\\Templating\\Integration\\Laminas\\Latte"
                 }
             },
             "autoload": {
@@ -1736,7 +1741,7 @@
             "dist": {
                 "type": "path",
                 "url": "./../../../src/Integration/Laminas/Mustache",
-                "reference": "e6f719e231ef471dcd0b9b0f29465a587720961c"
+                "reference": "d2b26fab316427ec72c1408606d27fa4d5887a98"
             },
             "require": {
                 "laminas/laminas-modulemanager": "^2.0",
@@ -1745,6 +1750,11 @@
                 "schranz-templating/mustache-bridge": "^0.1"
             },
             "type": "library",
+            "extra": {
+                "laminas": {
+                    "module": "Schranz\\Templating\\Integration\\Laminas\\Mustache"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Schranz\\Templating\\Integration\\Laminas\\Mustache\\": ""
@@ -1765,7 +1775,7 @@
             "dist": {
                 "type": "path",
                 "url": "./../../../src/Integration/Laminas/Plates",
-                "reference": "635347846cbfcde3c9f4d44ec18f450d46fff411"
+                "reference": "02682f938ec074351877aa77e19852af142a7cd5"
             },
             "require": {
                 "laminas/laminas-modulemanager": "^2.0",
@@ -1774,6 +1784,11 @@
                 "schranz-templating/plates-bridge": "^0.1"
             },
             "type": "library",
+            "extra": {
+                "laminas": {
+                    "module": "Schranz\\Templating\\Integration\\Laminas\\Plates"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Schranz\\Templating\\Integration\\Laminas\\Plates\\": ""
@@ -1794,7 +1809,7 @@
             "dist": {
                 "type": "path",
                 "url": "./../../../src/Integration/Laminas/Smarty",
-                "reference": "a22cc234f8610b779b5ce53862d195ecc816ec27"
+                "reference": "2243f03416c3a75fc3f2059385d46555ad570ebc"
             },
             "require": {
                 "laminas/laminas-modulemanager": "^2.0",
@@ -1803,6 +1818,11 @@
                 "schranz-templating/smarty-bridge": "^0.1"
             },
             "type": "library",
+            "extra": {
+                "laminas": {
+                    "module": "Schranz\\Templating\\Integration\\Laminas\\Smarty"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Schranz\\Templating\\Integration\\Laminas\\Smarty\\": ""
@@ -1812,6 +1832,40 @@
                 "MIT"
             ],
             "description": "A integration of template renderer into laminas via smarty template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "schranz-templating/laminas-twig-integration",
+            "version": "0.1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "./../../../src/Integration/Laminas/Twig",
+                "reference": "c2f5bc9a881f67663afb8b9f1939763f6aa50e8f"
+            },
+            "require": {
+                "laminas/laminas-modulemanager": "^2.0",
+                "laminas/laminas-servicemanager": "^2.0 || ^3.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/twig-bridge": "^0.1"
+            },
+            "type": "library",
+            "extra": {
+                "laminas": {
+                    "module": "Schranz\\Templating\\Integration\\Laminas\\Twig"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Integration\\Laminas\\Twig\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A integration of template renderer into laminas via twig template engine.",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -2001,6 +2055,43 @@
             "time": "2022-06-25T10:01:57+00:00"
         },
         {
+            "name": "schranz-templating/twig-bridge",
+            "version": "0.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schranz-templating/twig-bridge.git",
+                "reference": "90be620799f3139798f4ff91e2db9d1daa9ff601"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schranz-templating/twig-bridge/zipball/90be620799f3139798f4ff91e2db9d1daa9ff601",
+                "reference": "90be620799f3139798f4ff91e2db9d1daa9ff601",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/template-renderer": "^0.1",
+                "twig/twig": "^1.0 || ^2.0 || ^3.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Bridge\\Twig\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A bridge for the template renderer for twig template engine.",
+            "support": {
+                "issues": "https://github.com/schranz-templating/twig-bridge/issues",
+                "source": "https://github.com/schranz-templating/twig-bridge/tree/0.1"
+            },
+            "time": "2022-06-25T11:46:40+00:00"
+        },
+        {
             "name": "smarty/smarty",
             "version": "v4.2.0",
             "source": {
@@ -2065,6 +2156,250 @@
                 "source": "https://github.com/smarty-php/smarty/tree/v4.2.0"
             },
             "time": "2022-08-01T21:57:38+00:00"
+        },
+        {
+            "name": "symfony/polyfill-ctype",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "6fd1b9a79f6e3cf65f9e679b23af304cd9e010d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/6fd1b9a79f6e3cf65f9e679b23af304cd9e010d4",
+                "reference": "6fd1b9a79f6e3cf65f9e679b23af304cd9e010d4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "provide": {
+                "ext-ctype": "*"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.26-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.26.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-05-24T11:49:31+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "9344f9cb97f3b19424af1a21a3b0e75b0a7d8d7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/9344f9cb97f3b19424af1a21a3b0e75b0a7d8d7e",
+                "reference": "9344f9cb97f3b19424af1a21a3b0e75b0a7d8d7e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "provide": {
+                "ext-mbstring": "*"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.26-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.26.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-05-24T11:49:31+00:00"
+        },
+        {
+            "name": "twig/twig",
+            "version": "3.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "40b6f59430cc17999406a5557c9e178704e92fa8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/40b6f59430cc17999406a5557c9e178704e92fa8",
+                "reference": "40b6f59430cc17999406a5557c9e178704e92fa8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/polyfill-ctype": "^1.8",
+                "symfony/polyfill-mbstring": "^1.3"
+            },
+            "require-dev": {
+                "psr/container": "^1.0",
+                "symfony/phpunit-bridge": "^4.4.9|^5.0.9|^6.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Twig\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Twig Team",
+                    "role": "Contributors"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "https://twig.symfony.com",
+            "keywords": [
+                "templating"
+            ],
+            "support": {
+                "issues": "https://github.com/twigphp/Twig/issues",
+                "source": "https://github.com/twigphp/Twig/tree/3.x"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/twig/twig",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-08-14T13:29:42+00:00"
         },
         {
             "name": "webimpress/safe-writer",
@@ -2134,7 +2469,8 @@
         "schranz-templating/laminas-latte-integration": 20,
         "schranz-templating/laminas-mustache-integration": 20,
         "schranz-templating/laminas-plates-integration": 20,
-        "schranz-templating/laminas-smarty-integration": 20
+        "schranz-templating/laminas-smarty-integration": 20,
+        "schranz-templating/laminas-twig-integration": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

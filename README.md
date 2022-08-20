@@ -78,6 +78,7 @@ Discussion in the PHP-FIG:
       - [x] [Mustache](src/Integration/Laminas/Mustache/README.md) ([`schranz-templating/laminas-mustache-integration`](https://github.com/schranz-templating/laminas-mustache-integration))
       - [x] [Plates](src/Integration/Laminas/Plates/README.md) ([`schranz-templating/laminas-plates-integration`](https://github.com/schranz-templating/laminas-plates-integration))
       - [x] [Smarty](src/Integration/Laminas/Smarty/README.md) ([`schranz-templating/laminas-smarty-integration`](https://github.com/schranz-templating/laminas-smarty-integration))
+      - [x] [Twig](src/Integration/Laminas/Twig/README.md) ([`schranz-templating/laminas-twig-integration`](https://github.com/schranz-templating/laminas-twig-integration))
       - [ ] ...
    - [ ] Mezzio
       - [ ] Mezzio
@@ -175,6 +176,7 @@ composer require schranz-templating/laminas-latte-integration
 composer require schranz-templating/laminas-mustache-integration
 composer require schranz-templating/laminas-plates-integration
 composer require schranz-templating/laminas-smarty-integration
+composer require schranz-templating/laminas-twig-integration
 ```
 
 ## Analysis
