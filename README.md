@@ -73,6 +73,7 @@ Discussion in the PHP-FIG:
       - [ ] ...
    - [ ] Laminas
       - [ ] LaminasView
+      - [x] [Blade](src/Integration/Laminas/Blade/README.md) ([`schranz-templating/laminas-blade-integration`](https://github.com/schranz-templating/laminas-blade-integration))
       - [x] [Handlebars](src/Integration/Laminas/Handlebars/README.md) ([`schranz-templating/laminas-handlebars-integration`](https://github.com/schranz-templating/laminas-handlebars-integration))
       - [x] [Latte](src/Integration/Laminas/Latte/README.md) ([`schranz-templating/laminas-latte-integration`](https://github.com/schranz-templating/laminas-latte-integration))
       - [x] [Mustache](src/Integration/Laminas/Mustache/README.md) ([`schranz-templating/laminas-mustache-integration`](https://github.com/schranz-templating/laminas-mustache-integration))
@@ -171,6 +172,7 @@ To use the integration in the Laravel the following packages are currently provi
 which will register the bridge service and integration of the selected template engine:
 
 ```bash
+composer require schranz-templating/laminas-blade-integration
 composer require schranz-templating/laminas-handlebars-integration
 composer require schranz-templating/laminas-latte-integration
 composer require schranz-templating/laminas-mustache-integration

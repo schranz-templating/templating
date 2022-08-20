@@ -8,6 +8,7 @@
 return [
     'Laminas\Router',
     'Laminas\Validator',
+    'Schranz\Templating\Integration\Laminas\Blade',
     'Schranz\Templating\Integration\Laminas\Handlebars',
     'Schranz\Templating\Integration\Laminas\Latte',
     'Schranz\Templating\Integration\Laminas\Mustache',

@@ -71,6 +71,11 @@
             "target": "git@github.com:schranz-templating/twig-bridge.git"
         },
         {
+            "name": "LaminasBladeIntegration",
+            "directory": "src/Integration/Laminas/Blade",
+            "target": "git@github.com:schranz-templating/laminas-blade-integration.git"
+        },
+        {
             "name": "LaminasHandlebarsIntegration",
             "directory": "src/Integration/Laminas/Handlebars",
             "target": "git@github.com:schranz-templating/laminas-handlebars-integration.git"

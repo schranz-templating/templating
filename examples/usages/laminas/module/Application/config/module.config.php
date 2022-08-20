@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Application;
 
 use Laminas\Router\Http\Literal;
+use Schranz\Templating\Bridge\Blade\BladeRenderer;
 use Schranz\Templating\Bridge\Handlebars\HandlebarsRenderer;
 use Schranz\Templating\Bridge\Latte\LatteRenderer;
 use Schranz\Templating\Bridge\Mustache\MustacheRenderer;
@@ -23,6 +24,16 @@ return [
                     'defaults' => [
                         'controller' => Controller\TemplateController::class,
                         'action' => 'home',
+                    ],
+                ],
+            ],
+            'blade' => [
+                'type'    => Literal::class,
+                'options' => [
+                    'route'    => '/blade',
+                    'defaults' => [
+                        'controller' => Controller\TemplateController::class,
+                        'action'     => 'bladeRenderer',
                     ],
                 ],
             ],
@@ -93,6 +104,7 @@ return [
             Controller\TemplateController::class  => function($container) {
                 return new Controller\TemplateController(
                     $container->get(TemplateRendererInterface::class),
+                    $container->get(BladeRenderer::class),
                     $container->get(HandlebarsRenderer::class),
                     $container->get(LatteRenderer::class),
                     $container->get(MustacheRenderer::class),

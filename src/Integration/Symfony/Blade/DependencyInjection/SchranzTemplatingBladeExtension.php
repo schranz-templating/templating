@@ -85,15 +85,6 @@ class SchranzTemplatingBladeExtension extends Extension
         ));
 
         $container->setDefinition(
-            'blade.engine_resolver_php_closure',
-            (new Definition(\Closure::class, [
-                new Reference('blade.filesystem'),
-            ]))
-                ->setFactory([EngineResolverFactory::class, 'createPhpEngineClosure'])
-        )
-            ->setPublic(true);
-
-        $container->setDefinition(
             'blade.engine_resolver_blade_closure',
             (new Definition(\Closure::class, [
                 new Reference('blade.filesystem'),
@@ -109,17 +100,7 @@ class SchranzTemplatingBladeExtension extends Extension
                     'blade',
                     new Reference('blade.engine_resolver_blade_closure'),
                 ])
-                ->addMethodCall('register', [
-                    'blade',
-                    new Reference('blade.engine_resolver_php_closure'),
-                ])
         );
-
-        $container->getDefinition('blade.engine_resolver')
-            ->addMethodCall('register', [
-                'blade',
-                new Reference('blade.engine_resolver_blade_closure'),
-            ]);
 
         $container->setDefinition('blade.dispatcher', new Definition(Dispatcher::class));
 
