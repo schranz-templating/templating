@@ -1702,7 +1702,7 @@
             "dist": {
                 "type": "path",
                 "url": "./../../../src/Integration/Laminas/Latte",
-                "reference": "4eaf0a5094a3f841381b98cfc190de7cfd9bb7b2"
+                "reference": "714077705a7242b818d0c0b5be89121185a40be4"
             },
             "require": {
                 "laminas/laminas-modulemanager": "^2.0",
@@ -1711,6 +1711,11 @@
                 "schranz-templating/latte-bridge": "^0.1"
             },
             "type": "library",
+            "extra": {
+                "laminas": {
+                    "module": "Schranz\\Templating\\Integration\\Laminas\\Latte\\Module"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Schranz\\Templating\\Integration\\Laminas\\Latte\\": ""

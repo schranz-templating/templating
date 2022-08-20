@@ -14,5 +14,10 @@
         "laminas/laminas-servicemanager": "^2.0 || ^3.0",
         "schranz-templating/handlebars-bridge": "^0.1"
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "laminas": {
+            "module": "Schranz\\Templating\\Integration\\Laminas\\Handlebars"
+        }
+    }
 }

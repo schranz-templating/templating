@@ -5,7 +5,6 @@ namespace Schranz\Templating\Integration\Laminas\Latte;
 use Laminas\ModuleManager\Feature\ConfigProviderInterface;
 use Laminas\ServiceManager\ServiceManager;
 use Latte\Engine;
-use Latte\Extension;
 use Latte\Loaders\FileLoader;
 use Schranz\Templating\Bridge\Latte\LatteRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
@@ -34,6 +33,10 @@ class Module implements ConfigProviderInterface
                     $engine->setLoader($container->get('latte.loader'));
 
                     foreach ($container->get('config')[self::MODULE_NAME]['extensions'] as $latteExtension) {
+                        if (is_string($latteExtension)) {
+                            $latteExtension = $container->get($latteExtension);
+                        }
+
                         $engine->addExtension($container->get($latteExtension));
                     }
 
