@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32ca7180204126864511a6ef79463471",
+    "content-hash": "aab4edf660a916c27a13c3a9cc1570d9",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -616,12 +616,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "3ed0ad7991cfc77cbfaba2aa4acd64e711388f40"
+                "reference": "21ffaa1e5c2b548f2bf2be553d45233e4711f00b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/3ed0ad7991cfc77cbfaba2aa4acd64e711388f40",
-                "reference": "3ed0ad7991cfc77cbfaba2aa4acd64e711388f40",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/21ffaa1e5c2b548f2bf2be553d45233e4711f00b",
+                "reference": "21ffaa1e5c2b548f2bf2be553d45233e4711f00b",
                 "shasum": ""
             },
             "require": {
@@ -677,7 +677,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-08-18T13:50:01+00:00"
+            "time": "2022-08-20T17:04:54+00:00"
         },
         {
             "name": "illuminate/view",
@@ -2606,6 +2606,40 @@
             }
         },
         {
+            "name": "schranz-templating/laminas-laminas-view-integration",
+            "version": "0.1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "./../../../src/Integration/Laminas/LaminasView",
+                "reference": "de6767e83d74ce64361492c9310c6b229c4de9f0"
+            },
+            "require": {
+                "laminas/laminas-modulemanager": "^2.0",
+                "laminas/laminas-servicemanager": "^2.0 || ^3.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/laminas-view-bridge": "^0.1"
+            },
+            "type": "library",
+            "extra": {
+                "laminas": {
+                    "module": "Schranz\\Templating\\Integration\\Laminas\\LaminasView"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Integration\\Laminas\\LaminasView\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A integration of template renderer into laminas via laminas-view template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "schranz-templating/laminas-latte-integration",
             "version": "0.1.x-dev",
             "dist": {
@@ -2774,6 +2808,43 @@
                 "symlink": true,
                 "relative": true
             }
+        },
+        {
+            "name": "schranz-templating/laminas-view-bridge",
+            "version": "0.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schranz-templating/laminas-view-bridge.git",
+                "reference": "e68c1890e2ae94c89c0fe7bfb5509c65d024f59d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schranz-templating/laminas-view-bridge/zipball/e68c1890e2ae94c89c0fe7bfb5509c65d024f59d",
+                "reference": "e68c1890e2ae94c89c0fe7bfb5509c65d024f59d",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-view": "^2.0 || ^3.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/template-renderer": "^0.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Bridge\\LaminasView\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A bridge for the template renderer for laminas view template engines.",
+            "support": {
+                "issues": "https://github.com/schranz-templating/laminas-view-bridge/issues",
+                "source": "https://github.com/schranz-templating/laminas-view-bridge/tree/0.1"
+            },
+            "time": "2022-06-25T17:20:38+00:00"
         },
         {
             "name": "schranz-templating/latte-bridge",
@@ -3771,6 +3842,7 @@
     "stability-flags": {
         "schranz-templating/laminas-blade-integration": 20,
         "schranz-templating/laminas-handlebars-integration": 20,
+        "schranz-templating/laminas-laminas-view-integration": 20,
         "schranz-templating/laminas-latte-integration": 20,
         "schranz-templating/laminas-mustache-integration": 20,
         "schranz-templating/laminas-plates-integration": 20,

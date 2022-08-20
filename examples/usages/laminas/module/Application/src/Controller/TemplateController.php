@@ -6,6 +6,7 @@ use Laminas\Http\Response;
 use Laminas\Mvc\Controller\AbstractActionController;
 use Schranz\Templating\Bridge\Blade\BladeRenderer;
 use Schranz\Templating\Bridge\Handlebars\HandlebarsRenderer;
+use Schranz\Templating\Bridge\LaminasView\LaminasViewRenderer;
 use Schranz\Templating\Bridge\Latte\LatteRenderer;
 use Schranz\Templating\Bridge\Mustache\MustacheRenderer;
 use Schranz\Templating\Bridge\Plates\PlatesRenderer;
@@ -19,6 +20,7 @@ class TemplateController extends AbstractActionController
         private TemplateRendererInterface $defaultRenderer,
         private BladeRenderer $bladeRenderer,
         private HandlebarsRenderer $handlebarsRenderer,
+        private LaminasViewRenderer $laminasViewRenderer,
         private LatteRenderer $latteRenderer,
         private MustacheRenderer $mustacheRenderer,
         private PlatesRenderer $platesRenderer,
@@ -31,7 +33,7 @@ class TemplateController extends AbstractActionController
     {
         $response = new Response();
         $response->setContent(
-            '<h1>Goto /blade, /handlebars, /latte, /mustache, /plates, /smarty, /twig</h1>' .
+            '<h1>Goto /blade, /handlebars, /laminas-view, /latte, /mustache, /plates, /smarty, /twig</h1>' .
             '<p>Default Renderer is: ' . get_class($this->defaultRenderer) . '</p>'
         );
 
@@ -58,6 +60,19 @@ class TemplateController extends AbstractActionController
             'base',
             [
                 'title' => 'Render using: ' . get_class($this->handlebarsRenderer),
+            ]
+        ));
+
+        return $response;
+    }
+
+    public function laminasViewRendererAction(): Response
+    {
+        $response = new Response();
+        $response->setContent($this->laminasViewRenderer->render(
+            'base',
+            [
+                'title' => 'Render using: ' . get_class($this->laminasViewRenderer),
             ]
         ));
 

@@ -26,6 +26,13 @@
         },
         {
             "type": "path",
+            "url": "./../../../src/Integration/Laminas/LaminasView",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "./../../../src/Integration/Laminas/Latte",
             "options": {
                 "symlink": true
@@ -68,6 +75,7 @@
         "laminas/laminas-mvc": "^3.1.1",
         "schranz-templating/laminas-blade-integration": "@dev",
         "schranz-templating/laminas-handlebars-integration": "@dev",
+        "schranz-templating/laminas-laminas-view-integration": "@dev",
         "schranz-templating/laminas-latte-integration": "@dev",
         "schranz-templating/laminas-mustache-integration": "@dev",
         "schranz-templating/laminas-plates-integration": "@dev",

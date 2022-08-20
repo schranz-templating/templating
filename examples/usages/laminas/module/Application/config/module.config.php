@@ -7,6 +7,7 @@ namespace Application;
 use Laminas\Router\Http\Literal;
 use Schranz\Templating\Bridge\Blade\BladeRenderer;
 use Schranz\Templating\Bridge\Handlebars\HandlebarsRenderer;
+use Schranz\Templating\Bridge\LaminasView\LaminasViewRenderer;
 use Schranz\Templating\Bridge\Latte\LatteRenderer;
 use Schranz\Templating\Bridge\Mustache\MustacheRenderer;
 use Schranz\Templating\Bridge\Plates\PlatesRenderer;
@@ -67,6 +68,16 @@ return [
                     ],
                 ],
             ],
+            'laminas_view' => [
+                'type'    => Literal::class,
+                'options' => [
+                    'route'    => '/laminas-view',
+                    'defaults' => [
+                        'controller' => Controller\TemplateController::class,
+                        'action'     => 'laminasViewRenderer',
+                    ],
+                ],
+            ],
             'plates' => [
                 'type'    => Literal::class,
                 'options' => [
@@ -106,6 +117,7 @@ return [
                     $container->get(TemplateRendererInterface::class),
                     $container->get(BladeRenderer::class),
                     $container->get(HandlebarsRenderer::class),
+                    $container->get(LaminasViewRenderer::class),
                     $container->get(LatteRenderer::class),
                     $container->get(MustacheRenderer::class),
                     $container->get(PlatesRenderer::class),

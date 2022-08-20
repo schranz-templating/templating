@@ -15,5 +15,6 @@ return [
     'Schranz\Templating\Integration\Laminas\Plates',
     'Schranz\Templating\Integration\Laminas\Smarty',
     'Schranz\Templating\Integration\Laminas\Twig',
+    'Schranz\Templating\Integration\Laminas\LaminasView',
     'Application',
 ];
