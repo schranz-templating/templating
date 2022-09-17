@@ -1,0 +1,26 @@
+{
+    "name": "schranz-templating/twig-adapter",
+    "description": "An adapter for the template renderer for twig template engine.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\Adapter\\Twig\\": ""
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./../../TemplateRenderer",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "twig/twig": "^1.0 || ^2.0 || ^3.0",
+        "schranz-templating/template-renderer": "^0.1"
+    },
+    "minimum-stability": "dev"
+}

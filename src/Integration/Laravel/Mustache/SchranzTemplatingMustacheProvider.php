@@ -3,7 +3,7 @@
 namespace Schranz\Templating\Integration\Laravel\Mustache;
 
 use Illuminate\Support\ServiceProvider;
-use Schranz\Templating\Bridge\Mustache\MustacheRenderer;
+use Schranz\Templating\Adapter\Mustache\MustacheRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class SchranzTemplatingMustacheProvider extends ServiceProvider

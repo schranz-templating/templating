@@ -5,7 +5,7 @@ namespace Schranz\Templating\Integration\Symfony\Handlebars\DependencyInjection;
 use Handlebars\Cache\Disk;
 use Handlebars\Handlebars;
 use Handlebars\Loader\FilesystemLoader;
-use Schranz\Templating\Bridge\Handlebars\HandlebarsRenderer;
+use Schranz\Templating\Adapter\Handlebars\HandlebarsRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;

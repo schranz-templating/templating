@@ -8,11 +8,27 @@
             "Schranz\\Templating\\Integration\\Laravel\\Plates\\": ""
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./../../../TemplateRenderer",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../Adapter/Plates",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
         "php": "^7.0 || ^8.0",
         "illuminate/view": "^8.0 || ^9.0",
         "illuminate/support": "^8.0 || ^9.0",
-        "schranz-templating/plates-bridge": "^0.1"
+        "schranz-templating/plates-adapter": "^0.1"
     },
     "minimum-stability": "dev",
     "extra": {

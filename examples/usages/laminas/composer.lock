@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aab4edf660a916c27a13c3a9cc1570d9",
+    "content-hash": "a6018278995133d9723449a1cb102adb",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -61,24 +61,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "3249de584daab089c823ddc3f8efb108cee85a10"
+                "reference": "c109eb17daf5857f9471f9d12d52a89adc220a24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/3249de584daab089c823ddc3f8efb108cee85a10",
-                "reference": "3249de584daab089c823ddc3f8efb108cee85a10",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/c109eb17daf5857f9471f9d12d52a89adc220a24",
+                "reference": "c109eb17daf5857f9471f9d12d52a89adc220a24",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2 || ^8.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^8.2",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-phpunit": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12",
-                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0",
-                "vimeo/psalm": "^4.10"
+                "doctrine/coding-standard": "^9",
+                "phpstan/phpstan": "^1.8",
+                "phpstan/phpstan-phpunit": "^1.1",
+                "phpstan/phpstan-strict-rules": "^1.3",
+                "phpunit/phpunit": "^8.5 || ^9.5",
+                "vimeo/psalm": "^4.25"
             },
             "type": "library",
             "autoload": {
@@ -144,7 +144,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-22T20:33:24+00:00"
+            "time": "2022-09-07T09:09:33+00:00"
         },
         {
             "name": "illuminate/bus",
@@ -152,12 +152,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/bus.git",
-                "reference": "cd7631171bbe93589ec561d1798174a89301e27a"
+                "reference": "baccdba32ec4e7d3492cfd991806a8ead397f77f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/bus/zipball/cd7631171bbe93589ec561d1798174a89301e27a",
-                "reference": "cd7631171bbe93589ec561d1798174a89301e27a",
+                "url": "https://api.github.com/repos/illuminate/bus/zipball/baccdba32ec4e7d3492cfd991806a8ead397f77f",
+                "reference": "baccdba32ec4e7d3492cfd991806a8ead397f77f",
                 "shasum": ""
             },
             "require": {
@@ -197,7 +197,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-08-17T19:57:57+00:00"
+            "time": "2022-09-16T19:09:47+00:00"
         },
         {
             "name": "illuminate/collections",
@@ -205,12 +205,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "f0993c301439a80b2cce88286c69f92f4ce739c9"
+                "reference": "a533ba3fce4e288a42f6287e1b9a685cdbc14f9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/f0993c301439a80b2cce88286c69f92f4ce739c9",
-                "reference": "f0993c301439a80b2cce88286c69f92f4ce739c9",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/a533ba3fce4e288a42f6287e1b9a685cdbc14f9f",
+                "reference": "a533ba3fce4e288a42f6287e1b9a685cdbc14f9f",
                 "shasum": ""
             },
             "require": {
@@ -252,7 +252,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-08-19T14:35:33+00:00"
+            "time": "2022-09-16T14:22:26+00:00"
         },
         {
             "name": "illuminate/conditionable",
@@ -306,12 +306,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
-                "reference": "d86b073cae04713cf28def54417fa771621bc4f1"
+                "reference": "8ca3036459e26dc7cdedaf0f882b625757cc341e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/container/zipball/d86b073cae04713cf28def54417fa771621bc4f1",
-                "reference": "d86b073cae04713cf28def54417fa771621bc4f1",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/8ca3036459e26dc7cdedaf0f882b625757cc341e",
+                "reference": "8ca3036459e26dc7cdedaf0f882b625757cc341e",
                 "shasum": ""
             },
             "require": {
@@ -349,7 +349,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-05-16T15:53:09+00:00"
+            "time": "2022-09-05T15:58:42+00:00"
         },
         {
             "name": "illuminate/contracts",
@@ -357,12 +357,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "0d1dd1a7e947072319f2e641cc50081219606502"
+                "reference": "d57130115694b4f6a98d064bea31cdb09d7784f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/0d1dd1a7e947072319f2e641cc50081219606502",
-                "reference": "0d1dd1a7e947072319f2e641cc50081219606502",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/d57130115694b4f6a98d064bea31cdb09d7784f8",
+                "reference": "d57130115694b4f6a98d064bea31cdb09d7784f8",
                 "shasum": ""
             },
             "require": {
@@ -397,7 +397,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-08-18T14:18:13+00:00"
+            "time": "2022-09-15T13:31:42+00:00"
         },
         {
             "name": "illuminate/events",
@@ -405,12 +405,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
-                "reference": "2dea521665d295f6cefef78f1b5abeea6b94e35f"
+                "reference": "8e534676bac23bc17925f5c74c128f9c09b98f69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/events/zipball/2dea521665d295f6cefef78f1b5abeea6b94e35f",
-                "reference": "2dea521665d295f6cefef78f1b5abeea6b94e35f",
+                "url": "https://api.github.com/repos/illuminate/events/zipball/8e534676bac23bc17925f5c74c128f9c09b98f69",
+                "reference": "8e534676bac23bc17925f5c74c128f9c09b98f69",
                 "shasum": ""
             },
             "require": {
@@ -452,7 +452,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-05-02T13:59:45+00:00"
+            "time": "2022-09-15T13:14:12+00:00"
         },
         {
             "name": "illuminate/filesystem",
@@ -460,12 +460,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
-                "reference": "0f7f589b639ddee6f469ba01e986f75083844339"
+                "reference": "2579700c62f5eb767305759d5b31da6697462096"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/0f7f589b639ddee6f469ba01e986f75083844339",
-                "reference": "0f7f589b639ddee6f469ba01e986f75083844339",
+                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/2579700c62f5eb767305759d5b31da6697462096",
+                "reference": "2579700c62f5eb767305759d5b31da6697462096",
                 "shasum": ""
             },
             "require": {
@@ -514,7 +514,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-07-29T15:48:39+00:00"
+            "time": "2022-09-13T13:42:06+00:00"
         },
         {
             "name": "illuminate/macroable",
@@ -616,12 +616,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "21ffaa1e5c2b548f2bf2be553d45233e4711f00b"
+                "reference": "e81f343b45fdf049e32255a6f3b6c97c7c826083"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/21ffaa1e5c2b548f2bf2be553d45233e4711f00b",
-                "reference": "21ffaa1e5c2b548f2bf2be553d45233e4711f00b",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/e81f343b45fdf049e32255a6f3b6c97c7c826083",
+                "reference": "e81f343b45fdf049e32255a6f3b6c97c7c826083",
                 "shasum": ""
             },
             "require": {
@@ -644,6 +644,7 @@
                 "league/commonmark": "Required to use Str::markdown() and Stringable::markdown() (^2.0.2).",
                 "ramsey/uuid": "Required to use Str::uuid() (^4.2.2).",
                 "symfony/process": "Required to use the composer class (^6.0).",
+                "symfony/uid": "Required to generate ULIDs for Eloquent (^6.0).",
                 "symfony/var-dumper": "Required to use the dd function (^6.0).",
                 "vlucas/phpdotenv": "Required to use the Env class and env helper (^5.4.1)."
             },
@@ -677,7 +678,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-08-20T17:04:54+00:00"
+            "time": "2022-09-16T20:03:23+00:00"
         },
         {
             "name": "illuminate/view",
@@ -685,12 +686,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
-                "reference": "42ce37c2ffc45fc476aad9d6267b6ffac73ff539"
+                "reference": "913c3c5ae2228525d08432c5f91f5f6f53da68fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/view/zipball/42ce37c2ffc45fc476aad9d6267b6ffac73ff539",
-                "reference": "42ce37c2ffc45fc476aad9d6267b6ffac73ff539",
+                "url": "https://api.github.com/repos/illuminate/view/zipball/913c3c5ae2228525d08432c5f91f5f6f53da68fb",
+                "reference": "913c3c5ae2228525d08432c5f91f5f6f53da68fb",
                 "shasum": ""
             },
             "require": {
@@ -731,7 +732,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-08-08T20:01:36+00:00"
+            "time": "2022-09-15T13:31:42+00:00"
         },
         {
             "name": "laminas/laminas-component-installer",
@@ -876,12 +877,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-development-mode.git",
-                "reference": "37a2e5d0942379e146dc4ae7f18431bf4955e4f9"
+                "reference": "fe8b38de8903d8af431130490d56d28b3be0ed6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-development-mode/zipball/37a2e5d0942379e146dc4ae7f18431bf4955e4f9",
-                "reference": "37a2e5d0942379e146dc4ae7f18431bf4955e4f9",
+                "url": "https://api.github.com/repos/laminas/laminas-development-mode/zipball/fe8b38de8903d8af431130490d56d28b3be0ed6f",
+                "reference": "fe8b38de8903d8af431130490d56d28b3be0ed6f",
                 "shasum": ""
             },
             "require": {
@@ -891,7 +892,7 @@
                 "zfcampus/zf-development-mode": "*"
             },
             "require-dev": {
-                "laminas/laminas-coding-standard": "~2.3.0",
+                "laminas/laminas-coding-standard": "~2.4.0",
                 "mikey179/vfsstream": "^1.6.10",
                 "phpunit/phpunit": "^9.5.21",
                 "psalm/plugin-phpunit": "^0.17.0",
@@ -930,7 +931,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-08-10T01:53:44+00:00"
+            "time": "2022-09-15T00:47:10+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -938,12 +939,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-escaper.git",
-                "reference": "37165f1d5be8024663bd64b80df5ca48682d474e"
+                "reference": "5140d4496321cc02a6af5ab6043c5cb23090e535"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/37165f1d5be8024663bd64b80df5ca48682d474e",
-                "reference": "37165f1d5be8024663bd64b80df5ca48682d474e",
+                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/5140d4496321cc02a6af5ab6043c5cb23090e535",
+                "reference": "5140d4496321cc02a6af5ab6043c5cb23090e535",
                 "shasum": ""
             },
             "require": {
@@ -956,7 +957,7 @@
             },
             "require-dev": {
                 "infection/infection": "^0.26.6",
-                "laminas/laminas-coding-standard": "~2.3.0",
+                "laminas/laminas-coding-standard": "~2.4.0",
                 "maglnet/composer-require-checker": "^3.8.0",
                 "phpunit/phpunit": "^9.5.18",
                 "psalm/plugin-phpunit": "^0.17.0",
@@ -993,7 +994,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-08-10T00:07:38+00:00"
+            "time": "2022-09-15T01:38:11+00:00"
         },
         {
             "name": "laminas/laminas-eventmanager",
@@ -1001,12 +1002,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-eventmanager.git",
-                "reference": "34ae0ebf1eba72abdad9f7d758afccc739f47075"
+                "reference": "f8020a3206d456f924a2ff87bc47435535bed147"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-eventmanager/zipball/34ae0ebf1eba72abdad9f7d758afccc739f47075",
-                "reference": "34ae0ebf1eba72abdad9f7d758afccc739f47075",
+                "url": "https://api.github.com/repos/laminas/laminas-eventmanager/zipball/f8020a3206d456f924a2ff87bc47435535bed147",
+                "reference": "f8020a3206d456f924a2ff87bc47435535bed147",
                 "shasum": ""
             },
             "require": {
@@ -1017,7 +1018,7 @@
                 "zendframework/zend-eventmanager": "*"
             },
             "require-dev": {
-                "laminas/laminas-coding-standard": "~2.3.0",
+                "laminas/laminas-coding-standard": "~2.4.0",
                 "laminas/laminas-stdlib": "^3.6",
                 "phpbench/phpbench": "^1.1",
                 "phpspec/prophecy-phpunit": "^2.0",
@@ -1063,7 +1064,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-08-10T01:47:05+00:00"
+            "time": "2022-09-15T01:05:50+00:00"
         },
         {
             "name": "laminas/laminas-http",
@@ -1252,16 +1253,16 @@
         },
         {
             "name": "laminas/laminas-modulemanager",
-            "version": "2.12.x-dev",
+            "version": "2.13.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-modulemanager.git",
-                "reference": "2a3d94306987a484a4b65bbb590df86e100ca88c"
+                "reference": "3fd2e2db6d288fff9be023ed8865ad2a67b69efe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-modulemanager/zipball/2a3d94306987a484a4b65bbb590df86e100ca88c",
-                "reference": "2a3d94306987a484a4b65bbb590df86e100ca88c",
+                "url": "https://api.github.com/repos/laminas/laminas-modulemanager/zipball/3fd2e2db6d288fff9be023ed8865ad2a67b69efe",
+                "reference": "3fd2e2db6d288fff9be023ed8865ad2a67b69efe",
                 "shasum": ""
             },
             "require": {
@@ -1280,7 +1281,9 @@
                 "laminas/laminas-loader": "^2.8",
                 "laminas/laminas-mvc": "^3.1.1",
                 "laminas/laminas-servicemanager": "^3.7",
-                "phpunit/phpunit": "^9.5.5"
+                "phpunit/phpunit": "^9.5.5",
+                "psalm/plugin-phpunit": "^0.17.0",
+                "vimeo/psalm": "^4.10"
             },
             "suggest": {
                 "laminas/laminas-console": "Laminas\\Console component",
@@ -1319,7 +1322,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-03-23T09:33:56+00:00"
+            "time": "2022-09-15T01:42:52+00:00"
         },
         {
             "name": "laminas/laminas-mvc",
@@ -1405,16 +1408,16 @@
         },
         {
             "name": "laminas/laminas-router",
-            "version": "3.8.x-dev",
+            "version": "3.10.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-router.git",
-                "reference": "e7ae3370f85f3a50e968c89657d5cf69e732a10e"
+                "reference": "8f731dca901df9ec2ae2097fe23670a5df454f88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-router/zipball/e7ae3370f85f3a50e968c89657d5cf69e732a10e",
-                "reference": "e7ae3370f85f3a50e968c89657d5cf69e732a10e",
+                "url": "https://api.github.com/repos/laminas/laminas-router/zipball/8f731dca901df9ec2ae2097fe23670a5df454f88",
+                "reference": "8f731dca901df9ec2ae2097fe23670a5df454f88",
                 "shasum": ""
             },
             "require": {
@@ -1427,7 +1430,7 @@
                 "zendframework/zend-router": "*"
             },
             "require-dev": {
-                "laminas/laminas-coding-standard": "~2.3.0",
+                "laminas/laminas-coding-standard": "~2.4.0",
                 "laminas/laminas-i18n": "^2.15.0",
                 "phpunit/phpunit": "^9.5.5",
                 "psalm/plugin-phpunit": "^0.17.0",
@@ -1473,7 +1476,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-08-10T00:29:57+00:00"
+            "time": "2022-09-15T00:58:55+00:00"
         },
         {
             "name": "laminas/laminas-servicemanager",
@@ -1481,12 +1484,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-servicemanager.git",
-                "reference": "f32cdaea6dcba17b5701e46455a80ce4006970cb"
+                "reference": "6acba4619c81c32fe8e87027c01e7aba38e77ede"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-servicemanager/zipball/f32cdaea6dcba17b5701e46455a80ce4006970cb",
-                "reference": "f32cdaea6dcba17b5701e46455a80ce4006970cb",
+                "url": "https://api.github.com/repos/laminas/laminas-servicemanager/zipball/6acba4619c81c32fe8e87027c01e7aba38e77ede",
+                "reference": "6acba4619c81c32fe8e87027c01e7aba38e77ede",
                 "shasum": ""
             },
             "require": {
@@ -1508,7 +1511,7 @@
             },
             "require-dev": {
                 "composer/package-versions-deprecated": "^1.0",
-                "laminas/laminas-coding-standard": "~2.3.0",
+                "laminas/laminas-coding-standard": "~2.4.0",
                 "laminas/laminas-container-config-test": "^0.7",
                 "laminas/laminas-dependency-plugin": "^2.1.2",
                 "mikey179/vfsstream": "^1.6.10@alpha",
@@ -1565,7 +1568,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-08-10T01:51:39+00:00"
+            "time": "2022-09-15T00:06:57+00:00"
         },
         {
             "name": "laminas/laminas-skeleton-installer",
@@ -1636,30 +1639,30 @@
         },
         {
             "name": "laminas/laminas-stdlib",
-            "version": "3.12.x-dev",
+            "version": "3.14.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-stdlib.git",
-                "reference": "5d7fc724bc16caaac3991d0601806ed13415f9e8"
+                "reference": "0bbded0410c2935a5fb1efcf4c87a59813cc7594"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/5d7fc724bc16caaac3991d0601806ed13415f9e8",
-                "reference": "5d7fc724bc16caaac3991d0601806ed13415f9e8",
+                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/0bbded0410c2935a5fb1efcf4c87a59813cc7594",
+                "reference": "0bbded0410c2935a5fb1efcf4c87a59813cc7594",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.3 || ~8.0.0 || ~8.1.0"
+                "php": "^7.4 || ~8.0.0 || ~8.1.0"
             },
             "conflict": {
                 "zendframework/zend-stdlib": "*"
             },
             "require-dev": {
-                "laminas/laminas-coding-standard": "~2.3.0",
-                "phpbench/phpbench": "^1.0",
-                "phpunit/phpunit": "^9.3.7",
+                "laminas/laminas-coding-standard": "^2.4.0",
+                "phpbench/phpbench": "^1.2.6",
+                "phpunit/phpunit": "^9.5.23",
                 "psalm/plugin-phpunit": "^0.17.0",
-                "vimeo/psalm": "^4.7"
+                "vimeo/psalm": "^4.26"
             },
             "default-branch": true,
             "type": "library",
@@ -1692,7 +1695,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-08-05T01:53:11+00:00"
+            "time": "2022-09-15T00:54:23+00:00"
         },
         {
             "name": "laminas/laminas-uri",
@@ -1755,16 +1758,16 @@
         },
         {
             "name": "laminas/laminas-validator",
-            "version": "2.24.x-dev",
+            "version": "2.25.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-validator.git",
-                "reference": "eec393ae68c823d276353d6f16f901d5e5ad31f1"
+                "reference": "7f15f8136f913d17ba39ee595637e1e8348b1aac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-validator/zipball/eec393ae68c823d276353d6f16f901d5e5ad31f1",
-                "reference": "eec393ae68c823d276353d6f16f901d5e5ad31f1",
+                "url": "https://api.github.com/repos/laminas/laminas-validator/zipball/7f15f8136f913d17ba39ee595637e1e8348b1aac",
+                "reference": "7f15f8136f913d17ba39ee595637e1e8348b1aac",
                 "shasum": ""
             },
             "require": {
@@ -1776,20 +1779,20 @@
                 "zendframework/zend-validator": "*"
             },
             "require-dev": {
-                "laminas/laminas-coding-standard": "~2.3.0",
-                "laminas/laminas-db": "^2.7",
-                "laminas/laminas-filter": "^2.14.0",
-                "laminas/laminas-http": "^2.14.2",
-                "laminas/laminas-i18n": "^2.15.0",
-                "laminas/laminas-session": "^2.12.1",
+                "laminas/laminas-coding-standard": "^2.4.0",
+                "laminas/laminas-db": "^2.15.0",
+                "laminas/laminas-filter": "^2.18.0",
+                "laminas/laminas-http": "^2.16.0",
+                "laminas/laminas-i18n": "^2.17.0",
+                "laminas/laminas-session": "^2.13.0",
                 "laminas/laminas-uri": "^2.9.1",
                 "phpspec/prophecy-phpunit": "^2.0",
-                "phpunit/phpunit": "^9.5.21",
+                "phpunit/phpunit": "^9.5.24",
                 "psalm/plugin-phpunit": "^0.17.0",
                 "psr/http-client": "^1.0",
                 "psr/http-factory": "^1.0",
                 "psr/http-message": "^1.0",
-                "vimeo/psalm": "^4.24.0"
+                "vimeo/psalm": "^4.27.0"
             },
             "suggest": {
                 "laminas/laminas-db": "Laminas\\Db component, required by the (No)RecordExists validator",
@@ -1838,7 +1841,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-08-04T01:18:59+00:00"
+            "time": "2022-09-15T00:05:24+00:00"
         },
         {
             "name": "laminas/laminas-view",
@@ -1953,24 +1956,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/latte.git",
-                "reference": "f446bf515edd7d4f3e1cec188e529d9253b7f153"
+                "reference": "4a9adecdffe4f425654f771ae7e174d4f4fb422a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/latte/zipball/f446bf515edd7d4f3e1cec188e529d9253b7f153",
-                "reference": "f446bf515edd7d4f3e1cec188e529d9253b7f153",
+                "url": "https://api.github.com/repos/nette/latte/zipball/4a9adecdffe4f425654f771ae7e174d4f4fb422a",
+                "reference": "4a9adecdffe4f425654f771ae7e174d4f4fb422a",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-tokenizer": "*",
-                "php": ">=8.0 <8.2"
+                "php": ">=8.0 <8.3"
             },
             "conflict": {
                 "nette/application": "<2.4.1"
             },
             "require-dev": {
-                "nette/php-generator": "^3.3.4",
+                "nette/php-generator": "^3.6 || ^4.0",
                 "nette/tester": "^2.0",
                 "nette/utils": "^3.0",
                 "phpstan/phpstan": "^1",
@@ -2030,7 +2033,7 @@
                 "issues": "https://github.com/nette/latte/issues",
                 "source": "https://github.com/nette/latte/tree/master"
             },
-            "time": "2022-07-09T20:07:17+00:00"
+            "time": "2022-09-12T22:46:17+00:00"
         },
         {
             "name": "league/plates",
@@ -2099,16 +2102,16 @@
         },
         {
             "name": "mustache/mustache",
-            "version": "v2.14.1",
+            "version": "v2.14.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/mustache.php.git",
-                "reference": "579ffa5c96e1d292c060b3dd62811ff01ad8c24e"
+                "reference": "e62b7c3849d22ec55f3ec425507bf7968193a6cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/579ffa5c96e1d292c060b3dd62811ff01ad8c24e",
-                "reference": "579ffa5c96e1d292c060b3dd62811ff01ad8c24e",
+                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/e62b7c3849d22ec55f3ec425507bf7968193a6cb",
+                "reference": "e62b7c3849d22ec55f3ec425507bf7968193a6cb",
                 "shasum": ""
             },
             "require": {
@@ -2143,9 +2146,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/mustache.php/issues",
-                "source": "https://github.com/bobthecow/mustache.php/tree/v2.14.1"
+                "source": "https://github.com/bobthecow/mustache.php/tree/v2.14.2"
             },
-            "time": "2022-01-21T06:08:36+00:00"
+            "time": "2022-08-23T13:07:01+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -2153,12 +2156,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "bdf4f4fe3a3eac4de84dbec0738082a862c68ba6"
+                "reference": "560b02e62a2efbbcfa7e5d1cd46250878396df2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/bdf4f4fe3a3eac4de84dbec0738082a862c68ba6",
-                "reference": "bdf4f4fe3a3eac4de84dbec0738082a862c68ba6",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/560b02e62a2efbbcfa7e5d1cd46250878396df2f",
+                "reference": "560b02e62a2efbbcfa7e5d1cd46250878396df2f",
                 "shasum": ""
             },
             "require": {
@@ -2248,7 +2251,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-08-06T12:41:24+00:00"
+            "time": "2022-09-09T14:14:05+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -2256,12 +2259,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "2d589921f23d869846a52c541247e0bafca61ab3"
+                "reference": "2f1fd784fe5560675722a1e5cbbcece5f43bf3a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/2d589921f23d869846a52c541247e0bafca61ab3",
-                "reference": "2d589921f23d869846a52c541247e0bafca61ab3",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/2f1fd784fe5560675722a1e5cbbcece5f43bf3a0",
+                "reference": "2f1fd784fe5560675722a1e5cbbcece5f43bf3a0",
                 "shasum": ""
             },
             "require": {
@@ -2304,7 +2307,7 @@
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
                 "source": "https://github.com/nikic/PHP-Parser/tree/4.x"
             },
-            "time": "2022-06-04T10:44:36+00:00"
+            "time": "2022-09-10T20:41:13+00:00"
         },
         {
             "name": "psr/container",
@@ -2464,78 +2467,60 @@
             "time": "2020-06-08T17:23:52+00:00"
         },
         {
-            "name": "schranz-templating/blade-bridge",
+            "name": "schranz-templating/blade-adapter",
             "version": "0.1.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/schranz-templating/blade-bridge.git",
-                "reference": "c04d85ed4ab642ce1bdff5e453efe363a078a727"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/schranz-templating/blade-bridge/zipball/c04d85ed4ab642ce1bdff5e453efe363a078a727",
-                "reference": "c04d85ed4ab642ce1bdff5e453efe363a078a727",
-                "shasum": ""
+                "type": "path",
+                "url": "./../../../src/Adapter/Blade",
+                "reference": "1eaea57fba3943f1694c386fe01b427b5315ec57"
             },
             "require": {
                 "illuminate/view": "^8.0 || ^9.0",
                 "php": "^7.0 || ^8.0",
                 "schranz-templating/template-renderer": "^0.1"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Schranz\\Templating\\Bridge\\Blade\\": ""
+                    "Schranz\\Templating\\Adapter\\Blade\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "A bridge for the template renderer for blade template engine.",
-            "support": {
-                "issues": "https://github.com/schranz-templating/blade-bridge/issues",
-                "source": "https://github.com/schranz-templating/blade-bridge/tree/0.1"
-            },
-            "time": "2022-06-25T11:46:40+00:00"
+            "description": "An adapter for the template renderer for blade template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
-            "name": "schranz-templating/handlebars-bridge",
+            "name": "schranz-templating/handlebars-adapter",
             "version": "0.1.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/schranz-templating/handlebars-bridge.git",
-                "reference": "f3419ead7b9711cd0ed205c873ccb3fea859f080"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/schranz-templating/handlebars-bridge/zipball/f3419ead7b9711cd0ed205c873ccb3fea859f080",
-                "reference": "f3419ead7b9711cd0ed205c873ccb3fea859f080",
-                "shasum": ""
+                "type": "path",
+                "url": "./../../../src/Adapter/Handlebars",
+                "reference": "830f48b235f5dc0553fb39a429deab19b4c51459"
             },
             "require": {
                 "php": "^7.0 || ^8.0",
                 "salesforce/handlebars-php": "^2.3",
                 "schranz-templating/template-renderer": "^0.1"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Schranz\\Templating\\Bridge\\Handlebars\\": ""
+                    "Schranz\\Templating\\Adapter\\Handlebars\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "A bridge for the template renderer for handlebars template engine.",
-            "support": {
-                "issues": "https://github.com/schranz-templating/handlebars-bridge/issues",
-                "source": "https://github.com/schranz-templating/handlebars-bridge/tree/0.1"
-            },
-            "time": "2022-06-25T16:30:49+00:00"
+            "description": "An adapter for the template renderer for handlebars template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "schranz-templating/laminas-blade-integration",
@@ -2543,13 +2528,13 @@
             "dist": {
                 "type": "path",
                 "url": "./../../../src/Integration/Laminas/Blade",
-                "reference": "5d7b027ede9983c98bee29c97c172af53bde6756"
+                "reference": "1556bc217dfed4020786e26a3b288399a2e64ee9"
             },
             "require": {
                 "laminas/laminas-modulemanager": "^2.0",
                 "laminas/laminas-servicemanager": "^2.0 || ^3.0",
                 "php": "^7.0 || ^8.0",
-                "schranz-templating/blade-bridge": "^0.1"
+                "schranz-templating/blade-adapter": "^0.1"
             },
             "type": "library",
             "extra": {
@@ -2577,13 +2562,13 @@
             "dist": {
                 "type": "path",
                 "url": "./../../../src/Integration/Laminas/Handlebars",
-                "reference": "24c27a5f3e962d8e28b0b8bbc50faa46cd324959"
+                "reference": "cb3e36238e3bfa7e1d504044119f8c8970dbadb1"
             },
             "require": {
                 "laminas/laminas-modulemanager": "^2.0",
                 "laminas/laminas-servicemanager": "^2.0 || ^3.0",
                 "php": "^7.0 || ^8.0",
-                "schranz-templating/handlebars-bridge": "^0.1"
+                "schranz-templating/handlebars-adapter": "^0.1"
             },
             "type": "library",
             "extra": {
@@ -2611,13 +2596,13 @@
             "dist": {
                 "type": "path",
                 "url": "./../../../src/Integration/Laminas/LaminasView",
-                "reference": "de6767e83d74ce64361492c9310c6b229c4de9f0"
+                "reference": "ed15482a6151a2b10b95cacc624daa70276b6c9c"
             },
             "require": {
                 "laminas/laminas-modulemanager": "^2.0",
                 "laminas/laminas-servicemanager": "^2.0 || ^3.0",
                 "php": "^7.0 || ^8.0",
-                "schranz-templating/laminas-view-bridge": "^0.1"
+                "schranz-templating/laminas-view-adapter": "^0.1"
             },
             "type": "library",
             "extra": {
@@ -2645,13 +2630,13 @@
             "dist": {
                 "type": "path",
                 "url": "./../../../src/Integration/Laminas/Latte",
-                "reference": "5ec9228c70c88bbc88388cd1d3336aaa79c1f55c"
+                "reference": "60d08b3eb42d41d2bb34d014111cffa899e27fb8"
             },
             "require": {
                 "laminas/laminas-modulemanager": "^2.0",
                 "laminas/laminas-servicemanager": "^2.0 || ^3.0",
                 "php": "^7.0 || ^8.0",
-                "schranz-templating/latte-bridge": "^0.1"
+                "schranz-templating/latte-adapter": "^0.1"
             },
             "type": "library",
             "extra": {
@@ -2679,13 +2664,13 @@
             "dist": {
                 "type": "path",
                 "url": "./../../../src/Integration/Laminas/Mustache",
-                "reference": "d2b26fab316427ec72c1408606d27fa4d5887a98"
+                "reference": "ff172d5f561498102097cc089476ea4a9c030123"
             },
             "require": {
                 "laminas/laminas-modulemanager": "^2.0",
                 "laminas/laminas-servicemanager": "^2.0 || ^3.0",
                 "php": "^7.0 || ^8.0",
-                "schranz-templating/mustache-bridge": "^0.1"
+                "schranz-templating/mustache-adapter": "^0.1"
             },
             "type": "library",
             "extra": {
@@ -2713,13 +2698,13 @@
             "dist": {
                 "type": "path",
                 "url": "./../../../src/Integration/Laminas/Plates",
-                "reference": "02682f938ec074351877aa77e19852af142a7cd5"
+                "reference": "4954406556668c515cffd4e13d29074b96e7f727"
             },
             "require": {
                 "laminas/laminas-modulemanager": "^2.0",
                 "laminas/laminas-servicemanager": "^2.0 || ^3.0",
                 "php": "^7.0 || ^8.0",
-                "schranz-templating/plates-bridge": "^0.1"
+                "schranz-templating/plates-adapter": "^0.1"
             },
             "type": "library",
             "extra": {
@@ -2747,13 +2732,13 @@
             "dist": {
                 "type": "path",
                 "url": "./../../../src/Integration/Laminas/Smarty",
-                "reference": "2243f03416c3a75fc3f2059385d46555ad570ebc"
+                "reference": "a3134023d6a6c9e3a8878ac087568df827f95edf"
             },
             "require": {
                 "laminas/laminas-modulemanager": "^2.0",
                 "laminas/laminas-servicemanager": "^2.0 || ^3.0",
                 "php": "^7.0 || ^8.0",
-                "schranz-templating/smarty-bridge": "^0.1"
+                "schranz-templating/smarty-adapter": "^0.1"
             },
             "type": "library",
             "extra": {
@@ -2781,13 +2766,13 @@
             "dist": {
                 "type": "path",
                 "url": "./../../../src/Integration/Laminas/Twig",
-                "reference": "c2f5bc9a881f67663afb8b9f1939763f6aa50e8f"
+                "reference": "ee206711361a94f720dbc94a5c05dc44536570be"
             },
             "require": {
                 "laminas/laminas-modulemanager": "^2.0",
                 "laminas/laminas-servicemanager": "^2.0 || ^3.0",
                 "php": "^7.0 || ^8.0",
-                "schranz-templating/twig-bridge": "^0.1"
+                "schranz-templating/twig-adapter": "^0.1"
             },
             "type": "library",
             "extra": {
@@ -2810,274 +2795,211 @@
             }
         },
         {
-            "name": "schranz-templating/laminas-view-bridge",
+            "name": "schranz-templating/laminas-view-adapter",
             "version": "0.1.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/schranz-templating/laminas-view-bridge.git",
-                "reference": "e68c1890e2ae94c89c0fe7bfb5509c65d024f59d"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/schranz-templating/laminas-view-bridge/zipball/e68c1890e2ae94c89c0fe7bfb5509c65d024f59d",
-                "reference": "e68c1890e2ae94c89c0fe7bfb5509c65d024f59d",
-                "shasum": ""
+                "type": "path",
+                "url": "./../../../src/Adapter/LaminasView",
+                "reference": "dd11ad61e0cce5e53d55a4699095c7751526a2ac"
             },
             "require": {
                 "laminas/laminas-view": "^2.0 || ^3.0",
                 "php": "^7.0 || ^8.0",
                 "schranz-templating/template-renderer": "^0.1"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Schranz\\Templating\\Bridge\\LaminasView\\": ""
+                    "Schranz\\Templating\\Adapter\\LaminasView\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "A bridge for the template renderer for laminas view template engines.",
-            "support": {
-                "issues": "https://github.com/schranz-templating/laminas-view-bridge/issues",
-                "source": "https://github.com/schranz-templating/laminas-view-bridge/tree/0.1"
-            },
-            "time": "2022-06-25T17:20:38+00:00"
+            "description": "An adapter for the template renderer for laminas view template engines.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
-            "name": "schranz-templating/latte-bridge",
+            "name": "schranz-templating/latte-adapter",
             "version": "0.1.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/schranz-templating/latte-bridge.git",
-                "reference": "18633efa193b2100a760ce3a6e00b5cd153804a2"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/schranz-templating/latte-bridge/zipball/18633efa193b2100a760ce3a6e00b5cd153804a2",
-                "reference": "18633efa193b2100a760ce3a6e00b5cd153804a2",
-                "shasum": ""
+                "type": "path",
+                "url": "./../../../src/Adapter/Latte",
+                "reference": "98d6b7144aa9fbb1d88b94bf5f983e806b87c0bb"
             },
             "require": {
                 "latte/latte": "^2.0 || ^3.0",
                 "php": "^7.0 || ^8.0",
                 "schranz-templating/template-renderer": "^0.1"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Schranz\\Templating\\Bridge\\Latte\\": ""
+                    "Schranz\\Templating\\Adapter\\Latte\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "A bridge for the template renderer for latte template engine.",
-            "support": {
-                "issues": "https://github.com/schranz-templating/latte-bridge/issues",
-                "source": "https://github.com/schranz-templating/latte-bridge/tree/0.1"
-            },
-            "time": "2022-06-25T11:46:40+00:00"
+            "description": "An adapter for the template renderer for latte template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
-            "name": "schranz-templating/mustache-bridge",
+            "name": "schranz-templating/mustache-adapter",
             "version": "0.1.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/schranz-templating/mustache-bridge.git",
-                "reference": "3e0726ef5daf9bd128bc4695dc7fd60d783462a8"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/schranz-templating/mustache-bridge/zipball/3e0726ef5daf9bd128bc4695dc7fd60d783462a8",
-                "reference": "3e0726ef5daf9bd128bc4695dc7fd60d783462a8",
-                "shasum": ""
+                "type": "path",
+                "url": "./../../../src/Adapter/Mustache",
+                "reference": "afb98a1bb38c5b4a1d7701d061451dbc2be3c23f"
             },
             "require": {
                 "mustache/mustache": "^2.0",
                 "php": "^7.0 || ^8.0",
                 "schranz-templating/template-renderer": "^0.1"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Schranz\\Templating\\Bridge\\Mustache\\": ""
+                    "Schranz\\Templating\\Adapter\\Mustache\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "A bridge for the template renderer for mustache template engine.",
-            "support": {
-                "issues": "https://github.com/schranz-templating/mustache-bridge/issues",
-                "source": "https://github.com/schranz-templating/mustache-bridge/tree/0.1"
-            },
-            "time": "2022-06-25T16:11:44+00:00"
+            "description": "An adapter for the template renderer for mustache template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
-            "name": "schranz-templating/plates-bridge",
+            "name": "schranz-templating/plates-adapter",
             "version": "0.1.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/schranz-templating/plates-bridge.git",
-                "reference": "91ee8627608b70459d4c1039e0aa330c3a447bf3"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/schranz-templating/plates-bridge/zipball/91ee8627608b70459d4c1039e0aa330c3a447bf3",
-                "reference": "91ee8627608b70459d4c1039e0aa330c3a447bf3",
-                "shasum": ""
+                "type": "path",
+                "url": "./../../../src/Adapter/Plates",
+                "reference": "5011dd0e03957bc9960d5b170f16795f6b862e9c"
             },
             "require": {
                 "league/plates": "^3.0",
                 "php": "^7.0 || ^8.0",
                 "schranz-templating/template-renderer": "^0.1"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Schranz\\Templating\\Bridge\\Plates\\": ""
+                    "Schranz\\Templating\\Adapter\\Plates\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "A bridge for the template renderer for plates template engine.",
-            "support": {
-                "issues": "https://github.com/schranz-templating/plates-bridge/issues",
-                "source": "https://github.com/schranz-templating/plates-bridge/tree/0.1"
-            },
-            "time": "2022-06-25T16:11:44+00:00"
+            "description": "An adapter for the template renderer for plates template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
-            "name": "schranz-templating/smarty-bridge",
+            "name": "schranz-templating/smarty-adapter",
             "version": "0.1.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/schranz-templating/smarty-bridge.git",
-                "reference": "28df4e9c39c3cfc469cb74d1bb7cc888fbf46440"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/schranz-templating/smarty-bridge/zipball/28df4e9c39c3cfc469cb74d1bb7cc888fbf46440",
-                "reference": "28df4e9c39c3cfc469cb74d1bb7cc888fbf46440",
-                "shasum": ""
+                "type": "path",
+                "url": "./../../../src/Adapter/Smarty",
+                "reference": "e34621aeb2a0c3a9c708edb6328da3057a7eaab4"
             },
             "require": {
                 "php": "^7.0 || ^8.0",
                 "schranz-templating/template-renderer": "^0.1",
                 "smarty/smarty": "^3.0 || ^4.1"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Schranz\\Templating\\Bridge\\Smarty\\": ""
+                    "Schranz\\Templating\\Adapter\\Smarty\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "A bridge for the template renderer for smarty template engine.",
-            "support": {
-                "issues": "https://github.com/schranz-templating/smarty-bridge/issues",
-                "source": "https://github.com/schranz-templating/smarty-bridge/tree/0.1"
-            },
-            "time": "2022-06-27T21:40:09+00:00"
+            "description": "An adapter for the template renderer for smarty template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "schranz-templating/template-renderer",
             "version": "0.1.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/schranz-templating/template-renderer.git",
-                "reference": "b150e2056ef8e4c1ddb9c288ad5e5db7b7aa3c2e"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/schranz-templating/template-renderer/zipball/b150e2056ef8e4c1ddb9c288ad5e5db7b7aa3c2e",
-                "reference": "b150e2056ef8e4c1ddb9c288ad5e5db7b7aa3c2e",
-                "shasum": ""
+                "type": "path",
+                "url": "./../../../src/TemplateRenderer",
+                "reference": "8e0a1f20a2a91bfdced8b7f7feb9f0d95eab44ab"
             },
             "require": {
                 "php": "^7.0 || ^8.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Schranz\\Templating\\TemplateRenderer\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "Provide template renderer interface used by different template engine bridges.",
-            "support": {
-                "issues": "https://github.com/schranz-templating/template-renderer/issues",
-                "source": "https://github.com/schranz-templating/template-renderer/tree/0.1"
-            },
-            "time": "2022-06-25T10:01:57+00:00"
+            "description": "Provide template renderer interface used by different template engine adapters.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
-            "name": "schranz-templating/twig-bridge",
+            "name": "schranz-templating/twig-adapter",
             "version": "0.1.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/schranz-templating/twig-bridge.git",
-                "reference": "90be620799f3139798f4ff91e2db9d1daa9ff601"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/schranz-templating/twig-bridge/zipball/90be620799f3139798f4ff91e2db9d1daa9ff601",
-                "reference": "90be620799f3139798f4ff91e2db9d1daa9ff601",
-                "shasum": ""
+                "type": "path",
+                "url": "./../../../src/Adapter/Twig",
+                "reference": "d2edff007ed13b8bee152ff650a96c98dc406585"
             },
             "require": {
                 "php": "^7.0 || ^8.0",
                 "schranz-templating/template-renderer": "^0.1",
                 "twig/twig": "^1.0 || ^2.0 || ^3.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Schranz\\Templating\\Bridge\\Twig\\": ""
+                    "Schranz\\Templating\\Adapter\\Twig\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "A bridge for the template renderer for twig template engine.",
-            "support": {
-                "issues": "https://github.com/schranz-templating/twig-bridge/issues",
-                "source": "https://github.com/schranz-templating/twig-bridge/tree/0.1"
-            },
-            "time": "2022-06-25T11:46:40+00:00"
+            "description": "An adapter for the template renderer for twig template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "smarty/smarty",
-            "version": "v4.2.0",
+            "version": "v4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/smarty-php/smarty.git",
-                "reference": "97aeb14c6fc2fb733938809926e2f9d6c581a70d"
+                "reference": "ffa2b81a8e354a49fd8a2f24742dc9dc399e8007"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/97aeb14c6fc2fb733938809926e2f9d6c581a70d",
-                "reference": "97aeb14c6fc2fb733938809926e2f9d6c581a70d",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/ffa2b81a8e354a49fd8a2f24742dc9dc399e8007",
+                "reference": "ffa2b81a8e354a49fd8a2f24742dc9dc399e8007",
                 "shasum": ""
             },
             "require": {
@@ -3128,9 +3050,9 @@
             "support": {
                 "forum": "https://github.com/smarty-php/smarty/discussions",
                 "issues": "https://github.com/smarty-php/smarty/issues",
-                "source": "https://github.com/smarty-php/smarty/tree/v4.2.0"
+                "source": "https://github.com/smarty-php/smarty/tree/v4.2.1"
             },
-            "time": "2022-08-01T21:57:38+00:00"
+            "time": "2022-09-14T10:59:01+00:00"
         },
         {
             "name": "symfony/finder",
@@ -3453,12 +3375,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "3aaa746957af025557e2aefdeb96b607ac3d0c74"
+                "reference": "dee863694f76b2f867cfebb96ecc5f8701f4af0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/3aaa746957af025557e2aefdeb96b607ac3d0c74",
-                "reference": "3aaa746957af025557e2aefdeb96b607ac3d0c74",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/dee863694f76b2f867cfebb96ecc5f8701f4af0b",
+                "reference": "dee863694f76b2f867cfebb96ecc5f8701f4af0b",
                 "shasum": ""
             },
             "require": {
@@ -3541,7 +3463,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-08-02T16:18:05+00:00"
+            "time": "2022-09-02T15:04:41+00:00"
         },
         {
             "name": "symfony/translation-contracts",
@@ -3855,5 +3777,5 @@
         "php": "^7.4 || ~8.0.0 || ~8.1.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }

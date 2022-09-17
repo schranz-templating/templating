@@ -8,7 +8,7 @@ use Illuminate\View\Compilers\BladeCompiler;
 use Illuminate\View\Engines\EngineResolver;
 use Illuminate\View\Factory;
 use Illuminate\View\FileViewFinder;
-use Schranz\Templating\Bridge\Blade\BladeRenderer;
+use Schranz\Templating\Adapter\Blade\BladeRenderer;
 use Schranz\Templating\Integration\Symfony\Blade\Factory\EngineResolverFactory;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

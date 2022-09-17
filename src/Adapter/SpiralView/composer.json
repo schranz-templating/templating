@@ -1,0 +1,26 @@
+{
+    "name": "schranz-templating/spiral-view-adapter",
+    "description": "An adapter for the template renderer for spiral view template engines.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\Adapter\\SpiralView\\": ""
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./../../TemplateRenderer",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "spiral/views": "^1.0 || ^2",
+        "schranz-templating/template-renderer": "^0.1"
+    },
+    "minimum-stability": "dev"
+}

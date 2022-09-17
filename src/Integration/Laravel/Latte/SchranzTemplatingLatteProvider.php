@@ -5,7 +5,7 @@ namespace Schranz\Templating\Integration\Laravel\Latte;
 use Illuminate\Support\ServiceProvider;
 use Latte\Engine;
 use Latte\Loaders\FileLoader;
-use Schranz\Templating\Bridge\Latte\LatteRenderer;
+use Schranz\Templating\Adapter\Latte\LatteRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class SchranzTemplatingLatteProvider extends ServiceProvider

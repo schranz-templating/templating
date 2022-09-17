@@ -8,11 +8,27 @@
             "Schranz\\Templating\\Integration\\Laminas\\Blade\\": ""
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./../../../TemplateRenderer",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../Adapter/Blade",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
         "php": "^7.0 || ^8.0",
         "laminas/laminas-modulemanager": "^2.0",
         "laminas/laminas-servicemanager": "^2.0 || ^3.0",
-        "schranz-templating/blade-bridge": "^0.1"
+        "schranz-templating/blade-adapter": "^0.1"
     },
     "minimum-stability": "dev",
     "extra": {

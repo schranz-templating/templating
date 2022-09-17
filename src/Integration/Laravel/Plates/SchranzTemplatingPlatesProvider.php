@@ -4,7 +4,7 @@ namespace Schranz\Templating\Integration\Laravel\Plates;
 
 use Illuminate\Support\ServiceProvider;
 use League\Plates\Engine;
-use Schranz\Templating\Bridge\Plates\PlatesRenderer;
+use Schranz\Templating\Adapter\Plates\PlatesRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class SchranzTemplatingPlatesProvider extends ServiceProvider

@@ -5,7 +5,7 @@ namespace Schranz\Templating\Integration\Symfony\Latte\DependencyInjection;
 use Latte\Engine;
 use Latte\Extension as LatteExtension;
 use Latte\Loaders\FileLoader;
-use Schranz\Templating\Bridge\Latte\LatteRenderer;
+use Schranz\Templating\Adapter\Latte\LatteRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;

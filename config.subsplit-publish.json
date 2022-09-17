@@ -6,69 +6,69 @@
             "target": "git@github.com:schranz-templating/template-renderer.git"
         },
         {
-            "name": "AuraViewBridge",
-            "directory": "src/Bridge/AuraView",
-            "target": "git@github.com:schranz-templating/aura-view-bridge.git"
+            "name": "AuraViewAdapter",
+            "directory": "src/Adapter/AuraView",
+            "target": "git@github.com:schranz-templating/aura-view-adapter.git"
         },
         {
-            "name": "BladeBridge",
-            "directory": "src/Bridge/Blade",
-            "target": "git@github.com:schranz-templating/blade-bridge.git"
+            "name": "BladeAdapter",
+            "directory": "src/Adapter/Blade",
+            "target": "git@github.com:schranz-templating/blade-adapter.git"
         },
         {
-            "name": "FluidBridge",
-            "directory": "src/Bridge/Fluid",
-            "target": "git@github.com:schranz-templating/fluid-bridge.git"
+            "name": "FluidAdapter",
+            "directory": "src/Adapter/Fluid",
+            "target": "git@github.com:schranz-templating/fluid-adapter.git"
         },
         {
-            "name": "HandlebarsBridge",
-            "directory": "src/Bridge/Handlebars",
-            "target": "git@github.com:schranz-templating/handlebars-bridge.git"
+            "name": "HandlebarsAdapter",
+            "directory": "src/Adapter/Handlebars",
+            "target": "git@github.com:schranz-templating/handlebars-adapter.git"
         },
         {
-            "name": "LaminasViewBridge",
-            "directory": "src/Bridge/LaminasView",
-            "target": "git@github.com:schranz-templating/laminas-view-bridge.git"
+            "name": "LaminasViewAdapter",
+            "directory": "src/Adapter/LaminasView",
+            "target": "git@github.com:schranz-templating/laminas-view-adapter.git"
         },
         {
-            "name": "LatteBridge",
-            "directory": "src/Bridge/Latte",
-            "target": "git@github.com:schranz-templating/latte-bridge.git"
+            "name": "LatteAdapter",
+            "directory": "src/Adapter/Latte",
+            "target": "git@github.com:schranz-templating/latte-adapter.git"
         },
         {
-            "name": "MezzioBridge",
-            "directory": "src/Bridge/Mezzio",
-            "target": "git@github.com:schranz-templating/mezzio-bridge.git"
+            "name": "MezzioAdapter",
+            "directory": "src/Adapter/Mezzio",
+            "target": "git@github.com:schranz-templating/mezzio-adapter.git"
         },
         {
-            "name": "MustacheBridge",
-            "directory": "src/Bridge/Mustache",
-            "target": "git@github.com:schranz-templating/mustache-bridge.git"
+            "name": "MustacheAdapter",
+            "directory": "src/Adapter/Mustache",
+            "target": "git@github.com:schranz-templating/mustache-adapter.git"
         },
         {
-            "name": "PlatesBridge",
-            "directory": "src/Bridge/Plates",
-            "target": "git@github.com:schranz-templating/plates-bridge.git"
+            "name": "PlatesAdapter",
+            "directory": "src/Adapter/Plates",
+            "target": "git@github.com:schranz-templating/plates-adapter.git"
         },
         {
-            "name": "QiqBridge",
-            "directory": "src/Bridge/Qiq",
-            "target": "git@github.com:schranz-templating/qiq-bridge.git"
+            "name": "QiqAdapter",
+            "directory": "src/Adapter/Qiq",
+            "target": "git@github.com:schranz-templating/qiq-adapter.git"
         },
         {
-            "name": "SmartyBridge",
-            "directory": "src/Bridge/Smarty",
-            "target": "git@github.com:schranz-templating/smarty-bridge.git"
+            "name": "SmartyAdapter",
+            "directory": "src/Adapter/Smarty",
+            "target": "git@github.com:schranz-templating/smarty-adapter.git"
         },
         {
-            "name": "SpiralViewBridge",
-            "directory": "src/Bridge/SpiralView",
-            "target": "git@github.com:schranz-templating/spiral-view-bridge.git"
+            "name": "SpiralViewAdapter",
+            "directory": "src/Adapter/SpiralView",
+            "target": "git@github.com:schranz-templating/spiral-view-adapter.git"
         },
         {
-            "name": "TwigBridge",
-            "directory": "src/Bridge/Twig",
-            "target": "git@github.com:schranz-templating/twig-bridge.git"
+            "name": "TwigAdapter",
+            "directory": "src/Adapter/Twig",
+            "target": "git@github.com:schranz-templating/twig-adapter.git"
         },
         {
             "name": "LaminasBladeIntegration",
@@ -151,9 +151,9 @@
             "target": "git@github.com:schranz-templating/symfony-blade-integration.git"
         },
         {
-            "name": "YiiViewBridge",
-            "directory": "src/Bridge/YiiView",
-            "target": "git@github.com:schranz-templating/yii-view-bridge.git"
+            "name": "YiiViewAdapter",
+            "directory": "src/Adapter/YiiView",
+            "target": "git@github.com:schranz-templating/yii-view-adapter.git"
         },
         {
             "name": "SymfonyBladeIntegration",

@@ -1,6 +1,6 @@
 {
     "name": "schranz-templating/template-renderer",
-    "description": "Provide template renderer interface used by different template engine bridges.",
+    "description": "Provide template renderer interface used by different template engine adapters.",
     "type": "library",
     "license": "MIT",
     "autoload": {

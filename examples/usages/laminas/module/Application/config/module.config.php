@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace Application;
 
 use Laminas\Router\Http\Literal;
-use Schranz\Templating\Bridge\Blade\BladeRenderer;
-use Schranz\Templating\Bridge\Handlebars\HandlebarsRenderer;
-use Schranz\Templating\Bridge\LaminasView\LaminasViewRenderer;
-use Schranz\Templating\Bridge\Latte\LatteRenderer;
-use Schranz\Templating\Bridge\Mustache\MustacheRenderer;
-use Schranz\Templating\Bridge\Plates\PlatesRenderer;
-use Schranz\Templating\Bridge\Smarty\SmartyRenderer;
-use Schranz\Templating\Bridge\Twig\TwigRenderer;
+use Schranz\Templating\Adapter\Blade\BladeRenderer;
+use Schranz\Templating\Adapter\Handlebars\HandlebarsRenderer;
+use Schranz\Templating\Adapter\LaminasView\LaminasViewRenderer;
+use Schranz\Templating\Adapter\Latte\LatteRenderer;
+use Schranz\Templating\Adapter\Mustache\MustacheRenderer;
+use Schranz\Templating\Adapter\Plates\PlatesRenderer;
+use Schranz\Templating\Adapter\Smarty\SmartyRenderer;
+use Schranz\Templating\Adapter\Twig\TwigRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 return [

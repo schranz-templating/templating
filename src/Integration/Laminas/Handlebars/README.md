@@ -1,6 +1,6 @@
 # Schranz Template Renderer Integration for Handlebars
 
-Integrate the templating [Handlebars Bridge](https://github.com/schranz-templating/handlebars-bridge)
+Integrate the templating [Handlebars Adapter](https://github.com/schranz-templating/handlebars-adapter)
 into the [Laminas Framework](https://getlaminas.org/).
 
 Part of the [Schranz Templating Project](https://github.com/schranz-templating/templating).

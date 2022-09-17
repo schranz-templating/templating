@@ -1,6 +1,6 @@
 # Schranz Template Renderer Integration for Twig
 
-Integrate the templating [Twig Bridge](https://github.com/schranz-templating/twig-bridge) 
+Integrate the templating [Twig Adapter](https://github.com/schranz-templating/twig-adapter) 
 into the Symfony Framework.
 
 Part of the [Schranz Templating Project](https://github.com/schranz-templating/templating).
@@ -24,6 +24,6 @@ return [
 
 ## Configuration
 
-The Twig Bridge has currently no configuration as twig
+The Twig Integration has currently no configuration as twig
 is supported out of the box by Symfony and can be configured
 via the [Symfony Twig Bundle](https://symfony.com/doc/6.2/reference/configuration/twig.html).

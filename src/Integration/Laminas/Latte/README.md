@@ -1,6 +1,6 @@
 # Schranz Template Renderer Integration for Latte
 
-Integrate the templating [Latte Bridge](https://github.com/schranz-templating/latte-bridge)
+Integrate the templating [Latte Adapter](https://github.com/schranz-templating/latte-adapter)
 into the [Laminas Framework](https://getlaminas.org/).
 
 Part of the [Schranz Templating Project](https://github.com/schranz-templating/templating).

@@ -2,7 +2,7 @@
 
 namespace Schranz\Templating\Integration\Symfony\Smarty\DependencyInjection;
 
-use Schranz\Templating\Bridge\Smarty\SmartyRenderer;
+use Schranz\Templating\Adapter\Smarty\SmartyRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 use Smarty;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

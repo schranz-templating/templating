@@ -7,7 +7,7 @@ use Laminas\ServiceManager\ServiceManager;
 use Twig\Environment;
 use Twig\Extension\DebugExtension;
 use Twig\Loader\FilesystemLoader;
-use Schranz\Templating\Bridge\Twig\TwigRenderer;
+use Schranz\Templating\Adapter\Twig\TwigRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class Module implements ConfigProviderInterface

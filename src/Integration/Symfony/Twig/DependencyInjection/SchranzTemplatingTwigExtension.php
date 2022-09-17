@@ -2,7 +2,7 @@
 
 namespace Schranz\Templating\Integration\Symfony\Twig\DependencyInjection;
 
-use Schranz\Templating\Bridge\Twig\TwigRenderer;
+use Schranz\Templating\Adapter\Twig\TwigRenderer;
 use Schranz\Templating\Integration\Symfony\Blade\DependencyInjection\Configuration;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

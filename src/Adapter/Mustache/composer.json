@@ -1,0 +1,26 @@
+{
+    "name": "schranz-templating/mustache-adapter",
+    "description": "An adapter for the template renderer for mustache template engine.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\Adapter\\Mustache\\": ""
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./../../TemplateRenderer",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "mustache/mustache": "^2.0",
+        "schranz-templating/template-renderer": "^0.1"
+    },
+    "minimum-stability": "dev"
+}

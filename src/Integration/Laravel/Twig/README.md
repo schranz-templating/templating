@@ -1,6 +1,6 @@
 # Schranz Template Renderer Integration for Twig
 
-Integrate the templating [Twig Bridge](https://github.com/schranz-templating/twig-bridge) 
+Integrate the templating [Twig Adapter](https://github.com/schranz-templating/twig-adapter) 
 into the Laravel Framework.
 
 Part of the [Schranz Templating Project](https://github.com/schranz-templating/templating).
