@@ -59,6 +59,7 @@ Discussion in the PHP-FIG:
      - [x] [Plates](src/Integration/Symfony/Plates/README.md) ([`schranz-templating/symfony-plates-integration`](https://github.com/schranz-templating/symfony-plates-integration))
      - [x] [Handlebars](src/Integration/Symfony/Handlebars/README.md) ([`schranz-templating/symfony-handlebars-integration`](https://github.com/schranz-templating/symfony-handlebars-integration))
      - [x] [Smarty](src/Integration/Symfony/Smarty/README.md) ([`schranz-templating/symfony-smarty-integration`](https://github.com/schranz-templating/symfony-smarty-integration))
+     - [ ] Brainy
      - [ ] PHPTAL
      - [ ] ...
    - [ ] Laravel
@@ -69,6 +70,7 @@ Discussion in the PHP-FIG:
      - [x] [Plates](src/Integration/Laravel/Plates/README.md) ([`schranz-templating/laravel-plates-integration`](https://github.com/schranz-templating/laravel-plates-integration))
      - [x] [Smarty](src/Integration/Laravel/Smarty/README.md) ([`schranz-templating/laravel-smarty-integration`](https://github.com/schranz-templating/laravel-smarty-integration))
      - [x] [Twig](src/Integration/Laravel/Twig/README.md) ([`schranz-templating/laravel-twig-integration`](https://github.com/schranz-templating/laravel-twig-integration))
+     - [ ] Brainy
      - [ ] PHPTAL
      - [ ] ...
    - [ ] Spiral
@@ -83,6 +85,7 @@ Discussion in the PHP-FIG:
       - [x] [Plates](src/Integration/Laminas/Plates/README.md) ([`schranz-templating/laminas-plates-integration`](https://github.com/schranz-templating/laminas-plates-integration))
       - [x] [Smarty](src/Integration/Laminas/Smarty/README.md) ([`schranz-templating/laminas-smarty-integration`](https://github.com/schranz-templating/laminas-smarty-integration))
       - [x] [Twig](src/Integration/Laminas/Twig/README.md) ([`schranz-templating/laminas-twig-integration`](https://github.com/schranz-templating/laminas-twig-integration))
+      - [ ] Brainy
       - [ ] PHPTAL
       - [ ] ...
    - [ ] Mezzio
@@ -120,6 +123,7 @@ should require the renderer package and an adapter to the template engine they w
 ```bash
 composer require schranz-templating/aura-view-adapter
 composer require schranz-templating/blade-adapter
+composer require schranz-templating/brainy-adapter
 composer require schranz-templating/fluid-adapter
 composer require schranz-templating/handlebars-adapter
 composer require schranz-templating/laminas-view-adapter
@@ -196,7 +200,7 @@ they are supporting. Also, what kind of features are supported by them.
 | Engine       | Version  | PHP Version            | Inheritance | Subviews | Namespaces | Functions | Filters | Exist | Partial | Streaming | String | Raw | Globals | Implemented |
 |--------------|----------|------------------------|-------------|----------|------------|-----------|---------|-------|---------|-----------|--------|-----|---------|-------------|
 | Twig         | `3.4.1`  | `>=7.2.5`              | [x]         |          | [x] `@`    | [x]       | [x]     | [x]   | [x]     | [x]       | [x]    | [x] | [x]     | [x]         |
-| Smarty       | `4.1.1`  | `^7.1 ^8.0`            | [x]         |          | ?          | [x]       | ?       | ?     | ?       | [x]       |        | ?   | ?       | [x]         |
+| Smarty       | `4.1.1`  | `^7.1 ^8.0`            | [x]         |          | ?          | [x]       | ?       | ?     | ?       | [x]       | [x]    | ?   | ?       | [x]         |
 | Latte        | `3.0.0`  | `>=8.0 <8.2`           | [x]         |          | ?          |           | [x]     | ?     | ?       | ?         | [x]    | [x] | ?       | [x]         |
 | Blade        | `9.15.0` | `^8.1`                 | [x]         |          | [x] `::`   | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       | [x]         |
 | Spiral View  | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?     | ?       | ?         | ?      | ?   | ?       | [x]         |
@@ -211,6 +215,7 @@ they are supporting. Also, what kind of features are supported by them.
 | Qiq          | `1.0.2`  | `^8.0`                 | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       | [x]         |
 | Aura View    | `2.4.0`  | `>=5.4.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       | [x]         |
 | PHPTAL       | `1.7.0`  | `~8.0.0 ~8.1.0 ~8.2.0` | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       | [x]         |
+| Brainy       | `4.0.0`  | `>=7.3`                | [x]         |          | ?          | [x]       | ?       | ?     | ?       | [x]       | [x]    | ?   | ?       | [x]         |
 
 ### Feature Support
 
@@ -290,7 +295,7 @@ E.g. This is achieved in twig via the `display` method.
 
 Supports to return the template as a string.
 
-E.g. This is achieved in twig via the `render` method.
+E.g. This is achieved in twig via the `render` method, in Smarty/Brainy view the `fetch` method.
 
 #### Raw
 

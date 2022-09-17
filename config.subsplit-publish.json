@@ -16,6 +16,11 @@
             "target": "git@github.com:schranz-templating/blade-adapter.git"
         },
         {
+            "name": "BrainyAdapter",
+            "directory": "src/Adapter/Brainy",
+            "target": "git@github.com:schranz-templating/brainy-adapter.git"
+        },
+        {
             "name": "FluidAdapter",
             "directory": "src/Adapter/Fluid",
             "target": "git@github.com:schranz-templating/fluid-adapter.git"
