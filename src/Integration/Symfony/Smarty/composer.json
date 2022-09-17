@@ -8,6 +8,22 @@
             "Schranz\\Templating\\Integration\\Symfony\\Smarty\\": ""
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./../../../TemplateRenderer",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../Adapter/Smarty",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
         "php": "^7.0 || ^8.0",
         "schranz-templating/smarty-adapter": "^0.1",

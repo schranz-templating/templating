@@ -8,6 +8,15 @@
             "Schranz\\Templating\\Adapter\\Handlebars\\": ""
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./../../TemplateRenderer",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
         "php": "^7.0 || ^8.0",
         "salesforce/handlebars-php": "^2.3",

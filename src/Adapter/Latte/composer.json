@@ -8,6 +8,15 @@
             "Schranz\\Templating\\Adapter\\Latte\\": ""
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./../../TemplateRenderer",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
         "php": "^7.0 || ^8.0",
         "latte/latte": "^2.0 || ^3.0",

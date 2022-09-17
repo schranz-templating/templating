@@ -12,6 +12,69 @@
     "repositories": [
         {
             "type": "path",
+            "url": "./../../../src/TemplateRenderer",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../src/Adapter/Blade",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../src/Adapter/Handlebars",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../src/Adapter/LaminasView",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../src/Adapter/Latte",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../src/Adapter/Mustache",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../src/Adapter/Plates",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../src/Adapter/Smarty",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../src/Adapter/Twig",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "./../../../src/Integration/Laminas/Blade",
             "options": {
                 "symlink": true

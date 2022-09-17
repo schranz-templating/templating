@@ -8,6 +8,15 @@
             "Schranz\\Templating\\Adapter\\Mezzio\\": ""
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./../../TemplateRenderer",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
         "php": "^7.0 || ^8.0",
         "mezzio/mezzio-template": "^1.0 || ^2.0",

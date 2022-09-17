@@ -8,6 +8,15 @@
             "Schranz\\Templating\\Adapter\\Blade\\": ""
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./../../TemplateRenderer",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
         "php": "^7.0 || ^8.0",
         "illuminate/view": "^8.0 || ^9.0",

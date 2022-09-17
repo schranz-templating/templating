@@ -301,7 +301,7 @@ E.g.: In twig globals can be defined via extensions.
 
 #### Implemented
 
-A adapter was already implemented for this engine and so a common interface
+An adapter was already implemented for this engine and so a common interface
 for this type of engine would be possible.
 
 ## Tooling

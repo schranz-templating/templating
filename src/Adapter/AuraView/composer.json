@@ -8,6 +8,15 @@
             "Schranz\\Templating\\Adapter\\AuraView\\": ""
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./../../TemplateRenderer",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
         "php": "^7.0 || ^8.0",
         "aura/view": "^2.0",

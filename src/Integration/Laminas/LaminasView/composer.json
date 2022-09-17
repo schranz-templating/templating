@@ -8,6 +8,22 @@
             "Schranz\\Templating\\Integration\\Laminas\\LaminasView\\": ""
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./../../../TemplateRenderer",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../Adapter/LaminasView",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
         "php": "^7.0 || ^8.0",
         "laminas/laminas-modulemanager": "^2.0",

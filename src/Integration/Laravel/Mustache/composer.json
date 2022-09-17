@@ -8,6 +8,22 @@
             "Schranz\\Templating\\Integration\\Laravel\\Mustache\\": ""
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./../../../TemplateRenderer",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../Adapter/Mustache",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
         "php": "^7.0 || ^8.0",
         "illuminate/view": "^8.0 || ^9.0",
