@@ -4,7 +4,7 @@ namespace Schranz\Templating\Integration\Symfony\Mustache\DependencyInjection;
 
 use Mustache_Engine;
 use Mustache_Loader_FilesystemLoader;
-use Schranz\Templating\Bridge\Mustache\MustacheRenderer;
+use Schranz\Templating\Adapter\Mustache\MustacheRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;

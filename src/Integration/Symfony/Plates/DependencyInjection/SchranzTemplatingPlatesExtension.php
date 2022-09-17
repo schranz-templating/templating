@@ -3,7 +3,7 @@
 namespace Schranz\Templating\Integration\Symfony\Plates\DependencyInjection;
 
 use League\Plates\Engine;
-use Schranz\Templating\Bridge\Plates\PlatesRenderer;
+use Schranz\Templating\Adapter\Plates\PlatesRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;

@@ -1,6 +1,6 @@
 # Schranz Template Renderer Integration for Blade
 
-Integrate the templating [Blade Bridge](https://github.com/schranz-templating/blade-bridge) 
+Integrate the templating [Blade Adapter](https://github.com/schranz-templating/blade-adapter) 
 into the Laravel Framework.
 
 Part of the [Schranz Templating Project](https://github.com/schranz-templating/templating).

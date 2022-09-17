@@ -4,7 +4,7 @@ namespace Schranz\Templating\Integration\Laminas\Mustache;
 
 use Laminas\ModuleManager\Feature\ConfigProviderInterface;
 use Laminas\ServiceManager\ServiceManager;
-use Schranz\Templating\Bridge\Mustache\MustacheRenderer;
+use Schranz\Templating\Adapter\Mustache\MustacheRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class Module implements ConfigProviderInterface

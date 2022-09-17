@@ -5,7 +5,7 @@ namespace Schranz\Templating\Integration\Laminas\Plates;
 use Laminas\ModuleManager\Feature\ConfigProviderInterface;
 use Laminas\ServiceManager\ServiceManager;
 use League\Plates\Engine;
-use Schranz\Templating\Bridge\Plates\PlatesRenderer;
+use Schranz\Templating\Adapter\Plates\PlatesRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class Module implements ConfigProviderInterface

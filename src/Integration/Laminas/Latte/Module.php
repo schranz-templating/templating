@@ -6,7 +6,7 @@ use Laminas\ModuleManager\Feature\ConfigProviderInterface;
 use Laminas\ServiceManager\ServiceManager;
 use Latte\Engine;
 use Latte\Loaders\FileLoader;
-use Schranz\Templating\Bridge\Latte\LatteRenderer;
+use Schranz\Templating\Adapter\Latte\LatteRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class Module implements ConfigProviderInterface

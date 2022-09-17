@@ -3,7 +3,7 @@
 namespace Schranz\Templating\Integration\Laravel\Twig;
 
 use Illuminate\Support\ServiceProvider;
-use Schranz\Templating\Bridge\Twig\TwigRenderer;
+use Schranz\Templating\Adapter\Twig\TwigRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 use Twig\Environment;
 use Twig\Extension\DebugExtension;

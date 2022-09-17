@@ -1,6 +1,6 @@
 # Schranz Template Renderer Integration for Smarty
 
-Integrate the templating [Smarty Bridge](https://github.com/schranz-templating/smarty-bridge) 
+Integrate the templating [Smarty Adapter](https://github.com/schranz-templating/smarty-adapter) 
 into the Symfony Framework.
 
 Part of the [Schranz Templating Project](https://github.com/schranz-templating/templating).

@@ -5,7 +5,7 @@ namespace Schranz\Templating\Integration\Laminas\LaminasView;
 use Laminas\ModuleManager\Feature\ConfigProviderInterface;
 use Laminas\ServiceManager\ServiceManager;
 use Laminas\View\Renderer\RendererInterface;
-use Schranz\Templating\Bridge\LaminasView\LaminasViewRenderer;
+use Schranz\Templating\Adapter\LaminasView\LaminasViewRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class Module implements ConfigProviderInterface

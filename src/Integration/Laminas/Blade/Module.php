@@ -12,7 +12,7 @@ use Illuminate\View\Factory;
 use Illuminate\View\FileViewFinder;
 use Laminas\ModuleManager\Feature\ConfigProviderInterface;
 use Laminas\ServiceManager\ServiceManager;
-use Schranz\Templating\Bridge\Blade\BladeRenderer;
+use Schranz\Templating\Adapter\Blade\BladeRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class Module implements ConfigProviderInterface

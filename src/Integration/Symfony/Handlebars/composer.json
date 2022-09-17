@@ -11,7 +11,7 @@
     "require": {
         "php": "^7.0 || ^8.0",
         "salesforce/handlebars-php": "^2.3",
-        "schranz-templating/handlebars-bridge": "^0.1",
+        "schranz-templating/handlebars-adapter": "^0.1",
         "symfony/config": "^4.4 || ^5.4 || ^6.0",
         "symfony/dependency-injection": "^4.4 || ^5.4 || ^6.0",
         "symfony/http-kernel": "^4.4 || ^5.4 || ^6.0"

@@ -32,21 +32,21 @@ Discussion in the PHP-FIG:
 ## TODO
 
  - [x] [TemplateRendererInterface](src/TemplateRenderer/TemplateRendererInterface.php) ([`schranz-templating/template-renderer`](https://github.com/schranz-templating/template-renderer))
- - [ ] Bridges
-   - [x] [Twig Template Renderer](src/Bridge/Twig/TwigRenderer.php) ([`schranz-templating/twig-bridge`](https://github.com/schranz-templating/twig-bridge))
-   - [x] [Smarty Template Renderer](src/Bridge/Smarty/SmartyRenderer.php) ([`schranz-templating/smarty-bridge`](https://github.com/schranz-templating/smarty-bridge))
-   - [x] [Latte Template Renderer](src/Bridge/Latte/LatteRenderer.php) ([`schranz-templating/latte-bridge`](https://github.com/schranz-templating/latte-bridge))
-   - [x] [Blade Template Renderer](src/Bridge/Blade/BladeRenderer.php) ([`schranz-templating/blade-bridge`](https://github.com/schranz-templating/blade-bridge))
-   - [x] [Mezzio Template Renderer](src/Bridge/Mezzio/MezzioRenderer.php) ([`schranz-templating/mezzio-bridge`](https://github.com/schranz-templating/mezzio-bridge))
-   - [x] [Plates Template Renderer](src/Bridge/Plates/PlatesRenderer.php) ([`schranz-templating/plates-bridge`](https://github.com/schranz-templating/plates-bridge))
-   - [x] [Mustache Renderer](src/Bridge/Mustache/MustacheRenderer.php) ([`schranz-templating/mustache-bridge`](https://github.com/schranz-templating/mustache-bridge))
-   - [x] [Handlebars Renderer](src/Bridge/Handlebars/HandlebarsRenderer.php) ([`schranz-templating/handlebars-bridge`](https://github.com/schranz-templating/handlebars-bridge))
-   - [x] [Laminas View Renderer](src/Bridge/LaminasView/LaminasViewRenderer.php) ([`schranz-templating/laminas-view-bridge`](https://github.com/schranz-templating/laminas-view-bridge))
-   - [x] [YiiView Renderer](src/Bridge/YiiView/YiiViewRenderer.php) ([`schranz-templating/yii-view-bridge`](https://github.com/schranz-templating/yii-view-bridge))
-   - [x] [Aura View Renderer](src/Bridge/AuraView/AuraViewRenderer.php) ([`schranz-templating/aura-view-bridge`](https://github.com/schranz-templating/aura-view-bridge))
-   - [x] [Qiq Template Renderer](src/Bridge/Qiq/QiqRenderer.php) ([`schranz-templating/qiq-bridge`](https://github.com/schranz-templating/qiq-bridge))
-   - [x] [Spiral View Template Renderer](src/Bridge/SpiralView/SpiralViewRenderer.php) ([`schranz-templating/spiral-view-bridge`](https://github.com/schranz-templating/spiral-view-bridge))
-   - [x] [Fluid Renderer](src/Bridge/Fluid/FluidRenderer.php) ([`schranz-templating/fluid-bridge`](https://github.com/schranz-templating/fluid-bridge))
+ - [ ] Adapters
+   - [x] [Twig Template Renderer](src/Adapter/Twig/TwigRenderer.php) ([`schranz-templating/twig-adapter`](https://github.com/schranz-templating/twig-adapter))
+   - [x] [Smarty Template Renderer](src/Adapter/Smarty/SmartyRenderer.php) ([`schranz-templating/smarty-adapter`](https://github.com/schranz-templating/smarty-adapter))
+   - [x] [Latte Template Renderer](src/Adapter/Latte/LatteRenderer.php) ([`schranz-templating/latte-adapter`](https://github.com/schranz-templating/latte-adapter))
+   - [x] [Blade Template Renderer](src/Adapter/Blade/BladeRenderer.php) ([`schranz-templating/blade-adapter`](https://github.com/schranz-templating/blade-adapter))
+   - [x] [Mezzio Template Renderer](src/Adapter/Mezzio/MezzioRenderer.php) ([`schranz-templating/mezzio-adapter`](https://github.com/schranz-templating/mezzio-adapter))
+   - [x] [Plates Template Renderer](src/Adapter/Plates/PlatesRenderer.php) ([`schranz-templating/plates-adapter`](https://github.com/schranz-templating/plates-adapter))
+   - [x] [Mustache Renderer](src/Adapter/Mustache/MustacheRenderer.php) ([`schranz-templating/mustache-adapter`](https://github.com/schranz-templating/mustache-adapter))
+   - [x] [Handlebars Renderer](src/Adapter/Handlebars/HandlebarsRenderer.php) ([`schranz-templating/handlebars-adapter`](https://github.com/schranz-templating/handlebars-adapter))
+   - [x] [Laminas View Renderer](src/Adapter/LaminasView/LaminasViewRenderer.php) ([`schranz-templating/laminas-view-adapter`](https://github.com/schranz-templating/laminas-view-adapter))
+   - [x] [YiiView Renderer](src/Adapter/YiiView/YiiViewRenderer.php) ([`schranz-templating/yii-view-adapter`](https://github.com/schranz-templating/yii-view-adapter))
+   - [x] [Aura View Renderer](src/Adapter/AuraView/AuraViewRenderer.php) ([`schranz-templating/aura-view-adapter`](https://github.com/schranz-templating/aura-view-adapter))
+   - [x] [Qiq Template Renderer](src/Adapter/Qiq/QiqRenderer.php) ([`schranz-templating/qiq-adapter`](https://github.com/schranz-templating/qiq-adapter))
+   - [x] [Spiral View Template Renderer](src/Adapter/SpiralView/SpiralViewRenderer.php) ([`schranz-templating/spiral-view-adapter`](https://github.com/schranz-templating/spiral-view-adapter))
+   - [x] [Fluid Renderer](src/Adapter/Fluid/FluidRenderer.php) ([`schranz-templating/fluid-adapter`](https://github.com/schranz-templating/fluid-adapter))
    - [ ] Cake View
    - [ ] Contao
  - [ ] Integrations
@@ -102,7 +102,7 @@ Discussion in the PHP-FIG:
 ### Usage for Library Authors
 
 If you create a library, framework or whatever you should just require the template renderer in the
-require section of your composer.json:
+`require` section of your `composer.json`:
 
 ```bash
 composer require schranz-templating/template-renderer
@@ -111,35 +111,35 @@ composer require schranz-templating/template-renderer
 ### Usage for Projects
 
 Projects depending on libraries which where build on top of the `schranz-templating/template-render` abstract
-should require the renderer package and a bridge to the template engine they want to use:
+should require the renderer package and an adapter to the template engine they want to use:
 
 ```bash
-composer require schranz-templating/aura-view-bridge
-composer require schranz-templating/blade-bridge
-composer require schranz-templating/fluid-bridge
-composer require schranz-templating/handlebars-bridge
-composer require schranz-templating/laminas-view-bridge
-composer require schranz-templating/latte-bridge
-composer require schranz-templating/mezzio-bridge
-composer require schranz-templating/mustache-bridge
-composer require schranz-templating/plates-bridge
-composer require schranz-templating/qiq-bridge
-composer require schranz-templating/smarty-bridge
-composer require schranz-templating/spiral-view-bridge
-composer require schranz-templating/twig-bridge
-composer require schranz-templating/yii-view-bridge
+composer require schranz-templating/aura-view-adapter
+composer require schranz-templating/blade-adapter
+composer require schranz-templating/fluid-adapter
+composer require schranz-templating/handlebars-adapter
+composer require schranz-templating/laminas-view-adapter
+composer require schranz-templating/latte-adapter
+composer require schranz-templating/mezzio-adapter
+composer require schranz-templating/mustache-adapter
+composer require schranz-templating/plates-adapter
+composer require schranz-templating/qiq-adapter
+composer require schranz-templating/smarty-adapter
+composer require schranz-templating/spiral-view-adapter
+composer require schranz-templating/twig-adapter
+composer require schranz-templating/yii-view-adapter
 ```
 
-**Why Bridges?**
+**Why Adapters?**
 
 As it would be too much work to create forks of every template engines to implement
-the interface for prototyping it is easier to use the [Bridge Design Pattern](https://designpatternsphp.readthedocs.io/en/latest/Structural/Bridge/README.html)
-to bridge from the `TemplateRendererInterface` to underlying template engines.
+the interface for prototyping it is easier to use the [Adapter Design Pattern](https://designpatternsphp.readthedocs.io/en/latest/Structural/Adapter/README.html)
+to transfer from the `TemplateRendererInterface` to underlying template engines.
 
 #### Usage for Symfony Projects
 
 To use the integration in the Symfony the following packages are currently provided,
-which will register the bridge service and integration of the selected template engine:
+which will register the adapter service and integration of the selected template engine:
 
 ```bash
 composer require schranz-templating/symfony-blade-integration
@@ -154,7 +154,7 @@ composer require schranz-templating/symfony-twig-integration
 #### Usage for Laravel Projects
 
 To use the integration in the Laravel the following packages are currently provided,
-which will register the bridge service and integration of the selected template engine:
+which will register the adapter service and integration of the selected template engine:
 
 ```bash
 composer require schranz-templating/laravel-blade-integration
@@ -169,7 +169,7 @@ composer require schranz-templating/laravel-twig-integration
 #### Usage for Laminas Projects
 
 To use the integration in the Laravel the following packages are currently provided,
-which will register the bridge service and integration of the selected template engine:
+which will register the adapter service and integration of the selected template engine:
 
 ```bash
 composer require schranz-templating/laminas-laminas-view-integration
@@ -301,7 +301,7 @@ E.g.: In twig globals can be defined via extensions.
 
 #### Implemented
 
-A bridge was already implemented for this engine and so a common interface
+A adapter was already implemented for this engine and so a common interface
 for this type of engine would be possible.
 
 ## Tooling

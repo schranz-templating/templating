@@ -1438,16 +1438,16 @@
             "time": "2020-06-08T17:23:52+00:00"
         },
         {
-            "name": "schranz-templating/blade-bridge",
+            "name": "schranz-templating/blade-adapter",
             "version": "0.1.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/schranz-templating/blade-bridge.git",
+                "url": "https://github.com/schranz-templating/blade-adapter.git",
                 "reference": "c04d85ed4ab642ce1bdff5e453efe363a078a727"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schranz-templating/blade-bridge/zipball/c04d85ed4ab642ce1bdff5e453efe363a078a727",
+                "url": "https://api.github.com/repos/schranz-templating/blade-adapter/zipball/c04d85ed4ab642ce1bdff5e453efe363a078a727",
                 "reference": "c04d85ed4ab642ce1bdff5e453efe363a078a727",
                 "shasum": ""
             },
@@ -1460,31 +1460,31 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Schranz\\Templating\\Bridge\\Blade\\": ""
+                    "Schranz\\Templating\\Adapter\\Blade\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "A bridge for the template renderer for blade template engine.",
+            "description": "An adapter for the template renderer for blade template engine.",
             "support": {
-                "issues": "https://github.com/schranz-templating/blade-bridge/issues",
-                "source": "https://github.com/schranz-templating/blade-bridge/tree/0.1"
+                "issues": "https://github.com/schranz-templating/blade-adapter/issues",
+                "source": "https://github.com/schranz-templating/blade-adapter/tree/0.1"
             },
             "time": "2022-06-25T11:46:40+00:00"
         },
         {
-            "name": "schranz-templating/handlebars-bridge",
+            "name": "schranz-templating/handlebars-adapter",
             "version": "0.1.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/schranz-templating/handlebars-bridge.git",
+                "url": "https://github.com/schranz-templating/handlebars-adapter.git",
                 "reference": "f3419ead7b9711cd0ed205c873ccb3fea859f080"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schranz-templating/handlebars-bridge/zipball/f3419ead7b9711cd0ed205c873ccb3fea859f080",
+                "url": "https://api.github.com/repos/schranz-templating/handlebars-adapter/zipball/f3419ead7b9711cd0ed205c873ccb3fea859f080",
                 "reference": "f3419ead7b9711cd0ed205c873ccb3fea859f080",
                 "shasum": ""
             },
@@ -1497,31 +1497,31 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Schranz\\Templating\\Bridge\\Handlebars\\": ""
+                    "Schranz\\Templating\\Adapter\\Handlebars\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "A bridge for the template renderer for handlebars template engine.",
+            "description": "An adapter for the template renderer for handlebars template engine.",
             "support": {
-                "issues": "https://github.com/schranz-templating/handlebars-bridge/issues",
-                "source": "https://github.com/schranz-templating/handlebars-bridge/tree/0.1"
+                "issues": "https://github.com/schranz-templating/handlebars-adapter/issues",
+                "source": "https://github.com/schranz-templating/handlebars-adapter/tree/0.1"
             },
             "time": "2022-06-25T16:30:49+00:00"
         },
         {
-            "name": "schranz-templating/latte-bridge",
+            "name": "schranz-templating/latte-adapter",
             "version": "0.1.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/schranz-templating/latte-bridge.git",
+                "url": "https://github.com/schranz-templating/latte-adapter.git",
                 "reference": "18633efa193b2100a760ce3a6e00b5cd153804a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schranz-templating/latte-bridge/zipball/18633efa193b2100a760ce3a6e00b5cd153804a2",
+                "url": "https://api.github.com/repos/schranz-templating/latte-adapter/zipball/18633efa193b2100a760ce3a6e00b5cd153804a2",
                 "reference": "18633efa193b2100a760ce3a6e00b5cd153804a2",
                 "shasum": ""
             },
@@ -1534,31 +1534,31 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Schranz\\Templating\\Bridge\\Latte\\": ""
+                    "Schranz\\Templating\\Adapter\\Latte\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "A bridge for the template renderer for latte template engine.",
+            "description": "An adapter for the template renderer for latte template engine.",
             "support": {
-                "issues": "https://github.com/schranz-templating/latte-bridge/issues",
-                "source": "https://github.com/schranz-templating/latte-bridge/tree/0.1"
+                "issues": "https://github.com/schranz-templating/latte-adapter/issues",
+                "source": "https://github.com/schranz-templating/latte-adapter/tree/0.1"
             },
             "time": "2022-06-25T11:46:40+00:00"
         },
         {
-            "name": "schranz-templating/mustache-bridge",
+            "name": "schranz-templating/mustache-adapter",
             "version": "0.1.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/schranz-templating/mustache-bridge.git",
+                "url": "https://github.com/schranz-templating/mustache-adapter.git",
                 "reference": "3e0726ef5daf9bd128bc4695dc7fd60d783462a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schranz-templating/mustache-bridge/zipball/3e0726ef5daf9bd128bc4695dc7fd60d783462a8",
+                "url": "https://api.github.com/repos/schranz-templating/mustache-adapter/zipball/3e0726ef5daf9bd128bc4695dc7fd60d783462a8",
                 "reference": "3e0726ef5daf9bd128bc4695dc7fd60d783462a8",
                 "shasum": ""
             },
@@ -1571,31 +1571,31 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Schranz\\Templating\\Bridge\\Mustache\\": ""
+                    "Schranz\\Templating\\Adapter\\Mustache\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "A bridge for the template renderer for mustache template engine.",
+            "description": "An adapter for the template renderer for mustache template engine.",
             "support": {
-                "issues": "https://github.com/schranz-templating/mustache-bridge/issues",
-                "source": "https://github.com/schranz-templating/mustache-bridge/tree/0.1"
+                "issues": "https://github.com/schranz-templating/mustache-adapter/issues",
+                "source": "https://github.com/schranz-templating/mustache-adapter/tree/0.1"
             },
             "time": "2022-06-25T16:11:44+00:00"
         },
         {
-            "name": "schranz-templating/plates-bridge",
+            "name": "schranz-templating/plates-adapter",
             "version": "0.1.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/schranz-templating/plates-bridge.git",
+                "url": "https://github.com/schranz-templating/plates-adapter.git",
                 "reference": "91ee8627608b70459d4c1039e0aa330c3a447bf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schranz-templating/plates-bridge/zipball/91ee8627608b70459d4c1039e0aa330c3a447bf3",
+                "url": "https://api.github.com/repos/schranz-templating/plates-adapter/zipball/91ee8627608b70459d4c1039e0aa330c3a447bf3",
                 "reference": "91ee8627608b70459d4c1039e0aa330c3a447bf3",
                 "shasum": ""
             },
@@ -1608,31 +1608,31 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Schranz\\Templating\\Bridge\\Plates\\": ""
+                    "Schranz\\Templating\\Adapter\\Plates\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "A bridge for the template renderer for plates template engine.",
+            "description": "An adapter for the template renderer for plates template engine.",
             "support": {
-                "issues": "https://github.com/schranz-templating/plates-bridge/issues",
-                "source": "https://github.com/schranz-templating/plates-bridge/tree/0.1"
+                "issues": "https://github.com/schranz-templating/plates-adapter/issues",
+                "source": "https://github.com/schranz-templating/plates-adapter/tree/0.1"
             },
             "time": "2022-06-25T16:11:44+00:00"
         },
         {
-            "name": "schranz-templating/smarty-bridge",
+            "name": "schranz-templating/smarty-adapter",
             "version": "0.1.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/schranz-templating/smarty-bridge.git",
+                "url": "https://github.com/schranz-templating/smarty-adapter.git",
                 "reference": "a3cdfb168a6aaeb6c6cb0eea632bc2ed461f0111"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schranz-templating/smarty-bridge/zipball/a3cdfb168a6aaeb6c6cb0eea632bc2ed461f0111",
+                "url": "https://api.github.com/repos/schranz-templating/smarty-adapter/zipball/a3cdfb168a6aaeb6c6cb0eea632bc2ed461f0111",
                 "reference": "a3cdfb168a6aaeb6c6cb0eea632bc2ed461f0111",
                 "shasum": ""
             },
@@ -1645,17 +1645,17 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Schranz\\Templating\\Bridge\\Smarty\\": ""
+                    "Schranz\\Templating\\Adapter\\Smarty\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "A bridge for the template renderer for smarty template engine.",
+            "description": "An adapter for the template renderer for smarty template engine.",
             "support": {
-                "issues": "https://github.com/schranz-templating/smarty-bridge/issues",
-                "source": "https://github.com/schranz-templating/smarty-bridge/tree/0.1"
+                "issues": "https://github.com/schranz-templating/smarty-adapter/issues",
+                "source": "https://github.com/schranz-templating/smarty-adapter/tree/0.1"
             },
             "time": "2022-06-25T11:46:40+00:00"
         },
@@ -1670,7 +1670,7 @@
             "require": {
                 "illuminate/view": "^8.0 || ^9.0",
                 "php": "^7.0 || ^8.0",
-                "schranz-templating/blade-bridge": "^0.1",
+                "schranz-templating/blade-adapter": "^0.1",
                 "symfony/config": "^4.4 || ^5.4 || ^6.0",
                 "symfony/dependency-injection": "^4.4 || ^5.4 || ^6.0",
                 "symfony/http-kernel": "^4.4 || ^5.4 || ^6.0"
@@ -1701,7 +1701,7 @@
             "require": {
                 "php": "^7.0 || ^8.0",
                 "salesforce/handlebars-php": "^2.3",
-                "schranz-templating/handlebars-bridge": "^0.1",
+                "schranz-templating/handlebars-adapter": "^0.1",
                 "symfony/config": "^4.4 || ^5.4 || ^6.0",
                 "symfony/dependency-injection": "^4.4 || ^5.4 || ^6.0",
                 "symfony/http-kernel": "^4.4 || ^5.4 || ^6.0"
@@ -1732,7 +1732,7 @@
             "require": {
                 "latte/latte": "^2.0|^3.0",
                 "php": "^7.0 || ^8.0",
-                "schranz-templating/latte-bridge": "^0.1",
+                "schranz-templating/latte-adapter": "^0.1",
                 "symfony/config": "^4.4 || ^5.4 || ^6.0",
                 "symfony/dependency-injection": "^4.4 || ^5.4 || ^6.0",
                 "symfony/http-kernel": "^4.4 || ^5.4 || ^6.0"
@@ -1763,7 +1763,7 @@
             "require": {
                 "mustache/mustache": "^2.0",
                 "php": "^7.0 || ^8.0",
-                "schranz-templating/mustache-bridge": "^0.1",
+                "schranz-templating/mustache-adapter": "^0.1",
                 "symfony/config": "^4.4 || ^5.4 || ^6.0",
                 "symfony/dependency-injection": "^4.4 || ^5.4 || ^6.0",
                 "symfony/http-kernel": "^4.4 || ^5.4 || ^6.0"
@@ -1794,7 +1794,7 @@
             "require": {
                 "league/plates": "^3.0",
                 "php": "^7.0 || ^8.0",
-                "schranz-templating/plates-bridge": "^0.1",
+                "schranz-templating/plates-adapter": "^0.1",
                 "symfony/config": "^4.4 || ^5.4 || ^6.0",
                 "symfony/dependency-injection": "^4.4 || ^5.4 || ^6.0",
                 "symfony/http-kernel": "^4.4 || ^5.4 || ^6.0"
@@ -1824,7 +1824,7 @@
             },
             "require": {
                 "php": "^7.0 || ^8.0",
-                "schranz-templating/smarty-bridge": "^0.1",
+                "schranz-templating/smarty-adapter": "^0.1",
                 "smarty/smarty": "^3.0 || ^4.1",
                 "symfony/config": "^4.4 || ^5.4 || ^6.0",
                 "symfony/dependency-injection": "^4.4 || ^5.4 || ^6.0",
@@ -1855,7 +1855,7 @@
             },
             "require": {
                 "php": "^7.0 || ^8.0",
-                "schranz-templating/twig-bridge": "^0.1",
+                "schranz-templating/twig-adapter": "^0.1",
                 "symfony/config": "^4.4 || ^5.4 || ^6.0",
                 "symfony/dependency-injection": "^4.4 || ^5.4 || ^6.0",
                 "symfony/http-kernel": "^4.4 || ^5.4 || ^6.0",
@@ -1904,7 +1904,7 @@
             "license": [
                 "MIT"
             ],
-            "description": "Provide template renderer interface used by different template engine bridges.",
+            "description": "Provide template renderer interface used by different template engine adapters.",
             "support": {
                 "issues": "https://github.com/schranz-templating/template-renderer/issues",
                 "source": "https://github.com/schranz-templating/template-renderer/tree/0.1"
@@ -1912,16 +1912,16 @@
             "time": "2022-06-25T10:01:57+00:00"
         },
         {
-            "name": "schranz-templating/twig-bridge",
+            "name": "schranz-templating/twig-adapter",
             "version": "0.1.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://github.com/schranz-templating/twig-bridge.git",
+                "url": "https://github.com/schranz-templating/twig-adapter.git",
                 "reference": "90be620799f3139798f4ff91e2db9d1daa9ff601"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schranz-templating/twig-bridge/zipball/90be620799f3139798f4ff91e2db9d1daa9ff601",
+                "url": "https://api.github.com/repos/schranz-templating/twig-adapter/zipball/90be620799f3139798f4ff91e2db9d1daa9ff601",
                 "reference": "90be620799f3139798f4ff91e2db9d1daa9ff601",
                 "shasum": ""
             },
@@ -1934,17 +1934,17 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Schranz\\Templating\\Bridge\\Twig\\": ""
+                    "Schranz\\Templating\\Adapter\\Twig\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "A bridge for the template renderer for twig template engine.",
+            "description": "An adapter for the template renderer for twig template engine.",
             "support": {
-                "issues": "https://github.com/schranz-templating/twig-bridge/issues",
-                "source": "https://github.com/schranz-templating/twig-bridge/tree/0.1"
+                "issues": "https://github.com/schranz-templating/twig-adapter/issues",
+                "source": "https://github.com/schranz-templating/twig-adapter/tree/0.1"
             },
             "time": "2022-06-25T11:46:40+00:00"
         },

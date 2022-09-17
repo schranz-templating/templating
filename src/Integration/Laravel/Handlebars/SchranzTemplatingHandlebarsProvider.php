@@ -6,7 +6,7 @@ use Handlebars\Cache\Disk;
 use Handlebars\Handlebars;
 use Handlebars\Loader\FilesystemLoader;
 use Illuminate\Support\ServiceProvider;
-use Schranz\Templating\Bridge\Handlebars\HandlebarsRenderer;
+use Schranz\Templating\Adapter\Handlebars\HandlebarsRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class SchranzTemplatingHandlebarsProvider extends ServiceProvider

@@ -10,7 +10,7 @@
     },
     "require": {
         "php": "^7.0 || ^8.0",
-        "schranz-templating/smarty-bridge": "^0.1",
+        "schranz-templating/smarty-adapter": "^0.1",
         "smarty/smarty": "^3.0 || ^4.1",
         "symfony/config": "^4.4 || ^5.4 || ^6.0",
         "symfony/dependency-injection": "^4.4 || ^5.4 || ^6.0",

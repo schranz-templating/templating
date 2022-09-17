@@ -4,7 +4,7 @@ namespace Schranz\Templating\Integration\Laminas\Smarty;
 
 use Laminas\ModuleManager\Feature\ConfigProviderInterface;
 use Laminas\ServiceManager\ServiceManager;
-use Schranz\Templating\Bridge\Smarty\SmartyRenderer;
+use Schranz\Templating\Adapter\Smarty\SmartyRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class Module implements ConfigProviderInterface

@@ -12,7 +12,7 @@
         "php": "^7.0 || ^8.0",
         "laminas/laminas-modulemanager": "^2.0",
         "laminas/laminas-servicemanager": "^2.0 || ^3.0",
-        "schranz-templating/laminas-view-bridge": "^0.1"
+        "schranz-templating/laminas-view-adapter": "^0.1"
     },
     "minimum-stability": "dev",
     "extra": {

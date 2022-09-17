@@ -3,7 +3,7 @@
 namespace Schranz\Templating\Integration\Laravel\Blade;
 
 use Illuminate\Support\ServiceProvider;
-use Schranz\Templating\Bridge\Blade\BladeRenderer;
+use Schranz\Templating\Adapter\Blade\BladeRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class SchranzTemplatingBladeProvider extends ServiceProvider

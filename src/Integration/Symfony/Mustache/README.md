@@ -1,6 +1,6 @@
 # Schranz Template Renderer Integration for Mustache
 
-Integrate the templating [Mustache Bridge](https://github.com/schranz-templating/mustache-bridge) 
+Integrate the templating [Mustache Adapter](https://github.com/schranz-templating/mustache-adapter) 
 into the Symfony Framework.
 
 Part of the [Schranz Templating Project](https://github.com/schranz-templating/templating).

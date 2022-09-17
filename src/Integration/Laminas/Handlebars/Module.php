@@ -7,7 +7,7 @@ use Handlebars\Handlebars;
 use Handlebars\Loader\FilesystemLoader;
 use Laminas\ModuleManager\Feature\ConfigProviderInterface;
 use Laminas\ServiceManager\ServiceManager;
-use Schranz\Templating\Bridge\Handlebars\HandlebarsRenderer;
+use Schranz\Templating\Adapter\Handlebars\HandlebarsRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class Module implements ConfigProviderInterface

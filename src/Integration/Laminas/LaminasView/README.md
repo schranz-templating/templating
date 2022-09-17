@@ -1,6 +1,6 @@
 # Schranz Template Renderer Integration for LaminasView
 
-Integrate the templating [LaminasView Bridge](https://github.com/schranz-templating/laminas-view-bridge)
+Integrate the templating [LaminasView Adapter](https://github.com/schranz-templating/laminas-view-adapter)
 into the [Laminas Framework](https://getlaminas.org/).
 
 Part of the [Schranz Templating Project](https://github.com/schranz-templating/templating).
