@@ -47,6 +47,7 @@ Discussion in the PHP-FIG:
    - [x] [Qiq Template Renderer](src/Adapter/Qiq/QiqRenderer.php) ([`schranz-templating/qiq-adapter`](https://github.com/schranz-templating/qiq-adapter))
    - [x] [Spiral View Template Renderer](src/Adapter/SpiralView/SpiralViewRenderer.php) ([`schranz-templating/spiral-view-adapter`](https://github.com/schranz-templating/spiral-view-adapter))
    - [x] [Fluid Renderer](src/Adapter/Fluid/FluidRenderer.php) ([`schranz-templating/fluid-adapter`](https://github.com/schranz-templating/fluid-adapter))
+   - [x] [PHPTAL Renderer](src/Adapter/PHPTAL/PHPTALRenderer.php) ([`schranz-templating/phptal-adapter`](https://github.com/schranz-templating/phptal-adapter))
    - [ ] Cake View
    - [ ] Contao
  - [ ] Integrations
@@ -58,6 +59,7 @@ Discussion in the PHP-FIG:
      - [x] [Plates](src/Integration/Symfony/Plates/README.md) ([`schranz-templating/symfony-plates-integration`](https://github.com/schranz-templating/symfony-plates-integration))
      - [x] [Handlebars](src/Integration/Symfony/Handlebars/README.md) ([`schranz-templating/symfony-handlebars-integration`](https://github.com/schranz-templating/symfony-handlebars-integration))
      - [x] [Smarty](src/Integration/Symfony/Smarty/README.md) ([`schranz-templating/symfony-smarty-integration`](https://github.com/schranz-templating/symfony-smarty-integration))
+     - [ ] PHPTAL
      - [ ] ...
    - [ ] Laravel
      - [x] [Blade](src/Integration/Laravel/Blade/README.md) ([`schranz-templating/laravel-blade-integration`](https://github.com/schranz-templating/laravel-blade-integration))
@@ -67,6 +69,7 @@ Discussion in the PHP-FIG:
      - [x] [Plates](src/Integration/Laravel/Plates/README.md) ([`schranz-templating/laravel-plates-integration`](https://github.com/schranz-templating/laravel-plates-integration))
      - [x] [Smarty](src/Integration/Laravel/Smarty/README.md) ([`schranz-templating/laravel-smarty-integration`](https://github.com/schranz-templating/laravel-smarty-integration))
      - [x] [Twig](src/Integration/Laravel/Twig/README.md) ([`schranz-templating/laravel-twig-integration`](https://github.com/schranz-templating/laravel-twig-integration))
+     - [ ] PHPTAL
      - [ ] ...
    - [ ] Spiral
       - [ ] SpiralView
@@ -80,6 +83,7 @@ Discussion in the PHP-FIG:
       - [x] [Plates](src/Integration/Laminas/Plates/README.md) ([`schranz-templating/laminas-plates-integration`](https://github.com/schranz-templating/laminas-plates-integration))
       - [x] [Smarty](src/Integration/Laminas/Smarty/README.md) ([`schranz-templating/laminas-smarty-integration`](https://github.com/schranz-templating/laminas-smarty-integration))
       - [x] [Twig](src/Integration/Laminas/Twig/README.md) ([`schranz-templating/laminas-twig-integration`](https://github.com/schranz-templating/laminas-twig-integration))
+      - [ ] PHPTAL
       - [ ] ...
    - [ ] Mezzio
       - [ ] Mezzio
@@ -122,6 +126,7 @@ composer require schranz-templating/laminas-view-adapter
 composer require schranz-templating/latte-adapter
 composer require schranz-templating/mezzio-adapter
 composer require schranz-templating/mustache-adapter
+composer require schranz-templating/phptal-adapter
 composer require schranz-templating/plates-adapter
 composer require schranz-templating/qiq-adapter
 composer require schranz-templating/smarty-adapter
@@ -205,6 +210,7 @@ they are supporting. Also, what kind of features are supported by them.
 | Handlebars   | `2.3.0`  | `>=5.4.0`              |             |          | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       | [x]         |
 | Qiq          | `1.0.2`  | `^8.0`                 | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       | [x]         |
 | Aura View    | `2.4.0`  | `>=5.4.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       | [x]         |
+| PHPTAL       | `1.7.0`  | `~8.0.0 ~8.1.0 ~8.2.0` | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       | [x]         |
 
 ### Feature Support
 

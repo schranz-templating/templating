@@ -46,6 +46,11 @@
             "target": "git@github.com:schranz-templating/mustache-adapter.git"
         },
         {
+            "name": "PHPTALAdapter",
+            "directory": "src/Adapter/PHPTAL",
+            "target": "git@github.com:schranz-templating/phptal-adapter.git"
+        },
+        {
             "name": "PlatesAdapter",
             "directory": "src/Adapter/Plates",
             "target": "git@github.com:schranz-templating/plates-adapter.git"
