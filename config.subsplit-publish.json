@@ -161,6 +161,11 @@
             "target": "git@github.com:schranz-templating/symfony-blade-integration.git"
         },
         {
+            "name": "MezzioTwigIntegration",
+            "directory": "src/Integration/Mezzio/Twig",
+            "target": "git@github.com:schranz-templating/mezzio-twig-integration.git"
+        },
+        {
             "name": "YiiViewAdapter",
             "directory": "src/Adapter/YiiView",
             "target": "git@github.com:schranz-templating/yii-view-adapter.git"

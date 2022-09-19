@@ -92,6 +92,7 @@ Discussion in the PHP-FIG:
       - [ ] ...
    - [ ] Mezzio
       - [ ] Mezzio
+      - [x] [Twig](src/Integration/Mezzio/Twig/README.md) ([`schranz-templating/mezzio-twig-integration`](https://github.com/schranz-templating/mezzio-twig-integration))
       - [ ] ...
    - [ ] Yii
       - [ ] YiiView
@@ -179,7 +180,7 @@ composer require schranz-templating/laravel-twig-integration
 
 #### Usage for Laminas Projects
 
-To use the integration in the Laravel the following packages are currently provided,
+To use the integration in the Laminas the following packages are currently provided,
 which will register the adapter service and integration of the selected template engine:
 
 ```bash
@@ -191,6 +192,15 @@ composer require schranz-templating/laminas-mustache-integration
 composer require schranz-templating/laminas-plates-integration
 composer require schranz-templating/laminas-smarty-integration
 composer require schranz-templating/laminas-twig-integration
+```
+
+#### Usage for Mezzio Projects
+
+To use the integration in the Mezzio the following packages are currently provided,
+which will register the adapter service and integration of the selected template engine:
+
+```bash
+composer require schranz-templating/mezzio-twig-integration
 ```
 
 ## Analysis
