@@ -32,10 +32,12 @@ class ConfigProvider
     {
         return [
             'invokables' => [
+                Handler\TemplateTwigHandler::class => Handler\TemplateTwigHandler::class,
                 Handler\PingHandler::class => Handler\PingHandler::class,
             ],
-            'factories'  => [
-                Handler\HomePageHandler::class => Handler\HomePageHandlerFactory::class,
+            'factories' => [
+                Handler\TemplateHandler::class => Handler\TemplateHandlerFactory::class,
+                Handler\TemplateTwigHandler::class => Handler\TemplateTwigHandlerFactory::class,
             ],
         ];
     }
@@ -47,6 +49,7 @@ class ConfigProvider
     {
         return [
             'paths' => [
+                ''    => [__DIR__ . '/../templates'],
                 'app'    => [__DIR__ . '/../templates/app'],
                 'error'  => [__DIR__ . '/../templates/error'],
                 'layout' => [__DIR__ . '/../templates/layout'],

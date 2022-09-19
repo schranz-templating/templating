@@ -42,8 +42,31 @@
             ]
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./../../../src/TemplateRenderer",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../src/Adapter/Twig",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../src/Integration/Mezzio/Twig",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
-        "php": "^7.4 || ~8.0.0 || ~8.1.0",
+        "php": "~8.1.0",
         "composer/package-versions-deprecated": "^1.10.99",
         "laminas/laminas-component-installer": "^2.6",
         "laminas/laminas-config-aggregator": "^1.6",
@@ -53,7 +76,8 @@
         "mezzio/mezzio-helpers": "^5.7",
         "laminas/laminas-servicemanager": "^3.4",
         "mezzio/mezzio-fastroute": "^3.0.3",
-        "mezzio/mezzio-twigrenderer": "^2.6"
+        "mezzio/mezzio-twigrenderer": "^2.6",
+        "schranz-templating/mezzio-twig-integration": "@dev"
     },
     "require-dev": {
         "laminas/laminas-development-mode": "^3.3.0",
@@ -91,5 +115,6 @@
         "serve": "php -S 0.0.0.0:8080 -t public/",
         "test": "phpunit --colors=always",
         "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
-    }
+    },
+    "minimum-stability": "dev"
 }
