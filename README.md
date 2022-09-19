@@ -1,6 +1,6 @@
 <div align="center">
- 
-![PHP Templating Logo with a Rooster on it](https://user-images.githubusercontent.com/1698337/175612156-b475d5bc-6caa-413f-b741-ff14ce861d5d.png)
+
+![Schranz Templating Logo with a Rooster on it](https://user-images.githubusercontent.com/1698337/191008892-ea56b6b5-3484-4181-ab01-42afeee71115.svg)
 
 </div>
 
