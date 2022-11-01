@@ -81,6 +81,11 @@
             "target": "git@github.com:schranz-templating/twig-adapter.git"
         },
         {
+            "name": "YiiViewAdapter",
+            "directory": "src/Adapter/YiiView",
+            "target": "git@github.com:schranz-templating/yii-view-adapter.git"
+        },
+        {
             "name": "LaminasBladeIntegration",
             "directory": "src/Integration/Laminas/Blade",
             "target": "git@github.com:schranz-templating/laminas-blade-integration.git"
@@ -166,9 +171,9 @@
             "target": "git@github.com:schranz-templating/mezzio-twig-integration.git"
         },
         {
-            "name": "YiiViewAdapter",
-            "directory": "src/Adapter/YiiView",
-            "target": "git@github.com:schranz-templating/yii-view-adapter.git"
+            "name": "MezzioPlatesIntegration",
+            "directory": "src/Integration/Mezzio/Plates",
+            "target": "git@github.com:schranz-templating/mezzio-plates-integration.git"
         },
         {
             "name": "SymfonyBladeIntegration",

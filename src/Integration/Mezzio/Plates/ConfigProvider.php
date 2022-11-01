@@ -1,8 +1,8 @@
 <?php
 
-namespace Schranz\Templating\Integration\Mezzio\Twig;
+namespace Schranz\Templating\Integration\Mezzio\Plates;
 
-use Schranz\Templating\Adapter\Twig\TwigRenderer;
+use Schranz\Templating\Adapter\Plates\PlatesRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class ConfigProvider
@@ -18,11 +18,11 @@ class ConfigProvider
     {
         return [
             'aliases'   => [
-                TemplateRendererInterface::class => TwigRenderer::class,
-                TwigRenderer::class => 'schranz_templating.renderer.twig',
+                TemplateRendererInterface::class => PlatesRenderer::class,
+                PlatesRenderer::class => 'schranz_templating.renderer.plates',
             ],
             'factories' => [
-                'schranz_templating.renderer.twig' => TwigRendererFactory::class,
+                'schranz_templating.renderer.plates' => PlatesRendererFactory::class,
             ],
         ];
     }

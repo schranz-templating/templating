@@ -93,6 +93,7 @@ Discussion in the PHP-FIG:
    - [ ] Mezzio
       - [ ] Mezzio
       - [x] [Twig](src/Integration/Mezzio/Twig/README.md) ([`schranz-templating/mezzio-twig-integration`](https://github.com/schranz-templating/mezzio-twig-integration))
+      - [x] [Plates](src/Integration/Mezzio/Plates/README.md) ([`schranz-templating/mezzio-plates-integration`](https://github.com/schranz-templating/mezzio-plates-integration))
       - [ ] ...
    - [ ] Yii
       - [ ] YiiView
@@ -201,6 +202,7 @@ which will register the adapter service and integration of the selected template
 
 ```bash
 composer require schranz-templating/mezzio-twig-integration
+composer require schranz-templating/mezzio-plates-integration
 ```
 
 ## Analysis

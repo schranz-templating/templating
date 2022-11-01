@@ -1,6 +1,6 @@
 # Schranz Template Renderer Integration for Twig
 
-Integrate the templating [Twig Adapter](https://github.com/schranz-templating/twig-adapter) 
+Integrate the templating [Plates Adapter](https://github.com/schranz-templating/plates-adapter) 
 into the Mezzio Framework.
 
 Part of the [Schranz Templating Project](https://github.com/schranz-templating/templating).
@@ -10,7 +10,7 @@ Part of the [Schranz Templating Project](https://github.com/schranz-templating/t
 Install this package via Composer:
 
 ```bash
-composer require schranz-templating/mezzio-twig-integration
+composer require schranz-templating/mezzio-plates-integration
 ```
 
 Register the ConfigProvider class in your `config/config.php` if not already automatically
@@ -21,16 +21,16 @@ added by the framework:
 
 $aggregator = new ConfigAggregator([
     // ...
-    \Mezzio\Twig\ConfigProvider::class,
-    \Schranz\Templating\Integration\Mezzio\Twig\ConfigProvider::class,
+    \Mezzio\Plates\ConfigProvider::class,
+    \Schranz\Templating\Integration\Mezzio\Plates\ConfigProvider::class,
 ]);
 ```
 
 ## Configuration
 
-The Twig Integration has currently no configuration as Twig
+The Plates Integration has currently no configuration as Plates
 is supported out of the box by Mezzio and can be configured
-via the [Mezzio Twig Renderer](https://docs.mezzio.dev/mezzio/v3/features/template/twig/).
+via the [Mezzio Plates Renderer](https://docs.mezzio.dev/mezzio/v3/features/template/plates/).
 
 ## Usage with other Mezzio renderer
 
@@ -46,8 +46,8 @@ class ConfigProvider
     {
         return [
             // ...
-            'twig' => [
-                'extension' => 'html.twig',
+            'plates' => [
+                'extension' => 'php',
             ],
         ];
     }

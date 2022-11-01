@@ -1,11 +1,11 @@
 {
-    "name": "schranz-templating/mezzio-twig-integration",
-    "description": "A integration of template renderer into mezzio via twig template engine.",
+    "name": "schranz-templating/mezzio-plates-integration",
+    "description": "A integration of template renderer into mezzio via plates template engine.",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Schranz\\Templating\\Integration\\Mezzio\\Twig\\": ""
+            "Schranz\\Templating\\Integration\\Mezzio\\Plates\\": ""
         }
     },
     "repositories": [
@@ -18,22 +18,22 @@
         },
         {
             "type": "path",
-            "url": "./../../../Adapter/Twig",
+            "url": "./../../../Adapter/Plates",
             "options": {
                 "symlink": true
             }
         }
     ],
     "require": {
-        "php": "^7.1 || ^8.0",
-        "schranz-templating/twig-adapter": "^0.1",
-        "mezzio/mezzio-twigrenderer": "^2.0",
+        "php": "^7.4 || ^8.0",
+        "schranz-templating/plates-adapter": "^0.1",
+        "mezzio/mezzio-platesrenderer": "^2.6",
         "psr/container": "^1.0 || ^2.0"
     },
     "minimum-stability": "dev",
     "extra": {
         "laminas": {
-            "config-provider": "Schranz\\Templating\\Integration\\Mezzio\\Twig\\ConfigProvider"
+            "config-provider": "Schranz\\Templating\\Integration\\Mezzio\\Plates\\ConfigProvider"
         }
     }
 }
