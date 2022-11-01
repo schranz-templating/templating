@@ -22,6 +22,12 @@ class ConfigProvider
         return [
             'dependencies' => $this->getDependencies(),
             'templates'    => $this->getTemplates(),
+            'plates' => [
+                'extension' => 'php',
+            ],
+            'twig' => [
+                'extension' => 'html.twig',
+            ],
         ];
     }
 
@@ -33,11 +39,13 @@ class ConfigProvider
         return [
             'invokables' => [
                 Handler\TemplateTwigHandler::class => Handler\TemplateTwigHandler::class,
+                Handler\TemplatePlatesHandler::class => Handler\TemplatePlatesHandler::class,
                 Handler\PingHandler::class => Handler\PingHandler::class,
             ],
             'factories' => [
                 Handler\TemplateHandler::class => Handler\TemplateHandlerFactory::class,
                 Handler\TemplateTwigHandler::class => Handler\TemplateTwigHandlerFactory::class,
+                Handler\TemplatePlatesHandler::class => Handler\TemplatePlatesHandlerFactory::class,
             ],
         ];
     }
