@@ -337,13 +337,15 @@ Tooling around template engines:
 
  - **Twig**
    - [twig2latte](https://twig2latte.nette.org/)
-   - [twigfiddle](https://twigfiddle.com/);
+   - [twigfiddle](https://twigfiddle.com/)
    - [asm89/twig-lint](https://github.com/asm89/twig-lint)
-   - [symfony-twig-lint](https://github.com/symfony/twig-bridge/blob/05e3128cb875e9f21d18c5af2354293cd1dec010/Command/LintCommand.php#L39)
+   - [symfony-twig-lint](https://github.com/symfony/twig-bridge/blob/05e3128cb875e9f21d18c5af2354293cd1dec010/Command/LintCommand.php#L39) `bin/console lint:twig`
    - [reveal/reveal-twig](https://github.com/revealphp/reveal/tree/main/packages/reveal-twig) PHPStan Twig Rules
+   - [driveto/phpstan-twig](https://github.com/driveto/phpstan-twig)
    - [matthiasnoback/phpstan-twig-analysis](https://github.com/matthiasnoback/phpstan-twig-analysis)
    - [friendsoftwig/twigcs](https://github.com/friendsoftwig/twigcs)
    - [VincentLanglet/Twig-CS-Fixer](https://github.com/VincentLanglet/Twig-CS-Fixer)
+   - [k10r/twig-cs-fixer](https://github.com/kellerkinderDE/twig-cs-fixer)
 
  - **Latte**
    - [twig2latte](https://twig2latte.nette.org/)
@@ -353,5 +355,7 @@ Tooling around template engines:
  - **Blade**
      - [bdelespierre/laravel-blade-linter](https://github.com/bdelespierre/laravel-blade-linter)
      - [magentron/laravel-blade-lint](https://github.com/Magentron/laravel-blade-lint)
+     - [canvural/phpstan-blade-rule](https://github.com/canvural/phpstan-blade-rule)
+     - [thibaud-dauce/phpstan-blade](https://github.com/ThibaudDauce/phpstan-blade)
 
 Please let me know about more tools around template engines.
