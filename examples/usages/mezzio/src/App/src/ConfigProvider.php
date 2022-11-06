@@ -40,12 +40,14 @@ class ConfigProvider
             'invokables' => [
                 Handler\TemplateTwigHandler::class => Handler\TemplateTwigHandler::class,
                 Handler\TemplatePlatesHandler::class => Handler\TemplatePlatesHandler::class,
+                Handler\TemplateHandlebarsHandler::class => Handler\TemplateHandlebarsHandler::class,
                 Handler\PingHandler::class => Handler\PingHandler::class,
             ],
             'factories' => [
                 Handler\TemplateHandler::class => Handler\TemplateHandlerFactory::class,
                 Handler\TemplateTwigHandler::class => Handler\TemplateTwigHandlerFactory::class,
                 Handler\TemplatePlatesHandler::class => Handler\TemplatePlatesHandlerFactory::class,
+                Handler\TemplateHandlebarsHandler::class => Handler\TemplateHandlebarsHandlerFactory::class,
             ],
         ];
     }
