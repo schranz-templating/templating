@@ -176,6 +176,11 @@
             "target": "git@github.com:schranz-templating/mezzio-plates-integration.git"
         },
         {
+            "name": "MezzioHandlebarsIntegration",
+            "directory": "src/Integration/Mezzio/Handlebars",
+            "target": "git@github.com:schranz-templating/mezzio-handlebars-integration.git"
+        },
+        {
             "name": "SymfonyBladeIntegration",
             "directory": "src/Integration/Symfony/Blade",
             "target": "git@github.com:schranz-templating/symfony-blade-integration.git"
