@@ -41,5 +41,6 @@ return static function (Application $app, MiddlewareFactory $factory, ContainerI
     $app->get('/', App\Handler\TemplateHandler::class, 'home');
     $app->get('/twig', App\Handler\TemplateTwigHandler::class, 'twig');
     $app->get('/plates', App\Handler\TemplatePlatesHandler::class, 'plates');
+    $app->get('/handlebars', App\Handler\TemplateHandlebarsHandler::class, 'handlebars');
     $app->get('/api/ping', App\Handler\PingHandler::class, 'api.ping');
 };

@@ -18,7 +18,7 @@ class TemplateHandler implements RequestHandlerInterface
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
         return new HtmlResponse(
-            '<h1>Goto /twig, /plates</h1>' .
+            '<h1>Goto /twig, /plates, /handlebars</h1>' .
             '<p>Default Renderer is: ' . get_class($this->defaultRenderer) . '</p>'
         );
     }

@@ -1,4 +1,4 @@
-# Schranz Template Renderer Integration for Twig
+# Schranz Template Renderer Integration for Plates
 
 Integrate the templating [Plates Adapter](https://github.com/schranz-templating/plates-adapter) 
 into the Mezzio Framework.
