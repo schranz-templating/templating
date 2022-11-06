@@ -1,6 +1,6 @@
-# Schranz Template Renderer Integration for Handlebars
+# Schranz Template Renderer Integration for Mustache
 
-Integrate the templating [Handlebars Adapter](https://github.com/schranz-templating/handlebars-adapter) 
+Integrate the templating [Mustache Adapter](https://github.com/schranz-templating/mustache-adapter) 
 into the Mezzio Framework.
 
 Part of the [Schranz Templating Project](https://github.com/schranz-templating/templating).
@@ -10,7 +10,7 @@ Part of the [Schranz Templating Project](https://github.com/schranz-templating/t
 Install this package via Composer:
 
 ```bash
-composer require schranz-templating/mezzio-handlebars-integration
+composer require schranz-templating/mezzio-mustache-integration
 ```
 
 Register the ConfigProvider class in your `config/config.php` if not already automatically
@@ -21,7 +21,7 @@ added by the framework:
 
 $aggregator = new ConfigAggregator([
     // ...
-    \Schranz\Templating\Integration\Mezzio\Handlebars\ConfigProvider::class,
+    \Schranz\Templating\Integration\Mezzio\Mustache\ConfigProvider::class,
 ]);
 ```
 
@@ -38,9 +38,9 @@ class ConfigProvider
     {
         return [
             // ...
-            'handlebars' => [
+            'mustache' => [
                 'path' => 'src/App/templates',
-                'cache_dir' => 'data/cache/handlebars',
+                'cache_dir' => 'data/cache/mustache',
             ],
         ];
     }

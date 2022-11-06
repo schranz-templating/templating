@@ -73,6 +73,13 @@
         },
         {
             "type": "path",
+            "url": "./../../../src/Adapter/Mustache",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "./../../../src/Integration/Mezzio/Twig",
             "options": {
                 "symlink": true
@@ -88,6 +95,13 @@
         {
             "type": "path",
             "url": "./../../../src/Integration/Mezzio/Handlebars",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../src/Integration/Mezzio/Mustache",
             "options": {
                 "symlink": true
             }
@@ -107,7 +121,8 @@
         "mezzio/mezzio-twigrenderer": "^2.6",
         "schranz-templating/mezzio-twig-integration": "@dev",
         "schranz-templating/mezzio-plates-integration": "@dev",
-        "schranz-templating/mezzio-handlebars-integration": "@dev"
+        "schranz-templating/mezzio-handlebars-integration": "@dev",
+        "schranz-templating/mezzio-mustache-integration": "@dev"
     },
     "require-dev": {
         "laminas/laminas-development-mode": "^3.3.0",

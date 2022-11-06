@@ -1,0 +1,38 @@
+{
+    "name": "schranz-templating/mezzio-mustache-integration",
+    "description": "A integration of template renderer into mezzio via mustache template engine.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\Integration\\Mezzio\\Mustache\\": ""
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./../../../TemplateRenderer",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../Adapter/Mustache",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "php": "^7.0 || ^8.0",
+        "schranz-templating/mustache-adapter": "^0.1",
+        "psr/container": "^1.0 || ^2.0"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laminas": {
+            "config-provider": "Schranz\\Templating\\Integration\\Mezzio\\Mustache\\ConfigProvider"
+        }
+    }
+}
