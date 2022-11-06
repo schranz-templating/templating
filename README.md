@@ -206,6 +206,7 @@ which will register the adapter service and integration of the selected template
 composer require schranz-templating/mezzio-twig-integration
 composer require schranz-templating/mezzio-plates-integration
 composer require schranz-templating/mezzio-handlebars-integration
+composer require schranz-templating/mezzio-mustache-integration
 ```
 
 ## Analysis
