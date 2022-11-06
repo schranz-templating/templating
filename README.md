@@ -95,6 +95,7 @@ Discussion in the PHP-FIG:
       - [x] [Twig](src/Integration/Mezzio/Twig/README.md) ([`schranz-templating/mezzio-twig-integration`](https://github.com/schranz-templating/mezzio-twig-integration))
       - [x] [Plates](src/Integration/Mezzio/Plates/README.md) ([`schranz-templating/mezzio-plates-integration`](https://github.com/schranz-templating/mezzio-plates-integration))
       - [x] [Handlebars](src/Integration/Mezzio/Handlebars/README.md) ([`schranz-templating/mezzio-handlebars-integration`](https://github.com/schranz-templating/mezzio-handlebars-integration))
+      - [x] [Mustache](src/Integration/Mezzio/Mustache/README.md) ([`schranz-templating/mezzio-mustache-integration`](https://github.com/schranz-templating/mezzio-mustache-integration))
       - [ ] ...
    - [ ] Yii
       - [ ] YiiView

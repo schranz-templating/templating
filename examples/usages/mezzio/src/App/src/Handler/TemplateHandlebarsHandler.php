@@ -12,15 +12,15 @@ use Schranz\Templating\Adapter\Handlebars\HandlebarsRenderer;
 
 class TemplateHandlebarsHandler implements RequestHandlerInterface
 {
-    public function __construct(private HandlebarsRenderer $platesRenderer)
+    public function __construct(private HandlebarsRenderer $handlebarsRenderer)
     {}
 
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
-        return new HtmlResponse($this->platesRenderer->render(
+        return new HtmlResponse($this->handlebarsRenderer->render(
             'base.handlebars',
             [
-                'title' => 'Render using: ' . get_class($this->platesRenderer),
+                'title' => 'Render using: ' . get_class($this->handlebarsRenderer),
             ]
         ));
     }

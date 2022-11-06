@@ -48,6 +48,7 @@ class ConfigProvider
                 Handler\TemplateTwigHandler::class => Handler\TemplateTwigHandlerFactory::class,
                 Handler\TemplatePlatesHandler::class => Handler\TemplatePlatesHandlerFactory::class,
                 Handler\TemplateHandlebarsHandler::class => Handler\TemplateHandlebarsHandlerFactory::class,
+                Handler\TemplateMustacheHandler::class => Handler\TemplateMustacheHandlerFactory::class,
             ],
         ];
     }
