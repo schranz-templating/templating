@@ -49,7 +49,7 @@ implemented.
 | Template Engine | Adapter |     | Symfony | Laravel | Laminas | Mezzio | Spiral |     | Yii | Typo3 | Cake | CodeIgniter |
 |-----------------|---------|-----|---------|---------|---------|--------|--------|-----|-----|-------|------|-------------|
 | Twig            | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
-| Blade           | ✅       |     | ✅       | ✅       | ✅       |        |        |     |     |       |      |             |
+| Blade           | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
 | Latte           | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
 |                 |         |     |         |         |         |        |        |     |     |       |      |             |
 | Plates          | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
@@ -92,8 +92,8 @@ php -S 127.0.0.1:8000 -t public
 Open then [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to get a list of available integrations in the example.
 
  - [http://127.0.0.1:8000/twig](http://127.0.0.1:8000/twig)
- - [http://127.0.0.1:8000/latte](http://127.0.0.1:8000/latte)
  - [http://127.0.0.1:8000/blade](http://127.0.0.1:8000/blade)
+ - [http://127.0.0.1:8000/latte](http://127.0.0.1:8000/latte)
   
   
  - [http://127.0.0.1:8000/plates](http://127.0.0.1:8000/plates)
@@ -241,6 +241,7 @@ which will register the adapter service and integration of the selected template
 composer require schranz-templating/mezzio-mezzio-integration
 
 composer require schranz-templating/mezzio-twig-integration
+composer require schranz-templating/mezzio-blade-integration
 composer require schranz-templating/mezzio-latte-integration
 
 composer require schranz-templating/mezzio-plates-integration
@@ -315,6 +316,7 @@ engines into different frameworks.
     - [ ] Mezzio
         - [ ] Mezzio
         - [x] [Twig](src/Integration/Mezzio/Twig/README.md) ([`schranz-templating/mezzio-twig-integration`](https://github.com/schranz-templating/mezzio-twig-integration))
+        - [x] [Latte](src/Integration/Mezzio/Blade/README.md) ([`schranz-templating/mezzio-blade-integration`](https://github.com/schranz-templating/mezzio-blade-integration))
         - [x] [Latte](src/Integration/Mezzio/Latte/README.md) ([`schranz-templating/mezzio-latte-integration`](https://github.com/schranz-templating/mezzio-latte-integration))
         - [x] [Plates](src/Integration/Mezzio/Plates/README.md) ([`schranz-templating/mezzio-plates-integration`](https://github.com/schranz-templating/mezzio-plates-integration))
         - [x] [Handlebars](src/Integration/Mezzio/Handlebars/README.md) ([`schranz-templating/mezzio-handlebars-integration`](https://github.com/schranz-templating/mezzio-handlebars-integration))
