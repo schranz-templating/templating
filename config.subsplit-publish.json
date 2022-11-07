@@ -191,6 +191,11 @@
             "target": "git@github.com:schranz-templating/mezzio-smarty-integration.git"
         },
         {
+            "name": "MezzioMezzioIntegration",
+            "directory": "src/Integration/Mezzio/Mezzio",
+            "target": "git@github.com:schranz-templating/mezzio-mezzio-integration.git"
+        },
+        {
             "name": "SymfonyBladeIntegration",
             "directory": "src/Integration/Symfony/Blade",
             "target": "git@github.com:schranz-templating/symfony-blade-integration.git"

@@ -87,6 +87,13 @@
         },
         {
             "type": "path",
+            "url": "./../../../src/Adapter/Mezzio",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "./../../../src/Integration/Mezzio/Twig",
             "options": {
                 "symlink": true
@@ -119,6 +126,13 @@
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "path",
+            "url": "./../../../src/Integration/Mezzio/Mezzio",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "require": {
@@ -137,7 +151,8 @@
         "schranz-templating/mezzio-plates-integration": "@dev",
         "schranz-templating/mezzio-handlebars-integration": "@dev",
         "schranz-templating/mezzio-mustache-integration": "@dev",
-        "schranz-templating/mezzio-smarty-integration": "@dev"
+        "schranz-templating/mezzio-smarty-integration": "@dev",
+        "schranz-templating/mezzio-mezzio-integration": "@dev"
     },
     "require-dev": {
         "laminas/laminas-development-mode": "^3.3.0",
