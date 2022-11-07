@@ -8,7 +8,7 @@
 <h1 align="center">Schranz Templating</h1>
 
 <div align="center">
-   <strong>A template abstraction prototype for PHP template engines.</strong>
+   <strong>A template abstraction for PHP template engines.</strong>
 </div>
 
 <br/>
@@ -31,6 +31,44 @@ Discussion in the PHP-FIG:
  - [Tooling](#tooling)
 
 ## TODO
+
+Following table should show the process of integration of different template engines and the abstract
+Interface into the different Frameworks. The first part shows the main supported template engines
+Twig, Blade and Latte. This is actively maintained template engines. The second part shows some older
+template engines which are supported but not actively maintained.  
+The third part shows framework specific view integrations which will only be supported in the specific
+framework they are used.  
+The last part are some exotic template engines which did come up and are also adapters implemented for
+them.  
+On the right part of the table shows frameworks which are planned to be supported but are not yet
+implemented.
+
+| Template Engine | Adapter | Symfony | Laravel | Laminas | Mezzio | Spiral |     | Yii | Typo3 | Cake | CodeIgniter |
+|-----------------|---------|---------|---------|---------|--------|--------|-----|-----|-------|------|-------------|
+| Twig            | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+| Blade           | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+| Latte           | ✅       | ✅       | ✅       | ✅       |        |        |     |     |       |      |             |
+|                 |         |         |         |         |        |        |     |     |       |      |             |
+| Plates          | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+| Smarty          | ✅       | ✅       | ✅       | ✅       |        |        |     |     |       |      |             |
+| Brainy          |         |         |         |         |        |        |     |     |       |      |             |
+| Mustache        | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+| Handlebars      | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+|                 |         |         |         |         |        |        |     |     |       |      |             |
+| Mezzio          | ✅       |         |         |         |        |        |     |     |       |      |             |
+| Laminas View    | ✅       |         |         | ✅       |        |        |     |     |       |      |             |
+| Yii View        | ✅       |         |         |         |        |        |     |     |       |      |             |
+| Aura View       | ✅       |         |         |         |        |        |     |     |       |      |             |
+| Spiral View     | ✅       |         |         |         |        |        |     |     |       |      |             |
+| Fluid           | ✅       |         |         |         |        |        |     |     |       |      |             |
+| Cake View       |         |         |         |         |        |        |     |     |       |      |             |
+| Contao          |         |         |         |         |        |        |     |     |       |      |             |
+|                 |         |         |         |         |        |        |     |     |       |      |             |
+| Qiq             | ✅       |         |         |         |        |        |     |     |       |      |             |
+| PHPTAL          | ✅       |         |         |         |        |        |     |     |       |      |             |
+
+<details>
+<summary>Package List</summary>
 
  - [x] [TemplateRendererInterface](src/TemplateRenderer/TemplateRendererInterface.php) ([`schranz-templating/template-renderer`](https://github.com/schranz-templating/template-renderer))
  - [ ] Adapters
@@ -110,11 +148,13 @@ Discussion in the PHP-FIG:
  - [x] Subtree Split
  - [x] Register Packages
 
+</details>
+
 ## Usage
 
 ### Usage for Library Authors
 
-If you create a library, framework or whatever you should just require the template renderer in the
+If you create a library, framework or whatever reusable package you should just require the template renderer in the
 `require` section of your `composer.json`:
 
 ```bash
@@ -215,25 +255,25 @@ In the following table we will ist all yet found interesting template engines
 and view renderers. What kind of version they currently are and what PHP Version
 they are supporting. Also, what kind of features are supported by them.
 
-| Engine       | Version  | PHP Version            | Inheritance | Subviews | Namespaces | Functions | Filters | Exist | Partial | Streaming | String | Raw | Globals | Implemented |
-|--------------|----------|------------------------|-------------|----------|------------|-----------|---------|-------|---------|-----------|--------|-----|---------|-------------|
-| Twig         | `3.4.1`  | `>=7.2.5`              | [x]         |          | [x] `@`    | [x]       | [x]     | [x]   | [x]     | [x]       | [x]    | [x] | [x]     | [x]         |
-| Smarty       | `4.1.1`  | `^7.1 ^8.0`            | [x]         |          | ?          | [x]       | ?       | ?     | ?       | [x]       | [x]    | ?   | ?       | [x]         |
-| Latte        | `3.0.0`  | `>=8.0 <8.2`           | [x]         |          | ?          |           | [x]     | ?     | ?       | ?         | [x]    | [x] | ?       | [x]         |
-| Blade        | `9.15.0` | `^8.1`                 | [x]         |          | [x] `::`   | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       | [x]         |
-| Spiral View  | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?     | ?       | ?         | ?      | ?   | ?       | [x]         |
-| Mezzio       | `3.10.0` | `~7.4.0 ~8.0.0 ~8.1.0` | [x]         |          | [x] `@`    | ?         | ?       | ?     | ?       |           | [x]    | ?   | ?       | [x]         |
-| Plates       | `3.4.0`  | `^7.0 ^8.0`            | [x]         |          | [x] `::`   | [x]       |         | ?     |         | ?         | [x]    | ?   | ?       | [x]         |
-| Laminas View | `2.20.0` | `^7.4 ~8.0.0 ~8.1.0`   | [x]         | [x]      | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       | [x]         |
-| Yii View     | `5.0.0 ` | `^7.4 ^8.0`            | [x]         | [x]      | [x] `@`    | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       | [x]         |
-| Fluid        | `2.7.1`  | `>=5.5.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       | [x]         |
-| Contao       | `4.13.4` | `^7.4 ^8.0`            | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       | [ ]         |
-| Mustache     | `2.14.1` | `>=5.2.4`              |             |          | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       | [x]         |
-| Handlebars   | `2.3.0`  | `>=5.4.0`              |             |          | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       | [x]         |
-| Qiq          | `1.0.2`  | `^8.0`                 | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       | [x]         |
-| Aura View    | `2.4.0`  | `>=5.4.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       | [x]         |
-| PHPTAL       | `1.7.0`  | `~8.0.0 ~8.1.0 ~8.2.0` | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       | [x]         |
-| Brainy       | `4.0.0`  | `>=7.3`                | [x]         |          | ?          | [x]       | ?       | ?     | ?       | [x]       | [x]    | ?   | ?       | [x]         |
+| Engine       | Version  | PHP Version            | Inheritance | Subviews | Namespaces | Functions | Filters | Exist | Partial | Streaming | String | Raw | Globals |
+|--------------|----------|------------------------|-------------|----------|------------|-----------|---------|-------|---------|-----------|--------|-----|---------|
+| Twig         | `3.4.1`  | `>=7.2.5`              | [x]         |          | [x] `@`    | [x]       | [x]     | [x]   | [x]     | [x]       | [x]    | [x] | [x]     |
+| Smarty       | `4.1.1`  | `^7.1 ^8.0`            | [x]         |          | ?          | [x]       | ?       | ?     | ?       | [x]       | [x]    | ?   | ?       |
+| Latte        | `3.0.0`  | `>=8.0 <8.2`           | [x]         |          | ?          |           | [x]     | ?     | ?       | ?         | [x]    | [x] | ?       |
+| Blade        | `9.15.0` | `^8.1`                 | [x]         |          | [x] `::`   | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+| Spiral View  | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?     | ?       | ?         | ?      | ?   | ?       |
+| Mezzio       | `3.10.0` | `~7.4.0 ~8.0.0 ~8.1.0` | [x]         |          | [x] `@`    | ?         | ?       | ?     | ?       |           | [x]    | ?   | ?       |
+| Plates       | `3.4.0`  | `^7.0 ^8.0`            | [x]         |          | [x] `::`   | [x]       |         | ?     |         | ?         | [x]    | ?   | ?       |
+| Laminas View | `2.20.0` | `^7.4 ~8.0.0 ~8.1.0`   | [x]         | [x]      | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+| Yii View     | `5.0.0 ` | `^7.4 ^8.0`            | [x]         | [x]      | [x] `@`    | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+| Fluid        | `2.7.1`  | `>=5.5.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+| Contao       | `4.13.4` | `^7.4 ^8.0`            | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+| Mustache     | `2.14.1` | `>=5.2.4`              |             |          | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+| Handlebars   | `2.3.0`  | `>=5.4.0`              |             |          | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+| Qiq          | `1.0.2`  | `^8.0`                 | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+| Aura View    | `2.4.0`  | `>=5.4.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+| PHPTAL       | `1.7.0`  | `~8.0.0 ~8.1.0 ~8.2.0` | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+| Brainy       | `4.0.0`  | `>=7.3`                | [x]         |          | ?          | [x]       | ?       | ?     | ?       | [x]       | [x]    | ?   | ?       |
 
 ### Feature Support
 
@@ -327,11 +367,6 @@ E.g.: In twig this is handled via `['is_safe' => 'html']`, in Latte via `Latte\R
 If the template engine supports to define globals.
 
 E.g.: In twig globals can be defined via extensions.
-
-#### Implemented
-
-An adapter was already implemented for this engine and so a common interface
-for this type of engine would be possible.
 
 ## Tooling
 
