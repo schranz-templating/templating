@@ -44,6 +44,7 @@ class ConfigProvider
                 Handler\TemplateMustacheHandler::class => Handler\TemplateMustacheHandler::class,
                 Handler\TemplateSmartyHandler::class => Handler\TemplateSmartyHandler::class,
                 Handler\TemplateMezzioHandler::class => Handler\TemplateMezzioHandler::class,
+                Handler\TemplateLatteHandler::class => Handler\TemplateLatteHandler::class,
                 Handler\PingHandler::class => Handler\PingHandler::class,
             ],
             'factories' => [
@@ -54,6 +55,7 @@ class ConfigProvider
                 Handler\TemplateMustacheHandler::class => Handler\TemplateMustacheHandlerFactory::class,
                 Handler\TemplateSmartyHandler::class => Handler\TemplateSmartyHandlerFactory::class,
                 Handler\TemplateMezzioHandler::class => Handler\TemplateMezzioHandlerFactory::class,
+                Handler\TemplateLatteHandler::class => Handler\TemplateLatteHandlerFactory::class,
             ],
         ];
     }
