@@ -46,29 +46,29 @@ them.
 On the right part of the table shows frameworks which are planned to be supported but are not yet
 implemented.
 
-| Template Engine | Adapter | Symfony | Laravel | Laminas | Mezzio | Spiral |     | Yii | Typo3 | Cake | CodeIgniter |
-|-----------------|---------|---------|---------|---------|--------|--------|-----|-----|-------|------|-------------|
-| Twig            | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
-| Blade           | ✅       | ✅       | ✅       | ✅       |        |        |     |     |       |      |             |
-| Latte           | ✅       | ✅       | ✅       | ✅       |        |        |     |     |       |      |             |
-|                 |         |         |         |         |        |        |     |     |       |      |             |
-| Plates          | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
-| Smarty          | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
-| Handlebars      | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
-| Mustache        | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
-|                 |         |         |         |         |        |        |     |     |       |      |             |
-| Mezzio          | ✅       |         |         |         | ✅      |        |     |     |       |      |             |
-| Laminas View    | ✅       |         |         | ✅       |        |        |     |     |       |      |             |
-| Yii View        | ✅       |         |         |         |        |        |     |     |       |      |             |
-| Aura View       | ✅       |         |         |         |        |        |     |     |       |      |             |
-| Spiral View     | ✅       |         |         |         |        |        |     |     |       |      |             |
-| Fluid           | ✅       |         |         |         |        |        |     |     |       |      |             |
-| Cake View       |         |         |         |         |        |        |     |     |       |      |             |
-| Contao          |         |         |         |         |        |        |     |     |       |      |             |
-|                 |         |         |         |         |        |        |     |     |       |      |             |
-| Qiq             | ✅       |         |         |         |        |        |     |     |       |      |             |
-| PHPTAL          | ✅       |         |         |         |        |        |     |     |       |      |             |
-| Brainy          | ✅       |         |         |         |        |        |     |     |       |      |             |
+| Template Engine | Adapter |     | Symfony | Laravel | Laminas | Mezzio | Spiral |     | Yii | Typo3 | Cake | CodeIgniter |
+|-----------------|---------|-----|---------|---------|---------|--------|--------|-----|-----|-------|------|-------------|
+| Twig            | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+| Blade           | ✅       |     | ✅       | ✅       | ✅       |        |        |     |     |       |      |             |
+| Latte           | ✅       |     | ✅       | ✅       | ✅       |        |        |     |     |       |      |             |
+|                 |         |     |         |         |         |        |        |     |     |       |      |             |
+| Plates          | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+| Smarty          | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+| Handlebars      | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+| Mustache        | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+|                 |         |     |         |         |         |        |        |     |     |       |      |             |
+| Mezzio          | ✅       |     |         |         |         | ✅      |        |     |     |       |      |             |
+| Laminas View    | ✅       |     |         |         | ✅       |        |        |     |     |       |      |             |
+| Yii View        | ✅       |     |         |         |         |        |        |     |     |       |      |             |
+| Aura View       | ✅       |     |         |         |         |        |        |     |     |       |      |             |
+| Spiral View     | ✅       |     |         |         |         |        |        |     |     |       |      |             |
+| Fluid           | ✅       |     |         |         |         |        |        |     |     |       |      |             |
+| Cake View       |         |     |         |         |         |        |        |     |     |       |      |             |
+| Contao          |         |     |         |         |         |        |        |     |     |       |      |             |
+|                 |         |     |         |         |         |        |        |     |     |       |      |             |
+| Qiq             | ✅       |     |         |         |         |        |        |     |     |       |      |             |
+| PHPTAL          | ✅       |     |         |         |         |        |        |     |     |       |      |             |
+| Brainy          | ✅       |     |         |         |         |        |        |     |     |       |      |             |
 
 ## Example Applications
 
