@@ -61,6 +61,8 @@ Open then [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to get a list of avai
  - [http://127.0.0.1:8000/handlebars](http://127.0.0.1:8000/handlebars)
  - [http://127.0.0.1:8000/mustache](http://127.0.0.1:8000/mustache)
  - ...
+ - [http://127.0.0.1:8000/mustache](http://127.0.0.1:8000/laminas-view)
+ - [http://127.0.0.1:8000/mustache](http://127.0.0.1:8000/mezzio)
 
 ## Usage
 
@@ -162,6 +164,8 @@ To use the integration in the Mezzio Framework the following packages are curren
 which will register the adapter service and integration of the selected template engine:
 
 ```bash
+composer require schranz-templating/mezzio-mezzio-integration
+
 composer require schranz-templating/mezzio-twig-integration
 
 composer require schranz-templating/mezzio-plates-integration
@@ -194,7 +198,7 @@ implemented.
 | Handlebars      | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
 | Mustache        | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
 |                 |         |         |         |         |        |        |     |     |       |      |             |
-| Mezzio          | ✅       |         |         |         |        |        |     |     |       |      |             |
+| Mezzio          | ✅       |         |         |         | ✅      |        |     |     |       |      |             |
 | Laminas View    | ✅       |         |         | ✅       |        |        |     |     |       |      |             |
 | Yii View        | ✅       |         |         |         |        |        |     |     |       |      |             |
 | Aura View       | ✅       |         |         |         |        |        |     |     |       |      |             |
@@ -275,6 +279,7 @@ implemented.
         - [x] [Handlebars](src/Integration/Mezzio/Handlebars/README.md) ([`schranz-templating/mezzio-handlebars-integration`](https://github.com/schranz-templating/mezzio-handlebars-integration))
         - [x] [Mustache](src/Integration/Mezzio/Mustache/README.md) ([`schranz-templating/mezzio-mustache-integration`](https://github.com/schranz-templating/mezzio-mustache-integration))
         - [x] [Smarty](src/Integration/Mezzio/Smarty/README.md) ([`schranz-templating/mezzio-smarty-integration`](https://github.com/schranz-templating/mezzio-smarty-integration))
+        - [x] [Mezzio](src/Integration/Mezzio/Mezzio/README.md) ([`schranz-templating/mezzio-mezzio-integration`](https://github.com/schranz-templating/mezzio-mezzio-integration))
         - [ ] ...
     - [ ] Yii
         - [ ] YiiView

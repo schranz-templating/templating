@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "484f6a1c6a4dd84de41a96af0529ae26",
+    "content-hash": "1cddc02284c78707ab7f85ed3856af5a",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -1928,6 +1928,34 @@
             }
         },
         {
+            "name": "schranz-templating/mezzio-adapter",
+            "version": "0.1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "./../../../src/Adapter/Mezzio",
+                "reference": "440a9925dcff53139daffe401a8ef60540311632"
+            },
+            "require": {
+                "mezzio/mezzio-template": "^1.0 || ^2.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/template-renderer": "^0.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Adapter\\Mezzio\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "An adapter for the template renderer for mezzio template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "schranz-templating/mezzio-handlebars-integration",
             "version": "0.1.x-dev",
             "dist": {
@@ -1955,6 +1983,39 @@
                 "MIT"
             ],
             "description": "A integration of template renderer into mezzio via handlebars template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "schranz-templating/mezzio-mezzio-integration",
+            "version": "0.1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "./../../../src/Integration/Mezzio/Mezzio",
+                "reference": "84bb1549c0e6f977d57781ad08b9408473a89422"
+            },
+            "require": {
+                "php": "^7.0 || ^8.0",
+                "psr/container": "^1.0 || ^2.0",
+                "schranz-templating/mezzio-adapter": "^0.1"
+            },
+            "type": "library",
+            "extra": {
+                "laminas": {
+                    "config-provider": "Schranz\\Templating\\Integration\\Mezzio\\Mezzio\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Integration\\Mezzio\\Mezzio\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A integration of template renderer into mezzio via mezzio template engine.",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -6148,6 +6209,7 @@
         "schranz-templating/mezzio-handlebars-integration": 20,
         "schranz-templating/mezzio-mustache-integration": 20,
         "schranz-templating/mezzio-smarty-integration": 20,
+        "schranz-templating/mezzio-mezzio-integration": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,

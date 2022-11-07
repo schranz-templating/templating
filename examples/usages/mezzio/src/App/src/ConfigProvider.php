@@ -42,6 +42,8 @@ class ConfigProvider
                 Handler\TemplatePlatesHandler::class => Handler\TemplatePlatesHandler::class,
                 Handler\TemplateHandlebarsHandler::class => Handler\TemplateHandlebarsHandler::class,
                 Handler\TemplateMustacheHandler::class => Handler\TemplateMustacheHandler::class,
+                Handler\TemplateSmartyHandler::class => Handler\TemplateSmartyHandler::class,
+                Handler\TemplateMezzioHandler::class => Handler\TemplateMezzioHandler::class,
                 Handler\PingHandler::class => Handler\PingHandler::class,
             ],
             'factories' => [
@@ -51,6 +53,7 @@ class ConfigProvider
                 Handler\TemplateHandlebarsHandler::class => Handler\TemplateHandlebarsHandlerFactory::class,
                 Handler\TemplateMustacheHandler::class => Handler\TemplateMustacheHandlerFactory::class,
                 Handler\TemplateSmartyHandler::class => Handler\TemplateSmartyHandlerFactory::class,
+                Handler\TemplateMezzioHandler::class => Handler\TemplateMezzioHandlerFactory::class,
             ],
         ];
     }
