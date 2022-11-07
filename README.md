@@ -23,6 +23,7 @@ Discussion in the PHP-FIG:
 ## Table of Contents
 
  - [TODO](#todo)
+ - [Example Applications](#example-applications)
  - [Usage](#usage)
    - [Usage for Library Authors](#usage-for-library-authors)
    - [Usage for Projects](#usage-for-projects)
@@ -50,10 +51,10 @@ implemented.
 | Latte           | ✅       | ✅       | ✅       | ✅       |        |        |     |     |       |      |             |
 |                 |         |         |         |         |        |        |     |     |       |      |             |
 | Plates          | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
-| Smarty          | ✅       | ✅       | ✅       | ✅       |        |        |     |     |       |      |             |
+| Smarty          | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
 | Brainy          |         |         |         |         |        |        |     |     |       |      |             |
-| Mustache        | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
 | Handlebars      | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+| Mustache        | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
 |                 |         |         |         |         |        |        |     |     |       |      |             |
 | Mezzio          | ✅       |         |         |         |        |        |     |     |       |      |             |
 | Laminas View    | ✅       |         |         | ✅       |        |        |     |     |       |      |             |
@@ -134,6 +135,7 @@ implemented.
       - [x] [Plates](src/Integration/Mezzio/Plates/README.md) ([`schranz-templating/mezzio-plates-integration`](https://github.com/schranz-templating/mezzio-plates-integration))
       - [x] [Handlebars](src/Integration/Mezzio/Handlebars/README.md) ([`schranz-templating/mezzio-handlebars-integration`](https://github.com/schranz-templating/mezzio-handlebars-integration))
       - [x] [Mustache](src/Integration/Mezzio/Mustache/README.md) ([`schranz-templating/mezzio-mustache-integration`](https://github.com/schranz-templating/mezzio-mustache-integration))
+      - [x] [Smarty](src/Integration/Mezzio/Smarty/README.md) ([`schranz-templating/mezzio-smarty-integration`](https://github.com/schranz-templating/mezzio-smarty-integration))
       - [ ] ...
    - [ ] Yii
       - [ ] YiiView
@@ -149,6 +151,27 @@ implemented.
  - [x] Register Packages
 
 </details>
+
+## Example Applications
+
+There exist for all already implemented frameworks an example application.
+Which shows you how to use the Interface or a specific adapter inside the framework.
+
+ - [Symfony](examples/usages/symfony)
+ - [Laravel](examples/usages/laravel)
+ - [Laminas](examples/usages/laminas)
+ - [Mezzio](examples/usages/mezzio)
+ - ...
+
+Go into one of the application directory and run:
+
+```bash
+composer install
+
+php -S 127.0.0.1:8000 -t public
+```
+
+Open then [http://127.0.0.1:8000](http://127.0.0.1:8000) to get a list of available integrations in the example.
 
 ## Usage
 
@@ -167,22 +190,25 @@ Projects depending on libraries which where build on top of the `schranz-templat
 should require the renderer package and an adapter to the template engine they want to use:
 
 ```bash
-composer require schranz-templating/aura-view-adapter
-composer require schranz-templating/blade-adapter
-composer require schranz-templating/brainy-adapter
-composer require schranz-templating/fluid-adapter
-composer require schranz-templating/handlebars-adapter
-composer require schranz-templating/laminas-view-adapter
-composer require schranz-templating/latte-adapter
-composer require schranz-templating/mezzio-adapter
-composer require schranz-templating/mustache-adapter
-composer require schranz-templating/phptal-adapter
-composer require schranz-templating/plates-adapter
-composer require schranz-templating/qiq-adapter
-composer require schranz-templating/smarty-adapter
-composer require schranz-templating/spiral-view-adapter
 composer require schranz-templating/twig-adapter
+composer require schranz-templating/blade-adapter
+composer require schranz-templating/latte-adapter
+
+composer require schranz-templating/plates-adapter
+composer require schranz-templating/smarty-adapter
+composer require schranz-templating/brainy-adapter
+composer require schranz-templating/handlebars-adapter
+composer require schranz-templating/mustache-adapter
+
+composer require schranz-templating/aura-view-adapter
+composer require schranz-templating/fluid-adapter
+composer require schranz-templating/laminas-view-adapter
+composer require schranz-templating/mezzio-adapter
+composer require schranz-templating/spiral-view-adapter
 composer require schranz-templating/yii-view-adapter
+
+composer require schranz-templating/phptal-adapter
+composer require schranz-templating/qiq-adapter
 ```
 
 **Why Adapters?**
@@ -193,58 +219,64 @@ to transfer from the `TemplateRendererInterface` to underlying template engines.
 
 #### Usage for Symfony Projects
 
-To use the integration in the Symfony the following packages are currently provided,
+To use the integration in the Symfony Framework the following packages are currently provided,
 which will register the adapter service and integration of the selected template engine:
 
 ```bash
+composer require schranz-templating/symfony-twig-integration
 composer require schranz-templating/symfony-blade-integration
-composer require schranz-templating/symfony-handlebars-integration
 composer require schranz-templating/symfony-latte-integration
-composer require schranz-templating/symfony-mustache-integration
+
 composer require schranz-templating/symfony-plates-integration
 composer require schranz-templating/symfony-smarty-integration
-composer require schranz-templating/symfony-twig-integration
+composer require schranz-templating/symfony-handlebars-integration
+composer require schranz-templating/symfony-mustache-integration
 ```
 
 #### Usage for Laravel Projects
 
-To use the integration in the Laravel the following packages are currently provided,
+To use the integration in the Laravel Framework the following packages are currently provided,
 which will register the adapter service and integration of the selected template engine:
 
 ```bash
+composer require schranz-templating/laravel-twig-integration
 composer require schranz-templating/laravel-blade-integration
-composer require schranz-templating/laravel-handlebars-integration
 composer require schranz-templating/laravel-latte-integration
-composer require schranz-templating/laravel-mustache-integration
+
 composer require schranz-templating/laravel-plates-integration
 composer require schranz-templating/laravel-smarty-integration
-composer require schranz-templating/laravel-twig-integration
+composer require schranz-templating/laravel-handlebars-integration
+composer require schranz-templating/laravel-mustache-integration
 ```
 
 #### Usage for Laminas Projects
 
-To use the integration in the Laminas the following packages are currently provided,
+To use the integration in the Laminas Framework the following packages are currently provided,
 which will register the adapter service and integration of the selected template engine:
 
 ```bash
 composer require schranz-templating/laminas-laminas-view-integration
+
+composer require schranz-templating/laminas-twig-integration
 composer require schranz-templating/laminas-blade-integration
-composer require schranz-templating/laminas-handlebars-integration
 composer require schranz-templating/laminas-latte-integration
-composer require schranz-templating/laminas-mustache-integration
+
 composer require schranz-templating/laminas-plates-integration
 composer require schranz-templating/laminas-smarty-integration
-composer require schranz-templating/laminas-twig-integration
+composer require schranz-templating/laminas-handlebars-integration
+composer require schranz-templating/laminas-mustache-integration
 ```
 
 #### Usage for Mezzio Projects
 
-To use the integration in the Mezzio the following packages are currently provided,
+To use the integration in the Mezzio Framework the following packages are currently provided,
 which will register the adapter service and integration of the selected template engine:
 
 ```bash
 composer require schranz-templating/mezzio-twig-integration
+
 composer require schranz-templating/mezzio-plates-integration
+composer require schranz-templating/mezzio-smarty-integration
 composer require schranz-templating/mezzio-handlebars-integration
 composer require schranz-templating/mezzio-mustache-integration
 ```
@@ -258,22 +290,25 @@ they are supporting. Also, what kind of features are supported by them.
 | Engine       | Version  | PHP Version            | Inheritance | Subviews | Namespaces | Functions | Filters | Exist | Partial | Streaming | String | Raw | Globals |
 |--------------|----------|------------------------|-------------|----------|------------|-----------|---------|-------|---------|-----------|--------|-----|---------|
 | Twig         | `3.4.1`  | `>=7.2.5`              | [x]         |          | [x] `@`    | [x]       | [x]     | [x]   | [x]     | [x]       | [x]    | [x] | [x]     |
-| Smarty       | `4.1.1`  | `^7.1 ^8.0`            | [x]         |          | ?          | [x]       | ?       | ?     | ?       | [x]       | [x]    | ?   | ?       |
-| Latte        | `3.0.0`  | `>=8.0 <8.2`           | [x]         |          | ?          |           | [x]     | ?     | ?       | ?         | [x]    | [x] | ?       |
 | Blade        | `9.15.0` | `^8.1`                 | [x]         |          | [x] `::`   | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
-| Spiral View  | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?     | ?       | ?         | ?      | ?   | ?       |
-| Mezzio       | `3.10.0` | `~7.4.0 ~8.0.0 ~8.1.0` | [x]         |          | [x] `@`    | ?         | ?       | ?     | ?       |           | [x]    | ?   | ?       |
+| Latte        | `3.0.0`  | `>=8.0 <8.2`           | [x]         |          | ?          |           | [x]     | ?     | ?       | ?         | [x]    | [x] | ?       |
+|              |          |                        |             |          |            |           |         |       |         |           |        |     |         |
 | Plates       | `3.4.0`  | `^7.0 ^8.0`            | [x]         |          | [x] `::`   | [x]       |         | ?     |         | ?         | [x]    | ?   | ?       |
+| Smarty       | `4.1.1`  | `^7.1 ^8.0`            | [x]         |          | ?          | [x]       | ?       | ?     | ?       | [x]       | [x]    | ?   | ?       |
+| Brainy       | `4.0.0`  | `>=7.3`                | [x]         |          | ?          | [x]       | ?       | ?     | ?       | [x]       | [x]    | ?   | ?       |
+| Mustache     | `2.14.1` | `>=5.2.4`              |             |          | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+| Handlebars   | `2.3.0`  | `>=5.4.0`              |             |          | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+|              |          |                        |             |          |            |           |         |       |         |           |        |     |         |
+| Mezzio       | `3.10.0` | `~7.4.0 ~8.0.0 ~8.1.0` | [x]         |          | [x] `@`    | ?         | ?       | ?     | ?       |           | [x]    | ?   | ?       |
+| Spiral View  | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?     | ?       | ?         | ?      | ?   | ?       |
 | Laminas View | `2.20.0` | `^7.4 ~8.0.0 ~8.1.0`   | [x]         | [x]      | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
 | Yii View     | `5.0.0 ` | `^7.4 ^8.0`            | [x]         | [x]      | [x] `@`    | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
 | Fluid        | `2.7.1`  | `>=5.5.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
 | Contao       | `4.13.4` | `^7.4 ^8.0`            | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
-| Mustache     | `2.14.1` | `>=5.2.4`              |             |          | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
-| Handlebars   | `2.3.0`  | `>=5.4.0`              |             |          | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
-| Qiq          | `1.0.2`  | `^8.0`                 | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
 | Aura View    | `2.4.0`  | `>=5.4.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+|              |          |                        |             |          |            |           |         |       |         |           |        |     |         |
+| Qiq          | `1.0.2`  | `^8.0`                 | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
 | PHPTAL       | `1.7.0`  | `~8.0.0 ~8.1.0 ~8.2.0` | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
-| Brainy       | `4.0.0`  | `>=7.3`                | [x]         |          | ?          | [x]       | ?       | ?     | ?       | [x]       | [x]    | ?   | ?       |
 
 ### Feature Support
 

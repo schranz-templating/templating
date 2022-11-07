@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f465dde01c38944fb367859d7af8aeed",
+    "content-hash": "484f6a1c6a4dd84de41a96af0529ae26",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -2028,6 +2028,39 @@
             }
         },
         {
+            "name": "schranz-templating/mezzio-smarty-integration",
+            "version": "0.1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "./../../../src/Integration/Mezzio/Smarty",
+                "reference": "5aa9fee8f2ce4dde81130e0a80b0bec1940fe369"
+            },
+            "require": {
+                "php": "^7.0 || ^8.0",
+                "psr/container": "^1.0 || ^2.0",
+                "schranz-templating/smarty-adapter": "^0.1"
+            },
+            "type": "library",
+            "extra": {
+                "laminas": {
+                    "config-provider": "Schranz\\Templating\\Integration\\Mezzio\\Smarty\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Integration\\Mezzio\\Smarty\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A integration of template renderer into mezzio via smarty template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "schranz-templating/mezzio-twig-integration",
             "version": "0.1.x-dev",
             "dist": {
@@ -2118,6 +2151,34 @@
             }
         },
         {
+            "name": "schranz-templating/smarty-adapter",
+            "version": "0.1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "./../../../src/Adapter/Smarty",
+                "reference": "e34621aeb2a0c3a9c708edb6328da3057a7eaab4"
+            },
+            "require": {
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/template-renderer": "^0.1",
+                "smarty/smarty": "^3.0 || ^4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Adapter\\Smarty\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "An adapter for the template renderer for smarty template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "schranz-templating/template-renderer",
             "version": "0.1.x-dev",
             "dist": {
@@ -2170,6 +2231,72 @@
                 "symlink": true,
                 "relative": true
             }
+        },
+        {
+            "name": "smarty/smarty",
+            "version": "v4.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smarty-php/smarty.git",
+                "reference": "ffa2b81a8e354a49fd8a2f24742dc9dc399e8007"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/ffa2b81a8e354a49fd8a2f24742dc9dc399e8007",
+                "reference": "ffa2b81a8e354a49fd8a2f24742dc9dc399e8007",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5 || ^7.5",
+                "smarty/smarty-lexer": "^3.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "libs/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Monte Ohrt",
+                    "email": "monte@ohrt.com"
+                },
+                {
+                    "name": "Uwe Tews",
+                    "email": "uwe.tews@googlemail.com"
+                },
+                {
+                    "name": "Rodney Rehm",
+                    "email": "rodney.rehm@medialize.de"
+                },
+                {
+                    "name": "Simon Wisselink",
+                    "homepage": "https://www.iwink.nl/"
+                }
+            ],
+            "description": "Smarty - the compiling PHP template engine",
+            "homepage": "https://smarty-php.github.io/smarty/",
+            "keywords": [
+                "templating"
+            ],
+            "support": {
+                "forum": "https://github.com/smarty-php/smarty/discussions",
+                "issues": "https://github.com/smarty-php/smarty/issues",
+                "source": "https://github.com/smarty-php/smarty/tree/v4.2.1"
+            },
+            "time": "2022-09-14T10:59:01+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -3138,12 +3265,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "019a384e54a12d8bfca736f88c2f4478b432e71d"
+                "reference": "858b0f26c8b12ed8f9bf1a610e1470af6950c5da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/019a384e54a12d8bfca736f88c2f4478b432e71d",
-                "reference": "019a384e54a12d8bfca736f88c2f4478b432e71d",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/858b0f26c8b12ed8f9bf1a610e1470af6950c5da",
+                "reference": "858b0f26c8b12ed8f9bf1a610e1470af6950c5da",
                 "shasum": ""
             },
             "require": {
@@ -3207,7 +3334,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-11-03T07:46:09+00:00"
+            "time": "2022-11-07T16:54:48+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -3456,12 +3583,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "a3a5b7fcd10576fb67a9c13ca7d31990bd5a1919"
+                "reference": "62ca8fd78d8caa233f0d2a8fd380fd8b468dd472"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a3a5b7fcd10576fb67a9c13ca7d31990bd5a1919",
-                "reference": "a3a5b7fcd10576fb67a9c13ca7d31990bd5a1919",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/62ca8fd78d8caa233f0d2a8fd380fd8b468dd472",
+                "reference": "62ca8fd78d8caa233f0d2a8fd380fd8b468dd472",
                 "shasum": ""
             },
             "require": {
@@ -3550,7 +3677,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-01T06:34:20+00:00"
+            "time": "2022-11-07T16:09:03+00:00"
         },
         {
             "name": "psr/event-dispatcher",
@@ -6020,6 +6147,7 @@
         "schranz-templating/mezzio-plates-integration": 20,
         "schranz-templating/mezzio-handlebars-integration": 20,
         "schranz-templating/mezzio-mustache-integration": 20,
+        "schranz-templating/mezzio-smarty-integration": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,
