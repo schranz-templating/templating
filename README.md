@@ -23,14 +23,52 @@ Discussion in the PHP-FIG:
 
 ## Table of Contents
 
+ - [Project Status](#project-status)
  - [Example Applications](#example-applications)
  - [Usage](#usage)
    - [Usage for Library Authors](#usage-for-library-authors)
    - [Usage for Projects](#usage-for-projects)
    - [Usage for Symfony Projects](#usage-for-symfony-projects)
- - [TODO](#todo)
+ - [Package List](#package-list)
  - [Analyses](#analysis)
  - [Tooling](#tooling)
+
+## Project Status
+
+Following table should show the process of integration of different template engines and the abstract
+Interface into the different Frameworks. The first part shows the main supported template engines
+Twig, Blade and Latte. This is actively maintained template engines. The second part shows some older
+template engines which are supported but not actively maintained.  
+The third part shows framework specific view integrations which will only be supported in the specific
+framework they are used.  
+The last part are some exotic template engines which did come up and are also adapters implemented for
+them.  
+On the right part of the table shows frameworks which are planned to be supported but are not yet
+implemented.
+
+| Template Engine | Adapter | Symfony | Laravel | Laminas | Mezzio | Spiral |     | Yii | Typo3 | Cake | CodeIgniter |
+|-----------------|---------|---------|---------|---------|--------|--------|-----|-----|-------|------|-------------|
+| Twig            | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+| Blade           | ✅       | ✅       | ✅       | ✅       |        |        |     |     |       |      |             |
+| Latte           | ✅       | ✅       | ✅       | ✅       |        |        |     |     |       |      |             |
+|                 |         |         |         |         |        |        |     |     |       |      |             |
+| Plates          | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+| Smarty          | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+| Handlebars      | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+| Mustache        | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+|                 |         |         |         |         |        |        |     |     |       |      |             |
+| Mezzio          | ✅       |         |         |         | ✅      |        |     |     |       |      |             |
+| Laminas View    | ✅       |         |         | ✅       |        |        |     |     |       |      |             |
+| Yii View        | ✅       |         |         |         |        |        |     |     |       |      |             |
+| Aura View       | ✅       |         |         |         |        |        |     |     |       |      |             |
+| Spiral View     | ✅       |         |         |         |        |        |     |     |       |      |             |
+| Fluid           | ✅       |         |         |         |        |        |     |     |       |      |             |
+| Cake View       |         |         |         |         |        |        |     |     |       |      |             |
+| Contao          |         |         |         |         |        |        |     |     |       |      |             |
+|                 |         |         |         |         |        |        |     |     |       |      |             |
+| Qiq             | ✅       |         |         |         |        |        |     |     |       |      |             |
+| PHPTAL          | ✅       |         |         |         |        |        |     |     |       |      |             |
+| Brainy          | ✅       |         |         |         |        |        |     |     |       |      |             |
 
 ## Example Applications
 
@@ -74,6 +112,39 @@ If you create a library, framework or whatever reusable package you should just 
 ```bash
 composer require schranz-templating/template-renderer
 ```
+
+As library author every service which render a template should use the `TemplateRendererInterface`.
+Also every templateName should come from a configuration which can be defined by the user of your
+library. That configuration depends on which framework your library is integrated into.
+
+Example Controller:
+
+```php
+namespace Your\Package;
+
+use Schranz\Templating\TemplateRendererInterface;
+
+class YourController
+{
+    public function __construct(
+        private TemplateRendererInterface $templateRenderer,
+        private string $templateName,
+    ) {
+    }
+
+    public function yourAction(): YourResponse
+    {
+        $content = $this->templateRenderer->render($this->templateName, ['your' => 'data']);
+
+        return new YourResponse($content);
+    }
+}
+```
+
+To test your library you can use any of the provided adapters and integrations as `require-dev` dependency.
+There should be no requirement to an adapter or integration in the `require` section of your
+libraries `composer.json`. This allows the user of your library to choice which one matches best for their
+used project and framework.
 
 ### Usage for Projects
 
@@ -174,45 +245,10 @@ composer require schranz-templating/mezzio-handlebars-integration
 composer require schranz-templating/mezzio-mustache-integration
 ```
 
-## TODO
+## Package List
 
-Following table should show the process of integration of different template engines and the abstract
-Interface into the different Frameworks. The first part shows the main supported template engines
-Twig, Blade and Latte. This is actively maintained template engines. The second part shows some older
-template engines which are supported but not actively maintained.  
-The third part shows framework specific view integrations which will only be supported in the specific
-framework they are used.  
-The last part are some exotic template engines which did come up and are also adapters implemented for
-them.  
-On the right part of the table shows frameworks which are planned to be supported but are not yet
-implemented.
-
-| Template Engine | Adapter | Symfony | Laravel | Laminas | Mezzio | Spiral |     | Yii | Typo3 | Cake | CodeIgniter |
-|-----------------|---------|---------|---------|---------|--------|--------|-----|-----|-------|------|-------------|
-| Twig            | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
-| Blade           | ✅       | ✅       | ✅       | ✅       |        |        |     |     |       |      |             |
-| Latte           | ✅       | ✅       | ✅       | ✅       |        |        |     |     |       |      |             |
-|                 |         |         |         |         |        |        |     |     |       |      |             |
-| Plates          | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
-| Smarty          | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
-| Handlebars      | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
-| Mustache        | ✅       | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
-|                 |         |         |         |         |        |        |     |     |       |      |             |
-| Mezzio          | ✅       |         |         |         | ✅      |        |     |     |       |      |             |
-| Laminas View    | ✅       |         |         | ✅       |        |        |     |     |       |      |             |
-| Yii View        | ✅       |         |         |         |        |        |     |     |       |      |             |
-| Aura View       | ✅       |         |         |         |        |        |     |     |       |      |             |
-| Spiral View     | ✅       |         |         |         |        |        |     |     |       |      |             |
-| Fluid           | ✅       |         |         |         |        |        |     |     |       |      |             |
-| Cake View       |         |         |         |         |        |        |     |     |       |      |             |
-| Contao          |         |         |         |         |        |        |     |     |       |      |             |
-|                 |         |         |         |         |        |        |     |     |       |      |             |
-| Qiq             | ✅       |         |         |         |        |        |     |     |       |      |             |
-| PHPTAL          | ✅       |         |         |         |        |        |     |     |       |      |             |
-| Brainy          | ✅       |         |         |         |        |        |     |     |       |      |             |
-
-<details>
-<summary>Package List</summary>
+The current project already provides about more than ~45 packages to integrate different template
+engines into different frameworks.
 
 - [x] [TemplateRendererInterface](src/TemplateRenderer/TemplateRendererInterface.php) ([`schranz-templating/template-renderer`](https://github.com/schranz-templating/template-renderer))
 - [ ] Adapters
@@ -293,8 +329,6 @@ implemented.
         - [ ] ...
 - [x] Subtree Split
 - [x] Register Packages
-
-</details>
 
 ## Analysis
 
