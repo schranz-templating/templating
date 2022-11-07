@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1cddc02284c78707ab7f85ed3856af5a",
+    "content-hash": "c3d93140e29f7287b659e7640b28ae1b",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -784,6 +784,92 @@
                 }
             ],
             "time": "2022-11-04T00:32:31+00:00"
+        },
+        {
+            "name": "latte/latte",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/latte.git",
+                "reference": "2f638f4c4eb7cf01e9de87fc623443b4319752ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/latte/zipball/2f638f4c4eb7cf01e9de87fc623443b4319752ce",
+                "reference": "2f638f4c4eb7cf01e9de87fc623443b4319752ce",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-tokenizer": "*",
+                "php": ">=8.0 <8.3"
+            },
+            "conflict": {
+                "nette/application": "<3.1.7",
+                "nette/caching": "<3.1.4"
+            },
+            "require-dev": {
+                "nette/php-generator": "^3.6 || ^4.0",
+                "nette/tester": "^2.0",
+                "nette/utils": "^3.0",
+                "phpstan/phpstan": "^1",
+                "tracy/tracy": "^2.3"
+            },
+            "suggest": {
+                "ext-fileinfo": "to use filter |datastream",
+                "ext-iconv": "to use filters |reverse, |substring",
+                "ext-mbstring": "to use filters like lower, upper, capitalize, ...",
+                "nette/php-generator": "to use tag {templatePrint}",
+                "nette/utils": "to use filter |webalize"
+            },
+            "default-branch": true,
+            "bin": [
+                "bin/latte-lint"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0-only",
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "☕ Latte: the intuitive and fast template engine for those who want the most secure PHP sites. Introduces context-sensitive escaping.",
+            "homepage": "https://latte.nette.org",
+            "keywords": [
+                "context-sensitive",
+                "engine",
+                "escaping",
+                "html",
+                "nette",
+                "security",
+                "template",
+                "twig"
+            ],
+            "support": {
+                "issues": "https://github.com/nette/latte/issues",
+                "source": "https://github.com/nette/latte/tree/master"
+            },
+            "time": "2022-11-06T18:14:46+00:00"
         },
         {
             "name": "league/plates",
@@ -1928,6 +2014,34 @@
             }
         },
         {
+            "name": "schranz-templating/latte-adapter",
+            "version": "0.1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "./../../../src/Adapter/Latte",
+                "reference": "98d6b7144aa9fbb1d88b94bf5f983e806b87c0bb"
+            },
+            "require": {
+                "latte/latte": "^2.0 || ^3.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/template-renderer": "^0.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Adapter\\Latte\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "An adapter for the template renderer for latte template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "schranz-templating/mezzio-adapter",
             "version": "0.1.x-dev",
             "dist": {
@@ -1983,6 +2097,39 @@
                 "MIT"
             ],
             "description": "A integration of template renderer into mezzio via handlebars template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "schranz-templating/mezzio-latte-integration",
+            "version": "0.1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "./../../../src/Integration/Mezzio/Latte",
+                "reference": "85d44c623853df871c06a12dacfb7c1f40c99825"
+            },
+            "require": {
+                "php": "^7.0 || ^8.0",
+                "psr/container": "^1.0 || ^2.0",
+                "schranz-templating/latte-adapter": "^0.1"
+            },
+            "type": "library",
+            "extra": {
+                "laminas": {
+                    "config-provider": "Schranz\\Templating\\Integration\\Mezzio\\Latte\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Integration\\Mezzio\\Latte\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "A integration of template renderer into mezzio via latte template engine.",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -6210,6 +6357,7 @@
         "schranz-templating/mezzio-mustache-integration": 20,
         "schranz-templating/mezzio-smarty-integration": 20,
         "schranz-templating/mezzio-mezzio-integration": 20,
+        "schranz-templating/mezzio-latte-integration": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,

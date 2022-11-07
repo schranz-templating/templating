@@ -196,6 +196,11 @@
             "target": "git@github.com:schranz-templating/mezzio-mezzio-integration.git"
         },
         {
+            "name": "MezzioLatteIntegration",
+            "directory": "src/Integration/Mezzio/Latte",
+            "target": "git@github.com:schranz-templating/mezzio-latte-integration.git"
+        },
+        {
             "name": "SymfonyBladeIntegration",
             "directory": "src/Integration/Symfony/Blade",
             "target": "git@github.com:schranz-templating/symfony-blade-integration.git"
