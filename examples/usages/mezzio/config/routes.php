@@ -43,5 +43,6 @@ return static function (Application $app, MiddlewareFactory $factory, ContainerI
     $app->get('/plates', App\Handler\TemplatePlatesHandler::class, 'plates');
     $app->get('/handlebars', App\Handler\TemplateHandlebarsHandler::class, 'handlebars');
     $app->get('/mustache', App\Handler\TemplateMustacheHandler::class, 'mustache');
+    $app->get('/smarty', App\Handler\TemplateSmartyHandler::class, 'smarty');
     $app->get('/api/ping', App\Handler\PingHandler::class, 'api.ping');
 };

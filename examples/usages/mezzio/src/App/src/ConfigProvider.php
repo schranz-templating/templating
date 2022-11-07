@@ -41,6 +41,7 @@ class ConfigProvider
                 Handler\TemplateTwigHandler::class => Handler\TemplateTwigHandler::class,
                 Handler\TemplatePlatesHandler::class => Handler\TemplatePlatesHandler::class,
                 Handler\TemplateHandlebarsHandler::class => Handler\TemplateHandlebarsHandler::class,
+                Handler\TemplateMustacheHandler::class => Handler\TemplateMustacheHandler::class,
                 Handler\PingHandler::class => Handler\PingHandler::class,
             ],
             'factories' => [
@@ -49,6 +50,7 @@ class ConfigProvider
                 Handler\TemplatePlatesHandler::class => Handler\TemplatePlatesHandlerFactory::class,
                 Handler\TemplateHandlebarsHandler::class => Handler\TemplateHandlebarsHandlerFactory::class,
                 Handler\TemplateMustacheHandler::class => Handler\TemplateMustacheHandlerFactory::class,
+                Handler\TemplateSmartyHandler::class => Handler\TemplateSmartyHandlerFactory::class,
             ],
         ];
     }
