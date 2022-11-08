@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use App\Api\Web\Controller\HomeController;
 use Spiral\Router\Loader\Configurator\RoutingConfigurator;
 
 /*
@@ -16,5 +15,5 @@ use Spiral\Router\Loader\Configurator\RoutingConfigurator;
  * @link https://spiral.dev/docs/keeper-routing/#register-routes-via-annotations
  */
 return static function (RoutingConfigurator $routes): void {
-    $routes->add('home', '/<action>')->controller(HomeController::class);
+    // routes used via attributes
 };
