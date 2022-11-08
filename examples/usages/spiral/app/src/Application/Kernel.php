@@ -13,6 +13,7 @@ use Spiral\Monolog\Bootloader as Monolog;
 use Spiral\Nyholm\Bootloader as Nyholm;
 use Spiral\Prototype\Bootloader as Prototype;
 use Spiral\RoadRunnerBridge\Bootloader as RoadRunnerBridge;
+use Spiral\Router\Bootloader\AnnotatedRoutesBootloader;
 use Spiral\Sapi\Bootloader\SapiBootloader;
 use Spiral\Scaffolder\Bootloader as Scaffolder;
 use Spiral\Stempler\Bootloader as Stempler;
@@ -66,6 +67,7 @@ class Kernel extends \Spiral\Framework\Kernel
         Framework\Http\CsrfBootloader::class,
         Framework\Http\PaginationBootloader::class,
         SapiBootloader::class,
+        AnnotatedRoutesBootloader::class,
 
         // Databases
         CycleBridge\DatabaseBootloader::class,
