@@ -44,24 +44,26 @@ While most Frameworks has a goto Template Engine, there are also some **Framewor
 a specific one and want to support multiple (e.g.: `Mezzio`, `Laminas`, `Yii`, ...). A TemplateRendererInterface
 can help it make the integration of every Template engine easier. And even allow to easier upgrade Legacy
 projects to newer Frameworks as not the whole templates need to be migrated. But also major frameworks like
-`Symfony` and `Laravel` could benifit from supporting a more secure Template engine like [`Latte`](https://latte.nette.org/).
+`Symfony` and `Laravel` could benefit from supporting a more secure Template engine like [`Latte`](https://latte.nette.org/).
 
 But not only Framework can benefit from a general TemplateRendererInterface, a common interface also
 allows **CMS** like [`Sulu CMS`](http://github.com/sulu/sulu), [`Typo3`](https://github.com/TYPO3/typo3), ... 
-and more allow to give the Frontend Developer the full Freedom how to write their Templates. Specially
-as CMS today allow to provide Content via JSON and render there website via React, Angular, Vue, ... they
-should also be free to render their website via Twig, Blade, Latte, ... or whatever Template engine they
+and more allow to give the Frontend Developer the full freedom how to write their Templates. Specially
+as CMS today allow to provide Content via JSON and render a website via React, Angular, Vue, ... they
+should also be free to render their website via `Twig`, `Blade`, `Latte`, ... or whatever Template engine they
 prefer.
 
-Beside Framework and CMS a general TemplateRendererInterface also helps Library Authors to integrate their
+Beside Frameworks and CMSs a general TemplateRendererInterface also helps **Library Authors** to integrate their
 library easier into different Frameworks. E.g. a mail library like `symfony/mailer` which provides a
-`TemplatedEmail` class could be changed to render the email body via a TemplateRendererInterface. And so
-could be used also to render emails with `Blade`, `Latte` and not only `Twig`. Which make it easier to use
-this component also in other Frameworks. Also other functionality like `inky` or `inline_css` functionality
-could be provided to every Template Engine via an adapter pattern.
+`TemplatedEmail` class could be changed to render the email body via the `TemplateRendererInterface`. And so
+could be also be used to render emails with `Blade`, `Latte` and not only `Twig`. Which make it easier to use
+this component also in other Frameworks. Also, other functionality like `inky` or `inline_css` functionality
+could be provided to every Template Engine via an adapter pattern. Even Controllers can more easily be provided
+by Libraries as they would no longer need to be written for all Frameworks template engine.
 
 I think a common `TemplateRendererInterface` would be a great addition to the PHP ecosystem and would make
-it easier to use different PHP Libraries, Framework and CMS with the Template Engine somebody prefers.
+it easier to use different PHP Libraries, Framework and CMS with the Template Engine somebody prefers and
+even make Project upgrade and Framework changes easier.
 
 ## Different to exist Abstractions
 
@@ -84,12 +86,18 @@ the template engines have their own configuration and no config abstraction arou
 decides how to configure the template engine and library authors just use the Interface to render a
 configured template with the data that library provides.
 
-Also a common mistake in integrations of Template Engine in Frameworks are not providing the inner
+Also, a common mistake in integrations of Template Engine in Frameworks are not providing the inner
 template engine to the outside. I did stumble over integration of `Blade` into `Symfony` Framework
 which does not provide Blade itself just a Wrapper service around Blade. This does example not allow
 me use a Library which requires Blade directly. So all integrations not only provide the Adapter
-for the `TemplateRendererInterface` but also the `Template Engine` service itself. So also libraries
+for the `TemplateRendererInterface` but also the `Template Engine` service itself. This way libraries
 which do not yet support the `TemplateRendererInterface` can easily be integrated into any Framework.
+As the provided Integrations provides also the inner Template Engine as a service which could be used
+in these edge case.
+
+So the target is a simple Abstract Interface for Rendering a Template with given data. And providing
+well documented integrations of Template engines into all kind of Frameworks without limiting there
+direct usage and extensibility.
 
 ## Project Status
 
