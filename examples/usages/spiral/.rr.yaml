@@ -1,34 +1,44 @@
-# http service configuration.
+version: '2.7'
+
+rpc:
+  listen: tcp://127.0.0.1:6001
+
+server:
+  command: "php app.php"
+  relay: pipes
+
 http:
   address: 0.0.0.0:8080
+  middleware: [ "gzip", "static" ]
+  static:
+    dir: "public"
+    forbid: [ ".php", ".htaccess" ]
+  pool:
+    num_workers: 1
+    supervisor:
+      max_worker_memory: 100
 
-  workers:
-    command: "php app.php"
-
-# queue and jobs
 jobs:
-  dispatch:
-    app-job-*.pipeline: "local"
-  pipelines:
-    local:
-      broker: "ephemeral"
-  consume: ["local"]
+  consume: [ ]
+  pool:
+    num_workers: 2
+    supervisor:
+      max_worker_memory: 100
 
-  workers:
-    command: "php app.php"
-    pool.numWorkers: 2
-
-# serve static files
-static:
-  dir:    "public"
-  forbid: [".php", ".htaccess"]
+kv:
+  local:
+    driver: memory
+    config:
+      interval: 60
+  redis:
+    driver: redis
+    config:
+      addrs:
+        - localhost:6379
+#grpc:
+#  listen: "tcp://localhost:9001"
+#  proto:
+#    - "first.proto"
 
 metrics:
-  # prometheus client address (path /metrics added automatically)
   address: localhost:2112
-
-# control the max memory usage
-limit:
-  services:
-    http.maxMemory: 100
-    jobs.maxMemory: 100
