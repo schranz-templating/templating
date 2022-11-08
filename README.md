@@ -408,7 +408,7 @@ they are supporting. Also, what kind of features are supported by them.
 | Engine       | Version  | PHP Version            | Inheritance | Subviews | Namespaces | Functions | Filters | Exist | Partial | Streaming | String | Raw | Globals |
 |--------------|----------|------------------------|-------------|----------|------------|-----------|---------|-------|---------|-----------|--------|-----|---------|
 | Twig         | `3.4.1`  | `>=7.2.5`              | [x]         |          | [x] `@`    | [x]       | [x]     | [x]   | [x]     | [x]       | [x]    | [x] | [x]     |
-| Blade        | `9.15.0` | `^8.1`                 | [x]         |          | [x] `::`   | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+| Blade        | `9.15.0` | `^8.1`                 | [x]         |          | [x] `::`   | ?         | ?       | ?     | [x]     | ?         | [x]    | ?   | ?       |
 | Latte        | `3.0.0`  | `>=8.0 <8.2`           | [x]         |          | ?          |           | [x]     | ?     | ?       | ?         | [x]    | [x] | ?       |
 |              |          |                        |             |          |            |           |         |       |         |           |        |     |         |
 | Plates       | `3.4.0`  | `^7.0 ^8.0`            | [x]         |          | [x] `::`   | [x]       |         | ?     |         | ?         | [x]    | ?   | ?       |
@@ -493,7 +493,8 @@ E.g.: This is achieved in twig via twig extension, twig filters and the filter `
 The template engine allows to render only a subpart of a template.
 
 E.g. This is achieved in twig via loading the template and use the
-templates `renderBlock` method.
+templates `renderBlock` method. In blade via the fragment method on
+the view newly added in [lately](https://twitter.com/taylorotwell/status/1590066457458913280).
 
 #### Streaming
 
