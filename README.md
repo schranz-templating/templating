@@ -23,6 +23,8 @@ Discussion in the PHP-FIG:
 
 ## Table of Contents
 
+ - [Motivation](#motivation)
+ - [Different to exist abstractions](#different-to-exist-abstractions)
  - [Project Status](#project-status)
  - [Example Applications](#example-applications)
  - [Usage](#usage)
@@ -32,6 +34,62 @@ Discussion in the PHP-FIG:
  - [Package List](#package-list)
  - [Analyses](#analysis)
  - [Tooling](#tooling)
+
+## Motivation
+
+Why a TemplateRendererInterface?
+
+Somebody mostly don't see a lot of effort what a `TemplateRendererInterface` can do for the PHP ecosystem.
+While most Frameworks has a goto Template Engine, there are also some **Frameworks** not provided with
+a specific one and want to support multiple (e.g.: `Mezzio`, `Laminas`, `Yii`, ...). A TemplateRendererInterface
+can help it make the integration of every Template engine easier. And even allow to easier upgrade Legacy
+projects to newer Frameworks as not the whole templates need to be migrated. But also major frameworks like
+`Symfony` and `Laravel` could benifit from supporting a more secure Template engine like [`Latte`](https://latte.nette.org/).
+
+But not only Framework can benefit from a general TemplateRendererInterface, a common interface also
+allows **CMS** like [`Sulu CMS`](http://github.com/sulu/sulu), [`Typo3`](https://github.com/TYPO3/typo3), ... 
+and more allow to give the Frontend Developer the full Freedom how to write their Templates. Specially
+as CMS today allow to provide Content via JSON and render there website via React, Angular, Vue, ... they
+should also be free to render their website via Twig, Blade, Latte, ... or whatever Template engine they
+prefer.
+
+Beside Framework and CMS a general TemplateRendererInterface also helps Library Authors to integrate their
+library easier into different Frameworks. E.g. a mail library like `symfony/mailer` which provides a
+`TemplatedEmail` class could be changed to render the email body via a TemplateRendererInterface. And so
+could be used also to render emails with `Blade`, `Latte` and not only `Twig`. Which make it easier to use
+this component also in other Frameworks. Also other functionality like `inky` or `inline_css` functionality
+could be provided to every Template Engine via an adapter pattern.
+
+I think a common `TemplateRendererInterface` would be a great addition to the PHP ecosystem and would make
+it easier to use different PHP Libraries, Framework and CMS with the Template Engine somebody prefers.
+
+## Different to exist Abstractions
+
+There are currently existing abstraction for Template engines. Most common inside some frameworks in
+the past there did exist the `symfony/templating`. Other abstraction are `mezzio/mezzio-template`,
+`laminas/laminas-view`, `template-interop/engine`, and some more.
+
+A common mistake in these abstractions which also are integrations are that they are doing more than they
+should. Some like example `Mezzio` is also abstracting configuration. As example `paths`, this is bad in
+two ways, it forces that it can only support template engine which supports multiple `paths` or even
+require template engine which load there `template` via a Filesystem loader. So this forced configuration
+would not allow us to use a Template engine which is using different kind of loading of does not support
+multiple directories like `Mustache`, `Latte` (current state), `Handlebars`.
+
+So this abstraction follows the [`Single-Responsibility-Principle`](https://en.wikipedia.org/wiki/Single-responsibility_principle)
+which we defined on a very limited scope and that is rendering a given template with the given data.
+
+All template engines are different and there integrations into the different frameworks requires that
+the template engines have their own configuration and no config abstraction around it. The project
+decides how to configure the template engine and library authors just use the Interface to render a
+configured template with the data that library provides.
+
+Also a common mistake in integrations of Template Engine in Frameworks are not providing the inner
+template engine to the outside. I did stumble over integration of `Blade` into `Symfony` Framework
+which does not provide Blade itself just a Wrapper service around Blade. This does example not allow
+me use a Library which requires Blade directly. So all integrations not only provide the Adapter
+for the `TemplateRendererInterface` but also the `Template Engine` service itself. So also libraries
+which do not yet support the `TemplateRendererInterface` can easily be integrated into any Framework.
 
 ## Project Status
 
@@ -91,19 +149,15 @@ php -S 127.0.0.1:8000 -t public
 
 Open then [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to get a list of available integrations in the example.
 
- - [http://127.0.0.1:8000/twig](http://127.0.0.1:8000/twig)
- - [http://127.0.0.1:8000/blade](http://127.0.0.1:8000/blade)
- - [http://127.0.0.1:8000/latte](http://127.0.0.1:8000/latte)
-  
-  
- - [http://127.0.0.1:8000/plates](http://127.0.0.1:8000/plates)
- - [http://127.0.0.1:8000/smarty](http://127.0.0.1:8000/smarty)
- - [http://127.0.0.1:8000/handlebars](http://127.0.0.1:8000/handlebars)
- - [http://127.0.0.1:8000/mustache](http://127.0.0.1:8000/mustache)
-  
-  
- - [http://127.0.0.1:8000/laminas-view](http://127.0.0.1:8000/laminas-view)
- - [http://127.0.0.1:8000/mezzio](http://127.0.0.1:8000/mezzio)
+- [http://127.0.0.1:8000/twig](http://127.0.0.1:8000/twig)
+- [http://127.0.0.1:8000/blade](http://127.0.0.1:8000/blade)
+- [http://127.0.0.1:8000/latte](http://127.0.0.1:8000/latte)
+- [http://127.0.0.1:8000/plates](http://127.0.0.1:8000/plates)
+- [http://127.0.0.1:8000/smarty](http://127.0.0.1:8000/smarty)
+- [http://127.0.0.1:8000/handlebars](http://127.0.0.1:8000/handlebars)
+- [http://127.0.0.1:8000/mustache](http://127.0.0.1:8000/mustache)
+- [http://127.0.0.1:8000/laminas-view](http://127.0.0.1:8000/laminas-view)
+- [http://127.0.0.1:8000/mezzio](http://127.0.0.1:8000/mezzio)
 
 ## Usage
 
