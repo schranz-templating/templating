@@ -113,6 +113,7 @@ class Kernel extends \Spiral\Framework\Kernel
         // Custom
         \Spiral\Twig\Bootloader\TwigBootloader::class,
         \Schranz\Templating\Integration\Spiral\Twig\Bootloader\TwigBootloader::class,
+        \Schranz\Templating\Integration\Spiral\Smarty\Bootloader\SmartyBootloader::class,
     ];
 
     /*

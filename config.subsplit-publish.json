@@ -244,6 +244,11 @@
             "name": "SpiralTwigIntegration",
             "directory": "src/Integration/Spiral/Twig",
             "target": "git@github.com:schranz-templating/spiral-twig-integration.git"
+        },
+        {
+            "name": "SpiralSmartyIntegration",
+            "directory": "src/Integration/Spiral/Smarty",
+            "target": "git@github.com:schranz-templating/spiral-smarty-integration.git"
         }
     ]
 }
