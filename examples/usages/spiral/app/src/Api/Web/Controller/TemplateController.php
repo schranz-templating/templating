@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Api\Web\Controller;
 
+use Schranz\Templating\Adapter\Handlebars\HandlebarsRenderer;
 use Schranz\Templating\Adapter\Smarty\SmartyRenderer;
 use Schranz\Templating\Adapter\Twig\TwigRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
@@ -15,7 +16,7 @@ class TemplateController
     public function index(?TemplateRendererInterface $defaultRenderer = null): string
     {
         return
-            '<h1>Goto /twig, /smarty</h1>' .
+            '<h1>Goto /twig, /smarty, /handlebars</h1>' .
             '<p>Default Renderer is: ' . get_debug_type($defaultRenderer) . '</p>'
         ;
     }
@@ -32,13 +33,23 @@ class TemplateController
     }
 
     #[Route(route: '/smarty', name: 'smarty', methods: 'GET')]
-
     public function smartyRenderer(SmartyRenderer $smartyRenderer): string
     {
         return $smartyRenderer->render(
             'base.tpl',
             [
                 'title' => 'Render using: ' . get_class($smartyRenderer),
+            ]
+        );
+    }
+
+    #[Route(route: '/handlebars', name: 'handlebars', methods: 'GET')]
+    public function handlebarsRenderer(HandlebarsRenderer $handlebarsRenderer): string
+    {
+        return $handlebarsRenderer->render(
+            'base.handlebars',
+            [
+                'title' => 'Render using: ' . get_class($handlebarsRenderer),
             ]
         );
     }

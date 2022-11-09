@@ -32,6 +32,13 @@
         },
         {
             "type": "path",
+            "url": "./../../../src/Adapter/Handlebars",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "./../../../src/Integration/Spiral/Twig",
             "options": {
                 "symlink": true
@@ -40,6 +47,13 @@
         {
             "type": "path",
             "url": "./../../../src/Integration/Spiral/Smarty",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../src/Integration/Spiral/Handlebars",
             "options": {
                 "symlink": true
             }
@@ -55,7 +69,8 @@
         "spiral/roadrunner-bridge": "^2.1",
         "spiral/sapi-bridge": "^1.0.1",
         "schranz-templating/spiral-twig-integration": "@dev",
-        "schranz-templating/spiral-smarty-integration": "@dev"
+        "schranz-templating/spiral-smarty-integration": "@dev",
+        "schranz-templating/spiral-handlebars-integration": "@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",

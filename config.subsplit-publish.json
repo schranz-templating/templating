@@ -249,6 +249,11 @@
             "name": "SpiralSmartyIntegration",
             "directory": "src/Integration/Spiral/Smarty",
             "target": "git@github.com:schranz-templating/spiral-smarty-integration.git"
+        },
+        {
+            "name": "SpiralHandlebarsIntegration",
+            "directory": "src/Integration/Spiral/Handlebars",
+            "target": "git@github.com:schranz-templating/spiral-handlebars-integration.git"
         }
     ]
 }
