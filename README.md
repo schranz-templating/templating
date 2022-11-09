@@ -327,7 +327,7 @@ composer require schranz-templating/spiral-handlebars-integration
 
 ## Package List
 
-The current project already provides about more than ~45 packages to integrate different template
+The current project already provides about more than ~50 packages to integrate different template
 engines into different frameworks.
 
 - [x] [TemplateRendererInterface](src/TemplateRenderer/TemplateRendererInterface.php) ([`schranz-templating/template-renderer`](https://github.com/schranz-templating/template-renderer))
