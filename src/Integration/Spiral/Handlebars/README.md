@@ -28,8 +28,6 @@ class Kernel extends \Spiral\Framework\Kernel
 
 ## Configuration
 
-## Configuration
-
 The integration provides the following configuration.
 
 ```php
@@ -38,9 +36,7 @@ The integration provides the following configuration.
 declare(strict_types=1);
 
 return [
-    'paths' => [
-        'hello' => 'app/views',
-    ],
+    'path' => 'app/views',
     'cache_dir' => 'runtime/cache/smarty/cache',
     'compile_dir' => 'runtime/cache/smarty/compile',
 ];

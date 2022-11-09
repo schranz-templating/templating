@@ -22,7 +22,7 @@ final class SmartyBootloader extends Bootloader
             SmartyConfig::CONFIG,
             [
                 'paths' => [
-                    'hello' => 'app/views',
+                    'app/views',
                 ],
                 'cache_dir' => 'runtime/cache/smarty/cache',
                 'compile_dir' => 'runtime/cache/smarty/compile',
