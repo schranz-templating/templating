@@ -114,7 +114,7 @@ implemented.
 
 | Template Engine | Adapter |     | Symfony | Laravel | Laminas | Mezzio | Spiral |     | Yii | Typo3 | Cake | CodeIgniter |
 |-----------------|---------|-----|---------|---------|---------|--------|--------|-----|-----|-------|------|-------------|
-| Twig            | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+| Twig            | ✅       |     | ✅       | ✅       | ✅       | ✅      | ✅      |     |     |       |      |             |
 | Blade           | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
 | Latte           | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
 |                 |         |     |         |         |         |        |        |     |     |       |      |             |
@@ -145,6 +145,7 @@ Which shows you how to use the Interface or a specific adapter inside the framew
  - [Laravel](examples/usages/laravel)
  - [Laminas](examples/usages/laminas)
  - [Mezzio](examples/usages/mezzio)
+ - [Spiral](examples/usages/spiral)
  - ...
 
 Go into one of the application directory and run:
@@ -312,6 +313,15 @@ composer require schranz-templating/mezzio-handlebars-integration
 composer require schranz-templating/mezzio-mustache-integration
 ```
 
+#### Usage for Spiral Projects
+
+To use the integration in the Spiral Framework the following packages are currently provided,
+which will register the adapter service and integration of the selected template engine:
+
+```bash
+composer require schranz-templating/spiral-twig-integration
+```
+
 ## Package List
 
 The current project already provides about more than ~45 packages to integrate different template
@@ -362,6 +372,7 @@ engines into different frameworks.
         - [ ] ...
     - [ ] Spiral
         - [ ] SpiralView
+        - [x] [Twig](src/Integration/Spiral/Twig/README.md) ([`schranz-templating/spiral-twig-integration`](https://github.com/schranz-templating/spiral-twig-integration))
         - [ ] ...
     - [ ] Laminas
         - [x] [LaminasView](src/Integration/Laminas/LaminasView/README.md) ([`schranz-templating/laminas-laminas-view-integration`](https://github.com/schranz-templating/laminas-laminas-view-integration))
