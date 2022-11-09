@@ -1,0 +1,38 @@
+{
+    "name": "schranz-templating/spiral-smarty-integration",
+    "description": "A integration of template renderer into spiral via smarty template engine.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\Integration\\Spiral\\Smarty\\": ""
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./../../../TemplateRenderer",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../Adapter/Smarty",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "php": "^7.2 || ^8.0",
+        "schranz-templating/smarty-adapter": "^0.1",
+        "psr/container": "^1.0 || ^2.0"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "allow-plugins": {
+            "spiral/composer-publish-plugin": true
+        }
+    }
+}

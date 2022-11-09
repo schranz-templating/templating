@@ -119,7 +119,7 @@ implemented.
 | Latte           | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
 |                 |         |     |         |         |         |        |        |     |     |       |      |             |
 | Plates          | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
-| Smarty          | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+| Smarty          | ✅       |     | ✅       | ✅       | ✅       | ✅      | ✅      |     |     |       |      |             |
 | Handlebars      | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
 | Mustache        | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
 |                 |         |     |         |         |         |        |        |     |     |       |      |             |
@@ -320,6 +320,8 @@ which will register the adapter service and integration of the selected template
 
 ```bash
 composer require schranz-templating/spiral-twig-integration
+
+composer require schranz-templating/spiral-smarty-integration
 ```
 
 ## Package List
@@ -373,6 +375,7 @@ engines into different frameworks.
     - [ ] Spiral
         - [ ] SpiralView
         - [x] [Twig](src/Integration/Spiral/Twig/README.md) ([`schranz-templating/spiral-twig-integration`](https://github.com/schranz-templating/spiral-twig-integration))
+        - [x] [Smarty](src/Integration/Spiral/Smarty/README.md) ([`schranz-templating/spiral-smarty-integration`](https://github.com/schranz-templating/spiral-smarty-integration))
         - [ ] ...
     - [ ] Laminas
         - [x] [LaminasView](src/Integration/Laminas/LaminasView/README.md) ([`schranz-templating/laminas-laminas-view-integration`](https://github.com/schranz-templating/laminas-laminas-view-integration))

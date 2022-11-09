@@ -11,7 +11,7 @@ use Spiral\Views\ViewContext;
 use Spiral\Views\ViewManager;
 use Twig\Environment;
 
-class TwigBootloader extends Bootloader
+final class TwigBootloader extends Bootloader
 {
     public function boot(Container $container): void
     {
