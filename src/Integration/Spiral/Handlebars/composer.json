@@ -1,11 +1,11 @@
 {
-    "name": "schranz-templating/spiral-smarty-integration",
-    "description": "A integration of template renderer into spiral via smarty template engine.",
+    "name": "schranz-templating/spiral-handlebars-integration",
+    "description": "A integration of template renderer into spiral via handlebars template engine.",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Schranz\\Templating\\Integration\\Spiral\\Smarty\\": ""
+            "Schranz\\Templating\\Integration\\Spiral\\Handlebars\\": ""
         }
     },
     "repositories": [
@@ -18,7 +18,7 @@
         },
         {
             "type": "path",
-            "url": "./../../../Adapter/Smarty",
+            "url": "./../../../Adapter/Handlebars",
             "options": {
                 "symlink": true
             }
@@ -26,7 +26,7 @@
     ],
     "require": {
         "php": "^7.2 || ^8.0",
-        "schranz-templating/smarty-adapter": "^0.1",
+        "schranz-templating/handlebars-adapter": "^0.1",
         "spiral/boot": "^3.0",
         "spiral/config": "^3.0",
         "spiral/core": "^3.0"

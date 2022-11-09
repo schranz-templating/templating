@@ -40,16 +40,10 @@ final class SmartyBootloader extends Bootloader
             $smarty->setCacheDir($config->getCacheDir());
             $smarty->setCompileDir($config->getCompileDir());
 
-            dump($config->getPaths());
-
             return $smarty;
         });
 
         $container->bind(Smarty::class, 'smarty');
-
-        $container->bindSingleton('schranz_templating.renderer.smarty', function (Container $container) {
-            return new SmartyRenderer($container->get('smarty'));
-        });
 
         $container->bindSingleton('schranz_templating.renderer.smarty', function (Container $container) {
             return new SmartyRenderer($container->get('smarty'));
