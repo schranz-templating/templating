@@ -109,6 +109,10 @@ class Kernel extends \Spiral\Framework\Kernel
         RoadRunnerBridge\CommandBootloader::class,
 
         Bootloader\RoutesBootloader::class,
+
+        // Custom
+        \Spiral\Twig\Bootloader\TwigBootloader::class,
+        \Schranz\Templating\Integration\Spiral\Twig\Bootloader\TwigBootloader::class,
     ];
 
     /*

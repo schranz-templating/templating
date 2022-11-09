@@ -1,0 +1,39 @@
+{
+    "name": "schranz-templating/spiral-twig-integration",
+    "description": "A integration of template renderer into spiral via twig template engine.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\Integration\\Spiral\\Twig\\": ""
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./../../../TemplateRenderer",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../Adapter/Twig",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "php": "^7.2 || ^8.0",
+        "schranz-templating/twig-adapter": "^0.1",
+        "spiral/twig-bridge": "^1.0 || ^2.0",
+        "psr/container": "^1.0 || ^2.0"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "allow-plugins": {
+            "spiral/composer-publish-plugin": true
+        }
+    }
+}
