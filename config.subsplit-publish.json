@@ -239,6 +239,11 @@
             "name": "SymfonyTwigIntegration",
             "directory": "src/Integration/Symfony/Twig",
             "target": "git@github.com:schranz-templating/symfony-twig-integration.git"
+        },
+        {
+            "name": "SpiralTwigIntegration",
+            "directory": "src/Integration/Spiral/Twig",
+            "target": "git@github.com:schranz-templating/spiral-twig-integration.git"
         }
     ]
 }
