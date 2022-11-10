@@ -254,6 +254,11 @@
             "name": "SpiralHandlebarsIntegration",
             "directory": "src/Integration/Spiral/Handlebars",
             "target": "git@github.com:schranz-templating/spiral-handlebars-integration.git"
+        },
+        {
+            "name": "SpiralMustacheIntegration",
+            "directory": "src/Integration/Spiral/Mustache",
+            "target": "git@github.com:schranz-templating/spiral-mustache-integration.git"
         }
     ]
 }
