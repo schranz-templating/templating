@@ -39,6 +39,13 @@
         },
         {
             "type": "path",
+            "url": "./../../../src/Adapter/Mustache",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "./../../../src/Integration/Spiral/Twig",
             "options": {
                 "symlink": true
@@ -57,6 +64,13 @@
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "path",
+            "url": "./../../../src/Integration/Spiral/Mustache",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "require": {
@@ -70,7 +84,8 @@
         "spiral/sapi-bridge": "^1.0.1",
         "schranz-templating/spiral-twig-integration": "@dev",
         "schranz-templating/spiral-smarty-integration": "@dev",
-        "schranz-templating/spiral-handlebars-integration": "@dev"
+        "schranz-templating/spiral-handlebars-integration": "@dev",
+        "schranz-templating/spiral-mustache-integration": "@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",

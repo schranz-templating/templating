@@ -121,7 +121,7 @@ implemented.
 | Plates          | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
 | Smarty          | ✅       |     | ✅       | ✅       | ✅       | ✅      | ✅      |     |     |       |      |             |
 | Handlebars      | ✅       |     | ✅       | ✅       | ✅       | ✅      | ✅      |     |     |       |      |             |
-| Mustache        | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+| Mustache        | ✅       |     | ✅       | ✅       | ✅       | ✅      | ✅      |     |     |       |      |             |
 |                 |         |     |         |         |         |        |        |     |     |       |      |             |
 | Mezzio          | ✅       |     |         |         |         | ✅      |        |     |     |       |      |             |
 | Laminas View    | ✅       |     |         |         | ✅       |        |        |     |     |       |      |             |
@@ -323,6 +323,7 @@ composer require schranz-templating/spiral-twig-integration
 
 composer require schranz-templating/spiral-smarty-integration
 composer require schranz-templating/spiral-handlebars-integration
+composer require schranz-templating/spiral-mustache-integration
 ```
 
 ## Package List
@@ -378,6 +379,7 @@ engines into different frameworks.
         - [x] [Twig](src/Integration/Spiral/Twig/README.md) ([`schranz-templating/spiral-twig-integration`](https://github.com/schranz-templating/spiral-twig-integration))
         - [x] [Smarty](src/Integration/Spiral/Smarty/README.md) ([`schranz-templating/spiral-smarty-integration`](https://github.com/schranz-templating/spiral-smarty-integration))
         - [x] [Handlebars](src/Integration/Spiral/Handlebars/README.md) ([`schranz-templating/spiral-handlebars-integration`](https://github.com/schranz-templating/spiral-handlebars-integration))
+        - [x] [Mustache](src/Integration/Spiral/Mustache/README.md) ([`schranz-templating/spiral-mustache-integration`](https://github.com/schranz-templating/spiral-mustache-integration))
         - [ ] ...
     - [ ] Laminas
         - [x] [LaminasView](src/Integration/Laminas/LaminasView/README.md) ([`schranz-templating/laminas-laminas-view-integration`](https://github.com/schranz-templating/laminas-laminas-view-integration))
