@@ -46,6 +46,13 @@
         },
         {
             "type": "path",
+            "url": "./../../../src/Adapter/Plates",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "./../../../src/Integration/Spiral/Twig",
             "options": {
                 "symlink": true
@@ -71,6 +78,13 @@
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "path",
+            "url": "./../../../src/Integration/Spiral/Plates",
+            "options": {
+                "symlink": true
+            }
         }
     ],
     "require": {
@@ -85,7 +99,8 @@
         "schranz-templating/spiral-twig-integration": "@dev",
         "schranz-templating/spiral-smarty-integration": "@dev",
         "schranz-templating/spiral-handlebars-integration": "@dev",
-        "schranz-templating/spiral-mustache-integration": "@dev"
+        "schranz-templating/spiral-mustache-integration": "@dev",
+        "schranz-templating/spiral-plates-integration": "@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
