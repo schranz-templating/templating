@@ -116,6 +116,7 @@ class Kernel extends \Spiral\Framework\Kernel
         \Schranz\Templating\Integration\Spiral\Smarty\Bootloader\SmartyBootloader::class,
         \Schranz\Templating\Integration\Spiral\Handlebars\Bootloader\HandlebarsBootloader::class,
         \Schranz\Templating\Integration\Spiral\Mustache\Bootloader\MustacheBootloader::class,
+        \Schranz\Templating\Integration\Spiral\Plates\Bootloader\PlatesBootloader::class,
     ];
 
     /*

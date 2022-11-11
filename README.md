@@ -118,7 +118,7 @@ implemented.
 | Blade           | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
 | Latte           | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
 |                 |         |     |         |         |         |        |        |     |     |       |      |             |
-| Plates          | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+| Plates          | ✅       |     | ✅       | ✅       | ✅       | ✅      | ✅      |     |     |       |      |             |
 | Smarty          | ✅       |     | ✅       | ✅       | ✅       | ✅      | ✅      |     |     |       |      |             |
 | Handlebars      | ✅       |     | ✅       | ✅       | ✅       | ✅      | ✅      |     |     |       |      |             |
 | Mustache        | ✅       |     | ✅       | ✅       | ✅       | ✅      | ✅      |     |     |       |      |             |
@@ -321,6 +321,7 @@ which will register the adapter service and integration of the selected template
 ```bash
 composer require schranz-templating/spiral-twig-integration
 
+composer require schranz-templating/spiral-plates-integration
 composer require schranz-templating/spiral-smarty-integration
 composer require schranz-templating/spiral-handlebars-integration
 composer require schranz-templating/spiral-mustache-integration
@@ -334,19 +335,19 @@ engines into different frameworks.
 - [x] [TemplateRendererInterface](src/TemplateRenderer/TemplateRendererInterface.php) ([`schranz-templating/template-renderer`](https://github.com/schranz-templating/template-renderer))
 - [ ] Adapters
     - [x] [Twig Template Renderer](src/Adapter/Twig/TwigRenderer.php) ([`schranz-templating/twig-adapter`](https://github.com/schranz-templating/twig-adapter))
-    - [x] [Smarty Template Renderer](src/Adapter/Smarty/SmartyRenderer.php) ([`schranz-templating/smarty-adapter`](https://github.com/schranz-templating/smarty-adapter))
-    - [x] [Latte Template Renderer](src/Adapter/Latte/LatteRenderer.php) ([`schranz-templating/latte-adapter`](https://github.com/schranz-templating/latte-adapter))
     - [x] [Blade Template Renderer](src/Adapter/Blade/BladeRenderer.php) ([`schranz-templating/blade-adapter`](https://github.com/schranz-templating/blade-adapter))
-    - [x] [Mezzio Template Renderer](src/Adapter/Mezzio/MezzioRenderer.php) ([`schranz-templating/mezzio-adapter`](https://github.com/schranz-templating/mezzio-adapter))
+    - [x] [Latte Template Renderer](src/Adapter/Latte/LatteRenderer.php) ([`schranz-templating/latte-adapter`](https://github.com/schranz-templating/latte-adapter))
     - [x] [Plates Template Renderer](src/Adapter/Plates/PlatesRenderer.php) ([`schranz-templating/plates-adapter`](https://github.com/schranz-templating/plates-adapter))
-    - [x] [Mustache Renderer](src/Adapter/Mustache/MustacheRenderer.php) ([`schranz-templating/mustache-adapter`](https://github.com/schranz-templating/mustache-adapter))
+    - [x] [Smarty Template Renderer](src/Adapter/Smarty/SmartyRenderer.php) ([`schranz-templating/smarty-adapter`](https://github.com/schranz-templating/smarty-adapter))
     - [x] [Handlebars Renderer](src/Adapter/Handlebars/HandlebarsRenderer.php) ([`schranz-templating/handlebars-adapter`](https://github.com/schranz-templating/handlebars-adapter))
+    - [x] [Mustache Renderer](src/Adapter/Mustache/MustacheRenderer.php) ([`schranz-templating/mustache-adapter`](https://github.com/schranz-templating/mustache-adapter))
     - [x] [Laminas View Renderer](src/Adapter/LaminasView/LaminasViewRenderer.php) ([`schranz-templating/laminas-view-adapter`](https://github.com/schranz-templating/laminas-view-adapter))
+    - [x] [Mezzio Template Renderer](src/Adapter/Mezzio/MezzioRenderer.php) ([`schranz-templating/mezzio-adapter`](https://github.com/schranz-templating/mezzio-adapter))
     - [x] [YiiView Renderer](src/Adapter/YiiView/YiiViewRenderer.php) ([`schranz-templating/yii-view-adapter`](https://github.com/schranz-templating/yii-view-adapter))
     - [x] [Aura View Renderer](src/Adapter/AuraView/AuraViewRenderer.php) ([`schranz-templating/aura-view-adapter`](https://github.com/schranz-templating/aura-view-adapter))
-    - [x] [Qiq Template Renderer](src/Adapter/Qiq/QiqRenderer.php) ([`schranz-templating/qiq-adapter`](https://github.com/schranz-templating/qiq-adapter))
     - [x] [Spiral View Template Renderer](src/Adapter/SpiralView/SpiralViewRenderer.php) ([`schranz-templating/spiral-view-adapter`](https://github.com/schranz-templating/spiral-view-adapter))
     - [x] [Fluid Renderer](src/Adapter/Fluid/FluidRenderer.php) ([`schranz-templating/fluid-adapter`](https://github.com/schranz-templating/fluid-adapter))
+  - [x] [Qiq Template Renderer](src/Adapter/Qiq/QiqRenderer.php) ([`schranz-templating/qiq-adapter`](https://github.com/schranz-templating/qiq-adapter))
     - [x] [PHPTAL Renderer](src/Adapter/PHPTAL/PHPTALRenderer.php) ([`schranz-templating/phptal-adapter`](https://github.com/schranz-templating/phptal-adapter))
     - [x] [Brainy Renderer](src/Adapter/Brainy/BrainyRenderer.php) ([`schranz-templating/brainy-adapter`](https://github.com/schranz-templating/brainy-adapter))
     - [ ] Cake View
@@ -356,53 +357,53 @@ engines into different frameworks.
         - [x] [Twig](src/Integration/Symfony/Twig/README.md) ([`schranz-templating/symfony-twig-integration`](https://github.com/schranz-templating/symfony-twig-integration))
         - [x] [Blade](src/Integration/Symfony/Blade/README.md) ([`schranz-templating/symfony-blade-integration`](https://github.com/schranz-templating/symfony-blade-integration))
         - [x] [Latte](src/Integration/Symfony/Latte/README.md) ([`schranz-templating/symfony-latte-integration`](https://github.com/schranz-templating/symfony-latte-integration))
+      - [x] [Plates](src/Integration/Symfony/Plates/README.md) ([`schranz-templating/symfony-plates-integration`](https://github.com/schranz-templating/symfony-plates-integration))
+      - [x] [Smarty](src/Integration/Symfony/Smarty/README.md) ([`schranz-templating/symfony-smarty-integration`](https://github.com/schranz-templating/symfony-smarty-integration))
+          - [x] [Handlebars](src/Integration/Symfony/Handlebars/README.md) ([`schranz-templating/symfony-handlebars-integration`](https://github.com/schranz-templating/symfony-handlebars-integration))
         - [x] [Mustache](src/Integration/Symfony/Mustache/README.md) ([`schranz-templating/symfony-mustache-integration`](https://github.com/schranz-templating/symfony-mustache-integration))
-        - [x] [Plates](src/Integration/Symfony/Plates/README.md) ([`schranz-templating/symfony-plates-integration`](https://github.com/schranz-templating/symfony-plates-integration))
-        - [x] [Handlebars](src/Integration/Symfony/Handlebars/README.md) ([`schranz-templating/symfony-handlebars-integration`](https://github.com/schranz-templating/symfony-handlebars-integration))
-        - [x] [Smarty](src/Integration/Symfony/Smarty/README.md) ([`schranz-templating/symfony-smarty-integration`](https://github.com/schranz-templating/symfony-smarty-integration))
         - [ ] Brainy
         - [ ] PHPTAL
         - [ ] ...
     - [ ] Laravel
         - [x] [Blade](src/Integration/Laravel/Blade/README.md) ([`schranz-templating/laravel-blade-integration`](https://github.com/schranz-templating/laravel-blade-integration))
-        - [x] [Handlebars](src/Integration/Laravel/Handlebars/README.md) ([`schranz-templating/laravel-handlebars-integration`](https://github.com/schranz-templating/laravel-handlebars-integration))
-        - [x] [Latte](src/Integration/Laravel/Latte/README.md) ([`schranz-templating/laravel-latte-integration`](https://github.com/schranz-templating/laravel-latte-integration))
-        - [x] [Mustache](src/Integration/Laravel/Mustache/README.md) ([`schranz-templating/laravel-mustache-integration`](https://github.com/schranz-templating/laravel-mustache-integration))
+        - [x] [Twig](src/Integration/Laravel/Twig/README.md) ([`schranz-templating/laravel-twig-integration`](https://github.com/schranz-templating/laravel-twig-integration))
+      - [x] [Latte](src/Integration/Laravel/Latte/README.md) ([`schranz-templating/laravel-latte-integration`](https://github.com/schranz-templating/laravel-latte-integration))
         - [x] [Plates](src/Integration/Laravel/Plates/README.md) ([`schranz-templating/laravel-plates-integration`](https://github.com/schranz-templating/laravel-plates-integration))
         - [x] [Smarty](src/Integration/Laravel/Smarty/README.md) ([`schranz-templating/laravel-smarty-integration`](https://github.com/schranz-templating/laravel-smarty-integration))
-        - [x] [Twig](src/Integration/Laravel/Twig/README.md) ([`schranz-templating/laravel-twig-integration`](https://github.com/schranz-templating/laravel-twig-integration))
+          - [x] [Handlebars](src/Integration/Laravel/Handlebars/README.md) ([`schranz-templating/laravel-handlebars-integration`](https://github.com/schranz-templating/laravel-handlebars-integration))
+      - [x] [Mustache](src/Integration/Laravel/Mustache/README.md) ([`schranz-templating/laravel-mustache-integration`](https://github.com/schranz-templating/laravel-mustache-integration))
         - [ ] Brainy
         - [ ] PHPTAL
         - [ ] ...
     - [ ] Spiral
         - [ ] SpiralView
         - [x] [Twig](src/Integration/Spiral/Twig/README.md) ([`schranz-templating/spiral-twig-integration`](https://github.com/schranz-templating/spiral-twig-integration))
+        - [x] [Plates](src/Integration/Spiral/Plates/README.md) ([`schranz-templating/spiral-plates-integration`](https://github.com/schranz-templating/spiral-plates-integration))
         - [x] [Smarty](src/Integration/Spiral/Smarty/README.md) ([`schranz-templating/spiral-smarty-integration`](https://github.com/schranz-templating/spiral-smarty-integration))
         - [x] [Handlebars](src/Integration/Spiral/Handlebars/README.md) ([`schranz-templating/spiral-handlebars-integration`](https://github.com/schranz-templating/spiral-handlebars-integration))
         - [x] [Mustache](src/Integration/Spiral/Mustache/README.md) ([`schranz-templating/spiral-mustache-integration`](https://github.com/schranz-templating/spiral-mustache-integration))
         - [ ] ...
     - [ ] Laminas
         - [x] [LaminasView](src/Integration/Laminas/LaminasView/README.md) ([`schranz-templating/laminas-laminas-view-integration`](https://github.com/schranz-templating/laminas-laminas-view-integration))
+        - [x] [Twig](src/Integration/Laminas/Twig/README.md) ([`schranz-templating/laminas-twig-integration`](https://github.com/schranz-templating/laminas-twig-integration))
         - [x] [Blade](src/Integration/Laminas/Blade/README.md) ([`schranz-templating/laminas-blade-integration`](https://github.com/schranz-templating/laminas-blade-integration))
-        - [x] [Handlebars](src/Integration/Laminas/Handlebars/README.md) ([`schranz-templating/laminas-handlebars-integration`](https://github.com/schranz-templating/laminas-handlebars-integration))
-        - [x] [Latte](src/Integration/Laminas/Latte/README.md) ([`schranz-templating/laminas-latte-integration`](https://github.com/schranz-templating/laminas-latte-integration))
-        - [x] [Mustache](src/Integration/Laminas/Mustache/README.md) ([`schranz-templating/laminas-mustache-integration`](https://github.com/schranz-templating/laminas-mustache-integration))
+      - [x] [Latte](src/Integration/Laminas/Latte/README.md) ([`schranz-templating/laminas-latte-integration`](https://github.com/schranz-templating/laminas-latte-integration))
         - [x] [Plates](src/Integration/Laminas/Plates/README.md) ([`schranz-templating/laminas-plates-integration`](https://github.com/schranz-templating/laminas-plates-integration))
         - [x] [Smarty](src/Integration/Laminas/Smarty/README.md) ([`schranz-templating/laminas-smarty-integration`](https://github.com/schranz-templating/laminas-smarty-integration))
-        - [x] [Twig](src/Integration/Laminas/Twig/README.md) ([`schranz-templating/laminas-twig-integration`](https://github.com/schranz-templating/laminas-twig-integration))
+        - [x] [Handlebars](src/Integration/Laminas/Handlebars/README.md) ([`schranz-templating/laminas-handlebars-integration`](https://github.com/schranz-templating/laminas-handlebars-integration))
+      - [x] [Mustache](src/Integration/Laminas/Mustache/README.md) ([`schranz-templating/laminas-mustache-integration`](https://github.com/schranz-templating/laminas-mustache-integration))
         - [ ] Brainy
         - [ ] PHPTAL
         - [ ] ...
     - [ ] Mezzio
-        - [ ] Mezzio
+        - [x] [Mezzio](src/Integration/Mezzio/Mezzio/README.md) ([`schranz-templating/mezzio-mezzio-integration`](https://github.com/schranz-templating/mezzio-mezzio-integration))
         - [x] [Twig](src/Integration/Mezzio/Twig/README.md) ([`schranz-templating/mezzio-twig-integration`](https://github.com/schranz-templating/mezzio-twig-integration))
         - [x] [Latte](src/Integration/Mezzio/Blade/README.md) ([`schranz-templating/mezzio-blade-integration`](https://github.com/schranz-templating/mezzio-blade-integration))
         - [x] [Latte](src/Integration/Mezzio/Latte/README.md) ([`schranz-templating/mezzio-latte-integration`](https://github.com/schranz-templating/mezzio-latte-integration))
         - [x] [Plates](src/Integration/Mezzio/Plates/README.md) ([`schranz-templating/mezzio-plates-integration`](https://github.com/schranz-templating/mezzio-plates-integration))
+      - [x] [Smarty](src/Integration/Mezzio/Smarty/README.md) ([`schranz-templating/mezzio-smarty-integration`](https://github.com/schranz-templating/mezzio-smarty-integration))
         - [x] [Handlebars](src/Integration/Mezzio/Handlebars/README.md) ([`schranz-templating/mezzio-handlebars-integration`](https://github.com/schranz-templating/mezzio-handlebars-integration))
         - [x] [Mustache](src/Integration/Mezzio/Mustache/README.md) ([`schranz-templating/mezzio-mustache-integration`](https://github.com/schranz-templating/mezzio-mustache-integration))
-        - [x] [Smarty](src/Integration/Mezzio/Smarty/README.md) ([`schranz-templating/mezzio-smarty-integration`](https://github.com/schranz-templating/mezzio-smarty-integration))
-        - [x] [Mezzio](src/Integration/Mezzio/Mezzio/README.md) ([`schranz-templating/mezzio-mezzio-integration`](https://github.com/schranz-templating/mezzio-mezzio-integration))
         - [ ] ...
     - [ ] Yii
         - [ ] YiiView

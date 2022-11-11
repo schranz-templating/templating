@@ -6,6 +6,7 @@ namespace App\Api\Web\Controller;
 
 use Schranz\Templating\Adapter\Handlebars\HandlebarsRenderer;
 use Schranz\Templating\Adapter\Mustache\MustacheRenderer;
+use Schranz\Templating\Adapter\Plates\PlatesRenderer;
 use Schranz\Templating\Adapter\Smarty\SmartyRenderer;
 use Schranz\Templating\Adapter\Twig\TwigRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
@@ -17,7 +18,7 @@ class TemplateController
     public function index(?TemplateRendererInterface $defaultRenderer = null): string
     {
         return
-            '<h1>Goto /twig, /smarty, /handlebars, /mustache</h1>' .
+            '<h1>Goto /twig, /smarty, /handlebars, /mustache, /plates</h1>' .
             '<p>Default Renderer is: ' . get_debug_type($defaultRenderer) . '</p>'
         ;
     }
@@ -62,6 +63,17 @@ class TemplateController
             'base.mustache',
             [
                 'title' => 'Render using: ' . get_class($mustacheRenderer),
+            ]
+        );
+    }
+
+    #[Route(route: '/plates', name: 'plates', methods: 'GET')]
+    public function platesRenderer(PlatesRenderer $platesRenderer): string
+    {
+        return $platesRenderer->render(
+            'base.plates',
+            [
+                'title' => 'Render using: ' . get_class($platesRenderer),
             ]
         );
     }
