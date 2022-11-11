@@ -116,7 +116,7 @@ implemented.
 |-----------------|---------|-----|---------|---------|---------|--------|--------|-----|-----|-------|------|-------------|
 | Twig            | ✅       |     | ✅       | ✅       | ✅       | ✅      | ✅      |     |     |       |      |             |
 | Blade           | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
-| Latte           | ✅       |     | ✅       | ✅       | ✅       | ✅      |        |     |     |       |      |             |
+| Latte           | ✅       |     | ✅       | ✅       | ✅       | ✅      | ✅      |     |     |       |      |             |
 |                 |         |     |         |         |         |        |        |     |     |       |      |             |
 | Plates          | ✅       |     | ✅       | ✅       | ✅       | ✅      | ✅      |     |     |       |      |             |
 | Smarty          | ✅       |     | ✅       | ✅       | ✅       | ✅      | ✅      |     |     |       |      |             |
@@ -320,6 +320,7 @@ which will register the adapter service and integration of the selected template
 
 ```bash
 composer require schranz-templating/spiral-twig-integration
+composer require schranz-templating/spiral-latte-integration
 
 composer require schranz-templating/spiral-plates-integration
 composer require schranz-templating/spiral-smarty-integration
@@ -378,6 +379,7 @@ engines into different frameworks.
     - [ ] Spiral
         - [ ] SpiralView
         - [x] [Twig](src/Integration/Spiral/Twig/README.md) ([`schranz-templating/spiral-twig-integration`](https://github.com/schranz-templating/spiral-twig-integration))
+        - [x] [Latte](src/Integration/Spiral/Latte/README.md) ([`schranz-templating/spiral-latte-integration`](https://github.com/schranz-templating/spiral-latte-integration))
         - [x] [Plates](src/Integration/Spiral/Plates/README.md) ([`schranz-templating/spiral-plates-integration`](https://github.com/schranz-templating/spiral-plates-integration))
         - [x] [Smarty](src/Integration/Spiral/Smarty/README.md) ([`schranz-templating/spiral-smarty-integration`](https://github.com/schranz-templating/spiral-smarty-integration))
         - [x] [Handlebars](src/Integration/Spiral/Handlebars/README.md) ([`schranz-templating/spiral-handlebars-integration`](https://github.com/schranz-templating/spiral-handlebars-integration))
