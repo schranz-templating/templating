@@ -264,6 +264,11 @@
             "name": "SpiralPlatesIntegration",
             "directory": "src/Integration/Spiral/Plates",
             "target": "git@github.com:schranz-templating/spiral-plates-integration.git"
+        },
+        {
+            "name": "SpiralLatteIntegration",
+            "directory": "src/Integration/Spiral/Latte",
+            "target": "git@github.com:schranz-templating/spiral-latte-integration.git"
         }
     ]
 }
