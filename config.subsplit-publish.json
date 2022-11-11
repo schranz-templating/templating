@@ -259,6 +259,11 @@
             "name": "SpiralMustacheIntegration",
             "directory": "src/Integration/Spiral/Mustache",
             "target": "git@github.com:schranz-templating/spiral-mustache-integration.git"
+        },
+        {
+            "name": "SpiralPlatesIntegration",
+            "directory": "src/Integration/Spiral/Plates",
+            "target": "git@github.com:schranz-templating/spiral-plates-integration.git"
         }
     ]
 }
