@@ -111,6 +111,8 @@ class Kernel extends \Spiral\Framework\Kernel
         Bootloader\RoutesBootloader::class,
 
         // Custom
+        \Spiral\Views\Bootloader\ViewsBootloader::class,
+        \Schranz\Templating\Integration\Spiral\SpiralView\Bootloader\SpiralViewBootloader::class,
         \Spiral\Twig\Bootloader\TwigBootloader::class,
         \Schranz\Templating\Integration\Spiral\Twig\Bootloader\TwigBootloader::class,
         \Schranz\Templating\Integration\Spiral\Blade\Bootloader\BladeBootloader::class,

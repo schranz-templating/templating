@@ -269,6 +269,16 @@
             "name": "SpiralLatteIntegration",
             "directory": "src/Integration/Spiral/Latte",
             "target": "git@github.com:schranz-templating/spiral-latte-integration.git"
+        },
+        {
+            "name": "SpiralBladeIntegration",
+            "directory": "src/Integration/Spiral/Blade",
+            "target": "git@github.com:schranz-templating/spiral-blade-integration.git"
+        },
+        {
+            "name": "SpiralSpiralViewIntegration",
+            "directory": "src/Integration/Spiral/SpiralView",
+            "target": "git@github.com:schranz-templating/spiral-spiral-view-integration.git"
         }
     ]
 }

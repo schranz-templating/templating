@@ -167,6 +167,7 @@ Open then [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to get a list of avai
 - [http://127.0.0.1:8000/mustache](http://127.0.0.1:8000/mustache)
 - [http://127.0.0.1:8000/laminas-view](http://127.0.0.1:8000/laminas-view)
 - [http://127.0.0.1:8000/mezzio](http://127.0.0.1:8000/mezzio)
+- [http://127.0.0.1:8000/laminas-view](http://127.0.0.1:8000/spiral-view)
 
 ## Usage
 
@@ -267,6 +268,8 @@ To use the integration in the Laravel Framework the following packages are curre
 which will register the adapter service and integration of the selected template engine:
 
 ```bash
+composer require schranz-templating/laravel-spiral-view-integration
+
 composer require schranz-templating/laravel-twig-integration
 composer require schranz-templating/laravel-blade-integration
 composer require schranz-templating/laravel-latte-integration
@@ -349,7 +352,7 @@ engines into different frameworks.
     - [x] [Aura View Renderer](src/Adapter/AuraView/AuraViewRenderer.php) ([`schranz-templating/aura-view-adapter`](https://github.com/schranz-templating/aura-view-adapter))
     - [x] [Spiral View Template Renderer](src/Adapter/SpiralView/SpiralViewRenderer.php) ([`schranz-templating/spiral-view-adapter`](https://github.com/schranz-templating/spiral-view-adapter))
     - [x] [Fluid Renderer](src/Adapter/Fluid/FluidRenderer.php) ([`schranz-templating/fluid-adapter`](https://github.com/schranz-templating/fluid-adapter))
-  - [x] [Qiq Template Renderer](src/Adapter/Qiq/QiqRenderer.php) ([`schranz-templating/qiq-adapter`](https://github.com/schranz-templating/qiq-adapter))
+    - [x] [Qiq Template Renderer](src/Adapter/Qiq/QiqRenderer.php) ([`schranz-templating/qiq-adapter`](https://github.com/schranz-templating/qiq-adapter))
     - [x] [PHPTAL Renderer](src/Adapter/PHPTAL/PHPTALRenderer.php) ([`schranz-templating/phptal-adapter`](https://github.com/schranz-templating/phptal-adapter))
     - [x] [Brainy Renderer](src/Adapter/Brainy/BrainyRenderer.php) ([`schranz-templating/brainy-adapter`](https://github.com/schranz-templating/brainy-adapter))
     - [ ] Cake View
@@ -378,7 +381,7 @@ engines into different frameworks.
         - [ ] PHPTAL
         - [ ] ...
     - [ ] Spiral
-        - [ ] SpiralView
+        - [x] [SpiralView](src/Integration/Spiral/SpiralView/README.md) ([`schranz-templating/spiral-spiral-view-integration`](https://github.com/schranz-templating/spiral-spiral-view-integration))
         - [x] [Twig](src/Integration/Spiral/Twig/README.md) ([`schranz-templating/spiral-twig-integration`](https://github.com/schranz-templating/spiral-twig-integration))
         - [x] [Blade](src/Integration/Spiral/Blade/README.md) ([`schranz-templating/spiral-blade-integration`](https://github.com/schranz-templating/spiral-blade-integration))
         - [x] [Latte](src/Integration/Spiral/Latte/README.md) ([`schranz-templating/spiral-latte-integration`](https://github.com/schranz-templating/spiral-latte-integration))
