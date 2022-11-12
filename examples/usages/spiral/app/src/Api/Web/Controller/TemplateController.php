@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Api\Web\Controller;
 
+use Schranz\Templating\Adapter\Blade\BladeRenderer;
 use Schranz\Templating\Adapter\Handlebars\HandlebarsRenderer;
 use Schranz\Templating\Adapter\Latte\LatteRenderer;
 use Schranz\Templating\Adapter\Mustache\MustacheRenderer;
@@ -19,7 +20,7 @@ class TemplateController
     public function index(?TemplateRendererInterface $defaultRenderer = null): string
     {
         return
-            '<h1>Goto /twig, /latte, /smarty, /handlebars, /mustache, /plates</h1>' .
+            '<h1>Goto /twig, /blade, /latte, /smarty, /handlebars, /mustache, /plates</h1>' .
             '<p>Default Renderer is: ' . get_debug_type($defaultRenderer) . '</p>'
         ;
     }
@@ -86,6 +87,17 @@ class TemplateController
             'base.latte',
             [
                 'title' => 'Render using: ' . get_class($latteRenderer),
+            ]
+        );
+    }
+
+    #[Route(route: '/blade', name: 'blade', methods: 'GET')]
+    public function bladeRenderer(BladeRenderer $bladeRenderer): string
+    {
+        return $bladeRenderer->render(
+            'base',
+            [
+                'title' => 'Render using: ' . get_class($bladeRenderer),
             ]
         );
     }
