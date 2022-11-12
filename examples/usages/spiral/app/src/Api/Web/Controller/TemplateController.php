@@ -10,6 +10,7 @@ use Schranz\Templating\Adapter\Latte\LatteRenderer;
 use Schranz\Templating\Adapter\Mustache\MustacheRenderer;
 use Schranz\Templating\Adapter\Plates\PlatesRenderer;
 use Schranz\Templating\Adapter\Smarty\SmartyRenderer;
+use Schranz\Templating\Adapter\SpiralView\SpiralViewRenderer;
 use Schranz\Templating\Adapter\Twig\TwigRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 use Spiral\Router\Annotation\Route;
@@ -98,6 +99,17 @@ class TemplateController
             'base',
             [
                 'title' => 'Render using: ' . get_class($bladeRenderer),
+            ]
+        );
+    }
+
+    #[Route(route: '/spiral-view', name: 'spiral-view', methods: 'GET')]
+    public function spiralViewRenderer(SpiralViewRenderer $spiralViewRenderer): string
+    {
+        return $spiralViewRenderer->render(
+            'base',
+            [
+                'title' => 'Render using: ' . get_class($spiralViewRenderer),
             ]
         );
     }
