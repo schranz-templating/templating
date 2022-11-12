@@ -1,0 +1,40 @@
+{
+    "name": "schranz-templating/spiral-blade-integration",
+    "description": "A integration of template renderer into spiral via blade template engine.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Schranz\\Templating\\Integration\\Spiral\\Blade\\": ""
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./../../../TemplateRenderer",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./../../../Adapter/Blade",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "php": "^7.2 || ^8.0",
+        "schranz-templating/blade-adapter": "^0.1",
+        "spiral/boot": "^3.0",
+        "spiral/config": "^3.0",
+        "spiral/core": "^3.0"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "allow-plugins": {
+            "spiral/composer-publish-plugin": true
+        }
+    }
+}
