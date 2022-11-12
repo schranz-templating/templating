@@ -123,11 +123,11 @@ implemented.
 | Handlebars      | ✅       |     | ✅       | ✅       | ✅       | ✅      | ✅      |     |     |       |      |             |
 | Mustache        | ✅       |     | ✅       | ✅       | ✅       | ✅      | ✅      |     |     |       |      |             |
 |                 |         |     |         |         |         |        |        |     |     |       |      |             |
-| Mezzio          | ✅       |     |         |         |         | ✅      |        |     |     |       |      |             |
 | Laminas View    | ✅       |     |         |         | ✅       |        |        |     |     |       |      |             |
+| Mezzio          | ✅       |     |         |         |         | ✅      |        |     |     |       |      |             |
+| Spiral View     | ✅       |     |         |         |         |        | ✅      |     |     |       |      |             |
 | Yii View        | ✅       |     |         |         |         |        |        |     |     |       |      |             |
 | Aura View       | ✅       |     |         |         |         |        |        |     |     |       |      |             |
-| Spiral View     | ✅       |     |         |         |         |        |        |     |     |       |      |             |
 | Fluid           | ✅       |     |         |         |         |        |        |     |     |       |      |             |
 | Cake View       |         |     |         |         |         |        |        |     |     |       |      |             |
 | Contao          |         |     |         |         |         |        |        |     |     |       |      |             |
@@ -322,6 +322,8 @@ To use the integration in the Spiral Framework the following packages are curren
 which will register the adapter service and integration of the selected template engine:
 
 ```bash
+composer require schranz-templating/spiral-spiral-view-integration
+
 composer require schranz-templating/spiral-twig-integration
 composer require schranz-templating/spiral-blade-integration
 composer require schranz-templating/spiral-latte-integration
