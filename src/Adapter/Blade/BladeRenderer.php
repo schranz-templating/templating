@@ -2,17 +2,17 @@
 
 namespace Schranz\Templating\Adapter\Blade;
 
-use Illuminate\View\Factory;
+use Illuminate\Contracts\View\Factory as FactoryContract;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class BladeRenderer implements TemplateRendererInterface
 {
     /**
-     * @var Factory
+     * @var FactoryContract
      */
     private $blade;
 
-    public function __construct(Factory $blade)
+    public function __construct(FactoryContract $blade)
     {
         $this->blade = $blade;
     }

@@ -2,39 +2,37 @@
 
 namespace Schranz\Templating\Integration\Spiral\SpiralView\Bootloader;
 
+use Psr\Container\ContainerInterface;
 use Schranz\Templating\Adapter\SpiralView\SpiralViewRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 use Spiral\Boot\Bootloader\Bootloader;
-use Spiral\Core\Container;
+use Spiral\Core\BinderInterface;
 use Spiral\Views\Engine\Native\NativeEngine;
-use Spiral\Views\ViewManager;
 
 final class SpiralViewBootloader extends Bootloader
 {
-    public function boot(Container $container): void
+    protected const DEPENDENCIES = [
+        \Spiral\Views\Bootloader\ViewsBootloader::class
+    ];
+
+    protected const SINGLETONS = [
+        'schranz_templating.renderer.spiral_view' => TemplateRendererInterface::class,
+        TemplateRendererInterface::class => SpiralViewRenderer::class,
+    ];
+
+    public function boot(BinderInterface $binder): void
     {
-        $container->bindSingleton('schranz_templating.renderer.spiral_view', function (Container $container) {
-            $viewManager = $container->get(ViewManager::class);
-
-            $engines = $viewManager->getEngines();
-
-            $nativeEngine = null;
-            foreach ($engines as $nativeEngine) {
-                if ($nativeEngine instanceof NativeEngine) {
-                    break;
-                }
-            }
-
-            if (null === $nativeEngine) {
+        $binder->bindSingleton(SpiralViewRenderer::class, function (ContainerInterface $container) {
+            try {
+                $nativeEngine = $container->get(NativeEngine::class);
+            } catch (\Throwable $e) {
                 throw new \LogicException(
-                    \sprintf('Expected "%s" to be registered in the view manager.', NativeEngine::class)
+                    \sprintf('Expected "%s" to be registered in the view manager.', NativeEngine::class),
+                    previous: $e
                 );
             }
 
             return new SpiralViewRenderer($nativeEngine);
         });
-
-        $container->bind(TemplateRendererInterface::class, 'schranz_templating.renderer.spiral_view');
-        $container->bind(SpiralViewRenderer::class, 'schranz_templating.renderer.spiral_view');
     }
 }
