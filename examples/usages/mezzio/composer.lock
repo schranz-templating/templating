@@ -2764,23 +2764,23 @@
         },
         {
             "name": "salesforce/handlebars-php",
-            "version": "2.3.0",
+            "version": "v3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/salesforce/handlebars-php.git",
-                "reference": "59fc47c7b2701659cb483d0f3461c4f712693b2b"
+                "reference": "12d26943f643854b2cf0f52c4afbbb30fd469d47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/salesforce/handlebars-php/zipball/59fc47c7b2701659cb483d0f3461c4f712693b2b",
-                "reference": "59fc47c7b2701659cb483d0f3461c4f712693b2b",
+                "url": "https://api.github.com/repos/salesforce/handlebars-php/zipball/12d26943f643854b2cf0f52c4afbbb30fd469d47",
+                "reference": "12d26943f643854b2cf0f52c4afbbb30fd469d47",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4"
+                "phpunit/phpunit": "^9"
             },
             "type": "library",
             "autoload": {
@@ -2815,9 +2815,9 @@
             ],
             "support": {
                 "issues": "https://github.com/salesforce/handlebars-php/issues",
-                "source": "https://github.com/salesforce/handlebars-php/tree/2.3.0"
+                "source": "https://github.com/salesforce/handlebars-php/tree/v3"
             },
-            "time": "2020-06-08T17:23:52+00:00"
+            "time": "2022-07-29T14:09:54+00:00"
         },
         {
             "name": "schranz-templating/blade-adapter",
@@ -2853,11 +2853,11 @@
             "dist": {
                 "type": "path",
                 "url": "./../../../src/Adapter/Handlebars",
-                "reference": "830f48b235f5dc0553fb39a429deab19b4c51459"
+                "reference": "9f78a0f091fabaa4ac1bc9b7b98124c0959d2132"
             },
             "require": {
                 "php": "^7.0 || ^8.0",
-                "salesforce/handlebars-php": "^2.3",
+                "salesforce/handlebars-php": "^2.3 || ^3.0",
                 "schranz-templating/template-renderer": "^0.1"
             },
             "type": "library",
