@@ -21,7 +21,6 @@ class Kernel extends \Spiral\Framework\Kernel
 {
     protected const LOAD = [
         // ...
-        \Spiral\Twig\Bootloader\TwigBootloader::class,
         \Schranz\Templating\Integration\Spiral\Twig\Bootloader\TwigBootloader::class,
     ];
 }

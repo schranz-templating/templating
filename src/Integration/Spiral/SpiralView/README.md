@@ -21,7 +21,6 @@ class Kernel extends \Spiral\Framework\Kernel
 {
     protected const LOAD = [
         // ...
-        \Spiral\Views\Bootloader\ViewsBootloader::class,
         \Schranz\Templating\Integration\Spiral\SpiralView\Bootloader\SpiralViewBootloader::class,
     ];
 }
