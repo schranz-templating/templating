@@ -1,11 +1,11 @@
 <?php
 
-namespace Schranz\Templating\Adapter\Mezzio;
+namespace Schranz\Templating\Adapter\MezzioTemplate;
 
 use Mezzio\Template\TemplateRendererInterface as MezzioTemplateRendererInterface;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
-class MezzioRenderer implements TemplateRendererInterface
+class MezzioTemplateRenderer implements TemplateRendererInterface
 {
     /**
      * @var MezzioTemplateRendererInterface

@@ -1,8 +1,8 @@
 <?php
 
-namespace Schranz\Templating\Integration\Mezzio\Mezzio;
+namespace Schranz\Templating\Integration\Mezzio\MezzioTemplate;
 
-use Schranz\Templating\Adapter\Mezzio\MezzioRenderer;
+use Schranz\Templating\Adapter\MezzioTemplate\MezzioTemplateRenderer;
 use Schranz\Templating\TemplateRenderer\TemplateRendererInterface;
 
 class ConfigProvider
@@ -18,11 +18,11 @@ class ConfigProvider
     {
         return [
             'aliases' => [
-                TemplateRendererInterface::class => MezzioRenderer::class,
-                MezzioRenderer::class => 'schranz_templating.renderer.mezzio',
+                TemplateRendererInterface::class => MezzioTemplateRenderer::class,
+                MezzioTemplateRenderer::class => 'schranz_templating.renderer.mezzio',
             ],
             'factories' => [
-                'schranz_templating.renderer.mezzio' => MezzioRendererFactory::class,
+                'schranz_templating.renderer.mezzio' => MezzioTemplateRendererFactory::class,
             ],
         ];
     }

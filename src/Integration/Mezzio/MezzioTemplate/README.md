@@ -1,6 +1,6 @@
 # Schranz Template Renderer Integration for Mezzio
 
-Integrate the templating [Mezzio Adapter](https://github.com/schranz-templating/mezzio-adapter) 
+Integrate the templating [Mezzio Template Adapter](https://github.com/schranz-templating/mezzio-template-adapter) 
 into the Mezzio Framework.
 
 Part of the [Schranz Templating Project](https://github.com/schranz-templating/templating).
@@ -10,7 +10,7 @@ Part of the [Schranz Templating Project](https://github.com/schranz-templating/t
 Install this package via Composer:
 
 ```bash
-composer require schranz-templating/mezzio-mezzio-integration
+composer require schranz-templating/mezzio-mezzio-template-integration
 ```
 
 Register the ConfigProvider class in your `config/config.php` if not already automatically
@@ -21,7 +21,7 @@ added by the framework:
 
 $aggregator = new ConfigAggregator([
     // ...
-    \Schranz\Templating\Integration\Mezzio\Mezzio\ConfigProvider::class,
+    \Schranz\Templating\Integration\Mezzio\MezzioTemplate\ConfigProvider::class,
 ]);
 ```
 
