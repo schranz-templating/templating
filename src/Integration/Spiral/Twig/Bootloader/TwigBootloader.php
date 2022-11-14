@@ -9,6 +9,7 @@ use Spiral\Core\BinderInterface;
 use Spiral\Boot\Bootloader\Bootloader;
 use Spiral\Twig\TwigEngine;
 use Spiral\Views\ViewContext;
+use Spiral\Views\ViewManager;
 use Twig\Environment;
 
 final class TwigBootloader extends Bootloader
@@ -26,13 +27,24 @@ final class TwigBootloader extends Bootloader
 
     public function boot(BinderInterface $binder): void
     {
-        $binder->bindSingleton(Environment::class, static function (ContainerInterface $container): Environment {
-            try {
-                $twigEngine = $container->get(TwigEngine::class);
-            } catch (\Throwable $e) {
+        // Use a hack to get Twig from the ViewManager as it is not available as an service yet
+        $binder->bindSingleton(Environment::class, function (ContainerInterface $container) {
+            // Use a hack to get Twig from the ViewManager as it is not available as an service yet
+            $viewManager = $container->get(ViewManager::class);
+
+            $engines = $viewManager->getEngines();
+
+            $twigEngine = null;
+            foreach ($engines as $engine) {
+                if ($engine instanceof TwigEngine) {
+                    $twigEngine = $engine;
+                    break;
+                }
+            }
+
+            if (null === $twigEngine) {
                 throw new \LogicException(
-                    \sprintf('Expected "%s" to be registered in the view manager.', TwigEngine::class),
-                    previous: $e
+                    \sprintf('Expected "%s" to be registered in the view manager.', TwigEngine::class)
                 );
             }
 
