@@ -3,6 +3,7 @@
 namespace Schranz\Templating\Integration\Spiral\Mustache\Bootloader;
 
 use Mustache_Engine;
+use Mustache_Loader;
 use Mustache_Loader_FilesystemLoader;
 use Schranz\Templating\Adapter\Mustache\MustacheRenderer;
 use Schranz\Templating\Integration\Spiral\Mustache\Config\MustacheConfig;
@@ -13,6 +14,11 @@ use Spiral\Config\ConfiguratorInterface;
 
 final class MustacheBootloader extends Bootloader
 {
+    protected const SINGLETONS = [
+        MustacheRenderer::class => MustacheRenderer::class,
+        TemplateRendererInterface::class => MustacheRenderer::class,
+    ];
+
     public function __construct(
         private readonly ConfiguratorInterface $config
     ) {
@@ -30,29 +36,20 @@ final class MustacheBootloader extends Bootloader
 
     public function boot(Container $container): void
     {
-        $container->bindSingleton('mustache.filesystem_loader', function (Container $container) {
+        $container->bindSingleton(Mustache_Loader::class, function (Container $container) {
             $config = $container->get(MustacheConfig::class);
 
             return new Mustache_Loader_FilesystemLoader($config->getPath());
         });
 
-        $container->bindSingleton('mustache', function (Container $container) {
+        $container->bindSingleton(Mustache_Engine::class, function (Container $container) {
             $config = $container->get(MustacheConfig::class);
 
             return new Mustache_Engine([
                 'cache' => $config->getCacheDir(),
-                'loader' => $container->get('mustache.filesystem_loader'),
+                'loader' => $container->get(Mustache_Loader::class),
                 'charset' => 'UTF-8',
             ]);
         });
-
-        $container->bind(Mustache_Engine::class, 'mustache');
-
-        $container->bindSingleton('schranz_templating.renderer.mustache', function (Container $container) {
-            return new MustacheRenderer($container->get('mustache'));
-        });
-
-        $container->bind(TemplateRendererInterface::class, 'schranz_templating.renderer.mustache');
-        $container->bind(MustacheRenderer::class, 'schranz_templating.renderer.mustache');
     }
 }

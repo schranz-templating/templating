@@ -12,6 +12,11 @@ use Spiral\Config\ConfiguratorInterface;
 
 final class SmartyBootloader extends Bootloader
 {
+    protected const SINGLETONS = [
+        SmartyRenderer::class => SmartyRenderer::class,
+        TemplateRendererInterface::class => SmartyRenderer::class,
+    ];
+
     public function __construct(
         private readonly ConfiguratorInterface $config
     ) {
@@ -32,7 +37,7 @@ final class SmartyBootloader extends Bootloader
 
     public function boot(Container $container): void
     {
-        $container->bindSingleton('smarty', function (Container $container) {
+        $container->bindSingleton(Smarty::class, function (Container $container) {
             $config = $container->get(SmartyConfig::class);
 
             $smarty = new Smarty();
@@ -42,14 +47,5 @@ final class SmartyBootloader extends Bootloader
 
             return $smarty;
         });
-
-        $container->bind(Smarty::class, 'smarty');
-
-        $container->bindSingleton('schranz_templating.renderer.smarty', function (Container $container) {
-            return new SmartyRenderer($container->get('smarty'));
-        });
-
-        $container->bind(TemplateRendererInterface::class, 'schranz_templating.renderer.smarty');
-        $container->bind(SmartyRenderer::class, 'schranz_templating.renderer.smarty');
     }
 }

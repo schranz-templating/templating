@@ -14,7 +14,6 @@ final class SpiralViewBootloader extends Bootloader
 
     protected const SINGLETONS = [
         SpiralViewRenderer::class => SpiralViewRenderer::class,
-        'schranz_templating.renderer.spiral_view' => SpiralViewRenderer::class,
         TemplateRendererInterface::class => SpiralViewRenderer::class,
     ];
 }

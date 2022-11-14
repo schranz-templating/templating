@@ -3,6 +3,7 @@
 namespace Schranz\Templating\Integration\Spiral\Latte\Bootloader;
 
 use Latte\Engine;
+use Latte\Loader;
 use Latte\Loaders\FileLoader;
 use Schranz\Templating\Adapter\Latte\LatteRenderer;
 use Schranz\Templating\Integration\Spiral\Latte\Config\LatteConfig;
@@ -13,6 +14,11 @@ use Spiral\Config\ConfiguratorInterface;
 
 final class LatteBootloader extends Bootloader
 {
+    protected const SINGLETONS = [
+        LatteRenderer::class => LatteRenderer::class,
+        TemplateRendererInterface::class => LatteRenderer::class,
+    ];
+
     public function __construct(
         private readonly ConfiguratorInterface $config
     ) {
@@ -30,31 +36,22 @@ final class LatteBootloader extends Bootloader
 
     public function boot(Container $container): void
     {
-        $container->bindSingleton('latte.loader', function (Container $container) {
+        $container->bindSingleton(Loader::class, function (Container $container) {
             $config = $container->get(LatteConfig::class);
 
             return new FileLoader($config->getPath());
         });
 
-        $container->bindSingleton('latte', function (Container $container) {
+        $container->bindSingleton(Engine::class, function (Container $container) {
             $config = $container->get(LatteConfig::class);
 
             $engine = new Engine();
             $engine->setTempDirectory($config->getCacheDir());
-            $engine->setLoader($container->get('latte.loader'));
+            $engine->setLoader($container->get(Loader::class));
 
             // TODO implement latte extensions
 
             return $engine;
         });
-
-        $container->bind(Engine::class, 'latte');
-
-        $container->bindSingleton('schranz_templating.renderer.latte', function (Container $container) {
-            return new LatteRenderer($container->get('latte'));
-        });
-
-        $container->bind(TemplateRendererInterface::class, 'schranz_templating.renderer.latte');
-        $container->bind(LatteRenderer::class, 'schranz_templating.renderer.latte');
     }
 }

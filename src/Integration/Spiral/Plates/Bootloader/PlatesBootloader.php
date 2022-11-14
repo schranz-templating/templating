@@ -12,6 +12,11 @@ use Spiral\Config\ConfiguratorInterface;
 
 final class PlatesBootloader extends Bootloader
 {
+    protected const SINGLETONS = [
+        PlatesRenderer::class => PlatesRenderer::class,
+        TemplateRendererInterface::class => PlatesRenderer::class,
+    ];
+
     public function __construct(
         private readonly ConfiguratorInterface $config
     ) {
@@ -30,7 +35,7 @@ final class PlatesBootloader extends Bootloader
 
     public function boot(Container $container): void
     {
-        $container->bindSingleton('plates', function (Container $container) {
+        $container->bindSingleton(Engine::class, function (Container $container) {
             $config = $container->get(PlatesConfig::class);
 
             $paths = $config->getPaths();
@@ -46,14 +51,5 @@ final class PlatesBootloader extends Bootloader
 
             return $engine;
         });
-
-        $container->bind(Engine::class, 'plates');
-
-        $container->bindSingleton('schranz_templating.renderer.plates', function (Container $container) {
-            return new PlatesRenderer($container->get('plates'));
-        });
-
-        $container->bind(TemplateRendererInterface::class, 'schranz_templating.renderer.plates');
-        $container->bind(PlatesRenderer::class, 'schranz_templating.renderer.plates');
     }
 }

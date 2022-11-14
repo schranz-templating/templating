@@ -19,8 +19,6 @@ final class TwigBootloader extends Bootloader
     ];
 
     protected const SINGLETONS = [
-        'twig' => Environment::class,
-        'schranz_templating.renderer.twig' => TemplateRendererInterface::class,
         TemplateRendererInterface::class => TwigRenderer::class,
         TwigRenderer::class => TwigRenderer::class,
     ];
