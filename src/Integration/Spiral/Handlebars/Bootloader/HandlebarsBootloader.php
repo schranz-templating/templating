@@ -2,8 +2,10 @@
 
 namespace Schranz\Templating\Integration\Spiral\Handlebars\Bootloader;
 
+use Handlebars\Cache;
 use Handlebars\Cache\Disk;
 use Handlebars\Handlebars;
+use Handlebars\Loader;
 use Handlebars\Loader\FilesystemLoader;
 use Schranz\Templating\Adapter\Handlebars\HandlebarsRenderer;
 use Schranz\Templating\Integration\Spiral\Handlebars\Config\HandlebarsConfig;
@@ -14,6 +16,11 @@ use Spiral\Config\ConfiguratorInterface;
 
 final class HandlebarsBootloader extends Bootloader
 {
+    protected const SINGLETONS = [
+        HandlebarsRenderer::class => HandlebarsRenderer::class,
+        TemplateRendererInterface::class => HandlebarsRenderer::class,
+    ];
+
     public function __construct(
         private readonly ConfiguratorInterface $config
     ) {
@@ -31,34 +38,25 @@ final class HandlebarsBootloader extends Bootloader
 
     public function boot(Container $container): void
     {
-        $container->bindSingleton('handlebars.filesystem_loader', function (Container $container) {
+        $container->bindSingleton(Loader::class, function (Container $container) {
             $config = $container->get(HandlebarsConfig::class);
 
             return new FilesystemLoader($config->getPath());
         });
 
-        $container->bindSingleton('handlebars.cache', function (Container $container) {
+        $container->bindSingleton(Cache::class, function (Container $container) {
             $config = $container->get(HandlebarsConfig::class);
 
             return new Disk($config->getCacheDir());
         });
 
-        $container->bindSingleton('handlebars', function (Container $container) {
+        $container->bindSingleton(Handlebars::class, function (Container $container) {
             return new Handlebars(
                 [
-                    'cache' => $container->get('handlebars.cache'),
-                    'loader' => $container->get('handlebars.filesystem_loader'),
+                    'cache' => $container->get(Cache::class),
+                    'loader' => $container->get(Loader::class),
                 ]
             );
         });
-
-        $container->bind(Handlebars::class, 'handlebars');
-
-        $container->bindSingleton('schranz_templating.renderer.handlebars', function (Container $container) {
-            return new HandlebarsRenderer($container->get('handlebars'));
-        });
-
-        $container->bind(TemplateRendererInterface::class, 'schranz_templating.renderer.handlebars');
-        $container->bind(HandlebarsRenderer::class, 'schranz_templating.renderer.handlebars');
     }
 }

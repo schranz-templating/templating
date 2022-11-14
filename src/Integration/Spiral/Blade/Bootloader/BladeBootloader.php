@@ -25,10 +25,8 @@ use Spiral\Config\ConfiguratorInterface;
 final class BladeBootloader extends Bootloader
 {
     protected const SINGLETONS = [
-        'schranz_templating.renderer.blade' => TemplateRendererInterface::class,
-        'blade' => FactoryContract::class,
-        Filesystem::class => Filesystem::class,
-        'blade.filesystem' => Filesystem::class,
+        BladeRenderer::class => BladeRenderer::class,
+        TemplateRendererInterface::class => BladeRenderer::class,
     ];
 
     public function __construct(
@@ -116,13 +114,6 @@ final class BladeBootloader extends Bootloader
                     $finder,
                     $dispatcher,
                 );
-            }
-        );
-
-        $binder->bindSingleton(
-            TemplateRendererInterface::class,
-            static function (FactoryContract $factory): TemplateRendererInterface {
-                return new BladeRenderer($factory);
             }
         );
     }
