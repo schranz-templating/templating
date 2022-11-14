@@ -1,11 +1,11 @@
 {
-    "name": "schranz-templating/mezzio-mezzio-integration",
+    "name": "schranz-templating/mezzio-mezzio-template-integration",
     "description": "A integration of template renderer into mezzio via mezzio template engine.",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Schranz\\Templating\\Integration\\Mezzio\\Mezzio\\": ""
+            "Schranz\\Templating\\Integration\\Mezzio\\MezzioTemplate\\": ""
         }
     },
     "repositories": [
@@ -18,7 +18,7 @@
         },
         {
             "type": "path",
-            "url": "./../../../Adapter/Mezzio",
+            "url": "./../../../Adapter/MezzioTemplate",
             "options": {
                 "symlink": true
             }
@@ -26,13 +26,13 @@
     ],
     "require": {
         "php": "^7.0 || ^8.0",
-        "schranz-templating/mezzio-adapter": "^0.1",
+        "schranz-templating/mezzio-template-adapter": "^0.1",
         "psr/container": "^1.0 || ^2.0"
     },
     "minimum-stability": "dev",
     "extra": {
         "laminas": {
-            "config-provider": "Schranz\\Templating\\Integration\\Mezzio\\Mezzio\\ConfigProvider"
+            "config-provider": "Schranz\\Templating\\Integration\\Mezzio\\MezzioTemplate\\ConfigProvider"
         }
     }
 }

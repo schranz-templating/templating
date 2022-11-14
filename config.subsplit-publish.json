@@ -42,8 +42,8 @@
         },
         {
             "name": "MezzioAdapter",
-            "directory": "src/Adapter/Mezzio",
-            "target": "git@github.com:schranz-templating/mezzio-adapter.git"
+            "directory": "src/Adapter/MezzioTemplate",
+            "target": "git@github.com:schranz-templating/mezzio-template-adapter.git"
         },
         {
             "name": "MustacheAdapter",
@@ -192,8 +192,8 @@
         },
         {
             "name": "MezzioMezzioIntegration",
-            "directory": "src/Integration/Mezzio/Mezzio",
-            "target": "git@github.com:schranz-templating/mezzio-mezzio-integration.git"
+            "directory": "src/Integration/Mezzio/MezzioTemplate",
+            "target": "git@github.com:schranz-templating/mezzio-mezzio-template-integration.git"
         },
         {
             "name": "MezzioLatteIntegration",

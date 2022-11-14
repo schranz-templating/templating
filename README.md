@@ -124,7 +124,7 @@ implemented.
 | Mustache        | ✅       |     | ✅       | ✅       | ✅       | ✅      | ✅      |     |     |       |      |             |
 |                 |         |     |         |         |         |        |        |     |     |       |      |             |
 | Laminas View    | ✅       |     |         |         | ✅       |        |        |     |     |       |      |             |
-| Mezzio          | ✅       |     |         |         |         | ✅      |        |     |     |       |      |             |
+| Mezzio Template | ✅       |     |         |         |         | ✅      |        |     |     |       |      |             |
 | Spiral View     | ✅       |     |         |         |         |        | ✅      |     |     |       |      |             |
 | Yii View        | ✅       |     |         |         |         |        |        |     |     |       |      |             |
 | Aura View       | ✅       |     |         |         |         |        |        |     |     |       |      |             |
@@ -166,7 +166,7 @@ Open then [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to get a list of avai
 - [http://127.0.0.1:8000/handlebars](http://127.0.0.1:8000/handlebars)
 - [http://127.0.0.1:8000/mustache](http://127.0.0.1:8000/mustache)
 - [http://127.0.0.1:8000/laminas-view](http://127.0.0.1:8000/laminas-view)
-- [http://127.0.0.1:8000/mezzio](http://127.0.0.1:8000/mezzio)
+- [http://127.0.0.1:8000/mezzio-template](http://127.0.0.1:8000/mezzio-template)
 - [http://127.0.0.1:8000/laminas-view](http://127.0.0.1:8000/spiral-view)
 
 ## Usage
@@ -232,7 +232,7 @@ composer require schranz-templating/mustache-adapter
 composer require schranz-templating/aura-view-adapter
 composer require schranz-templating/fluid-adapter
 composer require schranz-templating/laminas-view-adapter
-composer require schranz-templating/mezzio-adapter
+composer require schranz-templating/mezzio-template-adapter
 composer require schranz-templating/spiral-view-adapter
 composer require schranz-templating/yii-view-adapter
 
@@ -304,7 +304,7 @@ To use the integration in the Mezzio Framework the following packages are curren
 which will register the adapter service and integration of the selected template engine:
 
 ```bash
-composer require schranz-templating/mezzio-mezzio-integration
+composer require schranz-templating/mezzio-mezzio-template-integration
 
 composer require schranz-templating/mezzio-twig-integration
 composer require schranz-templating/mezzio-blade-integration
@@ -407,7 +407,7 @@ engines into different frameworks.
         - [ ] PHPTAL
         - [ ] ...
     - [ ] Mezzio
-        - [x] [Mezzio](src/Integration/Mezzio/Mezzio/README.md) ([`schranz-templating/mezzio-mezzio-integration`](https://github.com/schranz-templating/mezzio-mezzio-integration))
+        - [x] [Mezzio](src/Integration/Mezzio/MezzioTemplate/README.md) ([`schranz-templating/mezzio-mezzio-template-integration`](https://github.com/schranz-templating/mezzio-mezzio-template-integration))
         - [x] [Twig](src/Integration/Mezzio/Twig/README.md) ([`schranz-templating/mezzio-twig-integration`](https://github.com/schranz-templating/mezzio-twig-integration))
         - [x] [Latte](src/Integration/Mezzio/Blade/README.md) ([`schranz-templating/mezzio-blade-integration`](https://github.com/schranz-templating/mezzio-blade-integration))
         - [x] [Latte](src/Integration/Mezzio/Latte/README.md) ([`schranz-templating/mezzio-latte-integration`](https://github.com/schranz-templating/mezzio-latte-integration))
@@ -437,28 +437,28 @@ In the following table we will ist all yet found interesting template engines
 and view renderers. What kind of version they currently are and what PHP Version
 they are supporting. Also, what kind of features are supported by them.
 
-| Engine       | Version  | PHP Version            | Inheritance | Subviews | Namespaces | Functions | Filters | Exist | Partial | Streaming | String | Raw | Globals |
-|--------------|----------|------------------------|-------------|----------|------------|-----------|---------|-------|---------|-----------|--------|-----|---------|
-| Twig         | `3.4.1`  | `>=7.2.5`              | [x]         |          | [x] `@`    | [x]       | [x]     | [x]   | [x]     | [x]       | [x]    | [x] | [x]     |
-| Blade        | `9.15.0` | `^8.1`                 | [x]         |          | [x] `::`   | ?         | ?       | ?     | [x]     | ?         | [x]    | ?   | ?       |
-| Latte        | `3.0.0`  | `>=8.0 <8.2`           | [x]         |          | ?          |           | [x]     | ?     | ?       | ?         | [x]    | [x] | ?       |
-|              |          |                        |             |          |            |           |         |       |         |           |        |     |         |
-| Plates       | `3.4.0`  | `^7.0 ^8.0`            | [x]         |          | [x] `::`   | [x]       |         | ?     |         | ?         | [x]    | ?   | ?       |
-| Smarty       | `4.1.1`  | `^7.1 ^8.0`            | [x]         |          | ?          | [x]       | ?       | ?     | ?       | [x]       | [x]    | ?   | ?       |
-| Brainy       | `4.0.0`  | `>=7.3`                | [x]         |          | ?          | [x]       | ?       | ?     | ?       | [x]       | [x]    | ?   | ?       |
-| Mustache     | `2.14.1` | `>=5.2.4`              |             |          | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
-| Handlebars   | `2.3.0`  | `>=5.4.0`              |             |          | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
-|              |          |                        |             |          |            |           |         |       |         |           |        |     |         |
-| Mezzio       | `3.10.0` | `~7.4.0 ~8.0.0 ~8.1.0` | [x]         |          | [x] `@`    | ?         | ?       | ?     | ?       |           | [x]    | ?   | ?       |
-| Spiral View  | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?     | ?       | ?         | ?      | ?   | ?       |
-| Laminas View | `2.20.0` | `^7.4 ~8.0.0 ~8.1.0`   | [x]         | [x]      | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
-| Yii View     | `5.0.0 ` | `^7.4 ^8.0`            | [x]         | [x]      | [x] `@`    | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
-| Fluid        | `2.7.1`  | `>=5.5.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
-| Contao       | `4.13.4` | `^7.4 ^8.0`            | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
-| Aura View    | `2.4.0`  | `>=5.4.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
-|              |          |                        |             |          |            |           |         |       |         |           |        |     |         |
-| Qiq          | `1.0.2`  | `^8.0`                 | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
-| PHPTAL       | `1.7.0`  | `~8.0.0 ~8.1.0 ~8.2.0` | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+| Engine          | Version  | PHP Version            | Inheritance | Subviews | Namespaces | Functions | Filters | Exist | Partial | Streaming | String | Raw | Globals |
+|-----------------|----------|------------------------|-------------|----------|------------|-----------|---------|-------|---------|-----------|--------|-----|---------|
+| Twig            | `3.4.1`  | `>=7.2.5`              | [x]         |          | [x] `@`    | [x]       | [x]     | [x]   | [x]     | [x]       | [x]    | [x] | [x]     |
+| Blade           | `9.15.0` | `^8.1`                 | [x]         |          | [x] `::`   | ?         | ?       | ?     | [x]     | ?         | [x]    | ?   | ?       |
+| Latte           | `3.0.0`  | `>=8.0 <8.2`           | [x]         |          | ?          |           | [x]     | ?     | ?       | ?         | [x]    | [x] | ?       |
+|                 |          |                        |             |          |            |           |         |       |         |           |        |     |         |
+| Plates          | `3.4.0`  | `^7.0 ^8.0`            | [x]         |          | [x] `::`   | [x]       |         | ?     |         | ?         | [x]    | ?   | ?       |
+| Smarty          | `4.1.1`  | `^7.1 ^8.0`            | [x]         |          | ?          | [x]       | ?       | ?     | ?       | [x]       | [x]    | ?   | ?       |
+| Brainy          | `4.0.0`  | `>=7.3`                | [x]         |          | ?          | [x]       | ?       | ?     | ?       | [x]       | [x]    | ?   | ?       |
+| Mustache        | `2.14.1` | `>=5.2.4`              |             |          | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+| Handlebars      | `2.3.0`  | `>=5.4.0`              |             |          | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+|                 |          |                        |             |          |            |           |         |       |         |           |        |     |         |
+| Mezzio Template | `3.10.0` | `~7.4.0 ~8.0.0 ~8.1.0` | [x]         |          | [x] `@`    | ?         | ?       | ?     | ?       |           | [x]    | ?   | ?       |
+| Spiral View     | `2.13.1` | `>=7.4`                | [x]         |          | ?          | ?         | ?       | ?     | ?       | ?         | ?      | ?   | ?       |
+| Laminas View    | `2.20.0` | `^7.4 ~8.0.0 ~8.1.0`   | [x]         | [x]      | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+| Yii View        | `5.0.0 ` | `^7.4 ^8.0`            | [x]         | [x]      | [x] `@`    | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+| Fluid           | `2.7.1`  | `>=5.5.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+| Contao          | `4.13.4` | `^7.4 ^8.0`            | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+| Aura View       | `2.4.0`  | `>=5.4.0`              | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+|                 |          |                        |             |          |            |           |         |       |         |           |        |     |         |
+| Qiq             | `1.0.2`  | `^8.0`                 | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
+| PHPTAL          | `1.7.0`  | `~8.0.0 ~8.1.0 ~8.2.0` | ?           | ?        | ?          | ?         | ?       | ?     | ?       | ?         | [x]    | ?   | ?       |
 
 ### Feature Support
 

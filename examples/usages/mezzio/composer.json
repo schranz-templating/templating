@@ -87,7 +87,7 @@
         },
         {
             "type": "path",
-            "url": "./../../../src/Adapter/Mezzio",
+            "url": "./../../../src/Adapter/MezzioTemplate",
             "options": {
                 "symlink": true
             }
@@ -143,7 +143,7 @@
         },
         {
             "type": "path",
-            "url": "./../../../src/Integration/Mezzio/Mezzio",
+            "url": "./../../../src/Integration/Mezzio/MezzioTemplate",
             "options": {
                 "symlink": true
             }
@@ -180,7 +180,7 @@
         "schranz-templating/mezzio-handlebars-integration": "@dev",
         "schranz-templating/mezzio-mustache-integration": "@dev",
         "schranz-templating/mezzio-smarty-integration": "@dev",
-        "schranz-templating/mezzio-mezzio-integration": "@dev",
+        "schranz-templating/mezzio-mezzio-template-integration": "@dev",
         "schranz-templating/mezzio-latte-integration": "@dev",
         "schranz-templating/mezzio-blade-integration": "@dev"
     },

@@ -1,11 +1,11 @@
 {
-    "name": "schranz-templating/mezzio-adapter",
+    "name": "schranz-templating/mezzio-template-adapter",
     "description": "An adapter for the template renderer for mezzio template engine.",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Schranz\\Templating\\Adapter\\Mezzio\\": ""
+            "Schranz\\Templating\\Adapter\\MezzioTemplate\\": ""
         }
     },
     "repositories": [

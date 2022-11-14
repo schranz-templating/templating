@@ -8,19 +8,19 @@ use Laminas\Diactoros\Response\HtmlResponse;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Server\RequestHandlerInterface;
-use Schranz\Templating\Adapter\Mezzio\MezzioRenderer;
+use Schranz\Templating\Adapter\MezzioTemplate\MezzioTemplateRenderer;
 
-class TemplateMezzioHandler implements RequestHandlerInterface
+class TemplateMezzioTemplateHandler implements RequestHandlerInterface
 {
-    public function __construct(private MezzioRenderer $mezzioRenderer)
+    public function __construct(private MezzioTemplateRenderer $mezzioTemplateRenderer)
     {}
 
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
-        return new HtmlResponse($this->mezzioRenderer->render(
+        return new HtmlResponse($this->mezzioTemplateRenderer->render(
             'base',
             [
-                'title' => 'Render using: ' . get_class($this->mezzioRenderer),
+                'title' => 'Render using: ' . get_class($this->mezzioTemplateRenderer),
             ]
         ));
     }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a574cc7359a70d1937c325e4e476b85f",
+    "content-hash": "fc63b781926aa81f1a041f28fdc2e0e3",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -747,12 +747,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "e613ecd3e9351328e64b7e748804aaf85f4a48c1"
+                "reference": "b4045151330d0818a5d9ea1ba8d567999cbf8e08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/e613ecd3e9351328e64b7e748804aaf85f4a48c1",
-                "reference": "e613ecd3e9351328e64b7e748804aaf85f4a48c1",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/b4045151330d0818a5d9ea1ba8d567999cbf8e08",
+                "reference": "b4045151330d0818a5d9ea1ba8d567999cbf8e08",
                 "shasum": ""
             },
             "require": {
@@ -809,7 +809,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-11-02T13:45:32+00:00"
+            "time": "2022-11-14T14:53:33+00:00"
         },
         {
             "name": "illuminate/view",
@@ -939,12 +939,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-config-aggregator.git",
-                "reference": "c4bac0f8325aa21091d4f171cd1e6211129f4c7f"
+                "reference": "ca079167c6e0e674c39f49d0c7d5f5c29f3eedd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-config-aggregator/zipball/c4bac0f8325aa21091d4f171cd1e6211129f4c7f",
-                "reference": "c4bac0f8325aa21091d4f171cd1e6211129f4c7f",
+                "url": "https://api.github.com/repos/laminas/laminas-config-aggregator/zipball/ca079167c6e0e674c39f49d0c7d5f5c29f3eedd5",
+                "reference": "ca079167c6e0e674c39f49d0c7d5f5c29f3eedd5",
                 "shasum": ""
             },
             "require": {
@@ -1001,20 +1001,20 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-11-04T00:28:42+00:00"
+            "time": "2022-11-11T00:44:34+00:00"
         },
         {
             "name": "laminas/laminas-diactoros",
-            "version": "2.21.x-dev",
+            "version": "2.22.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-diactoros.git",
-                "reference": "82fa5b677fb9bb11338d12c548d759cf291f400b"
+                "reference": "0b7d4e8ff6560e3a7f84d16283f2e12402f2bd78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-diactoros/zipball/82fa5b677fb9bb11338d12c548d759cf291f400b",
-                "reference": "82fa5b677fb9bb11338d12c548d759cf291f400b",
+                "url": "https://api.github.com/repos/laminas/laminas-diactoros/zipball/0b7d4e8ff6560e3a7f84d16283f2e12402f2bd78",
+                "reference": "0b7d4e8ff6560e3a7f84d16283f2e12402f2bd78",
                 "shasum": ""
             },
             "require": {
@@ -1099,7 +1099,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-11-04T01:53:34+00:00"
+            "time": "2022-11-13T01:35:46+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -1107,12 +1107,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-escaper.git",
-                "reference": "3ca285aae8ac27ab60311486ea64d8a43550d8ae"
+                "reference": "2d6742636b0a01af388208007aecac37d26d2277"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/3ca285aae8ac27ab60311486ea64d8a43550d8ae",
-                "reference": "3ca285aae8ac27ab60311486ea64d8a43550d8ae",
+                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/2d6742636b0a01af388208007aecac37d26d2277",
+                "reference": "2d6742636b0a01af388208007aecac37d26d2277",
                 "shasum": ""
             },
             "require": {
@@ -1162,7 +1162,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-11-04T00:49:44+00:00"
+            "time": "2022-11-13T01:29:16+00:00"
         },
         {
             "name": "laminas/laminas-httphandlerrunner",
@@ -1170,12 +1170,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-httphandlerrunner.git",
-                "reference": "6f7c86f332ae59827f757d716f10b5047818751d"
+                "reference": "b745a9f3f56d766ce2322d6f1a6dc218a791dafe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-httphandlerrunner/zipball/6f7c86f332ae59827f757d716f10b5047818751d",
-                "reference": "6f7c86f332ae59827f757d716f10b5047818751d",
+                "url": "https://api.github.com/repos/laminas/laminas-httphandlerrunner/zipball/b745a9f3f56d766ce2322d6f1a6dc218a791dafe",
+                "reference": "b745a9f3f56d766ce2322d6f1a6dc218a791dafe",
                 "shasum": ""
             },
             "require": {
@@ -1230,7 +1230,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-11-04T00:40:12+00:00"
+            "time": "2022-11-13T01:20:10+00:00"
         },
         {
             "name": "laminas/laminas-servicemanager",
@@ -1238,12 +1238,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-servicemanager.git",
-                "reference": "dca29ce5774d69ec4f4c27266737d4288828c095"
+                "reference": "562a859ca6eeb8779187c9a501a6751192f96dc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-servicemanager/zipball/dca29ce5774d69ec4f4c27266737d4288828c095",
-                "reference": "dca29ce5774d69ec4f4c27266737d4288828c095",
+                "url": "https://api.github.com/repos/laminas/laminas-servicemanager/zipball/562a859ca6eeb8779187c9a501a6751192f96dc4",
+                "reference": "562a859ca6eeb8779187c9a501a6751192f96dc4",
                 "shasum": ""
             },
             "require": {
@@ -1321,7 +1321,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-11-04T01:38:34+00:00"
+            "time": "2022-11-13T00:58:45+00:00"
         },
         {
             "name": "laminas/laminas-stdlib",
@@ -1329,12 +1329,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-stdlib.git",
-                "reference": "6858363f89e75496708a85efa1abd212820dad0b"
+                "reference": "5df51db5a888cec16e54ef2c13d7bd82e18eb2e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/6858363f89e75496708a85efa1abd212820dad0b",
-                "reference": "6858363f89e75496708a85efa1abd212820dad0b",
+                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/5df51db5a888cec16e54ef2c13d7bd82e18eb2e1",
+                "reference": "5df51db5a888cec16e54ef2c13d7bd82e18eb2e1",
                 "shasum": ""
             },
             "require": {
@@ -1381,7 +1381,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-11-04T00:38:51+00:00"
+            "time": "2022-11-13T01:22:53+00:00"
         },
         {
             "name": "laminas/laminas-stratigility",
@@ -1389,12 +1389,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-stratigility.git",
-                "reference": "9776e4ba2593848d1fb6784a4fe2596e6744e429"
+                "reference": "f7032e1e4ccafd199723985a4bf084009b488c6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-stratigility/zipball/9776e4ba2593848d1fb6784a4fe2596e6744e429",
-                "reference": "9776e4ba2593848d1fb6784a4fe2596e6744e429",
+                "url": "https://api.github.com/repos/laminas/laminas-stratigility/zipball/f7032e1e4ccafd199723985a4bf084009b488c6d",
+                "reference": "f7032e1e4ccafd199723985a4bf084009b488c6d",
                 "shasum": ""
             },
             "require": {
@@ -1462,7 +1462,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-11-04T00:32:31+00:00"
+            "time": "2022-11-13T01:11:11+00:00"
         },
         {
             "name": "latte/latte",
@@ -1621,12 +1621,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio.git",
-                "reference": "cde05471516d296fe08326c53303b840793c0702"
+                "reference": "707ddd92bdb83e393760b4c958a8099aebf0a401"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio/zipball/cde05471516d296fe08326c53303b840793c0702",
-                "reference": "cde05471516d296fe08326c53303b840793c0702",
+                "url": "https://api.github.com/repos/mezzio/mezzio/zipball/707ddd92bdb83e393760b4c958a8099aebf0a401",
+                "reference": "707ddd92bdb83e393760b4c958a8099aebf0a401",
                 "shasum": ""
             },
             "require": {
@@ -1722,7 +1722,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-11-04T00:21:07+00:00"
+            "time": "2022-11-13T02:00:08+00:00"
         },
         {
             "name": "mezzio/mezzio-fastroute",
@@ -1730,12 +1730,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio-fastroute.git",
-                "reference": "846dffdd736d4d20e4cdb6a4006987b82b2810fc"
+                "reference": "ae77c8b74c5cb253a7e0bf9c09c342da16c73973"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio-fastroute/zipball/846dffdd736d4d20e4cdb6a4006987b82b2810fc",
-                "reference": "846dffdd736d4d20e4cdb6a4006987b82b2810fc",
+                "url": "https://api.github.com/repos/mezzio/mezzio-fastroute/zipball/ae77c8b74c5cb253a7e0bf9c09c342da16c73973",
+                "reference": "ae77c8b74c5cb253a7e0bf9c09c342da16c73973",
                 "shasum": ""
             },
             "require": {
@@ -1801,7 +1801,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-11-04T01:34:51+00:00"
+            "time": "2022-11-12T00:56:10+00:00"
         },
         {
             "name": "mezzio/mezzio-helpers",
@@ -1886,12 +1886,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio-platesrenderer.git",
-                "reference": "d31eba77eb2431f8e657ae7d6ccb7d1d3c4283de"
+                "reference": "9b506b9851148ed0d7ed93d21fbef572ac13c518"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio-platesrenderer/zipball/d31eba77eb2431f8e657ae7d6ccb7d1d3c4283de",
-                "reference": "d31eba77eb2431f8e657ae7d6ccb7d1d3c4283de",
+                "url": "https://api.github.com/repos/mezzio/mezzio-platesrenderer/zipball/9b506b9851148ed0d7ed93d21fbef572ac13c518",
+                "reference": "9b506b9851148ed0d7ed93d21fbef572ac13c518",
                 "shasum": ""
             },
             "require": {
@@ -1955,7 +1955,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-11-04T14:21:11+00:00"
+            "time": "2022-11-12T00:04:18+00:00"
         },
         {
             "name": "mezzio/mezzio-router",
@@ -1963,12 +1963,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio-router.git",
-                "reference": "f47ad2a2303e27a55a979b3a5e152d783c96955e"
+                "reference": "9cc6836d2452ab76f65e3231ed6cd37a64f72d5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio-router/zipball/f47ad2a2303e27a55a979b3a5e152d783c96955e",
-                "reference": "f47ad2a2303e27a55a979b3a5e152d783c96955e",
+                "url": "https://api.github.com/repos/mezzio/mezzio-router/zipball/9cc6836d2452ab76f65e3231ed6cd37a64f72d5b",
+                "reference": "9cc6836d2452ab76f65e3231ed6cd37a64f72d5b",
                 "shasum": ""
             },
             "require": {
@@ -2037,7 +2037,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-11-04T00:36:11+00:00"
+            "time": "2022-11-13T00:09:33+00:00"
         },
         {
             "name": "mezzio/mezzio-template",
@@ -2045,12 +2045,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio-template.git",
-                "reference": "ac79a6109b9b417d6f9cd11a5b31d4779b812a53"
+                "reference": "013c382e872364c9251700ed83cbc991d3134781"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio-template/zipball/ac79a6109b9b417d6f9cd11a5b31d4779b812a53",
-                "reference": "ac79a6109b9b417d6f9cd11a5b31d4779b812a53",
+                "url": "https://api.github.com/repos/mezzio/mezzio-template/zipball/013c382e872364c9251700ed83cbc991d3134781",
+                "reference": "013c382e872364c9251700ed83cbc991d3134781",
                 "shasum": ""
             },
             "require": {
@@ -2102,7 +2102,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-11-04T00:02:48+00:00"
+            "time": "2022-11-14T00:10:38+00:00"
         },
         {
             "name": "mezzio/mezzio-twigrenderer",
@@ -2110,12 +2110,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio-twigrenderer.git",
-                "reference": "57f301d01181f96f1379b8397ca285b856622efc"
+                "reference": "46c284d0ece2f260f6b18bfa6164c2806145b513"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio-twigrenderer/zipball/57f301d01181f96f1379b8397ca285b856622efc",
-                "reference": "57f301d01181f96f1379b8397ca285b856622efc",
+                "url": "https://api.github.com/repos/mezzio/mezzio-twigrenderer/zipball/46c284d0ece2f260f6b18bfa6164c2806145b513",
+                "reference": "46c284d0ece2f260f6b18bfa6164c2806145b513",
                 "shasum": ""
             },
             "require": {
@@ -2175,7 +2175,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-11-01T10:12:30+00:00"
+            "time": "2022-11-13T01:06:38+00:00"
         },
         {
             "name": "mustache/mustache",
@@ -2233,12 +2233,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "bb76b610776a21c420f2d319f1c1a5f2c14fe075"
+                "reference": "6244541cdd0b323af59bbccfee857c6bd1cde88c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/bb76b610776a21c420f2d319f1c1a5f2c14fe075",
-                "reference": "bb76b610776a21c420f2d319f1c1a5f2c14fe075",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/6244541cdd0b323af59bbccfee857c6bd1cde88c",
+                "reference": "6244541cdd0b323af59bbccfee857c6bd1cde88c",
                 "shasum": ""
             },
             "require": {
@@ -2328,7 +2328,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-07T14:28:40+00:00"
+            "time": "2022-11-07T09:00:40+00:00"
         },
         {
             "name": "nikic/fast-route",
@@ -2386,12 +2386,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "2f1fd784fe5560675722a1e5cbbcece5f43bf3a0"
+                "reference": "1df465cd901414affcf9a04ef041cf3aedad73b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/2f1fd784fe5560675722a1e5cbbcece5f43bf3a0",
-                "reference": "2f1fd784fe5560675722a1e5cbbcece5f43bf3a0",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/1df465cd901414affcf9a04ef041cf3aedad73b1",
+                "reference": "1df465cd901414affcf9a04ef041cf3aedad73b1",
                 "shasum": ""
             },
             "require": {
@@ -2435,7 +2435,7 @@
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
                 "source": "https://github.com/nikic/PHP-Parser/tree/4.x"
             },
-            "time": "2022-09-10T20:41:13+00:00"
+            "time": "2022-11-13T15:33:17+00:00"
         },
         {
             "name": "psr/container",
@@ -2904,34 +2904,6 @@
             }
         },
         {
-            "name": "schranz-templating/mezzio-adapter",
-            "version": "0.1.x-dev",
-            "dist": {
-                "type": "path",
-                "url": "./../../../src/Adapter/Mezzio",
-                "reference": "440a9925dcff53139daffe401a8ef60540311632"
-            },
-            "require": {
-                "mezzio/mezzio-template": "^1.0 || ^2.0",
-                "php": "^7.0 || ^8.0",
-                "schranz-templating/template-renderer": "^0.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Schranz\\Templating\\Adapter\\Mezzio\\": ""
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "An adapter for the template renderer for mezzio template engine.",
-            "transport-options": {
-                "symlink": true,
-                "relative": true
-            }
-        },
-        {
             "name": "schranz-templating/mezzio-blade-integration",
             "version": "0.1.x-dev",
             "dist": {
@@ -3031,27 +3003,27 @@
             }
         },
         {
-            "name": "schranz-templating/mezzio-mezzio-integration",
+            "name": "schranz-templating/mezzio-mezzio-template-integration",
             "version": "0.1.x-dev",
             "dist": {
                 "type": "path",
-                "url": "./../../../src/Integration/Mezzio/Mezzio",
-                "reference": "84bb1549c0e6f977d57781ad08b9408473a89422"
+                "url": "./../../../src/Integration/Mezzio/MezzioTemplate",
+                "reference": "b0d5ba31b7f65d8f49a12c3f687f05faaed00b18"
             },
             "require": {
                 "php": "^7.0 || ^8.0",
                 "psr/container": "^1.0 || ^2.0",
-                "schranz-templating/mezzio-adapter": "^0.1"
+                "schranz-templating/mezzio-template-adapter": "^0.1"
             },
             "type": "library",
             "extra": {
                 "laminas": {
-                    "config-provider": "Schranz\\Templating\\Integration\\Mezzio\\Mezzio\\ConfigProvider"
+                    "config-provider": "Schranz\\Templating\\Integration\\Mezzio\\MezzioTemplate\\ConfigProvider"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Schranz\\Templating\\Integration\\Mezzio\\Mezzio\\": ""
+                    "Schranz\\Templating\\Integration\\Mezzio\\MezzioTemplate\\": ""
                 }
             },
             "license": [
@@ -3158,6 +3130,34 @@
                 "MIT"
             ],
             "description": "A integration of template renderer into mezzio via smarty template engine.",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "schranz-templating/mezzio-template-adapter",
+            "version": "0.1.x-dev",
+            "dist": {
+                "type": "path",
+                "url": "./../../../src/Adapter/MezzioTemplate",
+                "reference": "e1bae902dba146b345f5958932a6a6bfba859444"
+            },
+            "require": {
+                "mezzio/mezzio-template": "^1.0 || ^2.0",
+                "php": "^7.0 || ^8.0",
+                "schranz-templating/template-renderer": "^0.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Schranz\\Templating\\Adapter\\MezzioTemplate\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "An adapter for the template renderer for mezzio template engine.",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -3530,7 +3530,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/main"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.27.0"
             },
             "funding": [
                 {
@@ -3614,7 +3614,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/main"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.27.0"
             },
             "funding": [
                 {
@@ -3698,7 +3698,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/main"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.27.0"
             },
             "funding": [
                 {
@@ -4313,12 +4313,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-cli.git",
-                "reference": "605d1d988f833ccc417f3ce988104400976cc7d5"
+                "reference": "357afe25e2bac93b4efa7db589a67a54b8339848"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-cli/zipball/605d1d988f833ccc417f3ce988104400976cc7d5",
-                "reference": "605d1d988f833ccc417f3ce988104400976cc7d5",
+                "url": "https://api.github.com/repos/laminas/laminas-cli/zipball/357afe25e2bac93b4efa7db589a67a54b8339848",
+                "reference": "357afe25e2bac93b4efa7db589a67a54b8339848",
                 "shasum": ""
             },
             "require": {
@@ -4374,7 +4374,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-11-04T01:47:36+00:00"
+            "time": "2022-11-13T01:12:39+00:00"
         },
         {
             "name": "laminas/laminas-code",
@@ -4382,12 +4382,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-code.git",
-                "reference": "c0fefff24fb380b6e10b1a3cbac780f21cd068a0"
+                "reference": "6dbe5162a3c9aea6fc530945f9294f00bbffa053"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-code/zipball/c0fefff24fb380b6e10b1a3cbac780f21cd068a0",
-                "reference": "c0fefff24fb380b6e10b1a3cbac780f21cd068a0",
+                "url": "https://api.github.com/repos/laminas/laminas-code/zipball/6dbe5162a3c9aea6fc530945f9294f00bbffa053",
+                "reference": "6dbe5162a3c9aea6fc530945f9294f00bbffa053",
                 "shasum": ""
             },
             "require": {
@@ -4441,7 +4441,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-11-04T01:38:23+00:00"
+            "time": "2022-11-13T00:26:21+00:00"
         },
         {
             "name": "laminas/laminas-development-mode",
@@ -4449,12 +4449,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-development-mode.git",
-                "reference": "b26440aac8aa7768726097f00a4eec1a4dc551e9"
+                "reference": "e51632d548b1088ed40f8694c13d2fe9f88b9ac5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-development-mode/zipball/b26440aac8aa7768726097f00a4eec1a4dc551e9",
-                "reference": "b26440aac8aa7768726097f00a4eec1a4dc551e9",
+                "url": "https://api.github.com/repos/laminas/laminas-development-mode/zipball/e51632d548b1088ed40f8694c13d2fe9f88b9ac5",
+                "reference": "e51632d548b1088ed40f8694c13d2fe9f88b9ac5",
                 "shasum": ""
             },
             "require": {
@@ -4503,7 +4503,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-11-04T00:34:34+00:00"
+            "time": "2022-11-13T01:42:59+00:00"
         },
         {
             "name": "mezzio/mezzio-tooling",
@@ -4511,12 +4511,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mezzio/mezzio-tooling.git",
-                "reference": "c2e25a54742d85582583e9ee4ca4ac42773a0f28"
+                "reference": "7ed2d9550f4a45adeae1c7e18dbe5569c2e16105"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mezzio/mezzio-tooling/zipball/c2e25a54742d85582583e9ee4ca4ac42773a0f28",
-                "reference": "c2e25a54742d85582583e9ee4ca4ac42773a0f28",
+                "url": "https://api.github.com/repos/mezzio/mezzio-tooling/zipball/7ed2d9550f4a45adeae1c7e18dbe5569c2e16105",
+                "reference": "7ed2d9550f4a45adeae1c7e18dbe5569c2e16105",
                 "shasum": ""
             },
             "require": {
@@ -4583,7 +4583,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-11-05T01:23:27+00:00"
+            "time": "2022-11-13T01:37:22+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -5088,12 +5088,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "62ca8fd78d8caa233f0d2a8fd380fd8b468dd472"
+                "reference": "2854bdd8a1e8bd3831ee3622c6f0951684d08490"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/62ca8fd78d8caa233f0d2a8fd380fd8b468dd472",
-                "reference": "62ca8fd78d8caa233f0d2a8fd380fd8b468dd472",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2854bdd8a1e8bd3831ee3622c6f0951684d08490",
+                "reference": "2854bdd8a1e8bd3831ee3622c6f0951684d08490",
                 "shasum": ""
             },
             "require": {
@@ -5182,7 +5182,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-07T16:09:03+00:00"
+            "time": "2022-11-09T08:31:26+00:00"
         },
         {
             "name": "psr/event-dispatcher",
@@ -5294,12 +5294,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "964c5d9ca40d0ec72db203b3dd6382a30abef616"
+                "reference": "5317244268eb40e418f1cf8afa6d1d9df4e1f4a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/964c5d9ca40d0ec72db203b3dd6382a30abef616",
-                "reference": "964c5d9ca40d0ec72db203b3dd6382a30abef616",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/5317244268eb40e418f1cf8afa6d1d9df4e1f4a3",
+                "reference": "5317244268eb40e418f1cf8afa6d1d9df4e1f4a3",
                 "shasum": ""
             },
             "conflict": {
@@ -5402,16 +5402,17 @@
                 "ezsystems/ezdemo-ls-extension": ">=5.4,<5.4.2.1",
                 "ezsystems/ezfind-ls": ">=5.3,<5.3.6.1|>=5.4,<5.4.11.1|>=2017.12,<2017.12.0.1",
                 "ezsystems/ezplatform": "<=1.13.6|>=2,<=2.5.24",
-                "ezsystems/ezplatform-admin-ui": ">=1.3,<1.3.5|>=1.4,<1.4.6|>=1.5,<1.5.27",
+                "ezsystems/ezplatform-admin-ui": ">=1.3,<1.3.5|>=1.4,<1.4.6|>=1.5,<1.5.29|>=2.3,<2.3.26",
                 "ezsystems/ezplatform-admin-ui-assets": ">=4,<4.2.1|>=5,<5.0.1|>=5.1,<5.1.1",
-                "ezsystems/ezplatform-kernel": "<=1.2.5|>=1.3,<1.3.19",
+                "ezsystems/ezplatform-graphql": ">=1-rc.1,<1.0.13|>=2-beta.1,<2.3.12",
+                "ezsystems/ezplatform-kernel": "<=1.2.5|>=1.3,<1.3.26",
                 "ezsystems/ezplatform-rest": ">=1.2,<=1.2.2|>=1.3,<1.3.8",
                 "ezsystems/ezplatform-richtext": ">=2.3,<=2.3.7",
                 "ezsystems/ezplatform-user": ">=1,<1.0.1",
-                "ezsystems/ezpublish-kernel": "<=6.13.8.1|>=7,<7.5.29",
+                "ezsystems/ezpublish-kernel": "<=6.13.8.1|>=7,<7.5.30",
                 "ezsystems/ezpublish-legacy": "<=2017.12.7.3|>=2018.6,<=2019.3.5.1",
                 "ezsystems/platform-ui-assets-bundle": ">=4.2,<4.2.3",
-                "ezsystems/repository-forms": ">=2.3,<2.3.2.1",
+                "ezsystems/repository-forms": ">=2.3,<2.3.2.1|>=2.5,<2.5.15",
                 "ezyang/htmlpurifier": "<4.1.1",
                 "facade/ignition": "<1.16.15|>=2,<2.4.2|>=2.5,<2.5.2",
                 "facturascripts/facturascripts": "<=2022.8",
@@ -5457,7 +5458,9 @@
                 "hjue/justwriting": "<=1",
                 "hov/jobfair": "<1.0.13|>=2,<2.0.2",
                 "hyn/multi-tenant": ">=5.6,<5.7.2",
-                "ibexa/core": ">=4,<4.0.7|>=4.1,<4.1.4",
+                "ibexa/admin-ui": ">=4.2,<4.2.3",
+                "ibexa/core": ">=4,<4.0.7|>=4.1,<4.1.4|>=4.2,<4.2.3",
+                "ibexa/graphql": ">=2.5,<2.5.31|>=3.3,<3.3.28|>=4.2,<4.2.3",
                 "ibexa/post-install": "<=1.0.4",
                 "icecoder/icecoder": "<=8.1",
                 "idno/known": "<=1.3.1",
@@ -5820,7 +5823,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-04T21:04:09+00:00"
+            "time": "2022-11-11T00:18:57+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -6792,12 +6795,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "e308591eea22dafa9478d48bfba9bdd0351f4e7a"
+                "reference": "902b69856d640114d5c079fd57e4ce661c559807"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/e308591eea22dafa9478d48bfba9bdd0351f4e7a",
-                "reference": "e308591eea22dafa9478d48bfba9bdd0351f4e7a",
+                "url": "https://api.github.com/repos/symfony/console/zipball/902b69856d640114d5c079fd57e4ce661c559807",
+                "reference": "902b69856d640114d5c079fd57e4ce661c559807",
                 "shasum": ""
             },
             "require": {
@@ -6880,7 +6883,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-02T09:08:04+00:00"
+            "time": "2022-11-14T10:13:36+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -7177,7 +7180,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/main"
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.27.0"
             },
             "funding": [
                 {
@@ -7262,7 +7265,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/main"
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.27.0"
             },
             "funding": [
                 {
@@ -7569,7 +7572,7 @@
         "schranz-templating/mezzio-handlebars-integration": 20,
         "schranz-templating/mezzio-mustache-integration": 20,
         "schranz-templating/mezzio-smarty-integration": 20,
-        "schranz-templating/mezzio-mezzio-integration": 20,
+        "schranz-templating/mezzio-mezzio-template-integration": 20,
         "schranz-templating/mezzio-latte-integration": 20,
         "schranz-templating/mezzio-blade-integration": 20,
         "roave/security-advisories": 20
