@@ -15,11 +15,17 @@
 <br/>
 
 This project should help to find a way for a general Template Render Interface.
-And show an integration of different Template Engines into all common PHP Frameworks.
+And show an integration of different Template Engines into all common PHP frameworks.
 
 Discussion in the PHP-FIG:
 
  - [https://github.com/php-fig/fig-standards/pull/1280](https://github.com/php-fig/fig-standards/pull/1280)
+
+Target is that Content Management Systems like [Sulu CMS](https://github.com/sulu/sulu) or even [Typo3](https://github.com/TYPO3/typo3)
+but also any library which a project defines how the data is rendered can use the
+[`TemplateRendererInterface`](./src/TemplateRenderer/README.md) to render their content to give 100%
+freedom about the used Template engine to their projects and easier to implement this kind of libraries
+into different PHP frameworks.
 
 ## Table of Contents
 
@@ -48,10 +54,13 @@ projects to newer Frameworks as not the whole templates need to be migrated. But
 
 But not only Framework can benefit from a general TemplateRendererInterface, a common interface also
 allows **CMS** like [`Sulu CMS`](http://github.com/sulu/sulu), [`Typo3`](https://github.com/TYPO3/typo3), ... 
-and more allow to give the Frontend Developer the full freedom how to write their Templates. Specially
-as CMS today allow to provide Content via JSON and render a website via React, Angular, Vue, ... they
-should also be free to render their website via `Twig`, `Blade`, `Latte`, ... or whatever Template engine they
-prefer.
+and more allow to give the Frontend Developer the full freedom how to write their Templates.
+While working on [Sulu CMS](https://github.com/sulu/sulu) and working alot with Hexagonal Architecture from DDD.
+I was thinking that the PHP-FIG is missing a template abstraction for PHP template engines. So system can
+provide controllers which provide data and projects define how that data should be rendered with the template
+engine of there choice. Specially as CMS today allow to provide Content via JSON and render a website via React,
+Angular, Vue, ... they should also be free to render their website via `Twig`, `Blade`, `Latte`, ... or whatever
+Template engine they prefer.
 
 Beside Frameworks and CMSs a general TemplateRendererInterface also helps **Library Authors** to integrate their
 library easier into different Frameworks. E.g. a mail library like `symfony/mailer` which provides a
