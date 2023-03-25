@@ -585,10 +585,11 @@ Tooling around template engines:
    - [reveal/reveal-latte](https://github.com/revealphp/reveal/tree/main/packages/reveal-latte) PHPStan Latte Rules
 
  - **Blade**
-     - [TomasVotruba/bladestan](https://github.com/TomasVotruba/bladestan)
-     - [bdelespierre/laravel-blade-linter](https://github.com/bdelespierre/laravel-blade-linter)
-     - [magentron/laravel-blade-lint](https://github.com/Magentron/laravel-blade-lint)
-     - [canvural/phpstan-blade-rule](https://github.com/canvural/phpstan-blade-rule)
-     - [thibaud-dauce/phpstan-blade](https://github.com/ThibaudDauce/phpstan-blade)
+   - [TomasVotruba/bladestan](https://github.com/TomasVotruba/bladestan)
+   - [bdelespierre/laravel-blade-linter](https://github.com/bdelespierre/laravel-blade-linter)
+   - [magentron/laravel-blade-lint](https://github.com/Magentron/laravel-blade-lint)
+   - [canvural/phpstan-blade-rule](https://github.com/canvural/phpstan-blade-rule)
+   - [thibaud-dauce/phpstan-blade](https://github.com/ThibaudDauce/phpstan-blade)
+   - [beyondcode/laravel-prose-linter](https://github.com/beyondcode/laravel-prose-linter)
 
 Please let me know about more tools around template engines.
