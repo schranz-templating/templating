@@ -592,5 +592,6 @@ Tooling around template engines:
    - [thibaud-dauce/phpstan-blade](https://github.com/ThibaudDauce/phpstan-blade)
    - [beyondcode/laravel-prose-linter](https://github.com/beyondcode/laravel-prose-linter)
    - [stillat/blade-parser](https://github.com/stillat/blade-parser)
+   - [tighten/tlint](https://github.com/tighten/tlint)
 
 Please let me know about more tools around template engines.
