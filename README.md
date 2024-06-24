@@ -593,5 +593,6 @@ Tooling around template engines:
    - [beyondcode/laravel-prose-linter](https://github.com/beyondcode/laravel-prose-linter)
    - [stillat/blade-parser](https://github.com/stillat/blade-parser)
    - [tighten/tlint](https://github.com/tighten/tlint)
+   - [prettier-plugin-blade](https://www.npmjs.com/package/prettier-plugin-blade)
 
 Please let me know about more tools around template engines.
