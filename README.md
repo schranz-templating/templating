@@ -568,17 +568,18 @@ E.g.: In twig globals can be defined via extensions.
 Tooling around template engines:
 
  - **Twig**
-   - [twig2latte](https://twig2latte.nette.org/)
-   - [twigfiddle](https://twigfiddle.com/)
-   - [twigstan](https://github.com/twigstan/twigstan)
-   - [asm89/twig-lint](https://github.com/asm89/twig-lint)
-   - [symfony-twig-lint](https://github.com/symfony/twig-bridge/blob/05e3128cb875e9f21d18c5af2354293cd1dec010/Command/LintCommand.php#L39) `bin/console lint:twig`
-   - [reveal/reveal-twig](https://github.com/revealphp/reveal/tree/main/packages/reveal-twig) PHPStan Twig Rules
-   - [driveto/phpstan-twig](https://github.com/driveto/phpstan-twig)
-   - [matthiasnoback/phpstan-twig-analysis](https://github.com/matthiasnoback/phpstan-twig-analysis)
-   - [friendsoftwig/twigcs](https://github.com/friendsoftwig/twigcs)
+   - [twig2latte](https://twig2latte.nette.org/) Twig to Latte converter
+   - [twigfiddle](https://twigfiddle.com/) Twig Fiddle
    - [VincentLanglet/Twig-CS-Fixer](https://github.com/VincentLanglet/Twig-CS-Fixer)
-   - [k10r/twig-cs-fixer](https://github.com/kellerkinderDE/twig-cs-fixer)
+   - [twigstan](https://github.com/twigstan/twigstan) PHPStan for Twig
+   - [symfony-twig-lint](https://github.com/symfony/twig-bridge/blob/05e3128cb875e9f21d18c5af2354293cd1dec010/Command/LintCommand.php#L39) `bin/console lint:twig`
+   - Prototypes or removed tools kept for references:
+     - [reveal/reveal-twig](https://github.com/revealphp/reveal/tree/main/packages/reveal-twig) PHPStan for Twig (look at TwigStan now)
+     - [driveto/phpstan-twig](https://github.com/driveto/phpstan-twig) PHPStan for Twig (look at TwigStan now)
+     - [matthiasnoback/phpstan-twig-analysis](https://github.com/matthiasnoback/phpstan-twig-analysis) PHPStan for Twig (look at TwigStan now)
+     - [friendsoftwig/twigcs](https://github.com/friendsoftwig/twigcs) Not longer maintained look at Twig-CS-Fixer now
+     - [asm89/twig-lint](https://github.com/asm89/twig-lint) Not longer maintained look at Twig-CS-Fixer now
+     - [k10r/twig-cs-fixer](https://github.com/kellerkinderDE/twig-cs-fixer) Not longer exists look at Twig-CS-Fixer now
 
  - **Latte**
    - [twig2latte](https://twig2latte.nette.org/)
