@@ -570,6 +570,7 @@ Tooling around template engines:
  - **Twig**
    - [twig2latte](https://twig2latte.nette.org/)
    - [twigfiddle](https://twigfiddle.com/)
+   - [twigstan](https://github.com/twigstan/twigstan)
    - [asm89/twig-lint](https://github.com/asm89/twig-lint)
    - [symfony-twig-lint](https://github.com/symfony/twig-bridge/blob/05e3128cb875e9f21d18c5af2354293cd1dec010/Command/LintCommand.php#L39) `bin/console lint:twig`
    - [reveal/reveal-twig](https://github.com/revealphp/reveal/tree/main/packages/reveal-twig) PHPStan Twig Rules
